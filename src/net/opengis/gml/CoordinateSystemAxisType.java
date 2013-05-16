@@ -1,0 +1,222 @@
+/*
+ * XML Type:  CoordinateSystemAxisType
+ * Namespace: http://www.opengis.net/gml
+ * Java type: net.opengis.gml.CoordinateSystemAxisType
+ *
+ * Automatically generated - do not modify.
+ */
+package net.opengis.gml;
+
+
+/**
+ * An XML CoordinateSystemAxisType(@http://www.opengis.net/gml).
+ *
+ * This is a complex type.
+ */
+public interface CoordinateSystemAxisType extends net.opengis.gml.CoordinateSystemAxisBaseType
+{
+    public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(CoordinateSystemAxisType.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s6E28D279B6C224D74769DB8B98AF1665").resolveHandle("coordinatesystemaxistype65f9type");
+    
+    /**
+     * Gets a List of "axisID" elements
+     */
+    java.util.List<net.opengis.gml.IdentifierType> getAxisIDList();
+    
+    /**
+     * Gets array of all "axisID" elements
+     * @deprecated
+     */
+    @Deprecated
+    net.opengis.gml.IdentifierType[] getAxisIDArray();
+    
+    /**
+     * Gets ith "axisID" element
+     */
+    net.opengis.gml.IdentifierType getAxisIDArray(int i);
+    
+    /**
+     * Returns number of "axisID" element
+     */
+    int sizeOfAxisIDArray();
+    
+    /**
+     * Sets array of all "axisID" element
+     */
+    void setAxisIDArray(net.opengis.gml.IdentifierType[] axisIDArray);
+    
+    /**
+     * Sets ith "axisID" element
+     */
+    void setAxisIDArray(int i, net.opengis.gml.IdentifierType axisID);
+    
+    /**
+     * Inserts and returns a new empty value (as xml) as the ith "axisID" element
+     */
+    net.opengis.gml.IdentifierType insertNewAxisID(int i);
+    
+    /**
+     * Appends and returns a new empty value (as xml) as the last "axisID" element
+     */
+    net.opengis.gml.IdentifierType addNewAxisID();
+    
+    /**
+     * Removes the ith "axisID" element
+     */
+    void removeAxisID(int i);
+    
+    /**
+     * Gets the "remarks" element
+     */
+    net.opengis.gml.StringOrRefType getRemarks();
+    
+    /**
+     * True if has "remarks" element
+     */
+    boolean isSetRemarks();
+    
+    /**
+     * Sets the "remarks" element
+     */
+    void setRemarks(net.opengis.gml.StringOrRefType remarks);
+    
+    /**
+     * Appends and returns a new empty "remarks" element
+     */
+    net.opengis.gml.StringOrRefType addNewRemarks();
+    
+    /**
+     * Unsets the "remarks" element
+     */
+    void unsetRemarks();
+    
+    /**
+     * Gets the "axisAbbrev" element
+     */
+    net.opengis.gml.CodeType getAxisAbbrev();
+    
+    /**
+     * Sets the "axisAbbrev" element
+     */
+    void setAxisAbbrev(net.opengis.gml.CodeType axisAbbrev);
+    
+    /**
+     * Appends and returns a new empty "axisAbbrev" element
+     */
+    net.opengis.gml.CodeType addNewAxisAbbrev();
+    
+    /**
+     * Gets the "axisDirection" element
+     */
+    net.opengis.gml.CodeType getAxisDirection();
+    
+    /**
+     * Sets the "axisDirection" element
+     */
+    void setAxisDirection(net.opengis.gml.CodeType axisDirection);
+    
+    /**
+     * Appends and returns a new empty "axisDirection" element
+     */
+    net.opengis.gml.CodeType addNewAxisDirection();
+    
+    /**
+     * Gets the "uom" attribute
+     */
+    java.lang.String getUom();
+    
+    /**
+     * Gets (as xml) the "uom" attribute
+     */
+    org.apache.xmlbeans.XmlAnyURI xgetUom();
+    
+    /**
+     * Sets the "uom" attribute
+     */
+    void setUom(java.lang.String uom);
+    
+    /**
+     * Sets (as xml) the "uom" attribute
+     */
+    void xsetUom(org.apache.xmlbeans.XmlAnyURI uom);
+    
+    /**
+     * A factory class with static methods for creating instances
+     * of this type.
+     */
+    
+    public static final class Factory
+    {
+        public static net.opengis.gml.CoordinateSystemAxisType newInstance() {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newInstance( type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType newInstance(org.apache.xmlbeans.XmlOptions options) {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newInstance( type, options ); }
+        
+        /** @param xmlAsString the string value to parse */
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.lang.String xmlAsString) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xmlAsString, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.lang.String xmlAsString, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xmlAsString, type, options ); }
+        
+        /** @param file the file from which to load an xml document */
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.File file) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( file, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.File file, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( file, type, options ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.net.URL u) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( u, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.net.URL u, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( u, type, options ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.InputStream is) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( is, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.InputStream is, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( is, type, options ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.Reader r) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( r, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(java.io.Reader r, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, java.io.IOException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( r, type, options ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(javax.xml.stream.XMLStreamReader sr) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( sr, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(javax.xml.stream.XMLStreamReader sr, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( sr, type, options ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(org.w3c.dom.Node node) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( node, type, null ); }
+        
+        public static net.opengis.gml.CoordinateSystemAxisType parse(org.w3c.dom.Node node, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( node, type, options ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        @Deprecated
+        public static net.opengis.gml.CoordinateSystemAxisType parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        @Deprecated
+        public static net.opengis.gml.CoordinateSystemAxisType parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (net.opengis.gml.CoordinateSystemAxisType) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, options ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        @Deprecated
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        @Deprecated
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, options ); }
+        
+        private Factory() { } // No instance of this class allowed
+    }
+}

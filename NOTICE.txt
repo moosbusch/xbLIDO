@@ -1,0 +1,39 @@
+xbLIDO
+Copyright 2013 Gunnar Kappei
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+    Apache XMLBeans 2.6.0 -> http://www.xmlbeans.apache.org
+    [ASL 2.0, http://www.apache.org/licenses/]
+
+This product includes software developed by
+Saxonica Limited (http://www.saxonica.com/).
+
+    Saxon 9.5HE -> https://sourceforge.net/svn/?group_id=29872
+    [MPL 2.0, http://www.mozilla.org/MPL/MPL-2.0.html]
+
+This product includes software developed by
+Google (http://www.google.com/).
+
+    Google Guice 3.0 -> http://code.google.com/p/google-guice/
+    [ASL 2.0, http://www.apache.org/licenses/]
+
+Portions of this software may use a LIDO XML schema Copyright (c) 2009-2010
+ICOM-CIDOC for the Data Harvesting and Interchange Working Group. These are
+licensed under the Creative Commons 3.0 Attribution-ShareAlike license
+(http://creativecommons.org/licenses/by-sa/3.0/).
+For further information about LIDO please visit http://www.lido-schema.org .
+
+--------------------------------------------------------------------------------
+src/schemaorg_apache_xmlbeans/src/lido-v1.0.xsd is an xml-schema developed by
+ICOM-CIDOC. It is included in the
+distributions under the terms of the Creative Commons 3.0 Attribution-ShareAlike
+license (http://creativecommons.org/licenses/by-sa/3.0/). This file is provided
+without warranties of any kind nor will the author be liable for any damage
+arising as the result of using the work.
+
+Copyright (C) 2013 Gunnar Kappei (gkappei@web.de). Verbatim copying
+and distribution of this entire article is permitted in any medium,
+provided this notice is preserved.
+--------------------------------------------------------------------------------
