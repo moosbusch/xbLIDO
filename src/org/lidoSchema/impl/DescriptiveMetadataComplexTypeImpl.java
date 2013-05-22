@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.inject.annotation.Language;
 /**
  * An XML descriptiveMetadataComplexType(@http://www.lido-schema.org).
  *
@@ -14,24 +15,24 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.DescriptiveMetadataComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public DescriptiveMetadataComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName OBJECTCLASSIFICATIONWRAP$0 = 
+
+    private static final javax.xml.namespace.QName OBJECTCLASSIFICATIONWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectClassificationWrap");
-    private static final javax.xml.namespace.QName OBJECTIDENTIFICATIONWRAP$2 = 
+    private static final javax.xml.namespace.QName OBJECTIDENTIFICATIONWRAP$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectIdentificationWrap");
-    private static final javax.xml.namespace.QName EVENTWRAP$4 = 
+    private static final javax.xml.namespace.QName EVENTWRAP$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventWrap");
-    private static final javax.xml.namespace.QName OBJECTRELATIONWRAP$6 = 
+    private static final javax.xml.namespace.QName OBJECTRELATIONWRAP$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectRelationWrap");
-    private static final javax.xml.namespace.QName LANG$8 = 
+    private static final javax.xml.namespace.QName LANG$8 =
         new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-    
-    
+
+
     /**
      * Gets the "objectClassificationWrap" element
      */
@@ -49,7 +50,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Sets the "objectClassificationWrap" element
      */
@@ -57,7 +58,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     {
         generatedSetterHelperImpl(objectClassificationWrap, OBJECTCLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "objectClassificationWrap" element
      */
@@ -71,7 +72,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Gets the "objectIdentificationWrap" element
      */
@@ -89,7 +90,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Sets the "objectIdentificationWrap" element
      */
@@ -97,7 +98,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     {
         generatedSetterHelperImpl(objectIdentificationWrap, OBJECTIDENTIFICATIONWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "objectIdentificationWrap" element
      */
@@ -111,7 +112,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Gets the "eventWrap" element
      */
@@ -129,7 +130,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * True if has "eventWrap" element
      */
@@ -141,7 +142,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return get_store().count_elements(EVENTWRAP$4) != 0;
         }
     }
-    
+
     /**
      * Sets the "eventWrap" element
      */
@@ -149,7 +150,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     {
         generatedSetterHelperImpl(eventWrap, EVENTWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "eventWrap" element
      */
@@ -163,7 +164,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Unsets the "eventWrap" element
      */
@@ -175,7 +176,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             get_store().remove_element(EVENTWRAP$4, 0);
         }
     }
-    
+
     /**
      * Gets the "objectRelationWrap" element
      */
@@ -193,7 +194,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * True if has "objectRelationWrap" element
      */
@@ -205,7 +206,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return get_store().count_elements(OBJECTRELATIONWRAP$6) != 0;
         }
     }
-    
+
     /**
      * Sets the "objectRelationWrap" element
      */
@@ -213,7 +214,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     {
         generatedSetterHelperImpl(objectRelationWrap, OBJECTRELATIONWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "objectRelationWrap" element
      */
@@ -227,7 +228,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Unsets the "objectRelationWrap" element
      */
@@ -239,7 +240,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             get_store().remove_element(OBJECTRELATIONWRAP$6, 0);
         }
     }
-    
+
     /**
      * Gets the "lang" attribute
      */
@@ -257,7 +258,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "lang" attribute
      */
@@ -271,11 +272,11 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+    @Inject(optional=true) public void setLang(@Language java.lang.String lang)
     {
         synchronized (monitor())
         {
@@ -289,7 +290,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
             target.setStringValue(lang);
         }
     }
-    
+
     /**
      * Sets (as xml) the "lang" attribute
      */

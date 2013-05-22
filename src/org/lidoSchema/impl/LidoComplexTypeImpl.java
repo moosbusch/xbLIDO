@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.inject.annotation.RelatedEncoding;
 /**
  * An XML lidoComplexType(@http://www.lido-schema.org).
  *
@@ -14,26 +15,26 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.LidoComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public LidoComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName LIDORECID$0 = 
+
+    private static final javax.xml.namespace.QName LIDORECID$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "lidoRecID");
-    private static final javax.xml.namespace.QName OBJECTPUBLISHEDID$2 = 
+    private static final javax.xml.namespace.QName OBJECTPUBLISHEDID$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectPublishedID");
-    private static final javax.xml.namespace.QName CATEGORY$4 = 
+    private static final javax.xml.namespace.QName CATEGORY$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "category");
-    private static final javax.xml.namespace.QName DESCRIPTIVEMETADATA$6 = 
+    private static final javax.xml.namespace.QName DESCRIPTIVEMETADATA$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "descriptiveMetadata");
-    private static final javax.xml.namespace.QName ADMINISTRATIVEMETADATA$8 = 
+    private static final javax.xml.namespace.QName ADMINISTRATIVEMETADATA$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "administrativeMetadata");
-    private static final javax.xml.namespace.QName RELATEDENCODING$10 = 
+    private static final javax.xml.namespace.QName RELATEDENCODING$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "relatedencoding");
-    
-    
+
+
     /**
      * Gets a List of "lidoRecID" elements
      */
@@ -44,7 +45,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             @Override
             public org.lidoSchema.IdentifierComplexType get(int i)
                 { return LidoComplexTypeImpl.this.getLidoRecIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
             {
@@ -52,11 +53,11 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.setLidoRecIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.IdentifierComplexType o)
                 { LidoComplexTypeImpl.this.insertNewLidoRecID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType remove(int i)
             {
@@ -64,20 +65,20 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.removeLidoRecID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return LidoComplexTypeImpl.this.sizeOfLidoRecIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new LidoRecIDList();
         }
     }
-    
+
     /**
      * Gets array of all "lidoRecID" elements
      * @deprecated
@@ -95,7 +96,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return result;
         }
     }
-    
+
     /**
      * Gets ith "lidoRecID" element
      */
@@ -113,7 +114,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Returns number of "lidoRecID" element
      */
@@ -125,7 +126,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().count_elements(LIDORECID$0);
         }
     }
-    
+
     /**
      * Sets array of all "lidoRecID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -134,7 +135,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         check_orphaned();
         arraySetterHelper(lidoRecIDArray, LIDORECID$0);
     }
-    
+
     /**
      * Sets ith "lidoRecID" element
      */
@@ -142,7 +143,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     {
         generatedSetterHelperImpl(lidoRecID, LIDORECID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "lidoRecID" element
      */
@@ -156,7 +157,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "lidoRecID" element
      */
@@ -170,7 +171,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "lidoRecID" element
      */
@@ -182,7 +183,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             get_store().remove_element(LIDORECID$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "objectPublishedID" elements
      */
@@ -193,7 +194,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             @Override
             public org.lidoSchema.IdentifierComplexType get(int i)
                 { return LidoComplexTypeImpl.this.getObjectPublishedIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
             {
@@ -201,11 +202,11 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.setObjectPublishedIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.IdentifierComplexType o)
                 { LidoComplexTypeImpl.this.insertNewObjectPublishedID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType remove(int i)
             {
@@ -213,20 +214,20 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.removeObjectPublishedID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return LidoComplexTypeImpl.this.sizeOfObjectPublishedIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ObjectPublishedIDList();
         }
     }
-    
+
     /**
      * Gets array of all "objectPublishedID" elements
      * @deprecated
@@ -244,7 +245,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return result;
         }
     }
-    
+
     /**
      * Gets ith "objectPublishedID" element
      */
@@ -262,7 +263,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Returns number of "objectPublishedID" element
      */
@@ -274,7 +275,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().count_elements(OBJECTPUBLISHEDID$2);
         }
     }
-    
+
     /**
      * Sets array of all "objectPublishedID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -283,7 +284,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         check_orphaned();
         arraySetterHelper(objectPublishedIDArray, OBJECTPUBLISHEDID$2);
     }
-    
+
     /**
      * Sets ith "objectPublishedID" element
      */
@@ -291,7 +292,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     {
         generatedSetterHelperImpl(objectPublishedID, OBJECTPUBLISHEDID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "objectPublishedID" element
      */
@@ -305,7 +306,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "objectPublishedID" element
      */
@@ -319,7 +320,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "objectPublishedID" element
      */
@@ -331,7 +332,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             get_store().remove_element(OBJECTPUBLISHEDID$2, i);
         }
     }
-    
+
     /**
      * Gets the "category" element
      */
@@ -349,7 +350,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * True if has "category" element
      */
@@ -361,7 +362,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().count_elements(CATEGORY$4) != 0;
         }
     }
-    
+
     /**
      * Sets the "category" element
      */
@@ -369,7 +370,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     {
         generatedSetterHelperImpl(category, CATEGORY$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "category" element
      */
@@ -383,7 +384,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Unsets the "category" element
      */
@@ -395,7 +396,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             get_store().remove_element(CATEGORY$4, 0);
         }
     }
-    
+
     /**
      * Gets a List of "descriptiveMetadata" elements
      */
@@ -406,7 +407,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             @Override
             public org.lidoSchema.DescriptiveMetadataComplexType get(int i)
                 { return LidoComplexTypeImpl.this.getDescriptiveMetadataArray(i); }
-            
+
             @Override
             public org.lidoSchema.DescriptiveMetadataComplexType set(int i, org.lidoSchema.DescriptiveMetadataComplexType o)
             {
@@ -414,11 +415,11 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.setDescriptiveMetadataArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.DescriptiveMetadataComplexType o)
                 { LidoComplexTypeImpl.this.insertNewDescriptiveMetadata(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.DescriptiveMetadataComplexType remove(int i)
             {
@@ -426,20 +427,20 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.removeDescriptiveMetadata(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return LidoComplexTypeImpl.this.sizeOfDescriptiveMetadataArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new DescriptiveMetadataList();
         }
     }
-    
+
     /**
      * Gets array of all "descriptiveMetadata" elements
      * @deprecated
@@ -457,7 +458,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return result;
         }
     }
-    
+
     /**
      * Gets ith "descriptiveMetadata" element
      */
@@ -475,7 +476,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Returns number of "descriptiveMetadata" element
      */
@@ -487,7 +488,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().count_elements(DESCRIPTIVEMETADATA$6);
         }
     }
-    
+
     /**
      * Sets array of all "descriptiveMetadata" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -496,7 +497,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         check_orphaned();
         arraySetterHelper(descriptiveMetadataArray, DESCRIPTIVEMETADATA$6);
     }
-    
+
     /**
      * Sets ith "descriptiveMetadata" element
      */
@@ -504,7 +505,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     {
         generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "descriptiveMetadata" element
      */
@@ -518,7 +519,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "descriptiveMetadata" element
      */
@@ -532,7 +533,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "descriptiveMetadata" element
      */
@@ -544,7 +545,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             get_store().remove_element(DESCRIPTIVEMETADATA$6, i);
         }
     }
-    
+
     /**
      * Gets a List of "administrativeMetadata" elements
      */
@@ -555,7 +556,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             @Override
             public org.lidoSchema.AdministrativeMetadataComplexType get(int i)
                 { return LidoComplexTypeImpl.this.getAdministrativeMetadataArray(i); }
-            
+
             @Override
             public org.lidoSchema.AdministrativeMetadataComplexType set(int i, org.lidoSchema.AdministrativeMetadataComplexType o)
             {
@@ -563,11 +564,11 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.setAdministrativeMetadataArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.AdministrativeMetadataComplexType o)
                 { LidoComplexTypeImpl.this.insertNewAdministrativeMetadata(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.AdministrativeMetadataComplexType remove(int i)
             {
@@ -575,20 +576,20 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
                 LidoComplexTypeImpl.this.removeAdministrativeMetadata(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return LidoComplexTypeImpl.this.sizeOfAdministrativeMetadataArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new AdministrativeMetadataList();
         }
     }
-    
+
     /**
      * Gets array of all "administrativeMetadata" elements
      * @deprecated
@@ -606,7 +607,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return result;
         }
     }
-    
+
     /**
      * Gets ith "administrativeMetadata" element
      */
@@ -624,7 +625,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Returns number of "administrativeMetadata" element
      */
@@ -636,7 +637,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().count_elements(ADMINISTRATIVEMETADATA$8);
         }
     }
-    
+
     /**
      * Sets array of all "administrativeMetadata" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -645,7 +646,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         check_orphaned();
         arraySetterHelper(administrativeMetadataArray, ADMINISTRATIVEMETADATA$8);
     }
-    
+
     /**
      * Sets ith "administrativeMetadata" element
      */
@@ -653,7 +654,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     {
         generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "administrativeMetadata" element
      */
@@ -667,7 +668,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "administrativeMetadata" element
      */
@@ -681,7 +682,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "administrativeMetadata" element
      */
@@ -693,7 +694,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             get_store().remove_element(ADMINISTRATIVEMETADATA$8, i);
         }
     }
-    
+
     /**
      * Gets the "relatedencoding" attribute
      */
@@ -711,7 +712,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "relatedencoding" attribute
      */
@@ -725,7 +726,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return target;
         }
     }
-    
+
     /**
      * True if has "relatedencoding" attribute
      */
@@ -737,11 +738,11 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             return get_store().find_attribute_user(RELATEDENCODING$10) != null;
         }
     }
-    
+
     /**
      * Sets the "relatedencoding" attribute
      */
-    @Inject(optional=true) public void setRelatedencoding(java.lang.String relatedencoding)
+    @Inject(optional=true) public void setRelatedencoding(@RelatedEncoding java.lang.String relatedencoding)
     {
         synchronized (monitor())
         {
@@ -755,7 +756,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             target.setStringValue(relatedencoding);
         }
     }
-    
+
     /**
      * Sets (as xml) the "relatedencoding" attribute
      */
@@ -773,7 +774,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
             target.set(relatedencoding);
         }
     }
-    
+
     /**
      * Unsets the "relatedencoding" attribute
      */

@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.inject.annotation.Language;
 /**
  * An XML administrativeMetadataComplexType(@http://www.lido-schema.org).
  *
@@ -14,22 +15,22 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.AdministrativeMetadataComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public AdministrativeMetadataComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RIGHTSWORKWRAP$0 = 
+
+    private static final javax.xml.namespace.QName RIGHTSWORKWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsWorkWrap");
-    private static final javax.xml.namespace.QName RECORDWRAP$2 = 
+    private static final javax.xml.namespace.QName RECORDWRAP$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "recordWrap");
-    private static final javax.xml.namespace.QName RESOURCEWRAP$4 = 
+    private static final javax.xml.namespace.QName RESOURCEWRAP$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceWrap");
-    private static final javax.xml.namespace.QName LANG$6 = 
+    private static final javax.xml.namespace.QName LANG$6 =
         new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-    
-    
+
+
     /**
      * Gets the "rightsWorkWrap" element
      */
@@ -47,7 +48,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * True if has "rightsWorkWrap" element
      */
@@ -59,7 +60,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return get_store().count_elements(RIGHTSWORKWRAP$0) != 0;
         }
     }
-    
+
     /**
      * Sets the "rightsWorkWrap" element
      */
@@ -67,7 +68,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     {
         generatedSetterHelperImpl(rightsWorkWrap, RIGHTSWORKWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "rightsWorkWrap" element
      */
@@ -81,7 +82,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * Unsets the "rightsWorkWrap" element
      */
@@ -93,7 +94,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             get_store().remove_element(RIGHTSWORKWRAP$0, 0);
         }
     }
-    
+
     /**
      * Gets the "recordWrap" element
      */
@@ -111,7 +112,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * Sets the "recordWrap" element
      */
@@ -119,7 +120,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     {
         generatedSetterHelperImpl(recordWrap, RECORDWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "recordWrap" element
      */
@@ -133,7 +134,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * Gets the "resourceWrap" element
      */
@@ -151,7 +152,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * True if has "resourceWrap" element
      */
@@ -163,7 +164,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return get_store().count_elements(RESOURCEWRAP$4) != 0;
         }
     }
-    
+
     /**
      * Sets the "resourceWrap" element
      */
@@ -171,7 +172,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     {
         generatedSetterHelperImpl(resourceWrap, RESOURCEWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "resourceWrap" element
      */
@@ -185,7 +186,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * Unsets the "resourceWrap" element
      */
@@ -197,7 +198,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             get_store().remove_element(RESOURCEWRAP$4, 0);
         }
     }
-    
+
     /**
      * Gets the "lang" attribute
      */
@@ -215,7 +216,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "lang" attribute
      */
@@ -229,11 +230,11 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             return target;
         }
     }
-    
+
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+    @Inject(optional=true) public void setLang(@Language java.lang.String lang)
     {
         synchronized (monitor())
         {
@@ -247,7 +248,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
             target.setStringValue(lang);
         }
     }
-    
+
     /**
      * Sets (as xml) the "lang" attribute
      */

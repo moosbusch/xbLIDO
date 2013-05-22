@@ -31,6 +31,8 @@ public abstract class AbstractDocument<T extends LIDOObjectFactory>
         super(in);
     }
 
+    protected abstract void addSchemaLocation(LidoWrapDocument lidoWrapDocument);
+
     @Override
     public LidoWrap getRootElement() {
         synchronized (getRootWrapperElement().monitor()) {

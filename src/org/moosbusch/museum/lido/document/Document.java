@@ -16,4 +16,9 @@ import org.moosbusch.museum.lido.inject.impl.LIDOObjectFactory;
  */
 public interface Document<T extends LIDOObjectFactory>
     extends MuseumXmlDocument<LidoWrapDocument, T, LidoWrap, Lido> {
+    
+    public static final String LIDO_NS_URI = "http://www.lido-schema.org";
+    public static final String LIDO_NS_PREFIX = "lido";
+    public static final String LIDO_SCHEMA_LOCATION =
+            "http://www.lido-schema.org http://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd";
 }

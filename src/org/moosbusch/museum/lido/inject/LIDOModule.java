@@ -116,6 +116,8 @@ public interface LIDOModule extends MuseumXmlModule, GmlModule, Smil20Module, XL
     @Override
     public Document<? extends LIDOObjectFactory> createDocument();
 
+    public String getRelatedEncoding();
+
     @Provides
     public ActorComplexType createActorComplexType();
 
