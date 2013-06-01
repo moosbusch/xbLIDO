@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one objectMeasurementsWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ObjectMeasurementsWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ObjectMeasurementsWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName OBJECTMEASUREMENTSWRAP$0 = 
+
+    private static final javax.xml.namespace.QName OBJECTMEASUREMENTSWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectMeasurementsWrap");
-    
-    
+
+
     /**
      * Gets the "objectMeasurementsWrap" element
      */
@@ -42,7 +43,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
             return target;
         }
     }
-    
+
     /**
      * Sets the "objectMeasurementsWrap" element
      */
@@ -50,7 +51,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
     {
         generatedSetterHelperImpl(objectMeasurementsWrap, OBJECTMEASUREMENTSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "objectMeasurementsWrap" element
      */
@@ -72,16 +73,16 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
     public static class ObjectMeasurementsWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ObjectMeasurementsWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName OBJECTMEASUREMENTSSET$0 = 
+
+        private static final javax.xml.namespace.QName OBJECTMEASUREMENTSSET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "objectMeasurementsSet");
-        
-        
+
+
         /**
          * Gets a List of "objectMeasurementsSet" elements
          */
@@ -92,7 +93,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 @Override
                 public org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet get(int i)
                     { return ObjectMeasurementsWrapImpl.this.getObjectMeasurementsSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet set(int i, org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet o)
                 {
@@ -100,11 +101,11 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     ObjectMeasurementsWrapImpl.this.setObjectMeasurementsSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet o)
                     { ObjectMeasurementsWrapImpl.this.insertNewObjectMeasurementsSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     ObjectMeasurementsWrapImpl.this.removeObjectMeasurementsSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return ObjectMeasurementsWrapImpl.this.sizeOfObjectMeasurementsSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new ObjectMeasurementsSetList();
             }
         }
-        
+
         /**
          * Gets array of all "objectMeasurementsSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "objectMeasurementsSet" element
          */
@@ -161,7 +162,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "objectMeasurementsSet" element
          */
@@ -173,7 +174,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 return get_store().count_elements(OBJECTMEASUREMENTSSET$0);
             }
         }
-        
+
         /**
          * Sets array of all "objectMeasurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
             check_orphaned();
             arraySetterHelper(objectMeasurementsSetArray, OBJECTMEASUREMENTSSET$0);
         }
-        
+
         /**
          * Sets ith "objectMeasurementsSet" element
          */
@@ -190,7 +191,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
         {
             generatedSetterHelperImpl(objectMeasurementsSet, OBJECTMEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "objectMeasurementsSet" element
          */
@@ -204,7 +205,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "objectMeasurementsSet" element
          */
@@ -218,7 +219,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "objectMeasurementsSet" element
          */
@@ -238,16 +239,16 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
         public static class ObjectMeasurementsSetImpl extends org.lidoSchema.impl.ObjectMeasurementsSetComplexTypeImpl implements org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public ObjectMeasurementsSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

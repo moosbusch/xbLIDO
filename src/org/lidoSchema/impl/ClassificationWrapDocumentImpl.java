@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one classificationWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ClassificationWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ClassificationWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName CLASSIFICATIONWRAP$0 = 
+
+    private static final javax.xml.namespace.QName CLASSIFICATIONWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "classificationWrap");
-    
-    
+
+
     /**
      * Gets the "classificationWrap" element
      */
@@ -42,7 +43,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Sets the "classificationWrap" element
      */
@@ -50,7 +51,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     {
         generatedSetterHelperImpl(classificationWrap, CLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "classificationWrap" element
      */
@@ -72,16 +73,16 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     public static class ClassificationWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ClassificationWrapDocument.ClassificationWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ClassificationWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName CLASSIFICATION$0 = 
+
+        private static final javax.xml.namespace.QName CLASSIFICATION$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "classification");
-        
-        
+
+
         /**
          * Gets a List of "classification" elements
          */
@@ -92,7 +93,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 @Override
                 public org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification get(int i)
                     { return ClassificationWrapImpl.this.getClassificationArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification set(int i, org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification o)
                 {
@@ -100,11 +101,11 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     ClassificationWrapImpl.this.setClassificationArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification o)
                     { ClassificationWrapImpl.this.insertNewClassification(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification remove(int i)
                 {
@@ -112,20 +113,20 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     ClassificationWrapImpl.this.removeClassification(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return ClassificationWrapImpl.this.sizeOfClassificationArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new ClassificationList();
             }
         }
-        
+
         /**
          * Gets array of all "classification" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "classification" element
          */
@@ -161,7 +162,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "classification" element
          */
@@ -173,7 +174,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return get_store().count_elements(CLASSIFICATION$0);
             }
         }
-        
+
         /**
          * Sets array of all "classification" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             check_orphaned();
             arraySetterHelper(classificationArray, CLASSIFICATION$0);
         }
-        
+
         /**
          * Sets ith "classification" element
          */
@@ -190,7 +191,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         {
             generatedSetterHelperImpl(classification, CLASSIFICATION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "classification" element
          */
@@ -204,7 +205,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "classification" element
          */
@@ -218,7 +219,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "classification" element
          */
@@ -238,18 +239,18 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         public static class ClassificationImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification
         {
             private static final long serialVersionUID = 1L;
-            
+
             public ClassificationImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName TYPE$0 = 
+
+            private static final javax.xml.namespace.QName TYPE$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-            private static final javax.xml.namespace.QName SORTORDER$2 = 
+            private static final javax.xml.namespace.QName SORTORDER$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "type" attribute
              */
@@ -267,7 +268,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "type" attribute
              */
@@ -281,7 +282,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target;
                 }
             }
-            
+
             /**
              * True if has "type" attribute
              */
@@ -293,7 +294,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return get_store().find_attribute_user(TYPE$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "type" attribute
              */
@@ -311,7 +312,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.setStringValue(type);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "type" attribute
              */
@@ -329,7 +330,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.set(type);
                 }
             }
-            
+
             /**
              * Unsets the "type" attribute
              */
@@ -341,7 +342,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     get_store().remove_attribute(TYPE$0);
                 }
             }
-            
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -359,7 +360,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -373,7 +374,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -385,11 +386,11 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return get_store().find_attribute_user(SORTORDER$2) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -403,7 +404,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -421,7 +422,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

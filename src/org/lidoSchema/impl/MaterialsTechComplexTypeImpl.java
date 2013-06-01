@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML materialsTechComplexType(@http://www.lido-schema.org).
  *
@@ -14,20 +15,20 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.MaterialsTechComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public MaterialsTechComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName TERMMATERIALSTECH$0 = 
+
+    private static final javax.xml.namespace.QName TERMMATERIALSTECH$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "termMaterialsTech");
-    private static final javax.xml.namespace.QName EXTENTMATERIALSTECH$2 = 
+    private static final javax.xml.namespace.QName EXTENTMATERIALSTECH$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "extentMaterialsTech");
-    private static final javax.xml.namespace.QName SOURCEMATERIALSTECH$4 = 
+    private static final javax.xml.namespace.QName SOURCEMATERIALSTECH$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "sourceMaterialsTech");
-    
-    
+
+
     /**
      * Gets a List of "termMaterialsTech" elements
      */
@@ -38,7 +39,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             @Override
             public org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech get(int i)
                 { return MaterialsTechComplexTypeImpl.this.getTermMaterialsTechArray(i); }
-            
+
             @Override
             public org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech set(int i, org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech o)
             {
@@ -46,11 +47,11 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.setTermMaterialsTechArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech o)
                 { MaterialsTechComplexTypeImpl.this.insertNewTermMaterialsTech(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech remove(int i)
             {
@@ -58,20 +59,20 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.removeTermMaterialsTech(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return MaterialsTechComplexTypeImpl.this.sizeOfTermMaterialsTechArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new TermMaterialsTechList();
         }
     }
-    
+
     /**
      * Gets array of all "termMaterialsTech" elements
      * @deprecated
@@ -89,7 +90,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return result;
         }
     }
-    
+
     /**
      * Gets ith "termMaterialsTech" element
      */
@@ -107,7 +108,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Returns number of "termMaterialsTech" element
      */
@@ -119,7 +120,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(TERMMATERIALSTECH$0);
         }
     }
-    
+
     /**
      * Sets array of all "termMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -128,7 +129,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
         check_orphaned();
         arraySetterHelper(termMaterialsTechArray, TERMMATERIALSTECH$0);
     }
-    
+
     /**
      * Sets ith "termMaterialsTech" element
      */
@@ -136,7 +137,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(termMaterialsTech, TERMMATERIALSTECH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "termMaterialsTech" element
      */
@@ -150,7 +151,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "termMaterialsTech" element
      */
@@ -164,7 +165,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "termMaterialsTech" element
      */
@@ -176,7 +177,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_element(TERMMATERIALSTECH$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "extentMaterialsTech" elements
      */
@@ -187,7 +188,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return MaterialsTechComplexTypeImpl.this.getExtentMaterialsTechArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -195,11 +196,11 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.setExtentMaterialsTechArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { MaterialsTechComplexTypeImpl.this.insertNewExtentMaterialsTech(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -207,20 +208,20 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.removeExtentMaterialsTech(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return MaterialsTechComplexTypeImpl.this.sizeOfExtentMaterialsTechArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ExtentMaterialsTechList();
         }
     }
-    
+
     /**
      * Gets array of all "extentMaterialsTech" elements
      * @deprecated
@@ -238,7 +239,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return result;
         }
     }
-    
+
     /**
      * Gets ith "extentMaterialsTech" element
      */
@@ -256,7 +257,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Returns number of "extentMaterialsTech" element
      */
@@ -268,7 +269,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(EXTENTMATERIALSTECH$2);
         }
     }
-    
+
     /**
      * Sets array of all "extentMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -277,7 +278,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
         check_orphaned();
         arraySetterHelper(extentMaterialsTechArray, EXTENTMATERIALSTECH$2);
     }
-    
+
     /**
      * Sets ith "extentMaterialsTech" element
      */
@@ -285,7 +286,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(extentMaterialsTech, EXTENTMATERIALSTECH$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "extentMaterialsTech" element
      */
@@ -299,7 +300,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "extentMaterialsTech" element
      */
@@ -313,7 +314,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "extentMaterialsTech" element
      */
@@ -325,7 +326,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_element(EXTENTMATERIALSTECH$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "sourceMaterialsTech" elements
      */
@@ -336,7 +337,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return MaterialsTechComplexTypeImpl.this.getSourceMaterialsTechArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -344,11 +345,11 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.setSourceMaterialsTechArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { MaterialsTechComplexTypeImpl.this.insertNewSourceMaterialsTech(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -356,20 +357,20 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 MaterialsTechComplexTypeImpl.this.removeSourceMaterialsTech(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return MaterialsTechComplexTypeImpl.this.sizeOfSourceMaterialsTechArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SourceMaterialsTechList();
         }
     }
-    
+
     /**
      * Gets array of all "sourceMaterialsTech" elements
      * @deprecated
@@ -387,7 +388,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return result;
         }
     }
-    
+
     /**
      * Gets ith "sourceMaterialsTech" element
      */
@@ -405,7 +406,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Returns number of "sourceMaterialsTech" element
      */
@@ -417,7 +418,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(SOURCEMATERIALSTECH$4);
         }
     }
-    
+
     /**
      * Sets array of all "sourceMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -426,7 +427,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
         check_orphaned();
         arraySetterHelper(sourceMaterialsTechArray, SOURCEMATERIALSTECH$4);
     }
-    
+
     /**
      * Sets ith "sourceMaterialsTech" element
      */
@@ -434,7 +435,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(sourceMaterialsTech, SOURCEMATERIALSTECH$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "sourceMaterialsTech" element
      */
@@ -448,7 +449,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "sourceMaterialsTech" element
      */
@@ -462,7 +463,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "sourceMaterialsTech" element
      */
@@ -482,18 +483,18 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     public static class TermMaterialsTechImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech
     {
         private static final long serialVersionUID = 1L;
-        
+
         public TermMaterialsTechImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName TYPE$0 = 
+
+        private static final javax.xml.namespace.QName TYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$2 = 
+        private static final javax.xml.namespace.QName SORTORDER$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "type" attribute
          */
@@ -511,7 +512,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -525,7 +526,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -537,7 +538,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(TYPE$0) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -555,7 +556,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -573,7 +574,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -585,7 +586,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 get_store().remove_attribute(TYPE$0);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -603,7 +604,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -617,7 +618,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -629,11 +630,11 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(SORTORDER$2) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -647,7 +648,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -665,7 +666,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML objectMeasurementsComplexType(@http://www.lido-schema.org).
  *
@@ -14,26 +15,26 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ObjectMeasurementsComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ObjectMeasurementsComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName MEASUREMENTSSET$0 = 
+
+    private static final javax.xml.namespace.QName MEASUREMENTSSET$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "measurementsSet");
-    private static final javax.xml.namespace.QName EXTENTMEASUREMENTS$2 = 
+    private static final javax.xml.namespace.QName EXTENTMEASUREMENTS$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "extentMeasurements");
-    private static final javax.xml.namespace.QName QUALIFIERMEASUREMENTS$4 = 
+    private static final javax.xml.namespace.QName QUALIFIERMEASUREMENTS$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "qualifierMeasurements");
-    private static final javax.xml.namespace.QName FORMATMEASUREMENTS$6 = 
+    private static final javax.xml.namespace.QName FORMATMEASUREMENTS$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "formatMeasurements");
-    private static final javax.xml.namespace.QName SHAPEMEASUREMENTS$8 = 
+    private static final javax.xml.namespace.QName SHAPEMEASUREMENTS$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "shapeMeasurements");
-    private static final javax.xml.namespace.QName SCALEMEASUREMENTS$10 = 
+    private static final javax.xml.namespace.QName SCALEMEASUREMENTS$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "scaleMeasurements");
-    
-    
+
+
     /**
      * Gets a List of "measurementsSet" elements
      */
@@ -44,7 +45,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getMeasurementsSetArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet set(int i, org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet o)
             {
@@ -52,11 +53,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setMeasurementsSetArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewMeasurementsSet(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet remove(int i)
             {
@@ -64,20 +65,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeMeasurementsSet(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfMeasurementsSetArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new MeasurementsSetList();
         }
     }
-    
+
     /**
      * Gets array of all "measurementsSet" elements
      * @deprecated
@@ -95,7 +96,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "measurementsSet" element
      */
@@ -113,7 +114,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "measurementsSet" element
      */
@@ -125,7 +126,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(MEASUREMENTSSET$0);
         }
     }
-    
+
     /**
      * Sets array of all "measurementsSet" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -134,7 +135,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(measurementsSetArray, MEASUREMENTSSET$0);
     }
-    
+
     /**
      * Sets ith "measurementsSet" element
      */
@@ -142,7 +143,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(measurementsSet, MEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "measurementsSet" element
      */
@@ -156,7 +157,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "measurementsSet" element
      */
@@ -170,7 +171,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "measurementsSet" element
      */
@@ -182,7 +183,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             get_store().remove_element(MEASUREMENTSSET$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "extentMeasurements" elements
      */
@@ -193,7 +194,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getExtentMeasurementsArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements set(int i, org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements o)
             {
@@ -201,11 +202,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setExtentMeasurementsArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewExtentMeasurements(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements remove(int i)
             {
@@ -213,20 +214,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeExtentMeasurements(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfExtentMeasurementsArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ExtentMeasurementsList();
         }
     }
-    
+
     /**
      * Gets array of all "extentMeasurements" elements
      * @deprecated
@@ -244,7 +245,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "extentMeasurements" element
      */
@@ -262,7 +263,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "extentMeasurements" element
      */
@@ -274,7 +275,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(EXTENTMEASUREMENTS$2);
         }
     }
-    
+
     /**
      * Sets array of all "extentMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -283,7 +284,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(extentMeasurementsArray, EXTENTMEASUREMENTS$2);
     }
-    
+
     /**
      * Sets ith "extentMeasurements" element
      */
@@ -291,7 +292,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(extentMeasurements, EXTENTMEASUREMENTS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "extentMeasurements" element
      */
@@ -305,7 +306,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "extentMeasurements" element
      */
@@ -319,7 +320,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "extentMeasurements" element
      */
@@ -331,7 +332,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             get_store().remove_element(EXTENTMEASUREMENTS$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "qualifierMeasurements" elements
      */
@@ -342,7 +343,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getQualifierMeasurementsArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements set(int i, org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements o)
             {
@@ -350,11 +351,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setQualifierMeasurementsArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewQualifierMeasurements(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements remove(int i)
             {
@@ -362,20 +363,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeQualifierMeasurements(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfQualifierMeasurementsArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new QualifierMeasurementsList();
         }
     }
-    
+
     /**
      * Gets array of all "qualifierMeasurements" elements
      * @deprecated
@@ -393,7 +394,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "qualifierMeasurements" element
      */
@@ -411,7 +412,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "qualifierMeasurements" element
      */
@@ -423,7 +424,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(QUALIFIERMEASUREMENTS$4);
         }
     }
-    
+
     /**
      * Sets array of all "qualifierMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -432,7 +433,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(qualifierMeasurementsArray, QUALIFIERMEASUREMENTS$4);
     }
-    
+
     /**
      * Sets ith "qualifierMeasurements" element
      */
@@ -440,7 +441,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(qualifierMeasurements, QUALIFIERMEASUREMENTS$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "qualifierMeasurements" element
      */
@@ -454,7 +455,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "qualifierMeasurements" element
      */
@@ -468,7 +469,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "qualifierMeasurements" element
      */
@@ -480,7 +481,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             get_store().remove_element(QUALIFIERMEASUREMENTS$4, i);
         }
     }
-    
+
     /**
      * Gets a List of "formatMeasurements" elements
      */
@@ -491,7 +492,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getFormatMeasurementsArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements set(int i, org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements o)
             {
@@ -499,11 +500,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setFormatMeasurementsArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewFormatMeasurements(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements remove(int i)
             {
@@ -511,20 +512,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeFormatMeasurements(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfFormatMeasurementsArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new FormatMeasurementsList();
         }
     }
-    
+
     /**
      * Gets array of all "formatMeasurements" elements
      * @deprecated
@@ -542,7 +543,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "formatMeasurements" element
      */
@@ -560,7 +561,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "formatMeasurements" element
      */
@@ -572,7 +573,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(FORMATMEASUREMENTS$6);
         }
     }
-    
+
     /**
      * Sets array of all "formatMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -581,7 +582,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(formatMeasurementsArray, FORMATMEASUREMENTS$6);
     }
-    
+
     /**
      * Sets ith "formatMeasurements" element
      */
@@ -589,7 +590,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(formatMeasurements, FORMATMEASUREMENTS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "formatMeasurements" element
      */
@@ -603,7 +604,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "formatMeasurements" element
      */
@@ -617,7 +618,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "formatMeasurements" element
      */
@@ -629,7 +630,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             get_store().remove_element(FORMATMEASUREMENTS$6, i);
         }
     }
-    
+
     /**
      * Gets a List of "shapeMeasurements" elements
      */
@@ -640,7 +641,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getShapeMeasurementsArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements set(int i, org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements o)
             {
@@ -648,11 +649,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setShapeMeasurementsArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewShapeMeasurements(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements remove(int i)
             {
@@ -660,20 +661,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeShapeMeasurements(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfShapeMeasurementsArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ShapeMeasurementsList();
         }
     }
-    
+
     /**
      * Gets array of all "shapeMeasurements" elements
      * @deprecated
@@ -691,7 +692,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "shapeMeasurements" element
      */
@@ -709,7 +710,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "shapeMeasurements" element
      */
@@ -721,7 +722,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(SHAPEMEASUREMENTS$8);
         }
     }
-    
+
     /**
      * Sets array of all "shapeMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -730,7 +731,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(shapeMeasurementsArray, SHAPEMEASUREMENTS$8);
     }
-    
+
     /**
      * Sets ith "shapeMeasurements" element
      */
@@ -738,7 +739,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(shapeMeasurements, SHAPEMEASUREMENTS$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "shapeMeasurements" element
      */
@@ -752,7 +753,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "shapeMeasurements" element
      */
@@ -766,7 +767,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "shapeMeasurements" element
      */
@@ -778,7 +779,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             get_store().remove_element(SHAPEMEASUREMENTS$8, i);
         }
     }
-    
+
     /**
      * Gets a List of "scaleMeasurements" elements
      */
@@ -789,7 +790,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements get(int i)
                 { return ObjectMeasurementsComplexTypeImpl.this.getScaleMeasurementsArray(i); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements set(int i, org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements o)
             {
@@ -797,11 +798,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.setScaleMeasurementsArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements o)
                 { ObjectMeasurementsComplexTypeImpl.this.insertNewScaleMeasurements(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements remove(int i)
             {
@@ -809,20 +810,20 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 ObjectMeasurementsComplexTypeImpl.this.removeScaleMeasurements(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ObjectMeasurementsComplexTypeImpl.this.sizeOfScaleMeasurementsArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ScaleMeasurementsList();
         }
     }
-    
+
     /**
      * Gets array of all "scaleMeasurements" elements
      * @deprecated
@@ -840,7 +841,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "scaleMeasurements" element
      */
@@ -858,7 +859,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "scaleMeasurements" element
      */
@@ -870,7 +871,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return get_store().count_elements(SCALEMEASUREMENTS$10);
         }
     }
-    
+
     /**
      * Sets array of all "scaleMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -879,7 +880,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         check_orphaned();
         arraySetterHelper(scaleMeasurementsArray, SCALEMEASUREMENTS$10);
     }
-    
+
     /**
      * Sets ith "scaleMeasurements" element
      */
@@ -887,7 +888,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     {
         generatedSetterHelperImpl(scaleMeasurements, SCALEMEASUREMENTS$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "scaleMeasurements" element
      */
@@ -901,7 +902,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "scaleMeasurements" element
      */
@@ -915,7 +916,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "scaleMeasurements" element
      */
@@ -935,16 +936,16 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class MeasurementsSetImpl extends org.lidoSchema.impl.MeasurementsSetComplexTypeImpl implements org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet
     {
         private static final long serialVersionUID = 1L;
-        
+
         public MeasurementsSetImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -962,7 +963,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -976,7 +977,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -988,11 +989,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1006,7 +1007,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1024,7 +1025,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1045,27 +1046,27 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class ExtentMeasurementsImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ExtentMeasurementsImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected ExtentMeasurementsImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName SORTORDER$6 = 
+        private static final javax.xml.namespace.QName SORTORDER$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -1083,7 +1084,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -1097,7 +1098,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -1109,7 +1110,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -1127,7 +1128,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -1145,7 +1146,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -1157,7 +1158,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -1175,7 +1176,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -1189,7 +1190,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -1201,7 +1202,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -1219,7 +1220,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -1237,7 +1238,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -1249,7 +1250,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -1267,7 +1268,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -1281,7 +1282,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -1293,7 +1294,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -1311,7 +1312,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -1329,7 +1330,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -1341,7 +1342,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1359,7 +1360,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1373,7 +1374,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1385,11 +1386,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$6) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1403,7 +1404,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1421,7 +1422,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1442,27 +1443,27 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class QualifierMeasurementsImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements
     {
         private static final long serialVersionUID = 1L;
-        
+
         public QualifierMeasurementsImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected QualifierMeasurementsImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName SORTORDER$6 = 
+        private static final javax.xml.namespace.QName SORTORDER$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -1480,7 +1481,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -1494,7 +1495,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -1506,7 +1507,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -1524,7 +1525,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -1542,7 +1543,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -1554,7 +1555,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -1572,7 +1573,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -1586,7 +1587,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -1598,7 +1599,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -1616,7 +1617,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -1634,7 +1635,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -1646,7 +1647,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -1664,7 +1665,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -1678,7 +1679,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -1690,7 +1691,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -1708,7 +1709,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -1726,7 +1727,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -1738,7 +1739,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1756,7 +1757,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1770,7 +1771,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1782,11 +1783,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$6) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1800,7 +1801,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1818,7 +1819,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1839,27 +1840,27 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class FormatMeasurementsImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements
     {
         private static final long serialVersionUID = 1L;
-        
+
         public FormatMeasurementsImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected FormatMeasurementsImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName SORTORDER$6 = 
+        private static final javax.xml.namespace.QName SORTORDER$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -1877,7 +1878,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -1891,7 +1892,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -1903,7 +1904,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -1921,7 +1922,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -1939,7 +1940,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -1951,7 +1952,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -1969,7 +1970,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -1983,7 +1984,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -1995,7 +1996,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -2013,7 +2014,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -2031,7 +2032,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -2043,7 +2044,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -2061,7 +2062,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -2075,7 +2076,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -2087,7 +2088,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -2105,7 +2106,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -2123,7 +2124,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -2135,7 +2136,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2153,7 +2154,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2167,7 +2168,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2179,11 +2180,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$6) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2197,7 +2198,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2215,7 +2216,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2236,27 +2237,27 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class ShapeMeasurementsImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ShapeMeasurementsImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected ShapeMeasurementsImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName SORTORDER$6 = 
+        private static final javax.xml.namespace.QName SORTORDER$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -2274,7 +2275,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -2288,7 +2289,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -2300,7 +2301,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -2318,7 +2319,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -2336,7 +2337,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -2348,7 +2349,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -2366,7 +2367,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -2380,7 +2381,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -2392,7 +2393,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -2410,7 +2411,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -2428,7 +2429,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -2440,7 +2441,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -2458,7 +2459,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -2472,7 +2473,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -2484,7 +2485,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -2502,7 +2503,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -2520,7 +2521,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -2532,7 +2533,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2550,7 +2551,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2564,7 +2565,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2576,11 +2577,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$6) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2594,7 +2595,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2612,7 +2613,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2633,27 +2634,27 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     public static class ScaleMeasurementsImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ScaleMeasurementsImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected ScaleMeasurementsImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName SORTORDER$6 = 
+        private static final javax.xml.namespace.QName SORTORDER$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -2671,7 +2672,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -2685,7 +2686,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -2697,7 +2698,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -2715,7 +2716,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -2733,7 +2734,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -2745,7 +2746,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -2763,7 +2764,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -2777,7 +2778,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -2789,7 +2790,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -2807,7 +2808,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -2825,7 +2826,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -2837,7 +2838,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -2855,7 +2856,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -2869,7 +2870,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -2881,7 +2882,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -2899,7 +2900,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -2917,7 +2918,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -2929,7 +2930,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2947,7 +2948,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2961,7 +2962,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2973,11 +2974,11 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 return get_store().find_attribute_user(SORTORDER$6) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2991,7 +2992,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -3009,7 +3010,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

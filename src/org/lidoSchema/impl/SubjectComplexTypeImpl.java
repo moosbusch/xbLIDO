@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML subjectComplexType(@http://www.lido-schema.org).
  *
@@ -14,30 +15,30 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.SubjectComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public SubjectComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName EXTENTSUBJECT$0 = 
+
+    private static final javax.xml.namespace.QName EXTENTSUBJECT$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "extentSubject");
-    private static final javax.xml.namespace.QName SUBJECTCONCEPT$2 = 
+    private static final javax.xml.namespace.QName SUBJECTCONCEPT$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectConcept");
-    private static final javax.xml.namespace.QName SUBJECTACTOR$4 = 
+    private static final javax.xml.namespace.QName SUBJECTACTOR$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectActor");
-    private static final javax.xml.namespace.QName SUBJECTDATE$6 = 
+    private static final javax.xml.namespace.QName SUBJECTDATE$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectDate");
-    private static final javax.xml.namespace.QName SUBJECTEVENT$8 = 
+    private static final javax.xml.namespace.QName SUBJECTEVENT$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectEvent");
-    private static final javax.xml.namespace.QName SUBJECTPLACE$10 = 
+    private static final javax.xml.namespace.QName SUBJECTPLACE$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectPlace");
-    private static final javax.xml.namespace.QName SUBJECTOBJECT$12 = 
+    private static final javax.xml.namespace.QName SUBJECTOBJECT$12 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectObject");
-    private static final javax.xml.namespace.QName TYPE$14 = 
+    private static final javax.xml.namespace.QName TYPE$14 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-    
-    
+
+
     /**
      * Gets a List of "extentSubject" elements
      */
@@ -48,7 +49,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return SubjectComplexTypeImpl.this.getExtentSubjectArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -56,11 +57,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setExtentSubjectArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { SubjectComplexTypeImpl.this.insertNewExtentSubject(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -68,20 +69,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeExtentSubject(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfExtentSubjectArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ExtentSubjectList();
         }
     }
-    
+
     /**
      * Gets array of all "extentSubject" elements
      * @deprecated
@@ -99,7 +100,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "extentSubject" element
      */
@@ -117,7 +118,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "extentSubject" element
      */
@@ -129,7 +130,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(EXTENTSUBJECT$0);
         }
     }
-    
+
     /**
      * Sets array of all "extentSubject" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -138,7 +139,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(extentSubjectArray, EXTENTSUBJECT$0);
     }
-    
+
     /**
      * Sets ith "extentSubject" element
      */
@@ -146,7 +147,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(extentSubject, EXTENTSUBJECT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "extentSubject" element
      */
@@ -160,7 +161,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "extentSubject" element
      */
@@ -174,7 +175,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "extentSubject" element
      */
@@ -186,7 +187,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(EXTENTSUBJECT$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectConcept" elements
      */
@@ -197,7 +198,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectConcept get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectConceptArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectConcept set(int i, org.lidoSchema.SubjectComplexType.SubjectConcept o)
             {
@@ -205,11 +206,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectConceptArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectConcept o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectConcept(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectConcept remove(int i)
             {
@@ -217,20 +218,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectConcept(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectConceptArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectConceptList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectConcept" elements
      * @deprecated
@@ -248,7 +249,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectConcept" element
      */
@@ -266,7 +267,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectConcept" element
      */
@@ -278,7 +279,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTCONCEPT$2);
         }
     }
-    
+
     /**
      * Sets array of all "subjectConcept" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -287,7 +288,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectConceptArray, SUBJECTCONCEPT$2);
     }
-    
+
     /**
      * Sets ith "subjectConcept" element
      */
@@ -295,7 +296,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectConcept, SUBJECTCONCEPT$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectConcept" element
      */
@@ -309,7 +310,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectConcept" element
      */
@@ -323,7 +324,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectConcept" element
      */
@@ -335,7 +336,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTCONCEPT$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectActor" elements
      */
@@ -346,7 +347,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectActor get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectActor set(int i, org.lidoSchema.SubjectComplexType.SubjectActor o)
             {
@@ -354,11 +355,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectActor o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectActor remove(int i)
             {
@@ -366,20 +367,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectActorList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectActor" elements
      * @deprecated
@@ -397,7 +398,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectActor" element
      */
@@ -415,7 +416,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectActor" element
      */
@@ -427,7 +428,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTACTOR$4);
         }
     }
-    
+
     /**
      * Sets array of all "subjectActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -436,7 +437,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectActorArray, SUBJECTACTOR$4);
     }
-    
+
     /**
      * Sets ith "subjectActor" element
      */
@@ -444,7 +445,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectActor, SUBJECTACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectActor" element
      */
@@ -458,7 +459,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectActor" element
      */
@@ -472,7 +473,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectActor" element
      */
@@ -484,7 +485,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTACTOR$4, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectDate" elements
      */
@@ -495,7 +496,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectDate get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectDateArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectDate set(int i, org.lidoSchema.SubjectComplexType.SubjectDate o)
             {
@@ -503,11 +504,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectDateArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectDate o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectDate(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectDate remove(int i)
             {
@@ -515,20 +516,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectDate(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectDateArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectDateList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectDate" elements
      * @deprecated
@@ -546,7 +547,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectDate" element
      */
@@ -564,7 +565,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectDate" element
      */
@@ -576,7 +577,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTDATE$6);
         }
     }
-    
+
     /**
      * Sets array of all "subjectDate" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -585,7 +586,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectDateArray, SUBJECTDATE$6);
     }
-    
+
     /**
      * Sets ith "subjectDate" element
      */
@@ -593,7 +594,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectDate, SUBJECTDATE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectDate" element
      */
@@ -607,7 +608,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectDate" element
      */
@@ -621,7 +622,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectDate" element
      */
@@ -633,7 +634,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTDATE$6, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectEvent" elements
      */
@@ -644,7 +645,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectEvent get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectEventArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectEvent set(int i, org.lidoSchema.SubjectComplexType.SubjectEvent o)
             {
@@ -652,11 +653,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectEventArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectEvent o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectEvent(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectEvent remove(int i)
             {
@@ -664,20 +665,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectEvent(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectEventArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectEventList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectEvent" elements
      * @deprecated
@@ -695,7 +696,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectEvent" element
      */
@@ -713,7 +714,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectEvent" element
      */
@@ -725,7 +726,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTEVENT$8);
         }
     }
-    
+
     /**
      * Sets array of all "subjectEvent" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -734,7 +735,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectEventArray, SUBJECTEVENT$8);
     }
-    
+
     /**
      * Sets ith "subjectEvent" element
      */
@@ -742,7 +743,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectEvent, SUBJECTEVENT$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectEvent" element
      */
@@ -756,7 +757,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectEvent" element
      */
@@ -770,7 +771,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectEvent" element
      */
@@ -782,7 +783,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTEVENT$8, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectPlace" elements
      */
@@ -793,7 +794,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectPlace get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectPlaceArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectPlace set(int i, org.lidoSchema.SubjectComplexType.SubjectPlace o)
             {
@@ -801,11 +802,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectPlaceArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectPlace o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectPlace(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectPlace remove(int i)
             {
@@ -813,20 +814,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectPlace(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectPlaceArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectPlaceList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectPlace" elements
      * @deprecated
@@ -844,7 +845,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectPlace" element
      */
@@ -862,7 +863,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectPlace" element
      */
@@ -874,7 +875,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTPLACE$10);
         }
     }
-    
+
     /**
      * Sets array of all "subjectPlace" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -883,7 +884,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectPlaceArray, SUBJECTPLACE$10);
     }
-    
+
     /**
      * Sets ith "subjectPlace" element
      */
@@ -891,7 +892,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectPlace, SUBJECTPLACE$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectPlace" element
      */
@@ -905,7 +906,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectPlace" element
      */
@@ -919,7 +920,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectPlace" element
      */
@@ -931,7 +932,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTPLACE$10, i);
         }
     }
-    
+
     /**
      * Gets a List of "subjectObject" elements
      */
@@ -942,7 +943,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectObject get(int i)
                 { return SubjectComplexTypeImpl.this.getSubjectObjectArray(i); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectObject set(int i, org.lidoSchema.SubjectComplexType.SubjectObject o)
             {
@@ -950,11 +951,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.setSubjectObjectArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.SubjectComplexType.SubjectObject o)
                 { SubjectComplexTypeImpl.this.insertNewSubjectObject(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.SubjectComplexType.SubjectObject remove(int i)
             {
@@ -962,20 +963,20 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 SubjectComplexTypeImpl.this.removeSubjectObject(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return SubjectComplexTypeImpl.this.sizeOfSubjectObjectArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SubjectObjectList();
         }
     }
-    
+
     /**
      * Gets array of all "subjectObject" elements
      * @deprecated
@@ -993,7 +994,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return result;
         }
     }
-    
+
     /**
      * Gets ith "subjectObject" element
      */
@@ -1011,7 +1012,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Returns number of "subjectObject" element
      */
@@ -1023,7 +1024,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().count_elements(SUBJECTOBJECT$12);
         }
     }
-    
+
     /**
      * Sets array of all "subjectObject" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1032,7 +1033,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         check_orphaned();
         arraySetterHelper(subjectObjectArray, SUBJECTOBJECT$12);
     }
-    
+
     /**
      * Sets ith "subjectObject" element
      */
@@ -1040,7 +1041,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(subjectObject, SUBJECTOBJECT$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "subjectObject" element
      */
@@ -1054,7 +1055,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "subjectObject" element
      */
@@ -1068,7 +1069,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "subjectObject" element
      */
@@ -1080,7 +1081,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             get_store().remove_element(SUBJECTOBJECT$12, i);
         }
     }
-    
+
     /**
      * Gets the "type" attribute
      */
@@ -1098,7 +1099,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "type" attribute
      */
@@ -1112,7 +1113,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * True if has "type" attribute
      */
@@ -1124,7 +1125,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().find_attribute_user(TYPE$14) != null;
         }
     }
-    
+
     /**
      * Sets the "type" attribute
      */
@@ -1142,7 +1143,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             target.setStringValue(type);
         }
     }
-    
+
     /**
      * Sets (as xml) the "type" attribute
      */
@@ -1160,7 +1161,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
             target.set(type);
         }
     }
-    
+
     /**
      * Unsets the "type" attribute
      */
@@ -1180,16 +1181,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectConceptImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectConcept
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectConceptImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1207,7 +1208,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1221,7 +1222,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1233,11 +1234,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1251,7 +1252,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1269,7 +1270,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1290,16 +1291,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectActorImpl extends org.lidoSchema.impl.ActorSetComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectActor
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectActorImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1317,7 +1318,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1331,7 +1332,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1343,11 +1344,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1361,7 +1362,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1379,7 +1380,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1400,16 +1401,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectDateImpl extends org.lidoSchema.impl.DateSetComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectDate
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectDateImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1427,7 +1428,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1441,7 +1442,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1453,11 +1454,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1471,7 +1472,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1489,7 +1490,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1510,16 +1511,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectEventImpl extends org.lidoSchema.impl.EventSetComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectEvent
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectEventImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1537,7 +1538,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1551,7 +1552,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1563,11 +1564,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1581,7 +1582,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1599,7 +1600,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1620,16 +1621,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectPlaceImpl extends org.lidoSchema.impl.PlaceSetComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectPlace
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectPlaceImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1647,7 +1648,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1661,7 +1662,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1673,11 +1674,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1691,7 +1692,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1709,7 +1710,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -1730,16 +1731,16 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class SubjectObjectImpl extends org.lidoSchema.impl.ObjectSetComplexTypeImpl implements org.lidoSchema.SubjectComplexType.SubjectObject
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectObjectImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1757,7 +1758,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1771,7 +1772,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -1783,11 +1784,11 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1801,7 +1802,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -1819,7 +1820,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

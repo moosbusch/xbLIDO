@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one recordWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RecordWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RecordWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RECORDWRAP$0 = 
+
+    private static final javax.xml.namespace.QName RECORDWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "recordWrap");
-    
-    
+
+
     /**
      * Gets the "recordWrap" element
      */
@@ -42,7 +43,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Sets the "recordWrap" element
      */
@@ -50,7 +51,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(recordWrap, RECORDWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "recordWrap" element
      */
@@ -72,24 +73,24 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class RecordWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RecordWrapDocument.RecordWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RecordWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName RECORDID$0 = 
+
+        private static final javax.xml.namespace.QName RECORDID$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "recordID");
-        private static final javax.xml.namespace.QName RECORDTYPE$2 = 
+        private static final javax.xml.namespace.QName RECORDTYPE$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "recordType");
-        private static final javax.xml.namespace.QName RECORDSOURCE$4 = 
+        private static final javax.xml.namespace.QName RECORDSOURCE$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "recordSource");
-        private static final javax.xml.namespace.QName RECORDRIGHTS$6 = 
+        private static final javax.xml.namespace.QName RECORDRIGHTS$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "recordRights");
-        private static final javax.xml.namespace.QName RECORDINFOSET$8 = 
+        private static final javax.xml.namespace.QName RECORDINFOSET$8 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "recordInfoSet");
-        
-        
+
+
         /**
          * Gets a List of "recordID" elements
          */
@@ -100,7 +101,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 @Override
                 public org.lidoSchema.IdentifierComplexType get(int i)
                     { return RecordWrapImpl.this.getRecordIDArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
                 {
@@ -108,11 +109,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.setRecordIDArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.IdentifierComplexType o)
                     { RecordWrapImpl.this.insertNewRecordID(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.IdentifierComplexType remove(int i)
                 {
@@ -120,20 +121,20 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.removeRecordID(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RecordWrapImpl.this.sizeOfRecordIDArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RecordIDList();
             }
         }
-        
+
         /**
          * Gets array of all "recordID" elements
          * @deprecated
@@ -151,7 +152,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "recordID" element
          */
@@ -169,7 +170,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "recordID" element
          */
@@ -181,7 +182,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().count_elements(RECORDID$0);
             }
         }
-        
+
         /**
          * Sets array of all "recordID" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -190,7 +191,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             check_orphaned();
             arraySetterHelper(recordIDArray, RECORDID$0);
         }
-        
+
         /**
          * Sets ith "recordID" element
          */
@@ -198,7 +199,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         {
             generatedSetterHelperImpl(recordID, RECORDID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "recordID" element
          */
@@ -212,7 +213,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "recordID" element
          */
@@ -226,7 +227,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "recordID" element
          */
@@ -238,7 +239,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 get_store().remove_element(RECORDID$0, i);
             }
         }
-        
+
         /**
          * Gets the "recordType" element
          */
@@ -256,7 +257,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Sets the "recordType" element
          */
@@ -264,7 +265,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         {
             generatedSetterHelperImpl(recordType, RECORDTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
-        
+
         /**
          * Appends and returns a new empty "recordType" element
          */
@@ -278,7 +279,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Gets a List of "recordSource" elements
          */
@@ -289,7 +290,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource get(int i)
                     { return RecordWrapImpl.this.getRecordSourceArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource set(int i, org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource o)
                 {
@@ -297,11 +298,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.setRecordSourceArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource o)
                     { RecordWrapImpl.this.insertNewRecordSource(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource remove(int i)
                 {
@@ -309,20 +310,20 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.removeRecordSource(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RecordWrapImpl.this.sizeOfRecordSourceArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RecordSourceList();
             }
         }
-        
+
         /**
          * Gets array of all "recordSource" elements
          * @deprecated
@@ -340,7 +341,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "recordSource" element
          */
@@ -358,7 +359,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "recordSource" element
          */
@@ -370,7 +371,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().count_elements(RECORDSOURCE$4);
             }
         }
-        
+
         /**
          * Sets array of all "recordSource" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -379,7 +380,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             check_orphaned();
             arraySetterHelper(recordSourceArray, RECORDSOURCE$4);
         }
-        
+
         /**
          * Sets ith "recordSource" element
          */
@@ -387,7 +388,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         {
             generatedSetterHelperImpl(recordSource, RECORDSOURCE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "recordSource" element
          */
@@ -401,7 +402,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "recordSource" element
          */
@@ -415,7 +416,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "recordSource" element
          */
@@ -427,7 +428,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 get_store().remove_element(RECORDSOURCE$4, i);
             }
         }
-        
+
         /**
          * Gets a List of "recordRights" elements
          */
@@ -438,7 +439,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights get(int i)
                     { return RecordWrapImpl.this.getRecordRightsArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights set(int i, org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights o)
                 {
@@ -446,11 +447,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.setRecordRightsArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights o)
                     { RecordWrapImpl.this.insertNewRecordRights(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights remove(int i)
                 {
@@ -458,20 +459,20 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.removeRecordRights(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RecordWrapImpl.this.sizeOfRecordRightsArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RecordRightsList();
             }
         }
-        
+
         /**
          * Gets array of all "recordRights" elements
          * @deprecated
@@ -489,7 +490,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "recordRights" element
          */
@@ -507,7 +508,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "recordRights" element
          */
@@ -519,7 +520,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().count_elements(RECORDRIGHTS$6);
             }
         }
-        
+
         /**
          * Sets array of all "recordRights" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -528,7 +529,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             check_orphaned();
             arraySetterHelper(recordRightsArray, RECORDRIGHTS$6);
         }
-        
+
         /**
          * Sets ith "recordRights" element
          */
@@ -536,7 +537,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         {
             generatedSetterHelperImpl(recordRights, RECORDRIGHTS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "recordRights" element
          */
@@ -550,7 +551,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "recordRights" element
          */
@@ -564,7 +565,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "recordRights" element
          */
@@ -576,7 +577,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 get_store().remove_element(RECORDRIGHTS$6, i);
             }
         }
-        
+
         /**
          * Gets a List of "recordInfoSet" elements
          */
@@ -587,7 +588,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 @Override
                 public org.lidoSchema.RecordInfoSetComplexType get(int i)
                     { return RecordWrapImpl.this.getRecordInfoSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.RecordInfoSetComplexType set(int i, org.lidoSchema.RecordInfoSetComplexType o)
                 {
@@ -595,11 +596,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.setRecordInfoSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.RecordInfoSetComplexType o)
                     { RecordWrapImpl.this.insertNewRecordInfoSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.RecordInfoSetComplexType remove(int i)
                 {
@@ -607,20 +608,20 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     RecordWrapImpl.this.removeRecordInfoSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RecordWrapImpl.this.sizeOfRecordInfoSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RecordInfoSetList();
             }
         }
-        
+
         /**
          * Gets array of all "recordInfoSet" elements
          * @deprecated
@@ -638,7 +639,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "recordInfoSet" element
          */
@@ -656,7 +657,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "recordInfoSet" element
          */
@@ -668,7 +669,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().count_elements(RECORDINFOSET$8);
             }
         }
-        
+
         /**
          * Sets array of all "recordInfoSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -677,7 +678,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             check_orphaned();
             arraySetterHelper(recordInfoSetArray, RECORDINFOSET$8);
         }
-        
+
         /**
          * Sets ith "recordInfoSet" element
          */
@@ -685,7 +686,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         {
             generatedSetterHelperImpl(recordInfoSet, RECORDINFOSET$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "recordInfoSet" element
          */
@@ -699,7 +700,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "recordInfoSet" element
          */
@@ -713,7 +714,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "recordInfoSet" element
          */
@@ -733,18 +734,18 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         public static class RecordSourceImpl extends org.lidoSchema.impl.LegalBodyRefComplexTypeImpl implements org.lidoSchema.RecordWrapDocument.RecordWrap.RecordSource
         {
             private static final long serialVersionUID = 1L;
-            
+
             public RecordSourceImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName TYPE$0 = 
+
+            private static final javax.xml.namespace.QName TYPE$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-            private static final javax.xml.namespace.QName SORTORDER$2 = 
+            private static final javax.xml.namespace.QName SORTORDER$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "type" attribute
              */
@@ -762,7 +763,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "type" attribute
              */
@@ -776,7 +777,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target;
                 }
             }
-            
+
             /**
              * True if has "type" attribute
              */
@@ -788,7 +789,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return get_store().find_attribute_user(TYPE$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "type" attribute
              */
@@ -806,7 +807,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.setStringValue(type);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "type" attribute
              */
@@ -824,7 +825,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.set(type);
                 }
             }
-            
+
             /**
              * Unsets the "type" attribute
              */
@@ -836,7 +837,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     get_store().remove_attribute(TYPE$0);
                 }
             }
-            
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -854,7 +855,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -868,7 +869,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -880,11 +881,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return get_store().find_attribute_user(SORTORDER$2) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -898,7 +899,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -916,7 +917,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */
@@ -937,16 +938,16 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         public static class RecordRightsImpl extends org.lidoSchema.impl.RightsComplexTypeImpl implements org.lidoSchema.RecordWrapDocument.RecordWrap.RecordRights
         {
             private static final long serialVersionUID = 1L;
-            
+
             public RecordRightsImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -964,7 +965,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -978,7 +979,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -990,11 +991,11 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -1008,7 +1009,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -1026,7 +1027,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

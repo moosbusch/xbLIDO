@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one objectWorkTypeWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ObjectWorkTypeWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ObjectWorkTypeWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName OBJECTWORKTYPEWRAP$0 = 
+
+    private static final javax.xml.namespace.QName OBJECTWORKTYPEWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "objectWorkTypeWrap");
-    
-    
+
+
     /**
      * Gets the "objectWorkTypeWrap" element
      */
@@ -42,7 +43,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Sets the "objectWorkTypeWrap" element
      */
@@ -50,7 +51,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     {
         generatedSetterHelperImpl(objectWorkTypeWrap, OBJECTWORKTYPEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "objectWorkTypeWrap" element
      */
@@ -72,16 +73,16 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     public static class ObjectWorkTypeWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ObjectWorkTypeWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName OBJECTWORKTYPE$0 = 
+
+        private static final javax.xml.namespace.QName OBJECTWORKTYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "objectWorkType");
-        
-        
+
+
         /**
          * Gets a List of "objectWorkType" elements
          */
@@ -92,7 +93,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 @Override
                 public org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType get(int i)
                     { return ObjectWorkTypeWrapImpl.this.getObjectWorkTypeArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType set(int i, org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType o)
                 {
@@ -100,11 +101,11 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     ObjectWorkTypeWrapImpl.this.setObjectWorkTypeArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType o)
                     { ObjectWorkTypeWrapImpl.this.insertNewObjectWorkType(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType remove(int i)
                 {
@@ -112,20 +113,20 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     ObjectWorkTypeWrapImpl.this.removeObjectWorkType(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return ObjectWorkTypeWrapImpl.this.sizeOfObjectWorkTypeArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new ObjectWorkTypeList();
             }
         }
-        
+
         /**
          * Gets array of all "objectWorkType" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "objectWorkType" element
          */
@@ -161,7 +162,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "objectWorkType" element
          */
@@ -173,7 +174,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return get_store().count_elements(OBJECTWORKTYPE$0);
             }
         }
-        
+
         /**
          * Sets array of all "objectWorkType" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             check_orphaned();
             arraySetterHelper(objectWorkTypeArray, OBJECTWORKTYPE$0);
         }
-        
+
         /**
          * Sets ith "objectWorkType" element
          */
@@ -190,7 +191,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         {
             generatedSetterHelperImpl(objectWorkType, OBJECTWORKTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "objectWorkType" element
          */
@@ -204,7 +205,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "objectWorkType" element
          */
@@ -218,7 +219,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "objectWorkType" element
          */
@@ -238,18 +239,18 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         public static class ObjectWorkTypeImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType
         {
             private static final long serialVersionUID = 1L;
-            
+
             public ObjectWorkTypeImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName TYPE$0 = 
+
+            private static final javax.xml.namespace.QName TYPE$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-            private static final javax.xml.namespace.QName SORTORDER$2 = 
+            private static final javax.xml.namespace.QName SORTORDER$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "type" attribute
              */
@@ -267,7 +268,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "type" attribute
              */
@@ -281,7 +282,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target;
                 }
             }
-            
+
             /**
              * True if has "type" attribute
              */
@@ -293,7 +294,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return get_store().find_attribute_user(TYPE$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "type" attribute
              */
@@ -311,7 +312,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.setStringValue(type);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "type" attribute
              */
@@ -329,7 +330,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.set(type);
                 }
             }
-            
+
             /**
              * Unsets the "type" attribute
              */
@@ -341,7 +342,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     get_store().remove_attribute(TYPE$0);
                 }
             }
-            
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -359,7 +360,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -373,7 +374,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -385,11 +386,11 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     return get_store().find_attribute_user(SORTORDER$2) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -403,7 +404,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -421,7 +422,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

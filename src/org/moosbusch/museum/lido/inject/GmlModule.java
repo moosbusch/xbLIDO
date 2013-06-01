@@ -907,146 +907,170 @@ import net.opengis.gml.VolumeType;
  */
 public interface GmlModule extends Module {
 
+//    @Provides
+//    public TemporalDatumBaseType createTemporalDatumBaseType();
+
+//    @Provides
+//    public PrimeMeridianBaseType createPrimeMeridianBaseType();
+
+//    @Provides
+//    public OperationParameterGroupBaseType createOperationParameterGroupBaseType();
+
+//    @Provides
+//    public OperationParameterBaseType createOperationParameterBaseType();
+
+//    @Provides
+//    public AbstractReferenceSystemType createAbstractReferenceSystemType();
+
+//    @Provides
+//    public AbstractContinuousCoverageType createAbstractContinuousCoverageType();
+//
+//    @Provides
+//    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType();
+//
+//    @Provides
+//    public AbstractCoordinateOperationType createAbstractCoordinateOperationType();
+//
+//    @Provides
+//    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType();
+//
+//    @Provides
+//    public AbstractCoordinateSystemType createAbstractCoordinateSystemType();
+//
+//    @Provides
+//    public AbstractCoverageType createAbstractCoverageType();
+//
+//    @Provides
+//    public AbstractCurveSegmentType createAbstractCurveSegmentType();
+//
+//    @Provides
+//    public AbstractCurveType createAbstractCurveType();
+//
+//    @Provides
+//    public AbstractDatumBaseType createAbstractDatumBaseType();
+//
+//    @Provides
+//    public AbstractDatumType createAbstractDatumType();
+//
+//    @Provides
+//    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType();
+//
+//    @Provides
+//    public AbstractFeatureCollectionType createAbstractFeatureCollectionType();
+//
+//    @Provides
+//    public AbstractFeatureType createAbstractFeatureType();
+//
+//    @Provides
+//    public AbstractGeneralConversionType createAbstractGeneralConversionType();
+//
+//    @Provides
+//    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType();
+//
+//    @Provides
+//    public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument();
+//
+//    @Provides
+//    public AbstractGeneralOperationParameterRefType createAbstractGeneralOperationParameterRefType();
+//
+//    @Provides
+//    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType();
+//
+//    @Provides
+//    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType();
+//
+//    @Provides
+//    public AbstractGeneralTransformationType createAbstractGeneralTransformationType();
+//
+//    @Provides
+//    public AbstractGeometricAggregateType createAbstractGeometricAggregateType();
+//
+//    @Provides
+//    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType();
+//
+//    @Provides
+//    public AbstractGeometryType createAbstractGeometryType();
+//
+//    @Provides
+//    public AbstractGMLType createAbstractGMLType();
+//
+//    @Provides
+//    public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType();
+//
+//    @Provides
+//    public AbstractMetaDataType createAbstractMetaDataType();
+//
+//    @Provides
+//    public AbstractParametricCurveSurfaceType createAbstractParametricCurveSurfaceType();
+//
+//    @Provides
+//    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType();
+//
+//    @Provides
+//    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType();
+//
+//    @Provides
+//    public AbstractRingPropertyType createAbstractRingPropertyType();
+//
+//    @Provides
+//    public AbstractRingType createAbstractRingType();
+//
+//    @Provides
+//    public AbstractSolidType createAbstractSolidType();
+//
+//    @Provides
+//    public AbstractStyleType createAbstractStyleType();
+//
+//    @Provides
+//    public AbstractSurfacePatchType createAbstractSurfacePatchType();
+//
+//    @Provides
+//    public AbstractSurfaceType createAbstractSurfaceType();
+//
+//    @Provides
+//    public AbstractTimeComplexType createAbstractTimeComplexType();
+//
+//    @Provides
+//    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType();
+//
+//    @Provides
+//    public AbstractTimeObjectType createAbstractTimeObjectType();
+//
+//    @Provides
+//    public AbstractTimePrimitiveType createAbstractTimePrimitiveType();
+//
+//    @Provides
+//    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType();
+//
+//    @Provides
+//    public AbstractTimeSliceType createAbstractTimeSliceType();
+//
+//    @Provides
+//    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType();
+//
+//    @Provides
+//    public AbstractTopologyType createAbstractTopologyType();
+//
+//    @Provides
+//    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType();
+
+//    @Provides
+//    public BoundedFeatureType createBoundedFeatureType();
+
+//    @Provides
+//    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType();
+
+//    @Provides
+//    public OperationMethodBaseType createOperationMethodBaseType();
+
+//    @Provides
+//    public EllipsoidBaseType createEllipsoidBaseType();
+
     @Provides
     public AbsoluteExternalPositionalAccuracyDocument createAbsoluteExternalPositionalAccuracyDocument();
 
     @Provides
     public AbsoluteExternalPositionalAccuracyType createAbsoluteExternalPositionalAccuracyType();
-
-    @Provides
-    public AbstractContinuousCoverageType createAbstractContinuousCoverageType();
-
-    @Provides
-    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType();
-
-    @Provides
-    public AbstractCoordinateOperationType createAbstractCoordinateOperationType();
-
-    @Provides
-    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType();
-
-    @Provides
-    public AbstractCoordinateSystemType createAbstractCoordinateSystemType();
-
-    @Provides
-    public AbstractCoverageType createAbstractCoverageType();
-
-    @Provides
-    public AbstractCurveSegmentType createAbstractCurveSegmentType();
-
-    @Provides
-    public AbstractCurveType createAbstractCurveType();
-
-    @Provides
-    public AbstractDatumBaseType createAbstractDatumBaseType();
-
-    @Provides
-    public AbstractDatumType createAbstractDatumType();
-
-    @Provides
-    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType();
-
-    @Provides
-    public AbstractFeatureCollectionType createAbstractFeatureCollectionType();
-
-    @Provides
-    public AbstractFeatureType createAbstractFeatureType();
-
-    @Provides
-    public AbstractGeneralConversionType createAbstractGeneralConversionType();
-
-    @Provides
-    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType();
-
-    @Provides
-    public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument();
-
-    @Provides
-    public AbstractGeneralOperationParameterRefType createAbstractGeneralOperationParameterRefType();
-
-    @Provides
-    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType();
-
-    @Provides
-    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType();
-
-    @Provides
-    public AbstractGeneralTransformationType createAbstractGeneralTransformationType();
-
-    @Provides
-    public AbstractGeometricAggregateType createAbstractGeometricAggregateType();
-
-    @Provides
-    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType();
-
-    @Provides
-    public AbstractGeometryType createAbstractGeometryType();
-
-    @Provides
-    public AbstractGMLType createAbstractGMLType();
-
-    @Provides
-    public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType();
-
-    @Provides
-    public AbstractMetaDataType createAbstractMetaDataType();
-
-    @Provides
-    public AbstractParametricCurveSurfaceType createAbstractParametricCurveSurfaceType();
-
-    @Provides
-    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType();
-
-    @Provides
-    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType();
-
-    @Provides
-    public AbstractReferenceSystemType createAbstractReferenceSystemType();
-
-    @Provides
-    public AbstractRingPropertyType createAbstractRingPropertyType();
-
-    @Provides
-    public AbstractRingType createAbstractRingType();
-
-    @Provides
-    public AbstractSolidType createAbstractSolidType();
-
-    @Provides
-    public AbstractStyleType createAbstractStyleType();
-
-    @Provides
-    public AbstractSurfacePatchType createAbstractSurfacePatchType();
-
-    @Provides
-    public AbstractSurfaceType createAbstractSurfaceType();
-
-    @Provides
-    public AbstractTimeComplexType createAbstractTimeComplexType();
-
-    @Provides
-    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType();
-
-    @Provides
-    public AbstractTimeObjectType createAbstractTimeObjectType();
-
-    @Provides
-    public AbstractTimePrimitiveType createAbstractTimePrimitiveType();
-
-    @Provides
-    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType();
-
-    @Provides
-    public AbstractTimeSliceType createAbstractTimeSliceType();
-
-    @Provides
-    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType();
-
-    @Provides
-    public AbstractTopologyType createAbstractTopologyType();
-
-    @Provides
-    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType();
 
     @Provides
     public AesheticCriteriaType createAesheticCriteriaType();
@@ -1185,9 +1209,6 @@ public interface GmlModule extends Module {
 
     @Provides
     public BoundedByDocument createBoundedByDocument();
-
-    @Provides
-    public BoundedFeatureType createBoundedFeatureType();
 
     @Provides
     public BoundingBoxDocument createBoundingBoxDocument();
@@ -1407,9 +1428,6 @@ public interface GmlModule extends Module {
 
     @Provides
     public CoordinatesType createCoordinatesType();
-
-    @Provides
-    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType();
 
     @Provides
     public CoordinateSystemAxisDocument createCoordinateSystemAxisDocument();
@@ -1773,9 +1791,6 @@ public interface GmlModule extends Module {
 
     @Provides
     public EllipsoidalCSType createEllipsoidalCSType();
-
-    @Provides
-    public EllipsoidBaseType createEllipsoidBaseType();
 
     @Provides
     public EllipsoidDocument createEllipsoidDocument();
@@ -2534,9 +2549,6 @@ public interface GmlModule extends Module {
     public OperationDocument createOperationDocument();
 
     @Provides
-    public OperationMethodBaseType createOperationMethodBaseType();
-
-    @Provides
     public OperationMethodDocument createOperationMethodDocument();
 
     @Provides
@@ -2549,13 +2561,7 @@ public interface GmlModule extends Module {
     public OperationMethodType createOperationMethodType();
 
     @Provides
-    public OperationParameterBaseType createOperationParameterBaseType();
-
-    @Provides
     public OperationParameterDocument createOperationParameterDocument();
-
-    @Provides
-    public OperationParameterGroupBaseType createOperationParameterGroupBaseType();
 
     @Provides
     public OperationParameterGroupDocument createOperationParameterGroupDocument();
@@ -2730,9 +2736,6 @@ public interface GmlModule extends Module {
 
     @Provides
     public PosListDocument createPosListDocument();
-
-    @Provides
-    public PrimeMeridianBaseType createPrimeMeridianBaseType();
 
     @Provides
     public PrimeMeridianDocument createPrimeMeridianDocument();
@@ -3093,9 +3096,6 @@ public interface GmlModule extends Module {
 
     @Provides
     public TemporalCSType createTemporalCSType();
-
-    @Provides
-    public TemporalDatumBaseType createTemporalDatumBaseType();
 
     @Provides
     public TemporalDatumDocument createTemporalDatumDocument();

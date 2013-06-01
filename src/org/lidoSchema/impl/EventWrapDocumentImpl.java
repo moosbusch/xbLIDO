@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one eventWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.EventWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public EventWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName EVENTWRAP$0 = 
+
+    private static final javax.xml.namespace.QName EVENTWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventWrap");
-    
-    
+
+
     /**
      * Gets the "eventWrap" element
      */
@@ -42,7 +43,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Sets the "eventWrap" element
      */
@@ -50,7 +51,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(eventWrap, EVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "eventWrap" element
      */
@@ -72,16 +73,16 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     public static class EventWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.EventWrapDocument.EventWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public EventWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName EVENTSET$0 = 
+
+        private static final javax.xml.namespace.QName EVENTSET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "eventSet");
-        
-        
+
+
         /**
          * Gets a List of "eventSet" elements
          */
@@ -92,7 +93,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 @Override
                 public org.lidoSchema.EventWrapDocument.EventWrap.EventSet get(int i)
                     { return EventWrapImpl.this.getEventSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.EventWrapDocument.EventWrap.EventSet set(int i, org.lidoSchema.EventWrapDocument.EventWrap.EventSet o)
                 {
@@ -100,11 +101,11 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     EventWrapImpl.this.setEventSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.EventWrapDocument.EventWrap.EventSet o)
                     { EventWrapImpl.this.insertNewEventSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.EventWrapDocument.EventWrap.EventSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     EventWrapImpl.this.removeEventSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return EventWrapImpl.this.sizeOfEventSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new EventSetList();
             }
         }
-        
+
         /**
          * Gets array of all "eventSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "eventSet" element
          */
@@ -161,7 +162,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "eventSet" element
          */
@@ -173,7 +174,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return get_store().count_elements(EVENTSET$0);
             }
         }
-        
+
         /**
          * Sets array of all "eventSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             check_orphaned();
             arraySetterHelper(eventSetArray, EVENTSET$0);
         }
-        
+
         /**
          * Sets ith "eventSet" element
          */
@@ -190,7 +191,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         {
             generatedSetterHelperImpl(eventSet, EVENTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "eventSet" element
          */
@@ -204,7 +205,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "eventSet" element
          */
@@ -218,7 +219,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "eventSet" element
          */
@@ -238,16 +239,16 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         public static class EventSetImpl extends org.lidoSchema.impl.EventSetComplexTypeImpl implements org.lidoSchema.EventWrapDocument.EventWrap.EventSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public EventSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML rightsComplexType(@http://www.lido-schema.org).
  *
@@ -14,22 +15,22 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RightsComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RightsComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RIGHTSTYPE$0 = 
+
+    private static final javax.xml.namespace.QName RIGHTSTYPE$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsType");
-    private static final javax.xml.namespace.QName RIGHTSDATE$2 = 
+    private static final javax.xml.namespace.QName RIGHTSDATE$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsDate");
-    private static final javax.xml.namespace.QName RIGHTSHOLDER$4 = 
+    private static final javax.xml.namespace.QName RIGHTSHOLDER$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsHolder");
-    private static final javax.xml.namespace.QName CREDITLINE$6 = 
+    private static final javax.xml.namespace.QName CREDITLINE$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "creditLine");
-    
-    
+
+
     /**
      * Gets a List of "rightsType" elements
      */
@@ -40,7 +41,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             @Override
             public org.lidoSchema.ConceptComplexType get(int i)
                 { return RightsComplexTypeImpl.this.getRightsTypeArray(i); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType set(int i, org.lidoSchema.ConceptComplexType o)
             {
@@ -48,11 +49,11 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.setRightsTypeArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ConceptComplexType o)
                 { RightsComplexTypeImpl.this.insertNewRightsType(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType remove(int i)
             {
@@ -60,20 +61,20 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.removeRightsType(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return RightsComplexTypeImpl.this.sizeOfRightsTypeArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RightsTypeList();
         }
     }
-    
+
     /**
      * Gets array of all "rightsType" elements
      * @deprecated
@@ -91,7 +92,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return result;
         }
     }
-    
+
     /**
      * Gets ith "rightsType" element
      */
@@ -109,7 +110,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Returns number of "rightsType" element
      */
@@ -121,7 +122,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return get_store().count_elements(RIGHTSTYPE$0);
         }
     }
-    
+
     /**
      * Sets array of all "rightsType" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -130,7 +131,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         check_orphaned();
         arraySetterHelper(rightsTypeArray, RIGHTSTYPE$0);
     }
-    
+
     /**
      * Sets ith "rightsType" element
      */
@@ -138,7 +139,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(rightsType, RIGHTSTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "rightsType" element
      */
@@ -152,7 +153,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "rightsType" element
      */
@@ -166,7 +167,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "rightsType" element
      */
@@ -178,7 +179,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             get_store().remove_element(RIGHTSTYPE$0, i);
         }
     }
-    
+
     /**
      * Gets the "rightsDate" element
      */
@@ -196,7 +197,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * True if has "rightsDate" element
      */
@@ -208,7 +209,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return get_store().count_elements(RIGHTSDATE$2) != 0;
         }
     }
-    
+
     /**
      * Sets the "rightsDate" element
      */
@@ -216,7 +217,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(rightsDate, RIGHTSDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "rightsDate" element
      */
@@ -230,7 +231,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Unsets the "rightsDate" element
      */
@@ -242,7 +243,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             get_store().remove_element(RIGHTSDATE$2, 0);
         }
     }
-    
+
     /**
      * Gets a List of "rightsHolder" elements
      */
@@ -253,7 +254,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             @Override
             public org.lidoSchema.RightsComplexType.RightsHolder get(int i)
                 { return RightsComplexTypeImpl.this.getRightsHolderArray(i); }
-            
+
             @Override
             public org.lidoSchema.RightsComplexType.RightsHolder set(int i, org.lidoSchema.RightsComplexType.RightsHolder o)
             {
@@ -261,11 +262,11 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.setRightsHolderArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.RightsComplexType.RightsHolder o)
                 { RightsComplexTypeImpl.this.insertNewRightsHolder(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.RightsComplexType.RightsHolder remove(int i)
             {
@@ -273,20 +274,20 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.removeRightsHolder(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return RightsComplexTypeImpl.this.sizeOfRightsHolderArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RightsHolderList();
         }
     }
-    
+
     /**
      * Gets array of all "rightsHolder" elements
      * @deprecated
@@ -304,7 +305,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return result;
         }
     }
-    
+
     /**
      * Gets ith "rightsHolder" element
      */
@@ -322,7 +323,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Returns number of "rightsHolder" element
      */
@@ -334,7 +335,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return get_store().count_elements(RIGHTSHOLDER$4);
         }
     }
-    
+
     /**
      * Sets array of all "rightsHolder" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -343,7 +344,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         check_orphaned();
         arraySetterHelper(rightsHolderArray, RIGHTSHOLDER$4);
     }
-    
+
     /**
      * Sets ith "rightsHolder" element
      */
@@ -351,7 +352,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(rightsHolder, RIGHTSHOLDER$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "rightsHolder" element
      */
@@ -365,7 +366,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "rightsHolder" element
      */
@@ -379,7 +380,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "rightsHolder" element
      */
@@ -391,7 +392,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             get_store().remove_element(RIGHTSHOLDER$4, i);
         }
     }
-    
+
     /**
      * Gets a List of "creditLine" elements
      */
@@ -402,7 +403,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return RightsComplexTypeImpl.this.getCreditLineArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -410,11 +411,11 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.setCreditLineArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { RightsComplexTypeImpl.this.insertNewCreditLine(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -422,20 +423,20 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 RightsComplexTypeImpl.this.removeCreditLine(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return RightsComplexTypeImpl.this.sizeOfCreditLineArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new CreditLineList();
         }
     }
-    
+
     /**
      * Gets array of all "creditLine" elements
      * @deprecated
@@ -453,7 +454,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return result;
         }
     }
-    
+
     /**
      * Gets ith "creditLine" element
      */
@@ -471,7 +472,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Returns number of "creditLine" element
      */
@@ -483,7 +484,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return get_store().count_elements(CREDITLINE$6);
         }
     }
-    
+
     /**
      * Sets array of all "creditLine" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -492,7 +493,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         check_orphaned();
         arraySetterHelper(creditLineArray, CREDITLINE$6);
     }
-    
+
     /**
      * Sets ith "creditLine" element
      */
@@ -500,7 +501,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(creditLine, CREDITLINE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "creditLine" element
      */
@@ -514,7 +515,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "creditLine" element
      */
@@ -528,7 +529,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "creditLine" element
      */
@@ -548,16 +549,16 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     public static class RightsHolderImpl extends org.lidoSchema.impl.LegalBodyRefComplexTypeImpl implements org.lidoSchema.RightsComplexType.RightsHolder
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RightsHolderImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -575,7 +576,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -589,7 +590,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -601,11 +602,11 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -619,7 +620,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -637,7 +638,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

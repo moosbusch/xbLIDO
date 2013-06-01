@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML actorComplexType(@http://www.lido-schema.org).
  *
@@ -14,26 +15,26 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ActorComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ActorComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName ACTORID$0 = 
+
+    private static final javax.xml.namespace.QName ACTORID$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "actorID");
-    private static final javax.xml.namespace.QName NAMEACTORSET$2 = 
+    private static final javax.xml.namespace.QName NAMEACTORSET$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "nameActorSet");
-    private static final javax.xml.namespace.QName NATIONALITYACTOR$4 = 
+    private static final javax.xml.namespace.QName NATIONALITYACTOR$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "nationalityActor");
-    private static final javax.xml.namespace.QName VITALDATESACTOR$6 = 
+    private static final javax.xml.namespace.QName VITALDATESACTOR$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "vitalDatesActor");
-    private static final javax.xml.namespace.QName GENDERACTOR$8 = 
+    private static final javax.xml.namespace.QName GENDERACTOR$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "genderActor");
-    private static final javax.xml.namespace.QName TYPE$10 = 
+    private static final javax.xml.namespace.QName TYPE$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-    
-    
+
+
     /**
      * Gets a List of "actorID" elements
      */
@@ -44,7 +45,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.IdentifierComplexType get(int i)
                 { return ActorComplexTypeImpl.this.getActorIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
             {
@@ -52,11 +53,11 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.setActorIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.IdentifierComplexType o)
                 { ActorComplexTypeImpl.this.insertNewActorID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType remove(int i)
             {
@@ -64,20 +65,20 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.removeActorID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorComplexTypeImpl.this.sizeOfActorIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ActorIDList();
         }
     }
-    
+
     /**
      * Gets array of all "actorID" elements
      * @deprecated
@@ -95,7 +96,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "actorID" element
      */
@@ -113,7 +114,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "actorID" element
      */
@@ -125,7 +126,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(ACTORID$0);
         }
     }
-    
+
     /**
      * Sets array of all "actorID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -134,7 +135,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(actorIDArray, ACTORID$0);
     }
-    
+
     /**
      * Sets ith "actorID" element
      */
@@ -142,7 +143,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(actorID, ACTORID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "actorID" element
      */
@@ -156,7 +157,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "actorID" element
      */
@@ -170,7 +171,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "actorID" element
      */
@@ -182,7 +183,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(ACTORID$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "nameActorSet" elements
      */
@@ -193,7 +194,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.AppellationComplexType get(int i)
                 { return ActorComplexTypeImpl.this.getNameActorSetArray(i); }
-            
+
             @Override
             public org.lidoSchema.AppellationComplexType set(int i, org.lidoSchema.AppellationComplexType o)
             {
@@ -201,11 +202,11 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.setNameActorSetArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.AppellationComplexType o)
                 { ActorComplexTypeImpl.this.insertNewNameActorSet(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.AppellationComplexType remove(int i)
             {
@@ -213,20 +214,20 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.removeNameActorSet(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorComplexTypeImpl.this.sizeOfNameActorSetArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new NameActorSetList();
         }
     }
-    
+
     /**
      * Gets array of all "nameActorSet" elements
      * @deprecated
@@ -244,7 +245,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "nameActorSet" element
      */
@@ -262,7 +263,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "nameActorSet" element
      */
@@ -274,7 +275,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(NAMEACTORSET$2);
         }
     }
-    
+
     /**
      * Sets array of all "nameActorSet" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -283,7 +284,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(nameActorSetArray, NAMEACTORSET$2);
     }
-    
+
     /**
      * Sets ith "nameActorSet" element
      */
@@ -291,7 +292,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(nameActorSet, NAMEACTORSET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "nameActorSet" element
      */
@@ -305,7 +306,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "nameActorSet" element
      */
@@ -319,7 +320,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "nameActorSet" element
      */
@@ -331,7 +332,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(NAMEACTORSET$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "nationalityActor" elements
      */
@@ -342,7 +343,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.ActorComplexType.NationalityActor get(int i)
                 { return ActorComplexTypeImpl.this.getNationalityActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.ActorComplexType.NationalityActor set(int i, org.lidoSchema.ActorComplexType.NationalityActor o)
             {
@@ -350,11 +351,11 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.setNationalityActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ActorComplexType.NationalityActor o)
                 { ActorComplexTypeImpl.this.insertNewNationalityActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ActorComplexType.NationalityActor remove(int i)
             {
@@ -362,20 +363,20 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.removeNationalityActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorComplexTypeImpl.this.sizeOfNationalityActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new NationalityActorList();
         }
     }
-    
+
     /**
      * Gets array of all "nationalityActor" elements
      * @deprecated
@@ -393,7 +394,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "nationalityActor" element
      */
@@ -411,7 +412,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "nationalityActor" element
      */
@@ -423,7 +424,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(NATIONALITYACTOR$4);
         }
     }
-    
+
     /**
      * Sets array of all "nationalityActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -432,7 +433,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(nationalityActorArray, NATIONALITYACTOR$4);
     }
-    
+
     /**
      * Sets ith "nationalityActor" element
      */
@@ -440,7 +441,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(nationalityActor, NATIONALITYACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "nationalityActor" element
      */
@@ -454,7 +455,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "nationalityActor" element
      */
@@ -468,7 +469,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "nationalityActor" element
      */
@@ -480,7 +481,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(NATIONALITYACTOR$4, i);
         }
     }
-    
+
     /**
      * Gets the "vitalDatesActor" element
      */
@@ -498,7 +499,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * True if has "vitalDatesActor" element
      */
@@ -510,7 +511,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(VITALDATESACTOR$6) != 0;
         }
     }
-    
+
     /**
      * Sets the "vitalDatesActor" element
      */
@@ -518,7 +519,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(vitalDatesActor, VITALDATESACTOR$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "vitalDatesActor" element
      */
@@ -532,7 +533,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Unsets the "vitalDatesActor" element
      */
@@ -544,7 +545,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(VITALDATESACTOR$6, 0);
         }
     }
-    
+
     /**
      * Gets a List of "genderActor" elements
      */
@@ -555,7 +556,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return ActorComplexTypeImpl.this.getGenderActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -563,11 +564,11 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.setGenderActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { ActorComplexTypeImpl.this.insertNewGenderActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -575,20 +576,20 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 ActorComplexTypeImpl.this.removeGenderActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorComplexTypeImpl.this.sizeOfGenderActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new GenderActorList();
         }
     }
-    
+
     /**
      * Gets array of all "genderActor" elements
      * @deprecated
@@ -606,7 +607,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "genderActor" element
      */
@@ -624,7 +625,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "genderActor" element
      */
@@ -636,7 +637,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(GENDERACTOR$8);
         }
     }
-    
+
     /**
      * Sets array of all "genderActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -645,7 +646,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(genderActorArray, GENDERACTOR$8);
     }
-    
+
     /**
      * Sets ith "genderActor" element
      */
@@ -653,7 +654,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(genderActor, GENDERACTOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "genderActor" element
      */
@@ -667,7 +668,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "genderActor" element
      */
@@ -681,7 +682,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "genderActor" element
      */
@@ -693,7 +694,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(GENDERACTOR$8, i);
         }
     }
-    
+
     /**
      * Gets the "type" attribute
      */
@@ -711,7 +712,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "type" attribute
      */
@@ -725,7 +726,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * True if has "type" attribute
      */
@@ -737,7 +738,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().find_attribute_user(TYPE$10) != null;
         }
     }
-    
+
     /**
      * Sets the "type" attribute
      */
@@ -755,7 +756,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             target.setStringValue(type);
         }
     }
-    
+
     /**
      * Sets (as xml) the "type" attribute
      */
@@ -773,7 +774,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             target.set(type);
         }
     }
-    
+
     /**
      * Unsets the "type" attribute
      */
@@ -793,16 +794,16 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class NationalityActorImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.ActorComplexType.NationalityActor
     {
         private static final long serialVersionUID = 1L;
-        
+
         public NationalityActorImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -820,7 +821,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -834,7 +835,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -846,11 +847,11 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -864,7 +865,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -882,7 +883,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

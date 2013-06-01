@@ -334,8 +334,8 @@ public interface LIDOModule extends MuseumXmlModule, GmlModule, Smil20Module, XL
     @Provides
     public RelatedWorkSet createRelatedWorks();
 
-//    @Provides
-//    public RepositorySetComplexType createRepositorySetComplexType();
+    @Provides
+    public RepositorySetComplexType createRepositorySetComplexType();
 
     @Provides
     public RepositoryWrapDocument createRepositoryWrapDocument();

@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML actorInRoleComplexType(@http://www.lido-schema.org).
  *
@@ -14,22 +15,22 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ActorInRoleComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ActorInRoleComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName ACTOR$0 = 
+
+    private static final javax.xml.namespace.QName ACTOR$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "actor");
-    private static final javax.xml.namespace.QName ROLEACTOR$2 = 
+    private static final javax.xml.namespace.QName ROLEACTOR$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "roleActor");
-    private static final javax.xml.namespace.QName ATTRIBUTIONQUALIFIERACTOR$4 = 
+    private static final javax.xml.namespace.QName ATTRIBUTIONQUALIFIERACTOR$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "attributionQualifierActor");
-    private static final javax.xml.namespace.QName EXTENTACTOR$6 = 
+    private static final javax.xml.namespace.QName EXTENTACTOR$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "extentActor");
-    
-    
+
+
     /**
      * Gets the "actor" element
      */
@@ -47,7 +48,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Sets the "actor" element
      */
@@ -55,7 +56,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(actor, ACTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "actor" element
      */
@@ -69,7 +70,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Gets a List of "roleActor" elements
      */
@@ -80,7 +81,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ActorInRoleComplexType.RoleActor get(int i)
                 { return ActorInRoleComplexTypeImpl.this.getRoleActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.ActorInRoleComplexType.RoleActor set(int i, org.lidoSchema.ActorInRoleComplexType.RoleActor o)
             {
@@ -88,11 +89,11 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.setRoleActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ActorInRoleComplexType.RoleActor o)
                 { ActorInRoleComplexTypeImpl.this.insertNewRoleActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ActorInRoleComplexType.RoleActor remove(int i)
             {
@@ -100,20 +101,20 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.removeRoleActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorInRoleComplexTypeImpl.this.sizeOfRoleActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RoleActorList();
         }
     }
-    
+
     /**
      * Gets array of all "roleActor" elements
      * @deprecated
@@ -131,7 +132,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "roleActor" element
      */
@@ -149,7 +150,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "roleActor" element
      */
@@ -161,7 +162,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(ROLEACTOR$2);
         }
     }
-    
+
     /**
      * Sets array of all "roleActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -170,7 +171,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(roleActorArray, ROLEACTOR$2);
     }
-    
+
     /**
      * Sets ith "roleActor" element
      */
@@ -178,7 +179,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(roleActor, ROLEACTOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "roleActor" element
      */
@@ -192,7 +193,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "roleActor" element
      */
@@ -206,7 +207,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "roleActor" element
      */
@@ -218,7 +219,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(ROLEACTOR$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "attributionQualifierActor" elements
      */
@@ -229,7 +230,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return ActorInRoleComplexTypeImpl.this.getAttributionQualifierActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -237,11 +238,11 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.setAttributionQualifierActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { ActorInRoleComplexTypeImpl.this.insertNewAttributionQualifierActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -249,20 +250,20 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.removeAttributionQualifierActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorInRoleComplexTypeImpl.this.sizeOfAttributionQualifierActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new AttributionQualifierActorList();
         }
     }
-    
+
     /**
      * Gets array of all "attributionQualifierActor" elements
      * @deprecated
@@ -280,7 +281,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "attributionQualifierActor" element
      */
@@ -298,7 +299,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "attributionQualifierActor" element
      */
@@ -310,7 +311,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(ATTRIBUTIONQUALIFIERACTOR$4);
         }
     }
-    
+
     /**
      * Sets array of all "attributionQualifierActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -319,7 +320,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(attributionQualifierActorArray, ATTRIBUTIONQUALIFIERACTOR$4);
     }
-    
+
     /**
      * Sets ith "attributionQualifierActor" element
      */
@@ -327,7 +328,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(attributionQualifierActor, ATTRIBUTIONQUALIFIERACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "attributionQualifierActor" element
      */
@@ -341,7 +342,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "attributionQualifierActor" element
      */
@@ -355,7 +356,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "attributionQualifierActor" element
      */
@@ -367,7 +368,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(ATTRIBUTIONQUALIFIERACTOR$4, i);
         }
     }
-    
+
     /**
      * Gets a List of "extentActor" elements
      */
@@ -378,7 +379,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return ActorInRoleComplexTypeImpl.this.getExtentActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -386,11 +387,11 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.setExtentActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { ActorInRoleComplexTypeImpl.this.insertNewExtentActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -398,20 +399,20 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ActorInRoleComplexTypeImpl.this.removeExtentActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ActorInRoleComplexTypeImpl.this.sizeOfExtentActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ExtentActorList();
         }
     }
-    
+
     /**
      * Gets array of all "extentActor" elements
      * @deprecated
@@ -429,7 +430,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "extentActor" element
      */
@@ -447,7 +448,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "extentActor" element
      */
@@ -459,7 +460,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(EXTENTACTOR$6);
         }
     }
-    
+
     /**
      * Sets array of all "extentActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -468,7 +469,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(extentActorArray, EXTENTACTOR$6);
     }
-    
+
     /**
      * Sets ith "extentActor" element
      */
@@ -476,7 +477,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(extentActor, EXTENTACTOR$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "extentActor" element
      */
@@ -490,7 +491,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "extentActor" element
      */
@@ -504,7 +505,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "extentActor" element
      */
@@ -524,16 +525,16 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     public static class RoleActorImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.ActorInRoleComplexType.RoleActor
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RoleActorImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -551,7 +552,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -565,7 +566,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -577,11 +578,11 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -595,7 +596,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -613,7 +614,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

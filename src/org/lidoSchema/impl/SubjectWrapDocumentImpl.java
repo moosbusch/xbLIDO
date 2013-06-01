@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one subjectWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.SubjectWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public SubjectWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName SUBJECTWRAP$0 = 
+
+    private static final javax.xml.namespace.QName SUBJECTWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectWrap");
-    
-    
+
+
     /**
      * Gets the "subjectWrap" element
      */
@@ -42,7 +43,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
             return target;
         }
     }
-    
+
     /**
      * Sets the "subjectWrap" element
      */
@@ -50,7 +51,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     {
         generatedSetterHelperImpl(subjectWrap, SUBJECTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "subjectWrap" element
      */
@@ -72,16 +73,16 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     public static class SubjectWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.SubjectWrapDocument.SubjectWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public SubjectWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SUBJECTSET$0 = 
+
+        private static final javax.xml.namespace.QName SUBJECTSET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "subjectSet");
-        
-        
+
+
         /**
          * Gets a List of "subjectSet" elements
          */
@@ -92,7 +93,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 @Override
                 public org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet get(int i)
                     { return SubjectWrapImpl.this.getSubjectSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet set(int i, org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet o)
                 {
@@ -100,11 +101,11 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     SubjectWrapImpl.this.setSubjectSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet o)
                     { SubjectWrapImpl.this.insertNewSubjectSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     SubjectWrapImpl.this.removeSubjectSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return SubjectWrapImpl.this.sizeOfSubjectSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new SubjectSetList();
             }
         }
-        
+
         /**
          * Gets array of all "subjectSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "subjectSet" element
          */
@@ -161,7 +162,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "subjectSet" element
          */
@@ -173,7 +174,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 return get_store().count_elements(SUBJECTSET$0);
             }
         }
-        
+
         /**
          * Sets array of all "subjectSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
             check_orphaned();
             arraySetterHelper(subjectSetArray, SUBJECTSET$0);
         }
-        
+
         /**
          * Sets ith "subjectSet" element
          */
@@ -190,7 +191,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         {
             generatedSetterHelperImpl(subjectSet, SUBJECTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "subjectSet" element
          */
@@ -204,7 +205,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "subjectSet" element
          */
@@ -218,7 +219,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "subjectSet" element
          */
@@ -238,16 +239,16 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         public static class SubjectSetImpl extends org.lidoSchema.impl.SubjectSetComplexTypeImpl implements org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public SubjectSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

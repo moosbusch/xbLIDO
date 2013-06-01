@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML descriptiveNoteComplexType(@http://www.lido-schema.org).
  *
@@ -14,24 +15,24 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.DescriptiveNoteComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public DescriptiveNoteComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName DESCRIPTIVENOTEID$0 = 
+
+    private static final javax.xml.namespace.QName DESCRIPTIVENOTEID$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "descriptiveNoteID");
-    private static final javax.xml.namespace.QName DESCRIPTIVENOTEVALUE$2 = 
+    private static final javax.xml.namespace.QName DESCRIPTIVENOTEVALUE$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "descriptiveNoteValue");
-    private static final javax.xml.namespace.QName SOURCEDESCRIPTIVENOTE$4 = 
+    private static final javax.xml.namespace.QName SOURCEDESCRIPTIVENOTE$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "sourceDescriptiveNote");
-    private static final javax.xml.namespace.QName TYPE$6 = 
+    private static final javax.xml.namespace.QName TYPE$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-    private static final javax.xml.namespace.QName SORTORDER$8 = 
+    private static final javax.xml.namespace.QName SORTORDER$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-    
-    
+
+
     /**
      * Gets a List of "descriptiveNoteID" elements
      */
@@ -42,7 +43,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             @Override
             public org.lidoSchema.IdentifierComplexType get(int i)
                 { return DescriptiveNoteComplexTypeImpl.this.getDescriptiveNoteIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
             {
@@ -50,11 +51,11 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.setDescriptiveNoteIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.IdentifierComplexType o)
                 { DescriptiveNoteComplexTypeImpl.this.insertNewDescriptiveNoteID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType remove(int i)
             {
@@ -62,20 +63,20 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.removeDescriptiveNoteID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return DescriptiveNoteComplexTypeImpl.this.sizeOfDescriptiveNoteIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new DescriptiveNoteIDList();
         }
     }
-    
+
     /**
      * Gets array of all "descriptiveNoteID" elements
      * @deprecated
@@ -93,7 +94,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return result;
         }
     }
-    
+
     /**
      * Gets ith "descriptiveNoteID" element
      */
@@ -111,7 +112,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Returns number of "descriptiveNoteID" element
      */
@@ -123,7 +124,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return get_store().count_elements(DESCRIPTIVENOTEID$0);
         }
     }
-    
+
     /**
      * Sets array of all "descriptiveNoteID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -132,7 +133,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
         check_orphaned();
         arraySetterHelper(descriptiveNoteIDArray, DESCRIPTIVENOTEID$0);
     }
-    
+
     /**
      * Sets ith "descriptiveNoteID" element
      */
@@ -140,7 +141,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     {
         generatedSetterHelperImpl(descriptiveNoteID, DESCRIPTIVENOTEID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "descriptiveNoteID" element
      */
@@ -154,7 +155,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "descriptiveNoteID" element
      */
@@ -168,7 +169,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "descriptiveNoteID" element
      */
@@ -180,7 +181,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             get_store().remove_element(DESCRIPTIVENOTEID$0, i);
         }
     }
-    
+
     /**
      * Gets a List of "descriptiveNoteValue" elements
      */
@@ -191,7 +192,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return DescriptiveNoteComplexTypeImpl.this.getDescriptiveNoteValueArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -199,11 +200,11 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.setDescriptiveNoteValueArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { DescriptiveNoteComplexTypeImpl.this.insertNewDescriptiveNoteValue(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -211,20 +212,20 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.removeDescriptiveNoteValue(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return DescriptiveNoteComplexTypeImpl.this.sizeOfDescriptiveNoteValueArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new DescriptiveNoteValueList();
         }
     }
-    
+
     /**
      * Gets array of all "descriptiveNoteValue" elements
      * @deprecated
@@ -242,7 +243,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return result;
         }
     }
-    
+
     /**
      * Gets ith "descriptiveNoteValue" element
      */
@@ -260,7 +261,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Returns number of "descriptiveNoteValue" element
      */
@@ -272,7 +273,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return get_store().count_elements(DESCRIPTIVENOTEVALUE$2);
         }
     }
-    
+
     /**
      * Sets array of all "descriptiveNoteValue" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -281,7 +282,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
         check_orphaned();
         arraySetterHelper(descriptiveNoteValueArray, DESCRIPTIVENOTEVALUE$2);
     }
-    
+
     /**
      * Sets ith "descriptiveNoteValue" element
      */
@@ -289,7 +290,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     {
         generatedSetterHelperImpl(descriptiveNoteValue, DESCRIPTIVENOTEVALUE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "descriptiveNoteValue" element
      */
@@ -303,7 +304,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "descriptiveNoteValue" element
      */
@@ -317,7 +318,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "descriptiveNoteValue" element
      */
@@ -329,7 +330,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             get_store().remove_element(DESCRIPTIVENOTEVALUE$2, i);
         }
     }
-    
+
     /**
      * Gets a List of "sourceDescriptiveNote" elements
      */
@@ -340,7 +341,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             @Override
             public org.lidoSchema.TextComplexType get(int i)
                 { return DescriptiveNoteComplexTypeImpl.this.getSourceDescriptiveNoteArray(i); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
             {
@@ -348,11 +349,11 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.setSourceDescriptiveNoteArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.TextComplexType o)
                 { DescriptiveNoteComplexTypeImpl.this.insertNewSourceDescriptiveNote(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.TextComplexType remove(int i)
             {
@@ -360,20 +361,20 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
                 DescriptiveNoteComplexTypeImpl.this.removeSourceDescriptiveNote(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return DescriptiveNoteComplexTypeImpl.this.sizeOfSourceDescriptiveNoteArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new SourceDescriptiveNoteList();
         }
     }
-    
+
     /**
      * Gets array of all "sourceDescriptiveNote" elements
      * @deprecated
@@ -391,7 +392,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return result;
         }
     }
-    
+
     /**
      * Gets ith "sourceDescriptiveNote" element
      */
@@ -409,7 +410,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Returns number of "sourceDescriptiveNote" element
      */
@@ -421,7 +422,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return get_store().count_elements(SOURCEDESCRIPTIVENOTE$4);
         }
     }
-    
+
     /**
      * Sets array of all "sourceDescriptiveNote" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -430,7 +431,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
         check_orphaned();
         arraySetterHelper(sourceDescriptiveNoteArray, SOURCEDESCRIPTIVENOTE$4);
     }
-    
+
     /**
      * Sets ith "sourceDescriptiveNote" element
      */
@@ -438,7 +439,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     {
         generatedSetterHelperImpl(sourceDescriptiveNote, SOURCEDESCRIPTIVENOTE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "sourceDescriptiveNote" element
      */
@@ -452,7 +453,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "sourceDescriptiveNote" element
      */
@@ -466,7 +467,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "sourceDescriptiveNote" element
      */
@@ -478,7 +479,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             get_store().remove_element(SOURCEDESCRIPTIVENOTE$4, i);
         }
     }
-    
+
     /**
      * Gets the "type" attribute
      */
@@ -496,7 +497,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "type" attribute
      */
@@ -510,7 +511,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * True if has "type" attribute
      */
@@ -522,7 +523,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return get_store().find_attribute_user(TYPE$6) != null;
         }
     }
-    
+
     /**
      * Sets the "type" attribute
      */
@@ -540,7 +541,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             target.setStringValue(type);
         }
     }
-    
+
     /**
      * Sets (as xml) the "type" attribute
      */
@@ -558,7 +559,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             target.set(type);
         }
     }
-    
+
     /**
      * Unsets the "type" attribute
      */
@@ -570,7 +571,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             get_store().remove_attribute(TYPE$6);
         }
     }
-    
+
     /**
      * Gets the "sortorder" attribute
      */
@@ -588,7 +589,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target.getBigIntegerValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "sortorder" attribute
      */
@@ -602,7 +603,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return target;
         }
     }
-    
+
     /**
      * True if has "sortorder" attribute
      */
@@ -614,11 +615,11 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             return get_store().find_attribute_user(SORTORDER$8) != null;
         }
     }
-    
+
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {
@@ -632,7 +633,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             target.setBigIntegerValue(sortorder);
         }
     }
-    
+
     /**
      * Sets (as xml) the "sortorder" attribute
      */
@@ -650,7 +651,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
             target.set(sortorder);
         }
     }
-    
+
     /**
      * Unsets the "sortorder" attribute
      */

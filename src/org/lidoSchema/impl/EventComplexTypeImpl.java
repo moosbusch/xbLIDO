@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML eventComplexType(@http://www.lido-schema.org).
  *
@@ -14,42 +15,42 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.EventComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public EventComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName EVENTID$0 = 
+
+    private static final javax.xml.namespace.QName EVENTID$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventID");
-    private static final javax.xml.namespace.QName EVENTTYPE$2 = 
+    private static final javax.xml.namespace.QName EVENTTYPE$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventType");
-    private static final javax.xml.namespace.QName ROLEINEVENT$4 = 
+    private static final javax.xml.namespace.QName ROLEINEVENT$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "roleInEvent");
-    private static final javax.xml.namespace.QName EVENTNAME$6 = 
+    private static final javax.xml.namespace.QName EVENTNAME$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventName");
-    private static final javax.xml.namespace.QName EVENTACTOR$8 = 
+    private static final javax.xml.namespace.QName EVENTACTOR$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventActor");
-    private static final javax.xml.namespace.QName CULTURE$10 = 
+    private static final javax.xml.namespace.QName CULTURE$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "culture");
-    private static final javax.xml.namespace.QName EVENTDATE$12 = 
+    private static final javax.xml.namespace.QName EVENTDATE$12 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventDate");
-    private static final javax.xml.namespace.QName PERIODNAME$14 = 
+    private static final javax.xml.namespace.QName PERIODNAME$14 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "periodName");
-    private static final javax.xml.namespace.QName EVENTPLACE$16 = 
+    private static final javax.xml.namespace.QName EVENTPLACE$16 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventPlace");
-    private static final javax.xml.namespace.QName EVENTMETHOD$18 = 
+    private static final javax.xml.namespace.QName EVENTMETHOD$18 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventMethod");
-    private static final javax.xml.namespace.QName EVENTMATERIALSTECH$20 = 
+    private static final javax.xml.namespace.QName EVENTMATERIALSTECH$20 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventMaterialsTech");
-    private static final javax.xml.namespace.QName THINGPRESENT$22 = 
+    private static final javax.xml.namespace.QName THINGPRESENT$22 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "thingPresent");
-    private static final javax.xml.namespace.QName RELATEDEVENTSET$24 = 
+    private static final javax.xml.namespace.QName RELATEDEVENTSET$24 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "relatedEventSet");
-    private static final javax.xml.namespace.QName EVENTDESCRIPTIONSET$26 = 
+    private static final javax.xml.namespace.QName EVENTDESCRIPTIONSET$26 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "eventDescriptionSet");
-    
-    
+
+
     /**
      * Gets a List of "eventID" elements
      */
@@ -60,7 +61,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.IdentifierComplexType get(int i)
                 { return EventComplexTypeImpl.this.getEventIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType set(int i, org.lidoSchema.IdentifierComplexType o)
             {
@@ -68,11 +69,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.IdentifierComplexType o)
                 { EventComplexTypeImpl.this.insertNewEventID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.IdentifierComplexType remove(int i)
             {
@@ -80,20 +81,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventIDList();
         }
     }
-    
+
     /**
      * Gets array of all "eventID" elements
      * @deprecated
@@ -111,7 +112,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventID" element
      */
@@ -129,7 +130,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventID" element
      */
@@ -141,7 +142,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTID$0);
         }
     }
-    
+
     /**
      * Sets array of all "eventID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -150,7 +151,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventIDArray, EVENTID$0);
     }
-    
+
     /**
      * Sets ith "eventID" element
      */
@@ -158,7 +159,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventID, EVENTID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventID" element
      */
@@ -172,7 +173,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventID" element
      */
@@ -186,7 +187,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventID" element
      */
@@ -198,7 +199,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTID$0, i);
         }
     }
-    
+
     /**
      * Gets the "eventType" element
      */
@@ -216,7 +217,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Sets the "eventType" element
      */
@@ -224,7 +225,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventType, EVENTTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "eventType" element
      */
@@ -238,7 +239,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Gets a List of "roleInEvent" elements
      */
@@ -249,7 +250,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.ConceptComplexType get(int i)
                 { return EventComplexTypeImpl.this.getRoleInEventArray(i); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType set(int i, org.lidoSchema.ConceptComplexType o)
             {
@@ -257,11 +258,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setRoleInEventArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ConceptComplexType o)
                 { EventComplexTypeImpl.this.insertNewRoleInEvent(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType remove(int i)
             {
@@ -269,20 +270,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeRoleInEvent(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfRoleInEventArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RoleInEventList();
         }
     }
-    
+
     /**
      * Gets array of all "roleInEvent" elements
      * @deprecated
@@ -300,7 +301,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "roleInEvent" element
      */
@@ -318,7 +319,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "roleInEvent" element
      */
@@ -330,7 +331,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(ROLEINEVENT$4);
         }
     }
-    
+
     /**
      * Sets array of all "roleInEvent" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -339,7 +340,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(roleInEventArray, ROLEINEVENT$4);
     }
-    
+
     /**
      * Sets ith "roleInEvent" element
      */
@@ -347,7 +348,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(roleInEvent, ROLEINEVENT$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "roleInEvent" element
      */
@@ -361,7 +362,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "roleInEvent" element
      */
@@ -375,7 +376,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "roleInEvent" element
      */
@@ -387,7 +388,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(ROLEINEVENT$4, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventName" elements
      */
@@ -398,7 +399,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.AppellationComplexType get(int i)
                 { return EventComplexTypeImpl.this.getEventNameArray(i); }
-            
+
             @Override
             public org.lidoSchema.AppellationComplexType set(int i, org.lidoSchema.AppellationComplexType o)
             {
@@ -406,11 +407,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventNameArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.AppellationComplexType o)
                 { EventComplexTypeImpl.this.insertNewEventName(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.AppellationComplexType remove(int i)
             {
@@ -418,20 +419,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventName(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventNameArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventNameList();
         }
     }
-    
+
     /**
      * Gets array of all "eventName" elements
      * @deprecated
@@ -449,7 +450,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventName" element
      */
@@ -467,7 +468,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventName" element
      */
@@ -479,7 +480,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTNAME$6);
         }
     }
-    
+
     /**
      * Sets array of all "eventName" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -488,7 +489,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventNameArray, EVENTNAME$6);
     }
-    
+
     /**
      * Sets ith "eventName" element
      */
@@ -496,7 +497,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventName, EVENTNAME$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventName" element
      */
@@ -510,7 +511,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventName" element
      */
@@ -524,7 +525,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventName" element
      */
@@ -536,7 +537,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTNAME$6, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventActor" elements
      */
@@ -547,7 +548,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.EventActor get(int i)
                 { return EventComplexTypeImpl.this.getEventActorArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventActor set(int i, org.lidoSchema.EventComplexType.EventActor o)
             {
@@ -555,11 +556,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventActorArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.EventActor o)
                 { EventComplexTypeImpl.this.insertNewEventActor(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventActor remove(int i)
             {
@@ -567,20 +568,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventActor(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventActorArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventActorList();
         }
     }
-    
+
     /**
      * Gets array of all "eventActor" elements
      * @deprecated
@@ -598,7 +599,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventActor" element
      */
@@ -616,7 +617,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventActor" element
      */
@@ -628,7 +629,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTACTOR$8);
         }
     }
-    
+
     /**
      * Sets array of all "eventActor" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -637,7 +638,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventActorArray, EVENTACTOR$8);
     }
-    
+
     /**
      * Sets ith "eventActor" element
      */
@@ -645,7 +646,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventActor, EVENTACTOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventActor" element
      */
@@ -659,7 +660,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventActor" element
      */
@@ -673,7 +674,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventActor" element
      */
@@ -685,7 +686,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTACTOR$8, i);
         }
     }
-    
+
     /**
      * Gets a List of "culture" elements
      */
@@ -696,7 +697,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.Culture get(int i)
                 { return EventComplexTypeImpl.this.getCultureArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.Culture set(int i, org.lidoSchema.EventComplexType.Culture o)
             {
@@ -704,11 +705,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setCultureArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.Culture o)
                 { EventComplexTypeImpl.this.insertNewCulture(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.Culture remove(int i)
             {
@@ -716,20 +717,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeCulture(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfCultureArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new CultureList();
         }
     }
-    
+
     /**
      * Gets array of all "culture" elements
      * @deprecated
@@ -747,7 +748,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "culture" element
      */
@@ -765,7 +766,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "culture" element
      */
@@ -777,7 +778,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(CULTURE$10);
         }
     }
-    
+
     /**
      * Sets array of all "culture" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -786,7 +787,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(cultureArray, CULTURE$10);
     }
-    
+
     /**
      * Sets ith "culture" element
      */
@@ -794,7 +795,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(culture, CULTURE$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "culture" element
      */
@@ -808,7 +809,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "culture" element
      */
@@ -822,7 +823,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "culture" element
      */
@@ -834,7 +835,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(CULTURE$10, i);
         }
     }
-    
+
     /**
      * Gets the "eventDate" element
      */
@@ -852,7 +853,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * True if has "eventDate" element
      */
@@ -864,7 +865,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTDATE$12) != 0;
         }
     }
-    
+
     /**
      * Sets the "eventDate" element
      */
@@ -872,7 +873,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventDate, EVENTDATE$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "eventDate" element
      */
@@ -886,7 +887,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Unsets the "eventDate" element
      */
@@ -898,7 +899,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTDATE$12, 0);
         }
     }
-    
+
     /**
      * Gets a List of "periodName" elements
      */
@@ -909,7 +910,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.PeriodName get(int i)
                 { return EventComplexTypeImpl.this.getPeriodNameArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.PeriodName set(int i, org.lidoSchema.EventComplexType.PeriodName o)
             {
@@ -917,11 +918,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setPeriodNameArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.PeriodName o)
                 { EventComplexTypeImpl.this.insertNewPeriodName(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.PeriodName remove(int i)
             {
@@ -929,20 +930,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removePeriodName(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfPeriodNameArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new PeriodNameList();
         }
     }
-    
+
     /**
      * Gets array of all "periodName" elements
      * @deprecated
@@ -960,7 +961,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "periodName" element
      */
@@ -978,7 +979,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "periodName" element
      */
@@ -990,7 +991,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(PERIODNAME$14);
         }
     }
-    
+
     /**
      * Sets array of all "periodName" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -999,7 +1000,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(periodNameArray, PERIODNAME$14);
     }
-    
+
     /**
      * Sets ith "periodName" element
      */
@@ -1007,7 +1008,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(periodName, PERIODNAME$14, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "periodName" element
      */
@@ -1021,7 +1022,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "periodName" element
      */
@@ -1035,7 +1036,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "periodName" element
      */
@@ -1047,7 +1048,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(PERIODNAME$14, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventPlace" elements
      */
@@ -1058,7 +1059,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.EventPlace get(int i)
                 { return EventComplexTypeImpl.this.getEventPlaceArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventPlace set(int i, org.lidoSchema.EventComplexType.EventPlace o)
             {
@@ -1066,11 +1067,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventPlaceArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.EventPlace o)
                 { EventComplexTypeImpl.this.insertNewEventPlace(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventPlace remove(int i)
             {
@@ -1078,20 +1079,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventPlace(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventPlaceArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventPlaceList();
         }
     }
-    
+
     /**
      * Gets array of all "eventPlace" elements
      * @deprecated
@@ -1109,7 +1110,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventPlace" element
      */
@@ -1127,7 +1128,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventPlace" element
      */
@@ -1139,7 +1140,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTPLACE$16);
         }
     }
-    
+
     /**
      * Sets array of all "eventPlace" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1148,7 +1149,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventPlaceArray, EVENTPLACE$16);
     }
-    
+
     /**
      * Sets ith "eventPlace" element
      */
@@ -1156,7 +1157,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventPlace, EVENTPLACE$16, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventPlace" element
      */
@@ -1170,7 +1171,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventPlace" element
      */
@@ -1184,7 +1185,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventPlace" element
      */
@@ -1196,7 +1197,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTPLACE$16, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventMethod" elements
      */
@@ -1207,7 +1208,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.EventMethod get(int i)
                 { return EventComplexTypeImpl.this.getEventMethodArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventMethod set(int i, org.lidoSchema.EventComplexType.EventMethod o)
             {
@@ -1215,11 +1216,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventMethodArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.EventMethod o)
                 { EventComplexTypeImpl.this.insertNewEventMethod(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventMethod remove(int i)
             {
@@ -1227,20 +1228,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventMethod(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventMethodArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventMethodList();
         }
     }
-    
+
     /**
      * Gets array of all "eventMethod" elements
      * @deprecated
@@ -1258,7 +1259,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventMethod" element
      */
@@ -1276,7 +1277,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventMethod" element
      */
@@ -1288,7 +1289,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTMETHOD$18);
         }
     }
-    
+
     /**
      * Sets array of all "eventMethod" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1297,7 +1298,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventMethodArray, EVENTMETHOD$18);
     }
-    
+
     /**
      * Sets ith "eventMethod" element
      */
@@ -1305,7 +1306,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventMethod, EVENTMETHOD$18, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventMethod" element
      */
@@ -1319,7 +1320,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventMethod" element
      */
@@ -1333,7 +1334,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventMethod" element
      */
@@ -1345,7 +1346,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTMETHOD$18, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventMaterialsTech" elements
      */
@@ -1356,7 +1357,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.EventMaterialsTech get(int i)
                 { return EventComplexTypeImpl.this.getEventMaterialsTechArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventMaterialsTech set(int i, org.lidoSchema.EventComplexType.EventMaterialsTech o)
             {
@@ -1364,11 +1365,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventMaterialsTechArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.EventMaterialsTech o)
                 { EventComplexTypeImpl.this.insertNewEventMaterialsTech(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.EventMaterialsTech remove(int i)
             {
@@ -1376,20 +1377,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventMaterialsTech(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventMaterialsTechArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventMaterialsTechList();
         }
     }
-    
+
     /**
      * Gets array of all "eventMaterialsTech" elements
      * @deprecated
@@ -1407,7 +1408,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventMaterialsTech" element
      */
@@ -1425,7 +1426,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventMaterialsTech" element
      */
@@ -1437,7 +1438,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTMATERIALSTECH$20);
         }
     }
-    
+
     /**
      * Sets array of all "eventMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1446,7 +1447,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventMaterialsTechArray, EVENTMATERIALSTECH$20);
     }
-    
+
     /**
      * Sets ith "eventMaterialsTech" element
      */
@@ -1454,7 +1455,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventMaterialsTech, EVENTMATERIALSTECH$20, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventMaterialsTech" element
      */
@@ -1468,7 +1469,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventMaterialsTech" element
      */
@@ -1482,7 +1483,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventMaterialsTech" element
      */
@@ -1494,7 +1495,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(EVENTMATERIALSTECH$20, i);
         }
     }
-    
+
     /**
      * Gets a List of "thingPresent" elements
      */
@@ -1505,7 +1506,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.ThingPresent get(int i)
                 { return EventComplexTypeImpl.this.getThingPresentArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.ThingPresent set(int i, org.lidoSchema.EventComplexType.ThingPresent o)
             {
@@ -1513,11 +1514,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setThingPresentArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.ThingPresent o)
                 { EventComplexTypeImpl.this.insertNewThingPresent(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.ThingPresent remove(int i)
             {
@@ -1525,20 +1526,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeThingPresent(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfThingPresentArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ThingPresentList();
         }
     }
-    
+
     /**
      * Gets array of all "thingPresent" elements
      * @deprecated
@@ -1556,7 +1557,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "thingPresent" element
      */
@@ -1574,7 +1575,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "thingPresent" element
      */
@@ -1586,7 +1587,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(THINGPRESENT$22);
         }
     }
-    
+
     /**
      * Sets array of all "thingPresent" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1595,7 +1596,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(thingPresentArray, THINGPRESENT$22);
     }
-    
+
     /**
      * Sets ith "thingPresent" element
      */
@@ -1603,7 +1604,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(thingPresent, THINGPRESENT$22, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "thingPresent" element
      */
@@ -1617,7 +1618,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "thingPresent" element
      */
@@ -1631,7 +1632,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "thingPresent" element
      */
@@ -1643,7 +1644,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(THINGPRESENT$22, i);
         }
     }
-    
+
     /**
      * Gets a List of "relatedEventSet" elements
      */
@@ -1654,7 +1655,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.EventComplexType.RelatedEventSet get(int i)
                 { return EventComplexTypeImpl.this.getRelatedEventSetArray(i); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.RelatedEventSet set(int i, org.lidoSchema.EventComplexType.RelatedEventSet o)
             {
@@ -1662,11 +1663,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setRelatedEventSetArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.EventComplexType.RelatedEventSet o)
                 { EventComplexTypeImpl.this.insertNewRelatedEventSet(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.EventComplexType.RelatedEventSet remove(int i)
             {
@@ -1674,20 +1675,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeRelatedEventSet(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfRelatedEventSetArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RelatedEventSetList();
         }
     }
-    
+
     /**
      * Gets array of all "relatedEventSet" elements
      * @deprecated
@@ -1705,7 +1706,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "relatedEventSet" element
      */
@@ -1723,7 +1724,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "relatedEventSet" element
      */
@@ -1735,7 +1736,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(RELATEDEVENTSET$24);
         }
     }
-    
+
     /**
      * Sets array of all "relatedEventSet" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1744,7 +1745,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(relatedEventSetArray, RELATEDEVENTSET$24);
     }
-    
+
     /**
      * Sets ith "relatedEventSet" element
      */
@@ -1752,7 +1753,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(relatedEventSet, RELATEDEVENTSET$24, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "relatedEventSet" element
      */
@@ -1766,7 +1767,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "relatedEventSet" element
      */
@@ -1780,7 +1781,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "relatedEventSet" element
      */
@@ -1792,7 +1793,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             get_store().remove_element(RELATEDEVENTSET$24, i);
         }
     }
-    
+
     /**
      * Gets a List of "eventDescriptionSet" elements
      */
@@ -1803,7 +1804,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             @Override
             public org.lidoSchema.DescriptiveNoteComplexType get(int i)
                 { return EventComplexTypeImpl.this.getEventDescriptionSetArray(i); }
-            
+
             @Override
             public org.lidoSchema.DescriptiveNoteComplexType set(int i, org.lidoSchema.DescriptiveNoteComplexType o)
             {
@@ -1811,11 +1812,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.setEventDescriptionSetArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.DescriptiveNoteComplexType o)
                 { EventComplexTypeImpl.this.insertNewEventDescriptionSet(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.DescriptiveNoteComplexType remove(int i)
             {
@@ -1823,20 +1824,20 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 EventComplexTypeImpl.this.removeEventDescriptionSet(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return EventComplexTypeImpl.this.sizeOfEventDescriptionSetArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new EventDescriptionSetList();
         }
     }
-    
+
     /**
      * Gets array of all "eventDescriptionSet" elements
      * @deprecated
@@ -1854,7 +1855,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return result;
         }
     }
-    
+
     /**
      * Gets ith "eventDescriptionSet" element
      */
@@ -1872,7 +1873,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Returns number of "eventDescriptionSet" element
      */
@@ -1884,7 +1885,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return get_store().count_elements(EVENTDESCRIPTIONSET$26);
         }
     }
-    
+
     /**
      * Sets array of all "eventDescriptionSet" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1893,7 +1894,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         check_orphaned();
         arraySetterHelper(eventDescriptionSetArray, EVENTDESCRIPTIONSET$26);
     }
-    
+
     /**
      * Sets ith "eventDescriptionSet" element
      */
@@ -1901,7 +1902,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(eventDescriptionSet, EVENTDESCRIPTIONSET$26, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "eventDescriptionSet" element
      */
@@ -1915,7 +1916,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "eventDescriptionSet" element
      */
@@ -1929,7 +1930,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "eventDescriptionSet" element
      */
@@ -1949,16 +1950,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class EventActorImpl extends org.lidoSchema.impl.ActorInRoleSetComplexTypeImpl implements org.lidoSchema.EventComplexType.EventActor
     {
         private static final long serialVersionUID = 1L;
-        
+
         public EventActorImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -1976,7 +1977,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -1990,7 +1991,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2002,11 +2003,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2020,7 +2021,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2038,7 +2039,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2059,16 +2060,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class CultureImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.EventComplexType.Culture
     {
         private static final long serialVersionUID = 1L;
-        
+
         public CultureImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2086,7 +2087,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2100,7 +2101,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2112,11 +2113,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2130,7 +2131,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2148,7 +2149,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2169,18 +2170,18 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class PeriodNameImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.EventComplexType.PeriodName
     {
         private static final long serialVersionUID = 1L;
-        
+
         public PeriodNameImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName TYPE$0 = 
+
+        private static final javax.xml.namespace.QName TYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$2 = 
+        private static final javax.xml.namespace.QName SORTORDER$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "type" attribute
          */
@@ -2198,7 +2199,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -2212,7 +2213,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -2224,7 +2225,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(TYPE$0) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -2242,7 +2243,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -2260,7 +2261,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -2272,7 +2273,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 get_store().remove_attribute(TYPE$0);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2290,7 +2291,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2304,7 +2305,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2316,11 +2317,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$2) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2334,7 +2335,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2352,7 +2353,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2373,18 +2374,18 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class EventPlaceImpl extends org.lidoSchema.impl.PlaceSetComplexTypeImpl implements org.lidoSchema.EventComplexType.EventPlace
     {
         private static final long serialVersionUID = 1L;
-        
+
         public EventPlaceImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName TYPE$0 = 
+
+        private static final javax.xml.namespace.QName TYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$2 = 
+        private static final javax.xml.namespace.QName SORTORDER$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "type" attribute
          */
@@ -2402,7 +2403,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -2416,7 +2417,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -2428,7 +2429,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(TYPE$0) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -2446,7 +2447,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -2464,7 +2465,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -2476,7 +2477,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 get_store().remove_attribute(TYPE$0);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2494,7 +2495,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2508,7 +2509,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2520,11 +2521,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$2) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2538,7 +2539,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2556,7 +2557,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2577,16 +2578,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class EventMethodImpl extends org.lidoSchema.impl.ConceptComplexTypeImpl implements org.lidoSchema.EventComplexType.EventMethod
     {
         private static final long serialVersionUID = 1L;
-        
+
         public EventMethodImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2604,7 +2605,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2618,7 +2619,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2630,11 +2631,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2648,7 +2649,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2666,7 +2667,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2687,16 +2688,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class EventMaterialsTechImpl extends org.lidoSchema.impl.MaterialsTechSetComplexTypeImpl implements org.lidoSchema.EventComplexType.EventMaterialsTech
     {
         private static final long serialVersionUID = 1L;
-        
+
         public EventMaterialsTechImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2714,7 +2715,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2728,7 +2729,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2740,11 +2741,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2758,7 +2759,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2776,7 +2777,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2797,16 +2798,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class ThingPresentImpl extends org.lidoSchema.impl.ObjectSetComplexTypeImpl implements org.lidoSchema.EventComplexType.ThingPresent
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ThingPresentImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2824,7 +2825,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2838,7 +2839,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2850,11 +2851,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2868,7 +2869,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2886,7 +2887,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2907,16 +2908,16 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class RelatedEventSetImpl extends org.lidoSchema.impl.RelatedEventSetComplexTypeImpl implements org.lidoSchema.EventComplexType.RelatedEventSet
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RelatedEventSetImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2934,7 +2935,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2948,7 +2949,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2960,11 +2961,11 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2978,7 +2979,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2996,7 +2997,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

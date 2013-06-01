@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one rightsWorkWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RightsWorkWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RightsWorkWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RIGHTSWORKWRAP$0 = 
+
+    private static final javax.xml.namespace.QName RIGHTSWORKWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsWorkWrap");
-    
-    
+
+
     /**
      * Gets the "rightsWorkWrap" element
      */
@@ -42,7 +43,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Sets the "rightsWorkWrap" element
      */
@@ -50,7 +51,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(rightsWorkWrap, RIGHTSWORKWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "rightsWorkWrap" element
      */
@@ -72,16 +73,16 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
     public static class RightsWorkWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RightsWorkWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName RIGHTSWORKSET$0 = 
+
+        private static final javax.xml.namespace.QName RIGHTSWORKSET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsWorkSet");
-        
-        
+
+
         /**
          * Gets a List of "rightsWorkSet" elements
          */
@@ -92,7 +93,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 @Override
                 public org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet get(int i)
                     { return RightsWorkWrapImpl.this.getRightsWorkSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet set(int i, org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet o)
                 {
@@ -100,11 +101,11 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     RightsWorkWrapImpl.this.setRightsWorkSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet o)
                     { RightsWorkWrapImpl.this.insertNewRightsWorkSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     RightsWorkWrapImpl.this.removeRightsWorkSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RightsWorkWrapImpl.this.sizeOfRightsWorkSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RightsWorkSetList();
             }
         }
-        
+
         /**
          * Gets array of all "rightsWorkSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "rightsWorkSet" element
          */
@@ -161,7 +162,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "rightsWorkSet" element
          */
@@ -173,7 +174,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().count_elements(RIGHTSWORKSET$0);
             }
         }
-        
+
         /**
          * Sets array of all "rightsWorkSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
             check_orphaned();
             arraySetterHelper(rightsWorkSetArray, RIGHTSWORKSET$0);
         }
-        
+
         /**
          * Sets ith "rightsWorkSet" element
          */
@@ -190,7 +191,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         {
             generatedSetterHelperImpl(rightsWorkSet, RIGHTSWORKSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "rightsWorkSet" element
          */
@@ -204,7 +205,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "rightsWorkSet" element
          */
@@ -218,7 +219,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "rightsWorkSet" element
          */
@@ -238,16 +239,16 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         public static class RightsWorkSetImpl extends org.lidoSchema.impl.RightsComplexTypeImpl implements org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public RightsWorkSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

@@ -5,6 +5,7 @@
 package org.moosbusch.museum.lido.inject.impl;
 
 import com.google.inject.Provides;
+import java.math.BigInteger;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyDocument;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyType;
 import net.opengis.gml.AbstractContinuousCoverageType;
@@ -552,9 +553,7 @@ import net.opengis.gml.OperationMethodDocument;
 import net.opengis.gml.OperationMethodRefDocument;
 import net.opengis.gml.OperationMethodRefType;
 import net.opengis.gml.OperationMethodType;
-import net.opengis.gml.OperationParameterBaseType;
 import net.opengis.gml.OperationParameterDocument;
-import net.opengis.gml.OperationParameterGroupBaseType;
 import net.opengis.gml.OperationParameterGroupDocument;
 import net.opengis.gml.OperationParameterGroupRefDocument;
 import net.opengis.gml.OperationParameterGroupRefType;
@@ -613,7 +612,6 @@ import net.opengis.gml.PosDocument;
 import net.opengis.gml.PosListDocument;
 import net.opengis.gml.PositionDocument;
 import net.opengis.gml.PositionalAccuracyDocument;
-import net.opengis.gml.PrimeMeridianBaseType;
 import net.opengis.gml.PrimeMeridianDocument;
 import net.opengis.gml.PrimeMeridianRefDocument;
 import net.opengis.gml.PrimeMeridianRefType;
@@ -734,7 +732,6 @@ import net.opengis.gml.TemporalCSDocument;
 import net.opengis.gml.TemporalCSRefDocument;
 import net.opengis.gml.TemporalCSRefType;
 import net.opengis.gml.TemporalCSType;
-import net.opengis.gml.TemporalDatumBaseType;
 import net.opengis.gml.TemporalDatumDocument;
 import net.opengis.gml.TemporalDatumRefDocument;
 import net.opengis.gml.TemporalDatumRefType;
@@ -975,6 +972,7 @@ import org.moosbusch.museum.inject.annotation.Language;
 import org.moosbusch.museum.inject.annotation.RelatedEncoding;
 import org.moosbusch.museum.lido.document.Document;
 import org.moosbusch.museum.lido.document.impl.DocumentImpl;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 import org.moosbusch.museum.lido.inject.spi.AbstractLIDOModule;
 import org.w3.x1999.xlink.ActuateAttribute;
 import org.w3.x1999.xlink.ActuateType;
@@ -1037,6 +1035,9 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
                 getLanguage());
         binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(
                 getRelatedEncoding());
+        binder().bind(BigInteger.class).annotatedWith(SortOrder.class).toInstance(
+                BigInteger.ZERO);
+        binder().bind(BigInteger.class).toInstance(BigInteger.ZERO);
     }
 
     @Override
@@ -1047,6 +1048,382 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public Document<? extends LIDOObjectFactory> createDocument() {
         return new DocumentImpl();
+    }
+
+//    @Provides
+//    @Override
+//    public TemporalDatumBaseType createTemporalDatumBaseType() {
+//        TemporalDatumBaseType result = TemporalDatumBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public PrimeMeridianBaseType createPrimeMeridianBaseType() {
+//        PrimeMeridianBaseType result = PrimeMeridianBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public OperationParameterGroupBaseType createOperationParameterGroupBaseType() {
+//        OperationParameterGroupBaseType result = OperationParameterGroupBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public OperationParameterBaseType createOperationParameterBaseType() {
+//        OperationParameterBaseType result = OperationParameterBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public OperationMethodBaseType createOperationMethodBaseType() {
+//        OperationMethodBaseType result = OperationMethodBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public EllipsoidBaseType createEllipsoidBaseType() {
+//        EllipsoidBaseType result = EllipsoidBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType() {
+//        CoordinateSystemAxisBaseType result = CoordinateSystemAxisBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public BoundedFeatureType createBoundedFeatureType() {
+//        BoundedFeatureType result = BoundedFeatureType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType() {
+//        AbstractTopoPrimitiveType result = AbstractTopoPrimitiveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTopologyType createAbstractTopologyType() {
+//        AbstractTopologyType result = AbstractTopologyType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeComplexType createAbstractTimeComplexType() {
+//        AbstractTimeComplexType result = AbstractTimeComplexType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType() {
+//        AbstractTimeGeometricPrimitiveType result = AbstractTimeGeometricPrimitiveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeObjectType createAbstractTimeObjectType() {
+//        AbstractTimeObjectType result = AbstractTimeObjectType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimePrimitiveType createAbstractTimePrimitiveType() {
+//        AbstractTimePrimitiveType result = AbstractTimePrimitiveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType() {
+//        AbstractTimeReferenceSystemType result = AbstractTimeReferenceSystemType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeSliceType createAbstractTimeSliceType() {
+//        AbstractTimeSliceType result = AbstractTimeSliceType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType() {
+//        AbstractTimeTopologyPrimitiveType result = AbstractTimeTopologyPrimitiveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractStyleType createAbstractStyleType() {
+//        AbstractStyleType result = AbstractStyleType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractSurfacePatchType createAbstractSurfacePatchType() {
+//        AbstractSurfacePatchType result = AbstractSurfacePatchType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractContinuousCoverageType createAbstractContinuousCoverageType() {
+//        AbstractContinuousCoverageType result = AbstractContinuousCoverageType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType() {
+//        AbstractCoordinateOperationBaseType result = AbstractCoordinateOperationBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCoordinateOperationType createAbstractCoordinateOperationType() {
+//        AbstractCoordinateOperationType result = AbstractCoordinateOperationType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType() {
+//        AbstractCoordinateSystemBaseType result = AbstractCoordinateSystemBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCoordinateSystemType createAbstractCoordinateSystemType() {
+//        AbstractCoordinateSystemType result = AbstractCoordinateSystemType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCoverageType createAbstractCoverageType() {
+//        AbstractCoverageType result = AbstractCoverageType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCurveSegmentType createAbstractCurveSegmentType() {
+//        AbstractCurveSegmentType result = AbstractCurveSegmentType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractCurveType createAbstractCurveType() {
+//        AbstractCurveType result = AbstractCurveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractDatumBaseType createAbstractDatumBaseType() {
+//        AbstractDatumBaseType result = AbstractDatumBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractDatumType createAbstractDatumType() {
+//        AbstractDatumType result = AbstractDatumType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType() {
+//        AbstractDiscreteCoverageType result = AbstractDiscreteCoverageType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractFeatureCollectionType createAbstractFeatureCollectionType() {
+//        AbstractFeatureCollectionType result = AbstractFeatureCollectionType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractFeatureType createAbstractFeatureType() {
+//        AbstractFeatureType result = AbstractFeatureType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeneralConversionType createAbstractGeneralConversionType() {
+//        AbstractGeneralConversionType result = AbstractGeneralConversionType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType() {
+//        AbstractGeneralDerivedCRSType result = AbstractGeneralDerivedCRSType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType() {
+//        AbstractGeneralOperationParameterType result =
+//                AbstractGeneralOperationParameterType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType() {
+//        AbstractGeneralParameterValueType result = AbstractGeneralParameterValueType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeneralTransformationType createAbstractGeneralTransformationType() {
+//        AbstractGeneralTransformationType result = AbstractGeneralTransformationType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeometricAggregateType createAbstractGeometricAggregateType() {
+//        AbstractGeometricAggregateType result = AbstractGeometricAggregateType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType() {
+//        AbstractGeometricPrimitiveType result = AbstractGeometricPrimitiveType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGeometryType createAbstractGeometryType() {
+//        AbstractGeometryType result = AbstractGeometryType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractGMLType createAbstractGMLType() {
+//        AbstractGMLType result = AbstractGMLType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractMetaDataType createAbstractMetaDataType() {
+//        AbstractMetaDataType result = AbstractMetaDataType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType() {
+//        AbstractPositionalAccuracyType result = AbstractPositionalAccuracyType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+//
+//    @Provides
+//    @Override
+//    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType() {
+//        AbstractReferenceSystemBaseType result = AbstractReferenceSystemBaseType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public AbstractReferenceSystemType createAbstractReferenceSystemType() {
+//        AbstractReferenceSystemType result = AbstractReferenceSystemType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+//    @Provides
+//    @Override
+//    public AbstractRingType createAbstractRingType() {
+//        AbstractRingType result = AbstractRingType.Factory.newInstance();
+//        getObjectFactory().injectChildMembers(result);
+//        return result;
+//    }
+
+    @Override
+    public RepositorySetComplexType createRepositorySetComplexType() {
+        RepositorySetComplexType result = RepositorySetComplexType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
     }
 
     @Provides
@@ -1870,111 +2247,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public AbstractContinuousCoverageType createAbstractContinuousCoverageType() {
-        AbstractContinuousCoverageType result = AbstractContinuousCoverageType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType() {
-        AbstractCoordinateOperationBaseType result = AbstractCoordinateOperationBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCoordinateOperationType createAbstractCoordinateOperationType() {
-        AbstractCoordinateOperationType result = AbstractCoordinateOperationType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType() {
-        AbstractCoordinateSystemBaseType result = AbstractCoordinateSystemBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCoordinateSystemType createAbstractCoordinateSystemType() {
-        AbstractCoordinateSystemType result = AbstractCoordinateSystemType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCoverageType createAbstractCoverageType() {
-        AbstractCoverageType result = AbstractCoverageType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCurveSegmentType createAbstractCurveSegmentType() {
-        AbstractCurveSegmentType result = AbstractCurveSegmentType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractCurveType createAbstractCurveType() {
-        AbstractCurveType result = AbstractCurveType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractDatumBaseType createAbstractDatumBaseType() {
-        AbstractDatumBaseType result = AbstractDatumBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractDatumType createAbstractDatumType() {
-        AbstractDatumType result = AbstractDatumType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType() {
-        AbstractDiscreteCoverageType result = AbstractDiscreteCoverageType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractFeatureCollectionType createAbstractFeatureCollectionType() {
-        AbstractFeatureCollectionType result = AbstractFeatureCollectionType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractFeatureType createAbstractFeatureType() {
-        AbstractFeatureType result = AbstractFeatureType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeneralConversionType createAbstractGeneralConversionType() {
-        AbstractGeneralConversionType result = AbstractGeneralConversionType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType() {
-        AbstractGeneralDerivedCRSType result = AbstractGeneralDerivedCRSType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument() {
         AbstractGeneralOperationParameterRefDocument result =
                 AbstractGeneralOperationParameterRefDocument.Factory.newInstance();
@@ -1991,65 +2263,8 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType() {
-        AbstractGeneralOperationParameterType result =
-                AbstractGeneralOperationParameterType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType() {
-        AbstractGeneralParameterValueType result = AbstractGeneralParameterValueType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeneralTransformationType createAbstractGeneralTransformationType() {
-        AbstractGeneralTransformationType result = AbstractGeneralTransformationType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeometricAggregateType createAbstractGeometricAggregateType() {
-        AbstractGeometricAggregateType result = AbstractGeometricAggregateType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType() {
-        AbstractGeometricPrimitiveType result = AbstractGeometricPrimitiveType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGeometryType createAbstractGeometryType() {
-        AbstractGeometryType result = AbstractGeometryType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractGMLType createAbstractGMLType() {
-        AbstractGMLType result = AbstractGMLType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType() {
         AbstractGriddedSurfaceType result = AbstractGriddedSurfaceType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractMetaDataType createAbstractMetaDataType() {
-        AbstractMetaDataType result = AbstractMetaDataType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -2062,36 +2277,8 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType() {
-        AbstractPositionalAccuracyType result = AbstractPositionalAccuracyType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType() {
-        AbstractReferenceSystemBaseType result = AbstractReferenceSystemBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractReferenceSystemType createAbstractReferenceSystemType() {
-        AbstractReferenceSystemType result = AbstractReferenceSystemType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public AbstractRingPropertyType createAbstractRingPropertyType() {
         AbstractRingPropertyType result = AbstractRingPropertyType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractRingType createAbstractRingType() {
-        AbstractRingType result = AbstractRingType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -2104,85 +2291,8 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public AbstractStyleType createAbstractStyleType() {
-        AbstractStyleType result = AbstractStyleType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractSurfacePatchType createAbstractSurfacePatchType() {
-        AbstractSurfacePatchType result = AbstractSurfacePatchType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public AbstractSurfaceType createAbstractSurfaceType() {
         AbstractSurfaceType result = AbstractSurfaceType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeComplexType createAbstractTimeComplexType() {
-        AbstractTimeComplexType result = AbstractTimeComplexType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType() {
-        AbstractTimeGeometricPrimitiveType result = AbstractTimeGeometricPrimitiveType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeObjectType createAbstractTimeObjectType() {
-        AbstractTimeObjectType result = AbstractTimeObjectType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimePrimitiveType createAbstractTimePrimitiveType() {
-        AbstractTimePrimitiveType result = AbstractTimePrimitiveType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType() {
-        AbstractTimeReferenceSystemType result = AbstractTimeReferenceSystemType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeSliceType createAbstractTimeSliceType() {
-        AbstractTimeSliceType result = AbstractTimeSliceType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType() {
-        AbstractTimeTopologyPrimitiveType result = AbstractTimeTopologyPrimitiveType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTopologyType createAbstractTopologyType() {
-        AbstractTopologyType result = AbstractTopologyType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType() {
-        AbstractTopoPrimitiveType result = AbstractTopoPrimitiveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -2491,13 +2601,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public BoundedByDocument createBoundedByDocument() {
         BoundedByDocument result = BoundedByDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public BoundedFeatureType createBoundedFeatureType() {
-        BoundedFeatureType result = BoundedFeatureType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -3009,13 +3112,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public CoordinatesType createCoordinatesType() {
         CoordinatesType result = CoordinatesType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType() {
-        CoordinateSystemAxisBaseType result = CoordinateSystemAxisBaseType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -3856,13 +3952,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public EllipsoidalCSType createEllipsoidalCSType() {
         EllipsoidalCSType result = EllipsoidalCSType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public EllipsoidBaseType createEllipsoidBaseType() {
-        EllipsoidBaseType result = EllipsoidBaseType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -5625,13 +5714,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public OperationMethodBaseType createOperationMethodBaseType() {
-        OperationMethodBaseType result = OperationMethodBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public OperationMethodDocument createOperationMethodDocument() {
         OperationMethodDocument result = OperationMethodDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5660,22 +5742,8 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
-    public OperationParameterBaseType createOperationParameterBaseType() {
-        OperationParameterBaseType result = OperationParameterBaseType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
     public OperationParameterDocument createOperationParameterDocument() {
         OperationParameterDocument result = OperationParameterDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public OperationParameterGroupBaseType createOperationParameterGroupBaseType() {
-        OperationParameterGroupBaseType result = OperationParameterGroupBaseType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -6082,13 +6150,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public PosListDocument createPosListDocument() {
         PosListDocument result = PosListDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public PrimeMeridianBaseType createPrimeMeridianBaseType() {
-        PrimeMeridianBaseType result = PrimeMeridianBaseType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }
@@ -6931,13 +6992,6 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     @Provides
     public TemporalCSType createTemporalCSType() {
         TemporalCSType result = TemporalCSType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
-        return result;
-    }
-
-    @Provides
-    public TemporalDatumBaseType createTemporalDatumBaseType() {
-        TemporalDatumBaseType result = TemporalDatumBaseType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
         return result;
     }

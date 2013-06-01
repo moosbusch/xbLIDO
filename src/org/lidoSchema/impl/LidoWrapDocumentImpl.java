@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one lidoWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.LidoWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public LidoWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName LIDOWRAP$0 = 
+
+    private static final javax.xml.namespace.QName LIDOWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "lidoWrap");
-    
-    
+
+
     /**
      * Gets the "lidoWrap" element
      */
@@ -42,7 +43,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
             return target;
         }
     }
-    
+
     /**
      * Sets the "lidoWrap" element
      */
@@ -50,7 +51,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     {
         generatedSetterHelperImpl(lidoWrap, LIDOWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "lidoWrap" element
      */
@@ -72,18 +73,18 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public static class LidoWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.LidoWrapDocument.LidoWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public LidoWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName LIDO$0 = 
+
+        private static final javax.xml.namespace.QName LIDO$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "lido");
-        private static final javax.xml.namespace.QName RELATEDENCODING$2 = 
+        private static final javax.xml.namespace.QName RELATEDENCODING$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "relatedencoding");
-        
-        
+
+
         /**
          * Gets a List of "lido" elements
          */
@@ -94,7 +95,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 @Override
                 public org.lidoSchema.LidoWrapDocument.LidoWrap.Lido get(int i)
                     { return LidoWrapImpl.this.getLidoArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.LidoWrapDocument.LidoWrap.Lido set(int i, org.lidoSchema.LidoWrapDocument.LidoWrap.Lido o)
                 {
@@ -102,11 +103,11 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     LidoWrapImpl.this.setLidoArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.LidoWrapDocument.LidoWrap.Lido o)
                     { LidoWrapImpl.this.insertNewLido(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.LidoWrapDocument.LidoWrap.Lido remove(int i)
                 {
@@ -114,20 +115,20 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     LidoWrapImpl.this.removeLido(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return LidoWrapImpl.this.sizeOfLidoArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new LidoList();
             }
         }
-        
+
         /**
          * Gets array of all "lido" elements
          * @deprecated
@@ -145,7 +146,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "lido" element
          */
@@ -163,7 +164,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "lido" element
          */
@@ -175,7 +176,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().count_elements(LIDO$0);
             }
         }
-        
+
         /**
          * Sets array of all "lido" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -184,7 +185,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
             check_orphaned();
             arraySetterHelper(lidoArray, LIDO$0);
         }
-        
+
         /**
          * Sets ith "lido" element
          */
@@ -192,7 +193,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         {
             generatedSetterHelperImpl(lido, LIDO$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "lido" element
          */
@@ -206,7 +207,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "lido" element
          */
@@ -220,7 +221,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "lido" element
          */
@@ -232,7 +233,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 get_store().remove_element(LIDO$0, i);
             }
         }
-        
+
         /**
          * Gets the "relatedencoding" attribute
          */
@@ -250,7 +251,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "relatedencoding" attribute
          */
@@ -264,7 +265,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return target;
             }
         }
-        
+
         /**
          * True if has "relatedencoding" attribute
          */
@@ -276,7 +277,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 return get_store().find_attribute_user(RELATEDENCODING$2) != null;
             }
         }
-        
+
         /**
          * Sets the "relatedencoding" attribute
          */
@@ -294,7 +295,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.setStringValue(relatedencoding);
             }
         }
-        
+
         /**
          * Sets (as xml) the "relatedencoding" attribute
          */
@@ -312,7 +313,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                 target.set(relatedencoding);
             }
         }
-        
+
         /**
          * Unsets the "relatedencoding" attribute
          */
@@ -332,16 +333,16 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         public static class LidoImpl extends org.lidoSchema.impl.LidoComplexTypeImpl implements org.lidoSchema.LidoWrapDocument.LidoWrap.Lido
         {
             private static final long serialVersionUID = 1L;
-            
+
             public LidoImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -359,7 +360,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -373,7 +374,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -385,11 +386,11 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -403,7 +404,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -421,7 +422,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

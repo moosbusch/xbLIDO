@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one sortorder(@http://www.lido-schema.org) attribute.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.SortorderAttribute
 {
     private static final long serialVersionUID = 1L;
-    
+
     public SortorderAttributeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+    private static final javax.xml.namespace.QName SORTORDER$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-    
-    
+
+
     /**
      * Gets the "sortorder" attribute
      */
@@ -42,7 +43,7 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target.getBigIntegerValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "sortorder" attribute
      */
@@ -56,7 +57,7 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * True if has "sortorder" attribute
      */
@@ -68,11 +69,11 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
             return get_store().find_attribute_user(SORTORDER$0) != null;
         }
     }
-    
+
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {
@@ -86,7 +87,7 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
             target.setBigIntegerValue(sortorder);
         }
     }
-    
+
     /**
      * Sets (as xml) the "sortorder" attribute
      */
@@ -104,7 +105,7 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
             target.set(sortorder);
         }
     }
-    
+
     /**
      * Unsets the "sortorder" attribute
      */

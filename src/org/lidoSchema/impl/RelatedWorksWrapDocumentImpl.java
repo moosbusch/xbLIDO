@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one relatedWorksWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RelatedWorksWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RelatedWorksWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RELATEDWORKSWRAP$0 = 
+
+    private static final javax.xml.namespace.QName RELATEDWORKSWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "relatedWorksWrap");
-    
-    
+
+
     /**
      * Gets the "relatedWorksWrap" element
      */
@@ -42,7 +43,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Sets the "relatedWorksWrap" element
      */
@@ -50,7 +51,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "relatedWorksWrap" element
      */
@@ -72,16 +73,16 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     public static class RelatedWorksWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RelatedWorksWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName RELATEDWORKSET$0 = 
+
+        private static final javax.xml.namespace.QName RELATEDWORKSET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "relatedWorkSet");
-        
-        
+
+
         /**
          * Gets a List of "relatedWorkSet" elements
          */
@@ -92,7 +93,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 @Override
                 public org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet get(int i)
                     { return RelatedWorksWrapImpl.this.getRelatedWorkSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet set(int i, org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet o)
                 {
@@ -100,11 +101,11 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     RelatedWorksWrapImpl.this.setRelatedWorkSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet o)
                     { RelatedWorksWrapImpl.this.insertNewRelatedWorkSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     RelatedWorksWrapImpl.this.removeRelatedWorkSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return RelatedWorksWrapImpl.this.sizeOfRelatedWorkSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new RelatedWorkSetList();
             }
         }
-        
+
         /**
          * Gets array of all "relatedWorkSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "relatedWorkSet" element
          */
@@ -161,7 +162,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "relatedWorkSet" element
          */
@@ -173,7 +174,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return get_store().count_elements(RELATEDWORKSET$0);
             }
         }
-        
+
         /**
          * Sets array of all "relatedWorkSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             check_orphaned();
             arraySetterHelper(relatedWorkSetArray, RELATEDWORKSET$0);
         }
-        
+
         /**
          * Sets ith "relatedWorkSet" element
          */
@@ -190,7 +191,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         {
             generatedSetterHelperImpl(relatedWorkSet, RELATEDWORKSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "relatedWorkSet" element
          */
@@ -204,7 +205,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "relatedWorkSet" element
          */
@@ -218,7 +219,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "relatedWorkSet" element
          */
@@ -238,16 +239,16 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         public static class RelatedWorkSetImpl extends org.lidoSchema.impl.RelatedWorkSetComplexTypeImpl implements org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public RelatedWorkSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

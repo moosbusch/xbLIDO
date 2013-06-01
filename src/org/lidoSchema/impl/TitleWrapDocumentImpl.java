@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one titleWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.TitleWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public TitleWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName TITLEWRAP$0 = 
+
+    private static final javax.xml.namespace.QName TITLEWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "titleWrap");
-    
-    
+
+
     /**
      * Gets the "titleWrap" element
      */
@@ -42,7 +43,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             return target;
         }
     }
-    
+
     /**
      * Sets the "titleWrap" element
      */
@@ -50,7 +51,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     {
         generatedSetterHelperImpl(titleWrap, TITLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "titleWrap" element
      */
@@ -72,16 +73,16 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     public static class TitleWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.TitleWrapDocument.TitleWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public TitleWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName TITLESET$0 = 
+
+        private static final javax.xml.namespace.QName TITLESET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "titleSet");
-        
-        
+
+
         /**
          * Gets a List of "titleSet" elements
          */
@@ -92,7 +93,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 @Override
                 public org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet get(int i)
                     { return TitleWrapImpl.this.getTitleSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet set(int i, org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet o)
                 {
@@ -100,11 +101,11 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     TitleWrapImpl.this.setTitleSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet o)
                     { TitleWrapImpl.this.insertNewTitleSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     TitleWrapImpl.this.removeTitleSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return TitleWrapImpl.this.sizeOfTitleSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new TitleSetList();
             }
         }
-        
+
         /**
          * Gets array of all "titleSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "titleSet" element
          */
@@ -161,7 +162,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "titleSet" element
          */
@@ -173,7 +174,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return get_store().count_elements(TITLESET$0);
             }
         }
-        
+
         /**
          * Sets array of all "titleSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             check_orphaned();
             arraySetterHelper(titleSetArray, TITLESET$0);
         }
-        
+
         /**
          * Sets ith "titleSet" element
          */
@@ -190,7 +191,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         {
             generatedSetterHelperImpl(titleSet, TITLESET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "titleSet" element
          */
@@ -204,7 +205,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "titleSet" element
          */
@@ -218,7 +219,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "titleSet" element
          */
@@ -238,18 +239,18 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         public static class TitleSetImpl extends org.lidoSchema.impl.AppellationComplexTypeImpl implements org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public TitleSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName TYPE$0 = 
+
+            private static final javax.xml.namespace.QName TYPE$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-            private static final javax.xml.namespace.QName SORTORDER$2 = 
+            private static final javax.xml.namespace.QName SORTORDER$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "type" attribute
              */
@@ -267,7 +268,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "type" attribute
              */
@@ -281,7 +282,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target;
                 }
             }
-            
+
             /**
              * True if has "type" attribute
              */
@@ -293,7 +294,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return get_store().find_attribute_user(TYPE$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "type" attribute
              */
@@ -311,7 +312,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.setStringValue(type);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "type" attribute
              */
@@ -329,7 +330,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.set(type);
                 }
             }
-            
+
             /**
              * Unsets the "type" attribute
              */
@@ -341,7 +342,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     get_store().remove_attribute(TYPE$0);
                 }
             }
-            
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -359,7 +360,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -373,7 +374,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -385,11 +386,11 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     return get_store().find_attribute_user(SORTORDER$2) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -403,7 +404,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -421,7 +422,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

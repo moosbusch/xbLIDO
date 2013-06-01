@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML resourceSetComplexType(@http://www.lido-schema.org).
  *
@@ -14,32 +15,32 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ResourceSetComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ResourceSetComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RESOURCEID$0 = 
+
+    private static final javax.xml.namespace.QName RESOURCEID$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceID");
-    private static final javax.xml.namespace.QName RESOURCEREPRESENTATION$2 = 
+    private static final javax.xml.namespace.QName RESOURCEREPRESENTATION$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceRepresentation");
-    private static final javax.xml.namespace.QName RESOURCETYPE$4 = 
+    private static final javax.xml.namespace.QName RESOURCETYPE$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceType");
-    private static final javax.xml.namespace.QName RESOURCERELTYPE$6 = 
+    private static final javax.xml.namespace.QName RESOURCERELTYPE$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceRelType");
-    private static final javax.xml.namespace.QName RESOURCEPERSPECTIVE$8 = 
+    private static final javax.xml.namespace.QName RESOURCEPERSPECTIVE$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourcePerspective");
-    private static final javax.xml.namespace.QName RESOURCEDESCRIPTION$10 = 
+    private static final javax.xml.namespace.QName RESOURCEDESCRIPTION$10 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceDescription");
-    private static final javax.xml.namespace.QName RESOURCEDATETAKEN$12 = 
+    private static final javax.xml.namespace.QName RESOURCEDATETAKEN$12 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceDateTaken");
-    private static final javax.xml.namespace.QName RESOURCESOURCE$14 = 
+    private static final javax.xml.namespace.QName RESOURCESOURCE$14 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceSource");
-    private static final javax.xml.namespace.QName RIGHTSRESOURCE$16 = 
+    private static final javax.xml.namespace.QName RIGHTSRESOURCE$16 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "rightsResource");
-    
-    
+
+
     /**
      * Gets the "resourceID" element
      */
@@ -57,7 +58,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * True if has "resourceID" element
      */
@@ -69,7 +70,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCEID$0) != 0;
         }
     }
-    
+
     /**
      * Sets the "resourceID" element
      */
@@ -77,7 +78,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceID, RESOURCEID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "resourceID" element
      */
@@ -91,7 +92,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Unsets the "resourceID" element
      */
@@ -103,7 +104,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCEID$0, 0);
         }
     }
-    
+
     /**
      * Gets a List of "resourceRepresentation" elements
      */
@@ -114,7 +115,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceRepresentation get(int i)
                 { return ResourceSetComplexTypeImpl.this.getResourceRepresentationArray(i); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceRepresentation set(int i, org.lidoSchema.ResourceSetComplexType.ResourceRepresentation o)
             {
@@ -122,11 +123,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setResourceRepresentationArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ResourceSetComplexType.ResourceRepresentation o)
                 { ResourceSetComplexTypeImpl.this.insertNewResourceRepresentation(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceRepresentation remove(int i)
             {
@@ -134,20 +135,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeResourceRepresentation(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfResourceRepresentationArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ResourceRepresentationList();
         }
     }
-    
+
     /**
      * Gets array of all "resourceRepresentation" elements
      * @deprecated
@@ -165,7 +166,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "resourceRepresentation" element
      */
@@ -183,7 +184,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "resourceRepresentation" element
      */
@@ -195,7 +196,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCEREPRESENTATION$2);
         }
     }
-    
+
     /**
      * Sets array of all "resourceRepresentation" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -204,7 +205,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(resourceRepresentationArray, RESOURCEREPRESENTATION$2);
     }
-    
+
     /**
      * Sets ith "resourceRepresentation" element
      */
@@ -212,7 +213,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceRepresentation, RESOURCEREPRESENTATION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "resourceRepresentation" element
      */
@@ -226,7 +227,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "resourceRepresentation" element
      */
@@ -240,7 +241,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "resourceRepresentation" element
      */
@@ -252,7 +253,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCEREPRESENTATION$2, i);
         }
     }
-    
+
     /**
      * Gets the "resourceType" element
      */
@@ -270,7 +271,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * True if has "resourceType" element
      */
@@ -282,7 +283,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCETYPE$4) != 0;
         }
     }
-    
+
     /**
      * Sets the "resourceType" element
      */
@@ -290,7 +291,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceType, RESOURCETYPE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "resourceType" element
      */
@@ -304,7 +305,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Unsets the "resourceType" element
      */
@@ -316,7 +317,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCETYPE$4, 0);
         }
     }
-    
+
     /**
      * Gets a List of "resourceRelType" elements
      */
@@ -327,7 +328,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ConceptComplexType get(int i)
                 { return ResourceSetComplexTypeImpl.this.getResourceRelTypeArray(i); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType set(int i, org.lidoSchema.ConceptComplexType o)
             {
@@ -335,11 +336,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setResourceRelTypeArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ConceptComplexType o)
                 { ResourceSetComplexTypeImpl.this.insertNewResourceRelType(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType remove(int i)
             {
@@ -347,20 +348,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeResourceRelType(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfResourceRelTypeArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ResourceRelTypeList();
         }
     }
-    
+
     /**
      * Gets array of all "resourceRelType" elements
      * @deprecated
@@ -378,7 +379,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "resourceRelType" element
      */
@@ -396,7 +397,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "resourceRelType" element
      */
@@ -408,7 +409,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCERELTYPE$6);
         }
     }
-    
+
     /**
      * Sets array of all "resourceRelType" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -417,7 +418,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(resourceRelTypeArray, RESOURCERELTYPE$6);
     }
-    
+
     /**
      * Sets ith "resourceRelType" element
      */
@@ -425,7 +426,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceRelType, RESOURCERELTYPE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "resourceRelType" element
      */
@@ -439,7 +440,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "resourceRelType" element
      */
@@ -453,7 +454,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "resourceRelType" element
      */
@@ -465,7 +466,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCERELTYPE$6, i);
         }
     }
-    
+
     /**
      * Gets a List of "resourcePerspective" elements
      */
@@ -476,7 +477,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ConceptComplexType get(int i)
                 { return ResourceSetComplexTypeImpl.this.getResourcePerspectiveArray(i); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType set(int i, org.lidoSchema.ConceptComplexType o)
             {
@@ -484,11 +485,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setResourcePerspectiveArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ConceptComplexType o)
                 { ResourceSetComplexTypeImpl.this.insertNewResourcePerspective(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ConceptComplexType remove(int i)
             {
@@ -496,20 +497,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeResourcePerspective(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfResourcePerspectiveArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ResourcePerspectiveList();
         }
     }
-    
+
     /**
      * Gets array of all "resourcePerspective" elements
      * @deprecated
@@ -527,7 +528,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "resourcePerspective" element
      */
@@ -545,7 +546,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "resourcePerspective" element
      */
@@ -557,7 +558,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCEPERSPECTIVE$8);
         }
     }
-    
+
     /**
      * Sets array of all "resourcePerspective" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -566,7 +567,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(resourcePerspectiveArray, RESOURCEPERSPECTIVE$8);
     }
-    
+
     /**
      * Sets ith "resourcePerspective" element
      */
@@ -574,7 +575,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourcePerspective, RESOURCEPERSPECTIVE$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "resourcePerspective" element
      */
@@ -588,7 +589,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "resourcePerspective" element
      */
@@ -602,7 +603,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "resourcePerspective" element
      */
@@ -614,7 +615,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCEPERSPECTIVE$8, i);
         }
     }
-    
+
     /**
      * Gets a List of "resourceDescription" elements
      */
@@ -625,7 +626,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceDescription get(int i)
                 { return ResourceSetComplexTypeImpl.this.getResourceDescriptionArray(i); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceDescription set(int i, org.lidoSchema.ResourceSetComplexType.ResourceDescription o)
             {
@@ -633,11 +634,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setResourceDescriptionArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ResourceSetComplexType.ResourceDescription o)
                 { ResourceSetComplexTypeImpl.this.insertNewResourceDescription(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceDescription remove(int i)
             {
@@ -645,20 +646,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeResourceDescription(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfResourceDescriptionArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ResourceDescriptionList();
         }
     }
-    
+
     /**
      * Gets array of all "resourceDescription" elements
      * @deprecated
@@ -676,7 +677,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "resourceDescription" element
      */
@@ -694,7 +695,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "resourceDescription" element
      */
@@ -706,7 +707,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCEDESCRIPTION$10);
         }
     }
-    
+
     /**
      * Sets array of all "resourceDescription" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -715,7 +716,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(resourceDescriptionArray, RESOURCEDESCRIPTION$10);
     }
-    
+
     /**
      * Sets ith "resourceDescription" element
      */
@@ -723,7 +724,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceDescription, RESOURCEDESCRIPTION$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "resourceDescription" element
      */
@@ -737,7 +738,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "resourceDescription" element
      */
@@ -751,7 +752,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "resourceDescription" element
      */
@@ -763,7 +764,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCEDESCRIPTION$10, i);
         }
     }
-    
+
     /**
      * Gets the "resourceDateTaken" element
      */
@@ -781,7 +782,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * True if has "resourceDateTaken" element
      */
@@ -793,7 +794,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCEDATETAKEN$12) != 0;
         }
     }
-    
+
     /**
      * Sets the "resourceDateTaken" element
      */
@@ -801,7 +802,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceDateTaken, RESOURCEDATETAKEN$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "resourceDateTaken" element
      */
@@ -815,7 +816,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Unsets the "resourceDateTaken" element
      */
@@ -827,7 +828,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCEDATETAKEN$12, 0);
         }
     }
-    
+
     /**
      * Gets a List of "resourceSource" elements
      */
@@ -838,7 +839,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceSource get(int i)
                 { return ResourceSetComplexTypeImpl.this.getResourceSourceArray(i); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceSource set(int i, org.lidoSchema.ResourceSetComplexType.ResourceSource o)
             {
@@ -846,11 +847,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setResourceSourceArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ResourceSetComplexType.ResourceSource o)
                 { ResourceSetComplexTypeImpl.this.insertNewResourceSource(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.ResourceSource remove(int i)
             {
@@ -858,20 +859,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeResourceSource(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfResourceSourceArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new ResourceSourceList();
         }
     }
-    
+
     /**
      * Gets array of all "resourceSource" elements
      * @deprecated
@@ -889,7 +890,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "resourceSource" element
      */
@@ -907,7 +908,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "resourceSource" element
      */
@@ -919,7 +920,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RESOURCESOURCE$14);
         }
     }
-    
+
     /**
      * Sets array of all "resourceSource" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -928,7 +929,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(resourceSourceArray, RESOURCESOURCE$14);
     }
-    
+
     /**
      * Sets ith "resourceSource" element
      */
@@ -936,7 +937,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(resourceSource, RESOURCESOURCE$14, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "resourceSource" element
      */
@@ -950,7 +951,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "resourceSource" element
      */
@@ -964,7 +965,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "resourceSource" element
      */
@@ -976,7 +977,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             get_store().remove_element(RESOURCESOURCE$14, i);
         }
     }
-    
+
     /**
      * Gets a List of "rightsResource" elements
      */
@@ -987,7 +988,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             @Override
             public org.lidoSchema.ResourceSetComplexType.RightsResource get(int i)
                 { return ResourceSetComplexTypeImpl.this.getRightsResourceArray(i); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.RightsResource set(int i, org.lidoSchema.ResourceSetComplexType.RightsResource o)
             {
@@ -995,11 +996,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.setRightsResourceArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.ResourceSetComplexType.RightsResource o)
                 { ResourceSetComplexTypeImpl.this.insertNewRightsResource(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.ResourceSetComplexType.RightsResource remove(int i)
             {
@@ -1007,20 +1008,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 ResourceSetComplexTypeImpl.this.removeRightsResource(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return ResourceSetComplexTypeImpl.this.sizeOfRightsResourceArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new RightsResourceList();
         }
     }
-    
+
     /**
      * Gets array of all "rightsResource" elements
      * @deprecated
@@ -1038,7 +1039,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return result;
         }
     }
-    
+
     /**
      * Gets ith "rightsResource" element
      */
@@ -1056,7 +1057,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Returns number of "rightsResource" element
      */
@@ -1068,7 +1069,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return get_store().count_elements(RIGHTSRESOURCE$16);
         }
     }
-    
+
     /**
      * Sets array of all "rightsResource" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -1077,7 +1078,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         check_orphaned();
         arraySetterHelper(rightsResourceArray, RIGHTSRESOURCE$16);
     }
-    
+
     /**
      * Sets ith "rightsResource" element
      */
@@ -1085,7 +1086,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     {
         generatedSetterHelperImpl(rightsResource, RIGHTSRESOURCE$16, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "rightsResource" element
      */
@@ -1099,7 +1100,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "rightsResource" element
      */
@@ -1113,7 +1114,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "rightsResource" element
      */
@@ -1133,20 +1134,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     public static class ResourceRepresentationImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ResourceSetComplexType.ResourceRepresentation
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ResourceRepresentationImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName LINKRESOURCE$0 = 
+
+        private static final javax.xml.namespace.QName LINKRESOURCE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "linkResource");
-        private static final javax.xml.namespace.QName RESOURCEMEASUREMENTSSET$2 = 
+        private static final javax.xml.namespace.QName RESOURCEMEASUREMENTSSET$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceMeasurementsSet");
-        private static final javax.xml.namespace.QName TYPE$4 = 
+        private static final javax.xml.namespace.QName TYPE$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        
-        
+
+
         /**
          * Gets the "linkResource" element
          */
@@ -1164,7 +1165,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Sets the "linkResource" element
          */
@@ -1172,7 +1173,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         {
             generatedSetterHelperImpl(linkResource, LINKRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
-        
+
         /**
          * Appends and returns a new empty "linkResource" element
          */
@@ -1186,7 +1187,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Gets a List of "resourceMeasurementsSet" elements
          */
@@ -1197,7 +1198,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 @Override
                 public org.lidoSchema.MeasurementsSetComplexType get(int i)
                     { return ResourceRepresentationImpl.this.getResourceMeasurementsSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.MeasurementsSetComplexType set(int i, org.lidoSchema.MeasurementsSetComplexType o)
                 {
@@ -1205,11 +1206,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     ResourceRepresentationImpl.this.setResourceMeasurementsSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.MeasurementsSetComplexType o)
                     { ResourceRepresentationImpl.this.insertNewResourceMeasurementsSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.MeasurementsSetComplexType remove(int i)
                 {
@@ -1217,20 +1218,20 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     ResourceRepresentationImpl.this.removeResourceMeasurementsSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return ResourceRepresentationImpl.this.sizeOfResourceMeasurementsSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new ResourceMeasurementsSetList();
             }
         }
-        
+
         /**
          * Gets array of all "resourceMeasurementsSet" elements
          * @deprecated
@@ -1248,7 +1249,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "resourceMeasurementsSet" element
          */
@@ -1266,7 +1267,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "resourceMeasurementsSet" element
          */
@@ -1278,7 +1279,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().count_elements(RESOURCEMEASUREMENTSSET$2);
             }
         }
-        
+
         /**
          * Sets array of all "resourceMeasurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -1287,7 +1288,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             check_orphaned();
             arraySetterHelper(resourceMeasurementsSetArray, RESOURCEMEASUREMENTSSET$2);
         }
-        
+
         /**
          * Sets ith "resourceMeasurementsSet" element
          */
@@ -1295,7 +1296,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         {
             generatedSetterHelperImpl(resourceMeasurementsSet, RESOURCEMEASUREMENTSSET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "resourceMeasurementsSet" element
          */
@@ -1309,7 +1310,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "resourceMeasurementsSet" element
          */
@@ -1323,7 +1324,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "resourceMeasurementsSet" element
          */
@@ -1335,7 +1336,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_element(RESOURCEMEASUREMENTSSET$2, i);
             }
         }
-        
+
         /**
          * Gets the "type" attribute
          */
@@ -1353,7 +1354,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -1367,7 +1368,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -1379,7 +1380,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(TYPE$4) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -1397,7 +1398,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -1415,7 +1416,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -1435,31 +1436,31 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         public static class LinkResourceImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ResourceSetComplexType.ResourceRepresentation.LinkResource
         {
             private static final long serialVersionUID = 1L;
-            
+
             public LinkResourceImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType, true);
             }
-            
+
             protected LinkResourceImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
             {
                 super(sType, b);
             }
-            
-            private static final javax.xml.namespace.QName PREF$0 = 
+
+            private static final javax.xml.namespace.QName PREF$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "pref");
-            private static final javax.xml.namespace.QName FORMATRESOURCE$2 = 
+            private static final javax.xml.namespace.QName FORMATRESOURCE$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "formatResource");
-            private static final javax.xml.namespace.QName LANG$4 = 
+            private static final javax.xml.namespace.QName LANG$4 =
                 new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-            private static final javax.xml.namespace.QName ENCODINGANALOG$6 = 
+            private static final javax.xml.namespace.QName ENCODINGANALOG$6 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-            private static final javax.xml.namespace.QName LABEL$8 = 
+            private static final javax.xml.namespace.QName LABEL$8 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-            private static final javax.xml.namespace.QName CODECRESOURCE$10 = 
+            private static final javax.xml.namespace.QName CODECRESOURCE$10 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "codecResource");
-            
-            
+
+
             /**
              * Gets the "pref" attribute
              */
@@ -1477,7 +1478,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "pref" attribute
              */
@@ -1491,7 +1492,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "pref" attribute
              */
@@ -1503,7 +1504,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(PREF$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "pref" attribute
              */
@@ -1521,7 +1522,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(pref);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "pref" attribute
              */
@@ -1539,7 +1540,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(pref);
                 }
             }
-            
+
             /**
              * Unsets the "pref" attribute
              */
@@ -1551,7 +1552,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     get_store().remove_attribute(PREF$0);
                 }
             }
-            
+
             /**
              * Gets the "formatResource" attribute
              */
@@ -1569,7 +1570,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "formatResource" attribute
              */
@@ -1583,7 +1584,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "formatResource" attribute
              */
@@ -1595,7 +1596,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(FORMATRESOURCE$2) != null;
                 }
             }
-            
+
             /**
              * Sets the "formatResource" attribute
              */
@@ -1613,7 +1614,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(formatResource);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "formatResource" attribute
              */
@@ -1631,7 +1632,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(formatResource);
                 }
             }
-            
+
             /**
              * Unsets the "formatResource" attribute
              */
@@ -1643,7 +1644,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     get_store().remove_attribute(FORMATRESOURCE$2);
                 }
             }
-            
+
             /**
              * Gets the "lang" attribute
              */
@@ -1661,7 +1662,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "lang" attribute
              */
@@ -1675,7 +1676,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "lang" attribute
              */
@@ -1687,7 +1688,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(LANG$4) != null;
                 }
             }
-            
+
             /**
              * Sets the "lang" attribute
              */
@@ -1705,7 +1706,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(lang);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "lang" attribute
              */
@@ -1723,7 +1724,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(lang);
                 }
             }
-            
+
             /**
              * Unsets the "lang" attribute
              */
@@ -1735,7 +1736,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     get_store().remove_attribute(LANG$4);
                 }
             }
-            
+
             /**
              * Gets the "encodinganalog" attribute
              */
@@ -1753,7 +1754,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "encodinganalog" attribute
              */
@@ -1767,7 +1768,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "encodinganalog" attribute
              */
@@ -1779,7 +1780,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(ENCODINGANALOG$6) != null;
                 }
             }
-            
+
             /**
              * Sets the "encodinganalog" attribute
              */
@@ -1797,7 +1798,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(encodinganalog);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "encodinganalog" attribute
              */
@@ -1815,7 +1816,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(encodinganalog);
                 }
             }
-            
+
             /**
              * Unsets the "encodinganalog" attribute
              */
@@ -1827,7 +1828,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     get_store().remove_attribute(ENCODINGANALOG$6);
                 }
             }
-            
+
             /**
              * Gets the "label" attribute
              */
@@ -1845,7 +1846,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "label" attribute
              */
@@ -1859,7 +1860,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "label" attribute
              */
@@ -1871,7 +1872,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(LABEL$8) != null;
                 }
             }
-            
+
             /**
              * Sets the "label" attribute
              */
@@ -1889,7 +1890,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(label);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "label" attribute
              */
@@ -1907,7 +1908,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(label);
                 }
             }
-            
+
             /**
              * Unsets the "label" attribute
              */
@@ -1919,7 +1920,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     get_store().remove_attribute(LABEL$8);
                 }
             }
-            
+
             /**
              * Gets the "codecResource" attribute
              */
@@ -1937,7 +1938,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "codecResource" attribute
              */
@@ -1951,7 +1952,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return target;
                 }
             }
-            
+
             /**
              * True if has "codecResource" attribute
              */
@@ -1963,7 +1964,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     return get_store().find_attribute_user(CODECRESOURCE$10) != null;
                 }
             }
-            
+
             /**
              * Sets the "codecResource" attribute
              */
@@ -1981,7 +1982,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.setStringValue(codecResource);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "codecResource" attribute
              */
@@ -1999,7 +2000,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                     target.set(codecResource);
                 }
             }
-            
+
             /**
              * Unsets the "codecResource" attribute
              */
@@ -2021,29 +2022,29 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     public static class ResourceDescriptionImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.ResourceSetComplexType.ResourceDescription
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ResourceDescriptionImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected ResourceDescriptionImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName LANG$0 = 
+
+        private static final javax.xml.namespace.QName LANG$0 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$2 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$4 = 
+        private static final javax.xml.namespace.QName LABEL$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        private static final javax.xml.namespace.QName TYPE$6 = 
+        private static final javax.xml.namespace.QName TYPE$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$8 = 
+        private static final javax.xml.namespace.QName SORTORDER$8 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "lang" attribute
          */
@@ -2061,7 +2062,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -2075,7 +2076,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -2087,7 +2088,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(LANG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
@@ -2105,7 +2106,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -2123,7 +2124,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
@@ -2135,7 +2136,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_attribute(LANG$0);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -2153,7 +2154,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -2167,7 +2168,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -2179,7 +2180,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(ENCODINGANALOG$2) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -2197,7 +2198,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -2215,7 +2216,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -2227,7 +2228,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_attribute(ENCODINGANALOG$2);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -2245,7 +2246,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -2259,7 +2260,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -2271,7 +2272,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(LABEL$4) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -2289,7 +2290,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -2307,7 +2308,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -2319,7 +2320,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_attribute(LABEL$4);
             }
         }
-        
+
         /**
          * Gets the "type" attribute
          */
@@ -2337,7 +2338,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -2351,7 +2352,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -2363,7 +2364,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(TYPE$6) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -2381,7 +2382,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -2399,7 +2400,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -2411,7 +2412,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_attribute(TYPE$6);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2429,7 +2430,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2443,7 +2444,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2455,11 +2456,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(SORTORDER$8) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2473,7 +2474,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2491,7 +2492,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2512,18 +2513,18 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     public static class ResourceSourceImpl extends org.lidoSchema.impl.LegalBodyRefComplexTypeImpl implements org.lidoSchema.ResourceSetComplexType.ResourceSource
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ResourceSourceImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName TYPE$0 = 
+
+        private static final javax.xml.namespace.QName TYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$2 = 
+        private static final javax.xml.namespace.QName SORTORDER$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "type" attribute
          */
@@ -2541,7 +2542,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -2555,7 +2556,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -2567,7 +2568,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(TYPE$0) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -2585,7 +2586,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -2603,7 +2604,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -2615,7 +2616,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 get_store().remove_attribute(TYPE$0);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2633,7 +2634,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2647,7 +2648,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2659,11 +2660,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(SORTORDER$2) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2677,7 +2678,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2695,7 +2696,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -2716,16 +2717,16 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     public static class RightsResourceImpl extends org.lidoSchema.impl.RightsComplexTypeImpl implements org.lidoSchema.ResourceSetComplexType.RightsResource
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RightsResourceImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+        private static final javax.xml.namespace.QName SORTORDER$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        
-        
+
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -2743,7 +2744,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -2757,7 +2758,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -2769,11 +2770,11 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 return get_store().find_attribute_user(SORTORDER$0) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2787,7 +2788,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -2805,7 +2806,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */

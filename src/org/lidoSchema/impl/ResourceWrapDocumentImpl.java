@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one resourceWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ResourceWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public ResourceWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RESOURCEWRAP$0 = 
+
+    private static final javax.xml.namespace.QName RESOURCEWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceWrap");
-    
-    
+
+
     /**
      * Gets the "resourceWrap" element
      */
@@ -42,7 +43,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
             return target;
         }
     }
-    
+
     /**
      * Sets the "resourceWrap" element
      */
@@ -50,7 +51,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     {
         generatedSetterHelperImpl(resourceWrap, RESOURCEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "resourceWrap" element
      */
@@ -72,16 +73,16 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     public static class ResourceWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.ResourceWrapDocument.ResourceWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public ResourceWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName RESOURCESET$0 = 
+
+        private static final javax.xml.namespace.QName RESOURCESET$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "resourceSet");
-        
-        
+
+
         /**
          * Gets a List of "resourceSet" elements
          */
@@ -92,7 +93,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 @Override
                 public org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet get(int i)
                     { return ResourceWrapImpl.this.getResourceSetArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet set(int i, org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet o)
                 {
@@ -100,11 +101,11 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     ResourceWrapImpl.this.setResourceSetArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet o)
                     { ResourceWrapImpl.this.insertNewResourceSet(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet remove(int i)
                 {
@@ -112,20 +113,20 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     ResourceWrapImpl.this.removeResourceSet(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return ResourceWrapImpl.this.sizeOfResourceSetArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new ResourceSetList();
             }
         }
-        
+
         /**
          * Gets array of all "resourceSet" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "resourceSet" element
          */
@@ -161,7 +162,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "resourceSet" element
          */
@@ -173,7 +174,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return get_store().count_elements(RESOURCESET$0);
             }
         }
-        
+
         /**
          * Sets array of all "resourceSet" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
             check_orphaned();
             arraySetterHelper(resourceSetArray, RESOURCESET$0);
         }
-        
+
         /**
          * Sets ith "resourceSet" element
          */
@@ -190,7 +191,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         {
             generatedSetterHelperImpl(resourceSet, RESOURCESET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "resourceSet" element
          */
@@ -204,7 +205,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "resourceSet" element
          */
@@ -218,7 +219,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "resourceSet" element
          */
@@ -238,16 +239,16 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         public static class ResourceSetImpl extends org.lidoSchema.impl.ResourceSetComplexTypeImpl implements org.lidoSchema.ResourceWrapDocument.ResourceWrap.ResourceSet
         {
             private static final long serialVersionUID = 1L;
-            
+
             public ResourceSetImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName SORTORDER$0 = 
+
+            private static final javax.xml.namespace.QName SORTORDER$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -265,7 +266,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -279,7 +280,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -291,11 +292,11 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     return get_store().find_attribute_user(SORTORDER$0) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -309,7 +310,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -327,7 +328,7 @@ public class ResourceWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

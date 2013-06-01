@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * A document containing one inscriptionsWrap(@http://www.lido-schema.org) element.
  *
@@ -15,16 +16,16 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.InscriptionsWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public InscriptionsWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName INSCRIPTIONSWRAP$0 = 
+
+    private static final javax.xml.namespace.QName INSCRIPTIONSWRAP$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "inscriptionsWrap");
-    
-    
+
+
     /**
      * Gets the "inscriptionsWrap" element
      */
@@ -42,7 +43,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Sets the "inscriptionsWrap" element
      */
@@ -50,7 +51,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "inscriptionsWrap" element
      */
@@ -72,16 +73,16 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     public static class InscriptionsWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public InscriptionsWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName INSCRIPTIONS$0 = 
+
+        private static final javax.xml.namespace.QName INSCRIPTIONS$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "inscriptions");
-        
-        
+
+
         /**
          * Gets a List of "inscriptions" elements
          */
@@ -92,7 +93,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 @Override
                 public org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions get(int i)
                     { return InscriptionsWrapImpl.this.getInscriptionsArray(i); }
-                
+
                 @Override
                 public org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions set(int i, org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions o)
                 {
@@ -100,11 +101,11 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     InscriptionsWrapImpl.this.setInscriptionsArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions o)
                     { InscriptionsWrapImpl.this.insertNewInscriptions(i).set(o); }
-                
+
                 @Override
                 public org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions remove(int i)
                 {
@@ -112,20 +113,20 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     InscriptionsWrapImpl.this.removeInscriptions(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return InscriptionsWrapImpl.this.sizeOfInscriptionsArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new InscriptionsList();
             }
         }
-        
+
         /**
          * Gets array of all "inscriptions" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "inscriptions" element
          */
@@ -161,7 +162,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "inscriptions" element
          */
@@ -173,7 +174,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return get_store().count_elements(INSCRIPTIONS$0);
             }
         }
-        
+
         /**
          * Sets array of all "inscriptions" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -182,7 +183,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             check_orphaned();
             arraySetterHelper(inscriptionsArray, INSCRIPTIONS$0);
         }
-        
+
         /**
          * Sets ith "inscriptions" element
          */
@@ -190,7 +191,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         {
             generatedSetterHelperImpl(inscriptions, INSCRIPTIONS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "inscriptions" element
          */
@@ -204,7 +205,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "inscriptions" element
          */
@@ -218,7 +219,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "inscriptions" element
          */
@@ -238,22 +239,22 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         public static class InscriptionsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions
         {
             private static final long serialVersionUID = 1L;
-            
+
             public InscriptionsImpl(org.apache.xmlbeans.SchemaType sType)
             {
                 super(sType);
             }
-            
-            private static final javax.xml.namespace.QName INSCRIPTIONTRANSCRIPTION$0 = 
+
+            private static final javax.xml.namespace.QName INSCRIPTIONTRANSCRIPTION$0 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "inscriptionTranscription");
-            private static final javax.xml.namespace.QName INSCRIPTIONDESCRIPTION$2 = 
+            private static final javax.xml.namespace.QName INSCRIPTIONDESCRIPTION$2 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "inscriptionDescription");
-            private static final javax.xml.namespace.QName TYPE$4 = 
+            private static final javax.xml.namespace.QName TYPE$4 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-            private static final javax.xml.namespace.QName SORTORDER$6 = 
+            private static final javax.xml.namespace.QName SORTORDER$6 =
                 new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-            
-            
+
+
             /**
              * Gets a List of "inscriptionTranscription" elements
              */
@@ -264,7 +265,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     @Override
                     public org.lidoSchema.TextComplexType get(int i)
                         { return InscriptionsImpl.this.getInscriptionTranscriptionArray(i); }
-                    
+
                     @Override
                     public org.lidoSchema.TextComplexType set(int i, org.lidoSchema.TextComplexType o)
                     {
@@ -272,11 +273,11 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                       InscriptionsImpl.this.setInscriptionTranscriptionArray(i, o);
                       return old;
                     }
-                    
+
                     @Override
                     public void add(int i, org.lidoSchema.TextComplexType o)
                         { InscriptionsImpl.this.insertNewInscriptionTranscription(i).set(o); }
-                    
+
                     @Override
                     public org.lidoSchema.TextComplexType remove(int i)
                     {
@@ -284,20 +285,20 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                       InscriptionsImpl.this.removeInscriptionTranscription(i);
                       return old;
                     }
-                    
+
                     @Override
                     public int size()
                         { return InscriptionsImpl.this.sizeOfInscriptionTranscriptionArray(); }
-                    
+
                 }
-                
+
                 synchronized (monitor())
                 {
                     check_orphaned();
                     return new InscriptionTranscriptionList();
                 }
             }
-            
+
             /**
              * Gets array of all "inscriptionTranscription" elements
              * @deprecated
@@ -315,7 +316,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return result;
                 }
             }
-            
+
             /**
              * Gets ith "inscriptionTranscription" element
              */
@@ -333,7 +334,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Returns number of "inscriptionTranscription" element
              */
@@ -345,7 +346,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return get_store().count_elements(INSCRIPTIONTRANSCRIPTION$0);
                 }
             }
-            
+
             /**
              * Sets array of all "inscriptionTranscription" element  WARNING: This method is not atomicaly synchronized.
              */
@@ -354,7 +355,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 check_orphaned();
                 arraySetterHelper(inscriptionTranscriptionArray, INSCRIPTIONTRANSCRIPTION$0);
             }
-            
+
             /**
              * Sets ith "inscriptionTranscription" element
              */
@@ -362,7 +363,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             {
                 generatedSetterHelperImpl(inscriptionTranscription, INSCRIPTIONTRANSCRIPTION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
             }
-            
+
             /**
              * Inserts and returns a new empty value (as xml) as the ith "inscriptionTranscription" element
              */
@@ -376,7 +377,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Appends and returns a new empty value (as xml) as the last "inscriptionTranscription" element
              */
@@ -390,7 +391,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Removes the ith "inscriptionTranscription" element
              */
@@ -402,7 +403,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     get_store().remove_element(INSCRIPTIONTRANSCRIPTION$0, i);
                 }
             }
-            
+
             /**
              * Gets a List of "inscriptionDescription" elements
              */
@@ -413,7 +414,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     @Override
                     public org.lidoSchema.DescriptiveNoteComplexType get(int i)
                         { return InscriptionsImpl.this.getInscriptionDescriptionArray(i); }
-                    
+
                     @Override
                     public org.lidoSchema.DescriptiveNoteComplexType set(int i, org.lidoSchema.DescriptiveNoteComplexType o)
                     {
@@ -421,11 +422,11 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                       InscriptionsImpl.this.setInscriptionDescriptionArray(i, o);
                       return old;
                     }
-                    
+
                     @Override
                     public void add(int i, org.lidoSchema.DescriptiveNoteComplexType o)
                         { InscriptionsImpl.this.insertNewInscriptionDescription(i).set(o); }
-                    
+
                     @Override
                     public org.lidoSchema.DescriptiveNoteComplexType remove(int i)
                     {
@@ -433,20 +434,20 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                       InscriptionsImpl.this.removeInscriptionDescription(i);
                       return old;
                     }
-                    
+
                     @Override
                     public int size()
                         { return InscriptionsImpl.this.sizeOfInscriptionDescriptionArray(); }
-                    
+
                 }
-                
+
                 synchronized (monitor())
                 {
                     check_orphaned();
                     return new InscriptionDescriptionList();
                 }
             }
-            
+
             /**
              * Gets array of all "inscriptionDescription" elements
              * @deprecated
@@ -464,7 +465,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return result;
                 }
             }
-            
+
             /**
              * Gets ith "inscriptionDescription" element
              */
@@ -482,7 +483,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Returns number of "inscriptionDescription" element
              */
@@ -494,7 +495,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return get_store().count_elements(INSCRIPTIONDESCRIPTION$2);
                 }
             }
-            
+
             /**
              * Sets array of all "inscriptionDescription" element  WARNING: This method is not atomicaly synchronized.
              */
@@ -503,7 +504,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                 check_orphaned();
                 arraySetterHelper(inscriptionDescriptionArray, INSCRIPTIONDESCRIPTION$2);
             }
-            
+
             /**
              * Sets ith "inscriptionDescription" element
              */
@@ -511,7 +512,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             {
                 generatedSetterHelperImpl(inscriptionDescription, INSCRIPTIONDESCRIPTION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
             }
-            
+
             /**
              * Inserts and returns a new empty value (as xml) as the ith "inscriptionDescription" element
              */
@@ -525,7 +526,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Appends and returns a new empty value (as xml) as the last "inscriptionDescription" element
              */
@@ -539,7 +540,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * Removes the ith "inscriptionDescription" element
              */
@@ -551,7 +552,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     get_store().remove_element(INSCRIPTIONDESCRIPTION$2, i);
                 }
             }
-            
+
             /**
              * Gets the "type" attribute
              */
@@ -569,7 +570,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target.getStringValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "type" attribute
              */
@@ -583,7 +584,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * True if has "type" attribute
              */
@@ -595,7 +596,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return get_store().find_attribute_user(TYPE$4) != null;
                 }
             }
-            
+
             /**
              * Sets the "type" attribute
              */
@@ -613,7 +614,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.setStringValue(type);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "type" attribute
              */
@@ -631,7 +632,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.set(type);
                 }
             }
-            
+
             /**
              * Unsets the "type" attribute
              */
@@ -643,7 +644,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     get_store().remove_attribute(TYPE$4);
                 }
             }
-            
+
             /**
              * Gets the "sortorder" attribute
              */
@@ -661,7 +662,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target.getBigIntegerValue();
                 }
             }
-            
+
             /**
              * Gets (as xml) the "sortorder" attribute
              */
@@ -675,7 +676,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return target;
                 }
             }
-            
+
             /**
              * True if has "sortorder" attribute
              */
@@ -687,11 +688,11 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     return get_store().find_attribute_user(SORTORDER$6) != null;
                 }
             }
-            
+
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {
@@ -705,7 +706,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.setBigIntegerValue(sortorder);
                 }
             }
-            
+
             /**
              * Sets (as xml) the "sortorder" attribute
              */
@@ -723,7 +724,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
                     target.set(sortorder);
                 }
             }
-            
+
             /**
              * Unsets the "sortorder" attribute
              */

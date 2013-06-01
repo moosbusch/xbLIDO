@@ -6,6 +6,7 @@
  * Automatically generated - do not modify.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.lido.inject.annotation.SortOrder;
 /**
  * An XML repositorySetComplexType(@http://www.lido-schema.org).
  *
@@ -14,24 +15,24 @@ package org.lidoSchema.impl;  import com.google.inject.Inject;
 public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.lidoSchema.RepositorySetComplexType
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RepositorySetComplexTypeImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName REPOSITORYNAME$0 = 
+
+    private static final javax.xml.namespace.QName REPOSITORYNAME$0 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "repositoryName");
-    private static final javax.xml.namespace.QName WORKID$2 = 
+    private static final javax.xml.namespace.QName WORKID$2 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "workID");
-    private static final javax.xml.namespace.QName REPOSITORYLOCATION$4 = 
+    private static final javax.xml.namespace.QName REPOSITORYLOCATION$4 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "repositoryLocation");
-    private static final javax.xml.namespace.QName TYPE$6 = 
+    private static final javax.xml.namespace.QName TYPE$6 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-    private static final javax.xml.namespace.QName SORTORDER$8 = 
+    private static final javax.xml.namespace.QName SORTORDER$8 =
         new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-    
-    
+
+
     /**
      * Gets the "repositoryName" element
      */
@@ -49,7 +50,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * True if has "repositoryName" element
      */
@@ -61,7 +62,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(REPOSITORYNAME$0) != 0;
         }
     }
-    
+
     /**
      * Sets the "repositoryName" element
      */
@@ -69,7 +70,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(repositoryName, REPOSITORYNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "repositoryName" element
      */
@@ -83,7 +84,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Unsets the "repositoryName" element
      */
@@ -95,7 +96,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_element(REPOSITORYNAME$0, 0);
         }
     }
-    
+
     /**
      * Gets a List of "workID" elements
      */
@@ -106,7 +107,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             @Override
             public org.lidoSchema.RepositorySetComplexType.WorkID get(int i)
                 { return RepositorySetComplexTypeImpl.this.getWorkIDArray(i); }
-            
+
             @Override
             public org.lidoSchema.RepositorySetComplexType.WorkID set(int i, org.lidoSchema.RepositorySetComplexType.WorkID o)
             {
@@ -114,11 +115,11 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 RepositorySetComplexTypeImpl.this.setWorkIDArray(i, o);
                 return old;
             }
-            
+
             @Override
             public void add(int i, org.lidoSchema.RepositorySetComplexType.WorkID o)
                 { RepositorySetComplexTypeImpl.this.insertNewWorkID(i).set(o); }
-            
+
             @Override
             public org.lidoSchema.RepositorySetComplexType.WorkID remove(int i)
             {
@@ -126,20 +127,20 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 RepositorySetComplexTypeImpl.this.removeWorkID(i);
                 return old;
             }
-            
+
             @Override
             public int size()
                 { return RepositorySetComplexTypeImpl.this.sizeOfWorkIDArray(); }
-            
+
         }
-        
+
         synchronized (monitor())
         {
             check_orphaned();
             return new WorkIDList();
         }
     }
-    
+
     /**
      * Gets array of all "workID" elements
      * @deprecated
@@ -157,7 +158,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return result;
         }
     }
-    
+
     /**
      * Gets ith "workID" element
      */
@@ -175,7 +176,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Returns number of "workID" element
      */
@@ -187,7 +188,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(WORKID$2);
         }
     }
-    
+
     /**
      * Sets array of all "workID" element  WARNING: This method is not atomicaly synchronized.
      */
@@ -196,7 +197,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         check_orphaned();
         arraySetterHelper(workIDArray, WORKID$2);
     }
-    
+
     /**
      * Sets ith "workID" element
      */
@@ -204,7 +205,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(workID, WORKID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
-    
+
     /**
      * Inserts and returns a new empty value (as xml) as the ith "workID" element
      */
@@ -218,7 +219,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Appends and returns a new empty value (as xml) as the last "workID" element
      */
@@ -232,7 +233,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Removes the ith "workID" element
      */
@@ -244,7 +245,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_element(WORKID$2, i);
         }
     }
-    
+
     /**
      * Gets the "repositoryLocation" element
      */
@@ -262,7 +263,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * True if has "repositoryLocation" element
      */
@@ -274,7 +275,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().count_elements(REPOSITORYLOCATION$4) != 0;
         }
     }
-    
+
     /**
      * Sets the "repositoryLocation" element
      */
@@ -282,7 +283,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     {
         generatedSetterHelperImpl(repositoryLocation, REPOSITORYLOCATION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "repositoryLocation" element
      */
@@ -296,7 +297,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * Unsets the "repositoryLocation" element
      */
@@ -308,7 +309,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_element(REPOSITORYLOCATION$4, 0);
         }
     }
-    
+
     /**
      * Gets the "type" attribute
      */
@@ -326,7 +327,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target.getStringValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "type" attribute
      */
@@ -340,7 +341,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * True if has "type" attribute
      */
@@ -352,7 +353,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().find_attribute_user(TYPE$6) != null;
         }
     }
-    
+
     /**
      * Sets the "type" attribute
      */
@@ -370,7 +371,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             target.setStringValue(type);
         }
     }
-    
+
     /**
      * Sets (as xml) the "type" attribute
      */
@@ -388,7 +389,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             target.set(type);
         }
     }
-    
+
     /**
      * Unsets the "type" attribute
      */
@@ -400,7 +401,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             get_store().remove_attribute(TYPE$6);
         }
     }
-    
+
     /**
      * Gets the "sortorder" attribute
      */
@@ -418,7 +419,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target.getBigIntegerValue();
         }
     }
-    
+
     /**
      * Gets (as xml) the "sortorder" attribute
      */
@@ -432,7 +433,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return target;
         }
     }
-    
+
     /**
      * True if has "sortorder" attribute
      */
@@ -444,11 +445,11 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             return get_store().find_attribute_user(SORTORDER$8) != null;
         }
     }
-    
+
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {
@@ -462,7 +463,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             target.setBigIntegerValue(sortorder);
         }
     }
-    
+
     /**
      * Sets (as xml) the "sortorder" attribute
      */
@@ -480,7 +481,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
             target.set(sortorder);
         }
     }
-    
+
     /**
      * Unsets the "sortorder" attribute
      */
@@ -500,27 +501,27 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     public static class WorkIDImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.lidoSchema.RepositorySetComplexType.WorkID
     {
         private static final long serialVersionUID = 1L;
-        
+
         public WorkIDImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected WorkIDImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName TYPE$0 = 
+
+        private static final javax.xml.namespace.QName TYPE$0 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "type");
-        private static final javax.xml.namespace.QName SORTORDER$2 = 
+        private static final javax.xml.namespace.QName SORTORDER$2 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "sortorder");
-        private static final javax.xml.namespace.QName ENCODINGANALOG$4 = 
+        private static final javax.xml.namespace.QName ENCODINGANALOG$4 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$6 = 
+        private static final javax.xml.namespace.QName LABEL$6 =
             new javax.xml.namespace.QName("http://www.lido-schema.org", "label");
-        
-        
+
+
         /**
          * Gets the "type" attribute
          */
@@ -538,7 +539,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "type" attribute
          */
@@ -552,7 +553,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "type" attribute
          */
@@ -564,7 +565,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(TYPE$0) != null;
             }
         }
-        
+
         /**
          * Sets the "type" attribute
          */
@@ -582,7 +583,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setStringValue(type);
             }
         }
-        
+
         /**
          * Sets (as xml) the "type" attribute
          */
@@ -600,7 +601,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(type);
             }
         }
-        
+
         /**
          * Unsets the "type" attribute
          */
@@ -612,7 +613,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 get_store().remove_attribute(TYPE$0);
             }
         }
-        
+
         /**
          * Gets the "sortorder" attribute
          */
@@ -630,7 +631,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getBigIntegerValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "sortorder" attribute
          */
@@ -644,7 +645,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "sortorder" attribute
          */
@@ -656,11 +657,11 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(SORTORDER$2) != null;
             }
         }
-        
+
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(java.math.BigInteger sortorder)
+        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -674,7 +675,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setBigIntegerValue(sortorder);
             }
         }
-        
+
         /**
          * Sets (as xml) the "sortorder" attribute
          */
@@ -692,7 +693,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(sortorder);
             }
         }
-        
+
         /**
          * Unsets the "sortorder" attribute
          */
@@ -704,7 +705,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 get_store().remove_attribute(SORTORDER$2);
             }
         }
-        
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -722,7 +723,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -736,7 +737,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -748,7 +749,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(ENCODINGANALOG$4) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
@@ -766,7 +767,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -784,7 +785,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -796,7 +797,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 get_store().remove_attribute(ENCODINGANALOG$4);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -814,7 +815,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -828,7 +829,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -840,7 +841,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 return get_store().find_attribute_user(LABEL$6) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -858,7 +859,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -876,7 +877,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
