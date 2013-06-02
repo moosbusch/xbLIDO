@@ -35,15 +35,11 @@ public abstract class AbstractDocument<T extends LIDOObjectFactory>
 
     @Override
     public LidoWrap getRootElement() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootWrapperElement().getLidoWrap();
-        }
+        return getRootWrapperElement().getLidoWrap();
     }
 
     @Override
     public Collection<Lido> getItems() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootWrapperElement().getLidoWrap().getLidoList();
-        }
+        return getRootWrapperElement().getLidoWrap().getLidoList();
     }
 }

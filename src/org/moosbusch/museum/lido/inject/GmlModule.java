@@ -1,6 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ *
  */
 package org.moosbusch.museum.lido.inject;
 
@@ -8,51 +8,13 @@ import com.google.inject.Module;
 import com.google.inject.Provides;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyDocument;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyType;
-import net.opengis.gml.AbstractContinuousCoverageType;
-import net.opengis.gml.AbstractCoordinateOperationBaseType;
-import net.opengis.gml.AbstractCoordinateOperationType;
-import net.opengis.gml.AbstractCoordinateSystemBaseType;
-import net.opengis.gml.AbstractCoordinateSystemType;
-import net.opengis.gml.AbstractCoverageType;
-import net.opengis.gml.AbstractCurveSegmentType;
-import net.opengis.gml.AbstractCurveType;
-import net.opengis.gml.AbstractDatumBaseType;
-import net.opengis.gml.AbstractDatumType;
-import net.opengis.gml.AbstractDiscreteCoverageType;
-import net.opengis.gml.AbstractFeatureCollectionType;
-import net.opengis.gml.AbstractFeatureType;
-import net.opengis.gml.AbstractGMLType;
-import net.opengis.gml.AbstractGeneralConversionType;
-import net.opengis.gml.AbstractGeneralDerivedCRSType;
 import net.opengis.gml.AbstractGeneralOperationParameterRefDocument;
 import net.opengis.gml.AbstractGeneralOperationParameterRefType;
-import net.opengis.gml.AbstractGeneralOperationParameterType;
-import net.opengis.gml.AbstractGeneralParameterValueType;
-import net.opengis.gml.AbstractGeneralTransformationType;
-import net.opengis.gml.AbstractGeometricAggregateType;
-import net.opengis.gml.AbstractGeometricPrimitiveType;
-import net.opengis.gml.AbstractGeometryType;
 import net.opengis.gml.AbstractGriddedSurfaceType;
-import net.opengis.gml.AbstractMetaDataType;
 import net.opengis.gml.AbstractParametricCurveSurfaceType;
-import net.opengis.gml.AbstractPositionalAccuracyType;
-import net.opengis.gml.AbstractReferenceSystemBaseType;
-import net.opengis.gml.AbstractReferenceSystemType;
 import net.opengis.gml.AbstractRingPropertyType;
-import net.opengis.gml.AbstractRingType;
 import net.opengis.gml.AbstractSolidType;
-import net.opengis.gml.AbstractStyleType;
-import net.opengis.gml.AbstractSurfacePatchType;
 import net.opengis.gml.AbstractSurfaceType;
-import net.opengis.gml.AbstractTimeComplexType;
-import net.opengis.gml.AbstractTimeGeometricPrimitiveType;
-import net.opengis.gml.AbstractTimeObjectType;
-import net.opengis.gml.AbstractTimePrimitiveType;
-import net.opengis.gml.AbstractTimeReferenceSystemType;
-import net.opengis.gml.AbstractTimeSliceType;
-import net.opengis.gml.AbstractTimeTopologyPrimitiveType;
-import net.opengis.gml.AbstractTopoPrimitiveType;
-import net.opengis.gml.AbstractTopologyType;
 import net.opengis.gml.AesheticCriteriaType;
 import net.opengis.gml.AffinePlacementDocument;
 import net.opengis.gml.AffinePlacementType;
@@ -907,164 +869,29 @@ import net.opengis.gml.VolumeType;
  */
 public interface GmlModule extends Module {
 
-//    @Provides
-//    public TemporalDatumBaseType createTemporalDatumBaseType();
+    @Provides
+    public TemporalDatumBaseType createTemporalDatumBaseType();
 
-//    @Provides
-//    public PrimeMeridianBaseType createPrimeMeridianBaseType();
+    @Provides
+    public PrimeMeridianBaseType createPrimeMeridianBaseType();
 
-//    @Provides
-//    public OperationParameterGroupBaseType createOperationParameterGroupBaseType();
+    @Provides
+    public OperationParameterGroupBaseType createOperationParameterGroupBaseType();
 
-//    @Provides
-//    public OperationParameterBaseType createOperationParameterBaseType();
+    @Provides
+    public OperationParameterBaseType createOperationParameterBaseType();
 
-//    @Provides
-//    public AbstractReferenceSystemType createAbstractReferenceSystemType();
+    @Provides
+    public BoundedFeatureType createBoundedFeatureType();
 
-//    @Provides
-//    public AbstractContinuousCoverageType createAbstractContinuousCoverageType();
-//
-//    @Provides
-//    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType();
-//
-//    @Provides
-//    public AbstractCoordinateOperationType createAbstractCoordinateOperationType();
-//
-//    @Provides
-//    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType();
-//
-//    @Provides
-//    public AbstractCoordinateSystemType createAbstractCoordinateSystemType();
-//
-//    @Provides
-//    public AbstractCoverageType createAbstractCoverageType();
-//
-//    @Provides
-//    public AbstractCurveSegmentType createAbstractCurveSegmentType();
-//
-//    @Provides
-//    public AbstractCurveType createAbstractCurveType();
-//
-//    @Provides
-//    public AbstractDatumBaseType createAbstractDatumBaseType();
-//
-//    @Provides
-//    public AbstractDatumType createAbstractDatumType();
-//
-//    @Provides
-//    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType();
-//
-//    @Provides
-//    public AbstractFeatureCollectionType createAbstractFeatureCollectionType();
-//
-//    @Provides
-//    public AbstractFeatureType createAbstractFeatureType();
-//
-//    @Provides
-//    public AbstractGeneralConversionType createAbstractGeneralConversionType();
-//
-//    @Provides
-//    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType();
-//
-//    @Provides
-//    public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument();
-//
-//    @Provides
-//    public AbstractGeneralOperationParameterRefType createAbstractGeneralOperationParameterRefType();
-//
-//    @Provides
-//    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType();
-//
-//    @Provides
-//    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType();
-//
-//    @Provides
-//    public AbstractGeneralTransformationType createAbstractGeneralTransformationType();
-//
-//    @Provides
-//    public AbstractGeometricAggregateType createAbstractGeometricAggregateType();
-//
-//    @Provides
-//    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType();
-//
-//    @Provides
-//    public AbstractGeometryType createAbstractGeometryType();
-//
-//    @Provides
-//    public AbstractGMLType createAbstractGMLType();
-//
-//    @Provides
-//    public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType();
-//
-//    @Provides
-//    public AbstractMetaDataType createAbstractMetaDataType();
-//
-//    @Provides
-//    public AbstractParametricCurveSurfaceType createAbstractParametricCurveSurfaceType();
-//
-//    @Provides
-//    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType();
-//
-//    @Provides
-//    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType();
-//
-//    @Provides
-//    public AbstractRingPropertyType createAbstractRingPropertyType();
-//
-//    @Provides
-//    public AbstractRingType createAbstractRingType();
-//
-//    @Provides
-//    public AbstractSolidType createAbstractSolidType();
-//
-//    @Provides
-//    public AbstractStyleType createAbstractStyleType();
-//
-//    @Provides
-//    public AbstractSurfacePatchType createAbstractSurfacePatchType();
-//
-//    @Provides
-//    public AbstractSurfaceType createAbstractSurfaceType();
-//
-//    @Provides
-//    public AbstractTimeComplexType createAbstractTimeComplexType();
-//
-//    @Provides
-//    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType();
-//
-//    @Provides
-//    public AbstractTimeObjectType createAbstractTimeObjectType();
-//
-//    @Provides
-//    public AbstractTimePrimitiveType createAbstractTimePrimitiveType();
-//
-//    @Provides
-//    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType();
-//
-//    @Provides
-//    public AbstractTimeSliceType createAbstractTimeSliceType();
-//
-//    @Provides
-//    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType();
-//
-//    @Provides
-//    public AbstractTopologyType createAbstractTopologyType();
-//
-//    @Provides
-//    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType();
+    @Provides
+    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType();
 
-//    @Provides
-//    public BoundedFeatureType createBoundedFeatureType();
+    @Provides
+    public OperationMethodBaseType createOperationMethodBaseType();
 
-//    @Provides
-//    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType();
-
-//    @Provides
-//    public OperationMethodBaseType createOperationMethodBaseType();
-
-//    @Provides
-//    public EllipsoidBaseType createEllipsoidBaseType();
+    @Provides
+    public EllipsoidBaseType createEllipsoidBaseType();
 
     @Provides
     public AbsoluteExternalPositionalAccuracyDocument createAbsoluteExternalPositionalAccuracyDocument();
@@ -3588,4 +3415,25 @@ public interface GmlModule extends Module {
 
     @Provides
     public VolumeType createVolumeType();
+
+    @Provides
+    public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument();
+
+    @Provides
+    public AbstractGeneralOperationParameterRefType createAbstractGeneralOperationParameterRefType();
+
+    @Provides
+    public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType();
+
+    @Provides
+    public AbstractParametricCurveSurfaceType createAbstractParametricCurveSurfaceType();
+
+    @Provides
+    public AbstractRingPropertyType createAbstractRingPropertyType();
+
+    @Provides
+    public AbstractSolidType createAbstractSolidType();
+
+    @Provides
+    public AbstractSurfaceType createAbstractSurfaceType();
 }

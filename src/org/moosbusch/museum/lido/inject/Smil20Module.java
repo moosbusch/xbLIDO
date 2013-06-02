@@ -1,6 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ *
  */
 package org.moosbusch.museum.lido.inject;
 
@@ -29,6 +29,17 @@ import org.w3.x2001.smil20.language.AnimateType;
  * @author moosbusch
  */
 public interface Smil20Module extends Module {
+
+    public org.w3.x2001.smil20.language.AnimateColorDocument createLanguageAnimateColorDocument();
+
+    @Provides
+    public org.w3.x2001.smil20.language.AnimateDocument createLanguageAnimateDocument();
+
+    @Provides
+    public org.w3.x2001.smil20.language.AnimateMotionDocument createLanguageAnimateMotionDocument();
+
+    @Provides
+    public org.w3.x2001.smil20.language.SetDocument createLanguageSetDocument();
 
     @Provides
     public AnimateType createAnimateType();

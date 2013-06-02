@@ -1,6 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ *
  */
 package org.moosbusch.museum.lido.inject.impl;
 
@@ -8,51 +8,13 @@ import com.google.inject.Provides;
 import java.math.BigInteger;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyDocument;
 import net.opengis.gml.AbsoluteExternalPositionalAccuracyType;
-import net.opengis.gml.AbstractContinuousCoverageType;
-import net.opengis.gml.AbstractCoordinateOperationBaseType;
-import net.opengis.gml.AbstractCoordinateOperationType;
-import net.opengis.gml.AbstractCoordinateSystemBaseType;
-import net.opengis.gml.AbstractCoordinateSystemType;
-import net.opengis.gml.AbstractCoverageType;
-import net.opengis.gml.AbstractCurveSegmentType;
-import net.opengis.gml.AbstractCurveType;
-import net.opengis.gml.AbstractDatumBaseType;
-import net.opengis.gml.AbstractDatumType;
-import net.opengis.gml.AbstractDiscreteCoverageType;
-import net.opengis.gml.AbstractFeatureCollectionType;
-import net.opengis.gml.AbstractFeatureType;
-import net.opengis.gml.AbstractGMLType;
-import net.opengis.gml.AbstractGeneralConversionType;
-import net.opengis.gml.AbstractGeneralDerivedCRSType;
 import net.opengis.gml.AbstractGeneralOperationParameterRefDocument;
 import net.opengis.gml.AbstractGeneralOperationParameterRefType;
-import net.opengis.gml.AbstractGeneralOperationParameterType;
-import net.opengis.gml.AbstractGeneralParameterValueType;
-import net.opengis.gml.AbstractGeneralTransformationType;
-import net.opengis.gml.AbstractGeometricAggregateType;
-import net.opengis.gml.AbstractGeometricPrimitiveType;
-import net.opengis.gml.AbstractGeometryType;
 import net.opengis.gml.AbstractGriddedSurfaceType;
-import net.opengis.gml.AbstractMetaDataType;
 import net.opengis.gml.AbstractParametricCurveSurfaceType;
-import net.opengis.gml.AbstractPositionalAccuracyType;
-import net.opengis.gml.AbstractReferenceSystemBaseType;
-import net.opengis.gml.AbstractReferenceSystemType;
 import net.opengis.gml.AbstractRingPropertyType;
-import net.opengis.gml.AbstractRingType;
 import net.opengis.gml.AbstractSolidType;
-import net.opengis.gml.AbstractStyleType;
-import net.opengis.gml.AbstractSurfacePatchType;
 import net.opengis.gml.AbstractSurfaceType;
-import net.opengis.gml.AbstractTimeComplexType;
-import net.opengis.gml.AbstractTimeGeometricPrimitiveType;
-import net.opengis.gml.AbstractTimeObjectType;
-import net.opengis.gml.AbstractTimePrimitiveType;
-import net.opengis.gml.AbstractTimeReferenceSystemType;
-import net.opengis.gml.AbstractTimeSliceType;
-import net.opengis.gml.AbstractTimeTopologyPrimitiveType;
-import net.opengis.gml.AbstractTopoPrimitiveType;
-import net.opengis.gml.AbstractTopologyType;
 import net.opengis.gml.AesheticCriteriaType;
 import net.opengis.gml.AffinePlacementDocument;
 import net.opengis.gml.AffinePlacementType;
@@ -553,7 +515,9 @@ import net.opengis.gml.OperationMethodDocument;
 import net.opengis.gml.OperationMethodRefDocument;
 import net.opengis.gml.OperationMethodRefType;
 import net.opengis.gml.OperationMethodType;
+import net.opengis.gml.OperationParameterBaseType;
 import net.opengis.gml.OperationParameterDocument;
+import net.opengis.gml.OperationParameterGroupBaseType;
 import net.opengis.gml.OperationParameterGroupDocument;
 import net.opengis.gml.OperationParameterGroupRefDocument;
 import net.opengis.gml.OperationParameterGroupRefType;
@@ -612,6 +576,7 @@ import net.opengis.gml.PosDocument;
 import net.opengis.gml.PosListDocument;
 import net.opengis.gml.PositionDocument;
 import net.opengis.gml.PositionalAccuracyDocument;
+import net.opengis.gml.PrimeMeridianBaseType;
 import net.opengis.gml.PrimeMeridianDocument;
 import net.opengis.gml.PrimeMeridianRefDocument;
 import net.opengis.gml.PrimeMeridianRefType;
@@ -732,6 +697,7 @@ import net.opengis.gml.TemporalCSDocument;
 import net.opengis.gml.TemporalCSRefDocument;
 import net.opengis.gml.TemporalCSRefType;
 import net.opengis.gml.TemporalCSType;
+import net.opengis.gml.TemporalDatumBaseType;
 import net.opengis.gml.TemporalDatumDocument;
 import net.opengis.gml.TemporalDatumRefDocument;
 import net.opengis.gml.TemporalDatumRefType;
@@ -896,6 +862,7 @@ import net.opengis.gml.VerticalDatumTypeDocument;
 import net.opengis.gml.VerticalDatumTypeType;
 import net.opengis.gml.VerticalExtentDocument;
 import net.opengis.gml.VolumeType;
+import net.opengis.gml.impl.BoundedFeatureTypeImpl;
 import org.apache.xmlbeans.XmlObject;
 import org.lidoSchema.ActorComplexType;
 import org.lidoSchema.ActorInRoleComplexType;
@@ -1046,378 +1013,74 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public Document<? extends LIDOObjectFactory> createDocument() {
         return new DocumentImpl();
     }
 
-//    @Provides
-//    @Override
-//    public TemporalDatumBaseType createTemporalDatumBaseType() {
-//        TemporalDatumBaseType result = TemporalDatumBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public TemporalDatumBaseType createTemporalDatumBaseType() {
+        TemporalDatumBaseType result = TemporalDatumType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public PrimeMeridianBaseType createPrimeMeridianBaseType() {
-//        PrimeMeridianBaseType result = PrimeMeridianBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public PrimeMeridianBaseType createPrimeMeridianBaseType() {
+        PrimeMeridianBaseType result = PrimeMeridianType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public OperationParameterGroupBaseType createOperationParameterGroupBaseType() {
-//        OperationParameterGroupBaseType result = OperationParameterGroupBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public OperationParameterGroupBaseType createOperationParameterGroupBaseType() {
+        OperationParameterGroupBaseType result = OperationParameterGroupType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public OperationParameterBaseType createOperationParameterBaseType() {
-//        OperationParameterBaseType result = OperationParameterBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public OperationParameterBaseType createOperationParameterBaseType() {
+        OperationParameterBaseType result = OperationParameterType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public OperationMethodBaseType createOperationMethodBaseType() {
-//        OperationMethodBaseType result = OperationMethodBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public OperationMethodBaseType createOperationMethodBaseType() {
+        OperationMethodBaseType result = OperationMethodType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public EllipsoidBaseType createEllipsoidBaseType() {
-//        EllipsoidBaseType result = EllipsoidBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public EllipsoidBaseType createEllipsoidBaseType() {
+        EllipsoidBaseType result = EllipsoidType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType() {
-//        CoordinateSystemAxisBaseType result = CoordinateSystemAxisBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public CoordinateSystemAxisBaseType createCoordinateSystemAxisBaseType() {
+        CoordinateSystemAxisBaseType result = CoordinateSystemAxisType.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
-//    @Provides
-//    @Override
-//    public BoundedFeatureType createBoundedFeatureType() {
-//        BoundedFeatureType result = BoundedFeatureType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-
-//    @Provides
-//    @Override
-//    public AbstractTopoPrimitiveType createAbstractTopoPrimitiveType() {
-//        AbstractTopoPrimitiveType result = AbstractTopoPrimitiveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTopologyType createAbstractTopologyType() {
-//        AbstractTopologyType result = AbstractTopologyType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeComplexType createAbstractTimeComplexType() {
-//        AbstractTimeComplexType result = AbstractTimeComplexType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeGeometricPrimitiveType createAbstractTimeGeometricPrimitiveType() {
-//        AbstractTimeGeometricPrimitiveType result = AbstractTimeGeometricPrimitiveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeObjectType createAbstractTimeObjectType() {
-//        AbstractTimeObjectType result = AbstractTimeObjectType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimePrimitiveType createAbstractTimePrimitiveType() {
-//        AbstractTimePrimitiveType result = AbstractTimePrimitiveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeReferenceSystemType createAbstractTimeReferenceSystemType() {
-//        AbstractTimeReferenceSystemType result = AbstractTimeReferenceSystemType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeSliceType createAbstractTimeSliceType() {
-//        AbstractTimeSliceType result = AbstractTimeSliceType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractTimeTopologyPrimitiveType createAbstractTimeTopologyPrimitiveType() {
-//        AbstractTimeTopologyPrimitiveType result = AbstractTimeTopologyPrimitiveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractStyleType createAbstractStyleType() {
-//        AbstractStyleType result = AbstractStyleType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractSurfacePatchType createAbstractSurfacePatchType() {
-//        AbstractSurfacePatchType result = AbstractSurfacePatchType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractContinuousCoverageType createAbstractContinuousCoverageType() {
-//        AbstractContinuousCoverageType result = AbstractContinuousCoverageType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCoordinateOperationBaseType createAbstractCoordinateOperationBaseType() {
-//        AbstractCoordinateOperationBaseType result = AbstractCoordinateOperationBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCoordinateOperationType createAbstractCoordinateOperationType() {
-//        AbstractCoordinateOperationType result = AbstractCoordinateOperationType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCoordinateSystemBaseType createAbstractCoordinateSystemBaseType() {
-//        AbstractCoordinateSystemBaseType result = AbstractCoordinateSystemBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCoordinateSystemType createAbstractCoordinateSystemType() {
-//        AbstractCoordinateSystemType result = AbstractCoordinateSystemType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCoverageType createAbstractCoverageType() {
-//        AbstractCoverageType result = AbstractCoverageType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCurveSegmentType createAbstractCurveSegmentType() {
-//        AbstractCurveSegmentType result = AbstractCurveSegmentType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractCurveType createAbstractCurveType() {
-//        AbstractCurveType result = AbstractCurveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractDatumBaseType createAbstractDatumBaseType() {
-//        AbstractDatumBaseType result = AbstractDatumBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractDatumType createAbstractDatumType() {
-//        AbstractDatumType result = AbstractDatumType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractDiscreteCoverageType createAbstractDiscreteCoverageType() {
-//        AbstractDiscreteCoverageType result = AbstractDiscreteCoverageType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractFeatureCollectionType createAbstractFeatureCollectionType() {
-//        AbstractFeatureCollectionType result = AbstractFeatureCollectionType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractFeatureType createAbstractFeatureType() {
-//        AbstractFeatureType result = AbstractFeatureType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeneralConversionType createAbstractGeneralConversionType() {
-//        AbstractGeneralConversionType result = AbstractGeneralConversionType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeneralDerivedCRSType createAbstractGeneralDerivedCRSType() {
-//        AbstractGeneralDerivedCRSType result = AbstractGeneralDerivedCRSType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeneralOperationParameterType createAbstractGeneralOperationParameterType() {
-//        AbstractGeneralOperationParameterType result =
-//                AbstractGeneralOperationParameterType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeneralParameterValueType createAbstractGeneralParameterValueType() {
-//        AbstractGeneralParameterValueType result = AbstractGeneralParameterValueType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeneralTransformationType createAbstractGeneralTransformationType() {
-//        AbstractGeneralTransformationType result = AbstractGeneralTransformationType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeometricAggregateType createAbstractGeometricAggregateType() {
-//        AbstractGeometricAggregateType result = AbstractGeometricAggregateType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeometricPrimitiveType createAbstractGeometricPrimitiveType() {
-//        AbstractGeometricPrimitiveType result = AbstractGeometricPrimitiveType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGeometryType createAbstractGeometryType() {
-//        AbstractGeometryType result = AbstractGeometryType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractGMLType createAbstractGMLType() {
-//        AbstractGMLType result = AbstractGMLType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractMetaDataType createAbstractMetaDataType() {
-//        AbstractMetaDataType result = AbstractMetaDataType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractPositionalAccuracyType createAbstractPositionalAccuracyType() {
-//        AbstractPositionalAccuracyType result = AbstractPositionalAccuracyType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-//
-//    @Provides
-//    @Override
-//    public AbstractReferenceSystemBaseType createAbstractReferenceSystemBaseType() {
-//        AbstractReferenceSystemBaseType result = AbstractReferenceSystemBaseType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-
-//    @Provides
-//    @Override
-//    public AbstractReferenceSystemType createAbstractReferenceSystemType() {
-//        AbstractReferenceSystemType result = AbstractReferenceSystemType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
-
-//    @Provides
-//    @Override
-//    public AbstractRingType createAbstractRingType() {
-//        AbstractRingType result = AbstractRingType.Factory.newInstance();
-//        getObjectFactory().injectChildMembers(result);
-//        return result;
-//    }
+    @Provides
+    @Override
+    public BoundedFeatureType createBoundedFeatureType() {
+        BoundedFeatureType result = new BoundedFeatureTypeImpl(BoundedFeatureType.type);
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
 
     @Override
     public RepositorySetComplexType createRepositorySetComplexType() {
@@ -1427,6 +1090,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateMotionType createAnimateMotionType() {
         AnimateMotionType result = AnimateMotionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1434,6 +1098,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RepositorySetComplexType createRepository() {
         RepositorySetComplexType result = RepositorySetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1441,6 +1106,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateColorDocument createAnimateColorDocument() {
         AnimateColorDocument result = AnimateColorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1448,6 +1114,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateColorType createAnimateColorType() {
         AnimateColorType result = AnimateColorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1455,6 +1122,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateDocument createAnimateDocument() {
         AnimateDocument result = AnimateDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1462,6 +1130,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateMotionDocument createAnimateMotionDocument() {
         AnimateMotionDocument result = AnimateMotionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1469,6 +1138,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateType createAnimateType() {
         AnimateType result = AnimateType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1476,6 +1146,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SetDocument createSetDocument() {
         SetDocument result = SetDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1483,6 +1154,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SetType createSetType() {
         SetType result = SetType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1490,6 +1162,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateColorPrototype createAnimateColorPrototype() {
         AnimateColorPrototype result = AnimateColorPrototype.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1497,6 +1170,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimateMotionPrototype createAnimateMotionPrototype() {
         AnimateMotionPrototype result = AnimateMotionPrototype.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1504,6 +1178,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnimatePrototype createAnimatePrototype() {
         AnimatePrototype result = AnimatePrototype.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1511,6 +1186,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FillDefaultType createFillDefaultType() {
         FillDefaultType result = FillDefaultType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1518,6 +1194,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FillTimingAttrsType createFillTimingAttrsType() {
         FillTimingAttrsType result = FillTimingAttrsType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1525,6 +1202,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NonNegativeDecimalType createNonNegativeDecimalType() {
         NonNegativeDecimalType result = NonNegativeDecimalType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1532,6 +1210,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RestartDefaultType createRestartDefaultType() {
         RestartDefaultType result = RestartDefaultType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1539,6 +1218,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RestartTimingType createRestartTimingType() {
         RestartTimingType result = RestartTimingType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1546,6 +1226,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SetPrototype createSetPrototype() {
         SetPrototype result = SetPrototype.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1553,6 +1234,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SyncBehaviorDefaultType createSyncBehaviorDefaultType() {
         SyncBehaviorDefaultType result = SyncBehaviorDefaultType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1560,6 +1242,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SyncBehaviorType createSyncBehaviorType() {
         SyncBehaviorType result = SyncBehaviorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1567,6 +1250,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActuateAttribute createActuateAttribute() {
         ActuateAttribute result = ActuateAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1574,6 +1258,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActuateType createActuateType() {
         ActuateType result = ActuateType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1581,6 +1266,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcDocument createArcDocument() {
         ArcDocument result = ArcDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1588,6 +1274,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcroleAttribute createArcroleAttribute() {
         ArcroleAttribute result = ArcroleAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1595,6 +1282,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcroleType createArcroleType() {
         ArcroleType result = ArcroleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1602,6 +1290,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcType createArcType() {
         ArcType result = ArcType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1609,6 +1298,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public Extended createExtended() {
         Extended result = Extended.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1616,6 +1306,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FromAttribute createFromAttribute() {
         FromAttribute result = FromAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1623,6 +1314,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FromType createFromType() {
         FromType result = FromType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1630,6 +1322,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public HrefAttribute createHrefAttribute() {
         HrefAttribute result = HrefAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1637,6 +1330,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public HrefType createHrefType() {
         HrefType result = HrefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1644,6 +1338,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LabelAttribute createLabelAttribute() {
         LabelAttribute result = LabelAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1651,6 +1346,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LabelType createLabelType() {
         LabelType result = LabelType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1658,6 +1354,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocatorDocument createLocatorDocument() {
         LocatorDocument result = LocatorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1665,6 +1362,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocatorType createLocatorType() {
         LocatorType result = LocatorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1672,6 +1370,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceDocument createResourceDocument() {
         ResourceDocument result = ResourceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1679,6 +1378,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceType createResourceType() {
         ResourceType result = ResourceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1686,6 +1386,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RoleAttribute createRoleAttribute() {
         RoleAttribute result = RoleAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1693,6 +1394,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RoleType createRoleType() {
         RoleType result = RoleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1700,6 +1402,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ShowAttribute createShowAttribute() {
         ShowAttribute result = ShowAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1707,6 +1410,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ShowType createShowType() {
         ShowType result = ShowType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1714,6 +1418,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public Simple createSimple() {
         Simple result = Simple.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1721,6 +1426,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleAttribute createTitleAttribute() {
         TitleAttribute result = TitleAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1728,6 +1434,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleAttrType createTitleAttrType() {
         TitleAttrType result = TitleAttrType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1735,6 +1442,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleDocument createTitleDocument() {
         TitleDocument result = TitleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1742,6 +1450,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleEltType createTitleEltType() {
         TitleEltType result = TitleEltType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1749,6 +1458,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ToAttribute createToAttribute() {
         ToAttribute result = ToAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1756,6 +1466,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ToType createToType() {
         ToType result = ToType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1763,6 +1474,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TypeAttribute createTypeAttribute() {
         TypeAttribute result = TypeAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1770,6 +1482,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TypeType createTypeType() {
         TypeType result = TypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1777,6 +1490,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActorComplexType createActorComplexType() {
         ActorComplexType result = ActorComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1784,6 +1498,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActorInRoleComplexType createActorInRoleComplexType() {
         ActorInRoleComplexType result = ActorInRoleComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1791,6 +1506,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActorInRoleSetComplexType createActorInRoleSetComplexType() {
         ActorInRoleSetComplexType result = ActorInRoleSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1798,6 +1514,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ActorSetComplexType createActorSetComplexType() {
         ActorSetComplexType result = ActorSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1805,6 +1522,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AddedSearchTermAttribute createAddedSearchTermAttribute() {
         AddedSearchTermAttribute result = AddedSearchTermAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1812,6 +1530,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AdministrativeMetadataComplexType createAdministrativeMetadataComplexType() {
         AdministrativeMetadataComplexType result = AdministrativeMetadataComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1819,6 +1538,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AdministrativeMetadataDocument createAdministrativeMetadataDocument() {
         AdministrativeMetadataDocument result = AdministrativeMetadataDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1826,6 +1546,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AppellationComplexType createAppellationComplexType() {
         AppellationComplexType result = AppellationComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1833,6 +1554,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ClassificationWrapDocument createClassificationWrapDocument() {
         ClassificationWrapDocument result = ClassificationWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1840,6 +1562,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConceptComplexType createConceptComplexType() {
         ConceptComplexType result = ConceptComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1847,6 +1570,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DateComplexType createDateComplexType() {
         DateComplexType result = DateComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1854,6 +1578,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DateSetComplexType createDateSetComplexType() {
         DateSetComplexType result = DateSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1861,6 +1586,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DescriptiveMetadataComplexType createDescriptiveMetadataComplexType() {
         DescriptiveMetadataComplexType result = DescriptiveMetadataComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1868,6 +1594,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DescriptiveMetadataDocument createDescriptiveMetadataDocument() {
         DescriptiveMetadataDocument result = DescriptiveMetadataDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1875,6 +1602,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DescriptiveNoteComplexType createDescriptiveNoteComplexType() {
         DescriptiveNoteComplexType result = DescriptiveNoteComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1882,6 +1610,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DisplayStateEditionWrapDocument createDisplayStateEditionWrapDocument() {
         DisplayStateEditionWrapDocument result = DisplayStateEditionWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1889,6 +1618,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EncodinganalogAttribute createEncodinganalogAttribute() {
         EncodinganalogAttribute result = EncodinganalogAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1896,6 +1626,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EventComplexType createEventComplexType() {
         EventComplexType result = EventComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1903,6 +1634,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EventSetComplexType createEventSetComplexType() {
         EventSetComplexType result = EventSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1910,6 +1642,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EventWrapDocument createEventWrapDocument() {
         EventWrapDocument result = EventWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1917,6 +1650,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeographicalEntityAttribute createGeographicalEntityAttribute() {
         GeographicalEntityAttribute result = GeographicalEntityAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1924,6 +1658,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GmlComplexType createGmlComplexType() {
         GmlComplexType result = GmlComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1931,6 +1666,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IdentifierComplexType createIdentifierComplexType() {
         IdentifierComplexType result = IdentifierComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1938,6 +1674,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InscriptionsWrapDocument createInscriptionsWrapDocument() {
         InscriptionsWrapDocument result = InscriptionsWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1945,6 +1682,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LegalBodyRefComplexType createLegalBodyRefComplexType() {
         LegalBodyRefComplexType result = LegalBodyRefComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1952,6 +1690,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LidoComplexType createLidoComplexType() {
         LidoComplexType result = LidoComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1959,6 +1698,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LidoDocument createLidoDocument() {
         LidoDocument result = LidoDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1966,6 +1706,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LidoWrapDocument createLidoWrapDocument() {
         LidoWrapDocument result = LidoWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1973,6 +1714,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MaterialsTechComplexType createMaterialsTechComplexType() {
         MaterialsTechComplexType result = MaterialsTechComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1980,6 +1722,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MaterialsTechSetComplexType createMaterialsTechSetComplexType() {
         MaterialsTechSetComplexType result = MaterialsTechSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1987,6 +1730,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasurementsSetComplexType createMeasurementsSetComplexType() {
         MeasurementsSetComplexType result = MeasurementsSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -1994,6 +1738,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectClassificationWrapDocument createObjectClassificationWrapDocument() {
         ObjectClassificationWrapDocument result = ObjectClassificationWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2001,6 +1746,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectComplexType createObjectComplexType() {
         ObjectComplexType result = ObjectComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2008,6 +1754,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectDescriptionWrapDocument createObjectDescriptionWrapDocument() {
         ObjectDescriptionWrapDocument result = ObjectDescriptionWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2015,6 +1762,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectIdentificationWrapDocument createObjectIdentificationWrapDocument() {
         ObjectIdentificationWrapDocument result = ObjectIdentificationWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2022,6 +1770,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectMeasurementsComplexType createObjectMeasurementsComplexType() {
         ObjectMeasurementsComplexType result = ObjectMeasurementsComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2029,6 +1778,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectMeasurementsSetComplexType createObjectMeasurementsSetComplexType() {
         ObjectMeasurementsSetComplexType result = ObjectMeasurementsSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2036,6 +1786,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectMeasurementsWrapDocument createObjectMeasurementsWrapDocument() {
         ObjectMeasurementsWrapDocument result = ObjectMeasurementsWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2043,6 +1794,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectRelationWrapDocument createObjectRelationWrapDocument() {
         ObjectRelationWrapDocument result = ObjectRelationWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2050,6 +1802,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectSetComplexType createObjectSetComplexType() {
         ObjectSetComplexType result = ObjectSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2057,6 +1810,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectWorkTypeWrapDocument createObjectWorkTypeWrapDocument() {
         ObjectWorkTypeWrapDocument result = ObjectWorkTypeWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2064,6 +1818,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PlaceComplexType createPlaceComplexType() {
         PlaceComplexType result = PlaceComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2071,6 +1826,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PlaceSetComplexType createPlaceSetComplexType() {
         PlaceSetComplexType result = PlaceSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2078,6 +1834,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PoliticalEntityAttribute createPoliticalEntityAttribute() {
         PoliticalEntityAttribute result = PoliticalEntityAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2085,6 +1842,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PrefAttribute createPrefAttribute() {
         PrefAttribute result = PrefAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2092,6 +1850,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RecordInfoSetComplexType createRecordInfoSetComplexType() {
         RecordInfoSetComplexType result = RecordInfoSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2099,6 +1858,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RecordWrapDocument createRecordWrapDocument() {
         RecordWrapDocument result = RecordWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2106,6 +1866,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedencodingAttribute createRelatedencodingAttribute() {
         RelatedencodingAttribute result = RelatedencodingAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2113,6 +1874,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedEventSetComplexType createRelatedEventSetComplexType() {
         RelatedEventSetComplexType result = RelatedEventSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2120,6 +1882,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedWorkSetComplexType createRelatedWorkSetComplexType() {
         RelatedWorkSetComplexType result = RelatedWorkSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2127,6 +1890,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedWorksWrapDocument createRelatedWorksWrapDocument() {
         RelatedWorksWrapDocument result = RelatedWorksWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2134,6 +1898,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RepositoryWrapDocument createRepositoryWrapDocument() {
         RepositoryWrapDocument result = RepositoryWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2141,6 +1906,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceSetComplexType createResourceSetComplexType() {
         ResourceSetComplexType result = ResourceSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2148,6 +1914,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceWrapDocument createResourceWrapDocument() {
         ResourceWrapDocument result = ResourceWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2155,6 +1922,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RightsComplexType createRightsComplexType() {
         RightsComplexType result = RightsComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2162,6 +1930,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RightsWorkWrapDocument createRightsWorkWrapDocument() {
         RightsWorkWrapDocument result = RightsWorkWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2169,6 +1938,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SortorderAttribute createSortorderAttribute() {
         SortorderAttribute result = SortorderAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2176,6 +1946,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SourceAttribute createSourceAttribute() {
         SourceAttribute result = SourceAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2183,6 +1954,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectComplexType createSubjectComplexType() {
         SubjectComplexType result = SubjectComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2190,6 +1962,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectSetComplexType createSubjectSetComplexType() {
         SubjectSetComplexType result = SubjectSetComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2197,6 +1970,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectWrapDocument createSubjectWrapDocument() {
         SubjectWrapDocument result = SubjectWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2204,6 +1978,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TermComplexType createTermComplexType() {
         TermComplexType result = TermComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2211,6 +1986,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TextComplexType createTextComplexType() {
         TextComplexType result = TextComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2218,6 +1994,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleWrapDocument createTitleWrapDocument() {
         TitleWrapDocument result = TitleWrapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2225,6 +2002,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public WebResourceComplexType createWebResourceComplexType() {
         WebResourceComplexType result = WebResourceComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2232,6 +2010,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbsoluteExternalPositionalAccuracyDocument createAbsoluteExternalPositionalAccuracyDocument() {
         AbsoluteExternalPositionalAccuracyDocument result =
                 AbsoluteExternalPositionalAccuracyDocument.Factory.newInstance();
@@ -2240,6 +2019,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbsoluteExternalPositionalAccuracyType createAbsoluteExternalPositionalAccuracyType() {
         AbsoluteExternalPositionalAccuracyType result = AbsoluteExternalPositionalAccuracyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2247,6 +2027,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractGeneralOperationParameterRefDocument createAbstractGeneralOperationParameterRefDocument() {
         AbstractGeneralOperationParameterRefDocument result =
                 AbstractGeneralOperationParameterRefDocument.Factory.newInstance();
@@ -2255,6 +2036,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractGeneralOperationParameterRefType createAbstractGeneralOperationParameterRefType() {
         AbstractGeneralOperationParameterRefType result =
                 AbstractGeneralOperationParameterRefType.Factory.newInstance();
@@ -2263,6 +2045,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractGriddedSurfaceType createAbstractGriddedSurfaceType() {
         AbstractGriddedSurfaceType result = AbstractGriddedSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2270,6 +2053,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractParametricCurveSurfaceType createAbstractParametricCurveSurfaceType() {
         AbstractParametricCurveSurfaceType result = AbstractParametricCurveSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2277,6 +2061,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractRingPropertyType createAbstractRingPropertyType() {
         AbstractRingPropertyType result = AbstractRingPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2284,6 +2069,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractSolidType createAbstractSolidType() {
         AbstractSolidType result = AbstractSolidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2291,6 +2077,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AbstractSurfaceType createAbstractSurfaceType() {
         AbstractSurfaceType result = AbstractSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2298,6 +2085,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AesheticCriteriaType createAesheticCriteriaType() {
         AesheticCriteriaType result = AesheticCriteriaType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2305,6 +2093,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AffinePlacementDocument createAffinePlacementDocument() {
         AffinePlacementDocument result = AffinePlacementDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2312,6 +2101,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AffinePlacementType createAffinePlacementType() {
         AffinePlacementType result = AffinePlacementType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2319,6 +2109,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AnchorPointDocument createAnchorPointDocument() {
         AnchorPointDocument result = AnchorPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2326,6 +2117,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AngleChoiceType createAngleChoiceType() {
         AngleChoiceType result = AngleChoiceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2333,6 +2125,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AngleDocument createAngleDocument() {
         AngleDocument result = AngleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2340,6 +2133,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AngleType createAngleType() {
         AngleType result = AngleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2347,6 +2141,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcByBulgeDocument createArcByBulgeDocument() {
         ArcByBulgeDocument result = ArcByBulgeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2354,6 +2149,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcByBulgeType createArcByBulgeType() {
         ArcByBulgeType result = ArcByBulgeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2361,6 +2157,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcByCenterPointDocument createArcByCenterPointDocument() {
         ArcByCenterPointDocument result = ArcByCenterPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2368,6 +2165,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcByCenterPointType createArcByCenterPointType() {
         ArcByCenterPointType result = ArcByCenterPointType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2375,6 +2173,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcMinutesType createArcMinutesType() {
         ArcMinutesType result = ArcMinutesType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2382,6 +2181,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcSecondsType createArcSecondsType() {
         ArcSecondsType result = ArcSecondsType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2389,6 +2189,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcStringByBulgeDocument createArcStringByBulgeDocument() {
         ArcStringByBulgeDocument result = ArcStringByBulgeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2396,6 +2197,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcStringByBulgeType createArcStringByBulgeType() {
         ArcStringByBulgeType result = ArcStringByBulgeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2403,6 +2205,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcStringDocument createArcStringDocument() {
         ArcStringDocument result = ArcStringDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2410,6 +2213,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArcStringType createArcStringType() {
         ArcStringType result = ArcStringType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2417,6 +2221,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AreaType createAreaType() {
         AreaType result = AreaType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2424,6 +2229,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArrayAssociationType createArrayAssociationType() {
         ArrayAssociationType result = ArrayAssociationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2431,6 +2237,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArrayDocument createArrayDocument() {
         ArrayDocument result = ArrayDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2438,6 +2245,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ArrayType createArrayType() {
         ArrayType result = ArrayType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2445,6 +2253,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AssociationDocument createAssociationDocument() {
         AssociationDocument result = AssociationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2452,6 +2261,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AssociationType createAssociationType() {
         AssociationType result = AssociationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2459,6 +2269,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AxisAbbrevDocument createAxisAbbrevDocument() {
         AxisAbbrevDocument result = AxisAbbrevDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2466,6 +2277,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AxisDirectionDocument createAxisDirectionDocument() {
         AxisDirectionDocument result = AxisDirectionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2473,6 +2285,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public AxisIDDocument createAxisIDDocument() {
         AxisIDDocument result = AxisIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2480,6 +2293,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BagDocument createBagDocument() {
         BagDocument result = BagDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2487,6 +2301,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BagType createBagType() {
         BagType result = BagType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2494,6 +2309,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseCRSDocument createBaseCRSDocument() {
         BaseCRSDocument result = BaseCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2501,6 +2317,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseCurveDocument createBaseCurveDocument() {
         BaseCurveDocument result = BaseCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2508,6 +2325,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseStyleDescriptorType createBaseStyleDescriptorType() {
         BaseStyleDescriptorType result = BaseStyleDescriptorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2515,6 +2333,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseSurfaceDocument createBaseSurfaceDocument() {
         BaseSurfaceDocument result = BaseSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2522,6 +2341,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseUnitDocument createBaseUnitDocument() {
         BaseUnitDocument result = BaseUnitDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2529,6 +2349,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BaseUnitType createBaseUnitType() {
         BaseUnitType result = BaseUnitType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2536,6 +2357,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BezierDocument createBezierDocument() {
         BezierDocument result = BezierDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2543,6 +2365,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BezierType createBezierType() {
         BezierType result = BezierType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2550,6 +2373,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanDocument createBooleanDocument() {
         BooleanDocument result = BooleanDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2557,6 +2381,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanList createBooleanList() {
         BooleanList result = BooleanList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2564,6 +2389,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanListDocument createBooleanListDocument() {
         BooleanListDocument result = BooleanListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2571,6 +2397,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanOrNull createBooleanOrNull() {
         BooleanOrNull result = BooleanOrNull.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2578,6 +2405,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanOrNullList createBooleanOrNullList() {
         BooleanOrNullList result = BooleanOrNullList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2585,6 +2413,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanPropertyType createBooleanPropertyType() {
         BooleanPropertyType result = BooleanPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2592,6 +2421,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BooleanValueDocument createBooleanValueDocument() {
         BooleanValueDocument result = BooleanValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2599,6 +2429,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BoundedByDocument createBoundedByDocument() {
         BoundedByDocument result = BoundedByDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2606,6 +2437,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BoundingBoxDocument createBoundingBoxDocument() {
         BoundingBoxDocument result = BoundingBoxDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2613,6 +2445,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BoundingPolygonDocument createBoundingPolygonDocument() {
         BoundingPolygonDocument result = BoundingPolygonDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2620,6 +2453,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BoundingShapeType createBoundingShapeType() {
         BoundingShapeType result = BoundingShapeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2627,6 +2461,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BSplineDocument createBSplineDocument() {
         BSplineDocument result = BSplineDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2634,6 +2469,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public BSplineType createBSplineType() {
         BSplineType result = BSplineType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2641,6 +2477,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CalDate createCalDate() {
         CalDate result = CalDate.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2648,6 +2485,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CartesianCSDocument createCartesianCSDocument() {
         CartesianCSDocument result = CartesianCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2655,6 +2493,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CartesianCSRefDocument createCartesianCSRefDocument() {
         CartesianCSRefDocument result = CartesianCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2662,6 +2501,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CartesianCSRefType createCartesianCSRefType() {
         CartesianCSRefType result = CartesianCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2669,6 +2509,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CartesianCSType createCartesianCSType() {
         CartesianCSType result = CartesianCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2676,6 +2517,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CatalogSymbolDocument createCatalogSymbolDocument() {
         CatalogSymbolDocument result = CatalogSymbolDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2683,6 +2525,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CategoryDocument createCategoryDocument() {
         CategoryDocument result = CategoryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2690,6 +2533,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CategoryExtentDocument createCategoryExtentDocument() {
         CategoryExtentDocument result = CategoryExtentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2697,6 +2541,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CategoryExtentType createCategoryExtentType() {
         CategoryExtentType result = CategoryExtentType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2704,6 +2549,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CategoryListDocument createCategoryListDocument() {
         CategoryListDocument result = CategoryListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2711,6 +2557,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CategoryPropertyType createCategoryPropertyType() {
         CategoryPropertyType result = CategoryPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2718,6 +2565,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CenterLineOfDocument createCenterLineOfDocument() {
         CenterLineOfDocument result = CenterLineOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2725,6 +2573,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CenterOfDocument createCenterOfDocument() {
         CenterOfDocument result = CenterOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2732,6 +2581,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CircleByCenterPointDocument createCircleByCenterPointDocument() {
         CircleByCenterPointDocument result = CircleByCenterPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2739,6 +2589,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CircleByCenterPointType createCircleByCenterPointType() {
         CircleByCenterPointType result = CircleByCenterPointType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2746,6 +2597,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CircleDocument createCircleDocument() {
         CircleDocument result = CircleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2753,6 +2605,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CircleType createCircleType() {
         CircleType result = CircleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2760,6 +2613,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ClothoidDocument createClothoidDocument() {
         ClothoidDocument result = ClothoidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2767,6 +2621,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ClothoidType createClothoidType() {
         ClothoidType result = ClothoidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2774,6 +2629,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CodeListType createCodeListType() {
         CodeListType result = CodeListType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2781,6 +2637,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CodeOrNullListType createCodeOrNullListType() {
         CodeOrNullListType result = CodeOrNullListType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2788,6 +2645,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CodeType createCodeType() {
         CodeType result = CodeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2795,6 +2653,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ColumnIndexDocument createColumnIndexDocument() {
         ColumnIndexDocument result = ColumnIndexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2802,6 +2661,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompassPointDocument createCompassPointDocument() {
         CompassPointDocument result = CompassPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2809,6 +2669,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompassPointEnumeration createCompassPointEnumeration() {
         CompassPointEnumeration result = CompassPointEnumeration.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2816,6 +2677,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeCurveDocument createCompositeCurveDocument() {
         CompositeCurveDocument result = CompositeCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2823,6 +2685,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeCurvePropertyType createCompositeCurvePropertyType() {
         CompositeCurvePropertyType result = CompositeCurvePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2830,6 +2693,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeCurveType createCompositeCurveType() {
         CompositeCurveType result = CompositeCurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2837,6 +2701,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSolidDocument createCompositeSolidDocument() {
         CompositeSolidDocument result = CompositeSolidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2844,6 +2709,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSolidPropertyType createCompositeSolidPropertyType() {
         CompositeSolidPropertyType result = CompositeSolidPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2851,6 +2717,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSolidType createCompositeSolidType() {
         CompositeSolidType result = CompositeSolidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2858,6 +2725,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSurfaceDocument createCompositeSurfaceDocument() {
         CompositeSurfaceDocument result = CompositeSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2865,6 +2733,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSurfacePropertyType createCompositeSurfacePropertyType() {
         CompositeSurfacePropertyType result = CompositeSurfacePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2872,6 +2741,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeSurfaceType createCompositeSurfaceType() {
         CompositeSurfaceType result = CompositeSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2879,6 +2749,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeValueDocument createCompositeValueDocument() {
         CompositeValueDocument result = CompositeValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2886,6 +2757,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompositeValueType createCompositeValueType() {
         CompositeValueType result = CompositeValueType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2893,6 +2765,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompoundCRSDocument createCompoundCRSDocument() {
         CompoundCRSDocument result = CompoundCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2900,6 +2773,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompoundCRSRefDocument createCompoundCRSRefDocument() {
         CompoundCRSRefDocument result = CompoundCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2907,6 +2781,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompoundCRSRefType createCompoundCRSRefType() {
         CompoundCRSRefType result = CompoundCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2914,6 +2789,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CompoundCRSType createCompoundCRSType() {
         CompoundCRSType result = CompoundCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2921,6 +2797,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConcatenatedOperationDocument createConcatenatedOperationDocument() {
         ConcatenatedOperationDocument result = ConcatenatedOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2928,6 +2805,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConcatenatedOperationRefDocument createConcatenatedOperationRefDocument() {
         ConcatenatedOperationRefDocument result = ConcatenatedOperationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2935,6 +2813,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConcatenatedOperationRefType createConcatenatedOperationRefType() {
         ConcatenatedOperationRefType result = ConcatenatedOperationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2942,6 +2821,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConcatenatedOperationType createConcatenatedOperationType() {
         ConcatenatedOperationType result = ConcatenatedOperationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2949,6 +2829,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConeDocument createConeDocument() {
         ConeDocument result = ConeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2956,6 +2837,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConeType createConeType() {
         ConeType result = ConeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2963,6 +2845,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ContainerDocument createContainerDocument() {
         ContainerDocument result = ContainerDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2970,6 +2853,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ContainerPropertyType createContainerPropertyType() {
         ContainerPropertyType result = ContainerPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2977,6 +2861,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ContinuousCoverageDocument createContinuousCoverageDocument() {
         ContinuousCoverageDocument result = ContinuousCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2984,6 +2869,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConventionalUnitDocument createConventionalUnitDocument() {
         ConventionalUnitDocument result = ConventionalUnitDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2991,6 +2877,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConventionalUnitType createConventionalUnitType() {
         ConventionalUnitType result = ConventionalUnitType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -2998,6 +2885,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionDocument createConversionDocument() {
         ConversionDocument result = ConversionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3005,6 +2893,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionRefDocument createConversionRefDocument() {
         ConversionRefDocument result = ConversionRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3012,6 +2901,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionRefType createConversionRefType() {
         ConversionRefType result = ConversionRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3019,6 +2909,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionToPreferredUnitDocument createConversionToPreferredUnitDocument() {
         ConversionToPreferredUnitDocument result = ConversionToPreferredUnitDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3026,6 +2917,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionToPreferredUnitType createConversionToPreferredUnitType() {
         ConversionToPreferredUnitType result = ConversionToPreferredUnitType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3033,6 +2925,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ConversionType createConversionType() {
         ConversionType result = ConversionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3040,6 +2933,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordDocument createCoordDocument() {
         CoordDocument result = CoordDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3047,6 +2941,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateOperationDocument createCoordinateOperationDocument() {
         CoordinateOperationDocument result = CoordinateOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3054,6 +2949,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateOperationIDDocument createCoordinateOperationIDDocument() {
         CoordinateOperationIDDocument result = CoordinateOperationIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3061,6 +2957,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateOperationNameDocument createCoordinateOperationNameDocument() {
         CoordinateOperationNameDocument result = CoordinateOperationNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3068,6 +2965,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateOperationRefDocument createCoordinateOperationRefDocument() {
         CoordinateOperationRefDocument result = CoordinateOperationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3075,6 +2973,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateOperationRefType createCoordinateOperationRefType() {
         CoordinateOperationRefType result = CoordinateOperationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3082,6 +2981,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateReferenceSystemDocument createCoordinateReferenceSystemDocument() {
         CoordinateReferenceSystemDocument result = CoordinateReferenceSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3089,6 +2989,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateReferenceSystemRefDocument createCoordinateReferenceSystemRefDocument() {
         CoordinateReferenceSystemRefDocument result = CoordinateReferenceSystemRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3096,6 +2997,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateReferenceSystemRefType createCoordinateReferenceSystemRefType() {
         CoordinateReferenceSystemRefType result = CoordinateReferenceSystemRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3103,6 +3005,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinatesDocument createCoordinatesDocument() {
         CoordinatesDocument result = CoordinatesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3110,6 +3013,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinatesType createCoordinatesType() {
         CoordinatesType result = CoordinatesType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3117,6 +3021,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemAxisDocument createCoordinateSystemAxisDocument() {
         CoordinateSystemAxisDocument result = CoordinateSystemAxisDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3124,6 +3029,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemAxisRefDocument createCoordinateSystemAxisRefDocument() {
         CoordinateSystemAxisRefDocument result = CoordinateSystemAxisRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3131,6 +3037,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemAxisRefType createCoordinateSystemAxisRefType() {
         CoordinateSystemAxisRefType result = CoordinateSystemAxisRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3138,6 +3045,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemAxisType createCoordinateSystemAxisType() {
         CoordinateSystemAxisType result = CoordinateSystemAxisType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3145,6 +3053,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemDocument createCoordinateSystemDocument() {
         CoordinateSystemDocument result = CoordinateSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3152,6 +3061,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemRefDocument createCoordinateSystemRefDocument() {
         CoordinateSystemRefDocument result = CoordinateSystemRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3159,6 +3069,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordinateSystemRefType createCoordinateSystemRefType() {
         CoordinateSystemRefType result = CoordinateSystemRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3166,6 +3077,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoordType createCoordType() {
         CoordType result = CoordType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3173,6 +3085,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CountDocument createCountDocument() {
         CountDocument result = CountDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3180,6 +3093,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CountExtentDocument createCountExtentDocument() {
         CountExtentDocument result = CountExtentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3187,6 +3101,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CountExtentType createCountExtentType() {
         CountExtentType result = CountExtentType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3194,6 +3109,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CountListDocument createCountListDocument() {
         CountListDocument result = CountListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3201,6 +3117,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CountPropertyType createCountPropertyType() {
         CountPropertyType result = CountPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3208,6 +3125,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CovarianceDocument createCovarianceDocument() {
         CovarianceDocument result = CovarianceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3215,6 +3133,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CovarianceElementType createCovarianceElementType() {
         CovarianceElementType result = CovarianceElementType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3222,6 +3141,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CovarianceMatrixDocument createCovarianceMatrixDocument() {
         CovarianceMatrixDocument result = CovarianceMatrixDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3229,6 +3149,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CovarianceMatrixType createCovarianceMatrixType() {
         CovarianceMatrixType result = CovarianceMatrixType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3236,6 +3157,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoverageDocument createCoverageDocument() {
         CoverageDocument result = CoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3243,6 +3165,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoverageFunctionDocument createCoverageFunctionDocument() {
         CoverageFunctionDocument result = CoverageFunctionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3250,6 +3173,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CoverageFunctionType createCoverageFunctionType() {
         CoverageFunctionType result = CoverageFunctionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3257,6 +3181,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CRSDocument createCRSDocument() {
         CRSDocument result = CRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3264,6 +3189,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CrsRefDocument createCrsRefDocument() {
         CrsRefDocument result = CrsRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3271,6 +3197,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CRSRefType createCRSRefType() {
         CRSRefType result = CRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3278,6 +3205,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CsIDDocument createCsIDDocument() {
         CsIDDocument result = CsIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3285,6 +3213,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CsNameDocument createCsNameDocument() {
         CsNameDocument result = CsNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3292,6 +3221,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CubicSplineDocument createCubicSplineDocument() {
         CubicSplineDocument result = CubicSplineDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3299,6 +3229,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CubicSplineType createCubicSplineType() {
         CubicSplineType result = CubicSplineType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3306,6 +3237,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveArrayPropertyDocument createCurveArrayPropertyDocument() {
         CurveArrayPropertyDocument result = CurveArrayPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3313,6 +3245,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveArrayPropertyType createCurveArrayPropertyType() {
         CurveArrayPropertyType result = CurveArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3320,6 +3253,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveDocument createCurveDocument() {
         CurveDocument result = CurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3327,6 +3261,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveInterpolationType createCurveInterpolationType() {
         CurveInterpolationType result = CurveInterpolationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3334,6 +3269,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveMemberDocument createCurveMemberDocument() {
         CurveMemberDocument result = CurveMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3341,6 +3277,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurvePropertyDocument createCurvePropertyDocument() {
         CurvePropertyDocument result = CurvePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3348,6 +3285,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurvePropertyType createCurvePropertyType() {
         CurvePropertyType result = CurvePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3355,6 +3293,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveSegmentArrayPropertyType createCurveSegmentArrayPropertyType() {
         CurveSegmentArrayPropertyType result = CurveSegmentArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3362,6 +3301,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveSegmentDocument createCurveSegmentDocument() {
         CurveSegmentDocument result = CurveSegmentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3369,6 +3309,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveType createCurveType() {
         CurveType result = CurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3376,6 +3317,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylinderDocument createCylinderDocument() {
         CylinderDocument result = CylinderDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3383,6 +3325,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylinderType createCylinderType() {
         CylinderType result = CylinderType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3390,6 +3333,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylindricalCSDocument createCylindricalCSDocument() {
         CylindricalCSDocument result = CylindricalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3397,6 +3341,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylindricalCSRefDocument createCylindricalCSRefDocument() {
         CylindricalCSRefDocument result = CylindricalCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3404,6 +3349,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylindricalCSRefType createCylindricalCSRefType() {
         CylindricalCSRefType result = CylindricalCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3411,6 +3357,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CylindricalCSType createCylindricalCSType() {
         CylindricalCSType result = CylindricalCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3418,6 +3365,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DataBlockDocument createDataBlockDocument() {
         DataBlockDocument result = DataBlockDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3425,6 +3373,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DataBlockType createDataBlockType() {
         DataBlockType result = DataBlockType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3432,6 +3381,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DataSourceDocument createDataSourceDocument() {
         DataSourceDocument result = DataSourceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3439,6 +3389,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DatumDocument createDatumDocument() {
         DatumDocument result = DatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3446,6 +3397,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DatumIDDocument createDatumIDDocument() {
         DatumIDDocument result = DatumIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3453,6 +3405,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DatumNameDocument createDatumNameDocument() {
         DatumNameDocument result = DatumNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3460,6 +3413,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DatumRefDocument createDatumRefDocument() {
         DatumRefDocument result = DatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3467,6 +3421,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DatumRefType createDatumRefType() {
         DatumRefType result = DatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3474,6 +3429,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DecimalMinutesDocument createDecimalMinutesDocument() {
         DecimalMinutesDocument result = DecimalMinutesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3481,6 +3437,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DecimalMinutesType createDecimalMinutesType() {
         DecimalMinutesType result = DecimalMinutesType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3488,6 +3445,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefaultStyleDocument createDefaultStyleDocument() {
         DefaultStyleDocument result = DefaultStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3495,6 +3453,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefaultStylePropertyType createDefaultStylePropertyType() {
         DefaultStylePropertyType result = DefaultStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3502,6 +3461,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinedByConversionDocument createDefinedByConversionDocument() {
         DefinedByConversionDocument result = DefinedByConversionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3509,6 +3469,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionCollectionDocument createDefinitionCollectionDocument() {
         DefinitionCollectionDocument result = DefinitionCollectionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3516,6 +3477,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionDocument createDefinitionDocument() {
         DefinitionDocument result = DefinitionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3523,6 +3485,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionMemberDocument createDefinitionMemberDocument() {
         DefinitionMemberDocument result = DefinitionMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3530,6 +3493,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionProxyDocument createDefinitionProxyDocument() {
         DefinitionProxyDocument result = DefinitionProxyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3537,6 +3501,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionProxyType createDefinitionProxyType() {
         DefinitionProxyType result = DefinitionProxyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3544,6 +3509,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionRefDocument createDefinitionRefDocument() {
         DefinitionRefDocument result = DefinitionRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3551,6 +3517,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DefinitionType createDefinitionType() {
         DefinitionType result = DefinitionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3558,6 +3525,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DegreesDocument createDegreesDocument() {
         DegreesDocument result = DegreesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3565,6 +3533,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DegreesType createDegreesType() {
         DegreesType result = DegreesType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3572,6 +3541,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DegreeValueType createDegreeValueType() {
         DegreeValueType result = DegreeValueType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3579,6 +3549,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivationUnitTermDocument createDerivationUnitTermDocument() {
         DerivationUnitTermDocument result = DerivationUnitTermDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3586,6 +3557,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivationUnitTermType createDerivationUnitTermType() {
         DerivationUnitTermType result = DerivationUnitTermType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3593,6 +3565,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSDocument createDerivedCRSDocument() {
         DerivedCRSDocument result = DerivedCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3600,6 +3573,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSRefDocument createDerivedCRSRefDocument() {
         DerivedCRSRefDocument result = DerivedCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3607,6 +3581,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSRefType createDerivedCRSRefType() {
         DerivedCRSRefType result = DerivedCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3614,6 +3589,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSType createDerivedCRSType() {
         DerivedCRSType result = DerivedCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3621,6 +3597,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSTypeDocument createDerivedCRSTypeDocument() {
         DerivedCRSTypeDocument result = DerivedCRSTypeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3628,6 +3605,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedCRSTypeType createDerivedCRSTypeType() {
         DerivedCRSTypeType result = DerivedCRSTypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3635,6 +3613,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedUnitDocument createDerivedUnitDocument() {
         DerivedUnitDocument result = DerivedUnitDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3642,6 +3621,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DerivedUnitType createDerivedUnitType() {
         DerivedUnitType result = DerivedUnitType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3649,6 +3629,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DescriptionDocument createDescriptionDocument() {
         DescriptionDocument result = DescriptionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3656,6 +3637,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DictionaryDocument createDictionaryDocument() {
         DictionaryDocument result = DictionaryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3663,6 +3645,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DictionaryEntryDocument createDictionaryEntryDocument() {
         DictionaryEntryDocument result = DictionaryEntryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3670,6 +3653,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DictionaryEntryType createDictionaryEntryType() {
         DictionaryEntryType result = DictionaryEntryType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3677,6 +3661,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DictionaryType createDictionaryType() {
         DictionaryType result = DictionaryType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3684,6 +3669,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedEdgeDocument createDirectedEdgeDocument() {
         DirectedEdgeDocument result = DirectedEdgeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3691,6 +3677,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedEdgePropertyType createDirectedEdgePropertyType() {
         DirectedEdgePropertyType result = DirectedEdgePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3698,6 +3685,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedFaceDocument createDirectedFaceDocument() {
         DirectedFaceDocument result = DirectedFaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3705,6 +3693,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedFacePropertyType createDirectedFacePropertyType() {
         DirectedFacePropertyType result = DirectedFacePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3712,6 +3701,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedNodeDocument createDirectedNodeDocument() {
         DirectedNodeDocument result = DirectedNodeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3719,6 +3709,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedNodePropertyType createDirectedNodePropertyType() {
         DirectedNodePropertyType result = DirectedNodePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3726,6 +3717,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedObservationAtDistanceDocument createDirectedObservationAtDistanceDocument() {
         DirectedObservationAtDistanceDocument result = DirectedObservationAtDistanceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3733,6 +3725,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedObservationAtDistanceType createDirectedObservationAtDistanceType() {
         DirectedObservationAtDistanceType result = DirectedObservationAtDistanceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3740,6 +3733,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedObservationDocument createDirectedObservationDocument() {
         DirectedObservationDocument result = DirectedObservationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3747,6 +3741,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedObservationType createDirectedObservationType() {
         DirectedObservationType result = DirectedObservationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3754,6 +3749,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedTopoSolidDocument createDirectedTopoSolidDocument() {
         DirectedTopoSolidDocument result = DirectedTopoSolidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3761,6 +3757,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectedTopoSolidPropertyType createDirectedTopoSolidPropertyType() {
         DirectedTopoSolidPropertyType result = DirectedTopoSolidPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3768,6 +3765,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectionDocument createDirectionDocument() {
         DirectionDocument result = DirectionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3775,6 +3773,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectionPropertyType createDirectionPropertyType() {
         DirectionPropertyType result = DirectionPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3782,6 +3781,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectionVectorDocument createDirectionVectorDocument() {
         DirectionVectorDocument result = DirectionVectorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3789,6 +3789,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectionVectorType createDirectionVectorType() {
         DirectionVectorType result = DirectionVectorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3796,6 +3797,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectPositionListType createDirectPositionListType() {
         DirectPositionListType result = DirectPositionListType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3803,6 +3805,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DirectPositionType createDirectPositionType() {
         DirectPositionType result = DirectPositionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3810,6 +3813,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DiscreteCoverageDocument createDiscreteCoverageDocument() {
         DiscreteCoverageDocument result = DiscreteCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3817,6 +3821,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DmsAngleDocument createDmsAngleDocument() {
         DmsAngleDocument result = DmsAngleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3824,6 +3829,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DMSAngleType createDMSAngleType() {
         DMSAngleType result = DMSAngleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3831,6 +3837,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DmsAngleValueDocument createDmsAngleValueDocument() {
         DmsAngleValueDocument result = DmsAngleValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3838,6 +3845,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DomainSetDocument createDomainSetDocument() {
         DomainSetDocument result = DomainSetDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3845,6 +3853,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DomainSetType createDomainSetType() {
         DomainSetType result = DomainSetType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3852,6 +3861,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DoubleList createDoubleList() {
         DoubleList result = DoubleList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3859,6 +3869,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DoubleOrNull createDoubleOrNull() {
         DoubleOrNull result = DoubleOrNull.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3866,6 +3877,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DoubleOrNullList createDoubleOrNullList() {
         DoubleOrNullList result = DoubleOrNullList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3873,6 +3885,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DoubleOrNullTupleListDocument createDoubleOrNullTupleListDocument() {
         DoubleOrNullTupleListDocument result = DoubleOrNullTupleListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3880,6 +3893,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DrawingTypeType createDrawingTypeType() {
         DrawingTypeType result = DrawingTypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3887,6 +3901,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DurationDocument createDurationDocument() {
         DurationDocument result = DurationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3894,6 +3909,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DynamicFeatureCollectionType createDynamicFeatureCollectionType() {
         DynamicFeatureCollectionType result = DynamicFeatureCollectionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3901,6 +3917,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DynamicFeatureType createDynamicFeatureType() {
         DynamicFeatureType result = DynamicFeatureType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3908,6 +3925,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EdgeDocument createEdgeDocument() {
         EdgeDocument result = EdgeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3915,6 +3933,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EdgeOfDocument createEdgeOfDocument() {
         EdgeOfDocument result = EdgeOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3922,6 +3941,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EdgeType createEdgeType() {
         EdgeType result = EdgeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3929,6 +3949,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidalCSDocument createEllipsoidalCSDocument() {
         EllipsoidalCSDocument result = EllipsoidalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3936,6 +3957,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidalCSRefDocument createEllipsoidalCSRefDocument() {
         EllipsoidalCSRefDocument result = EllipsoidalCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3943,6 +3965,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidalCSRefType createEllipsoidalCSRefType() {
         EllipsoidalCSRefType result = EllipsoidalCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3950,6 +3973,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidalCSType createEllipsoidalCSType() {
         EllipsoidalCSType result = EllipsoidalCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3957,6 +3981,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidDocument createEllipsoidDocument() {
         EllipsoidDocument result = EllipsoidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3964,6 +3989,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidIDDocument createEllipsoidIDDocument() {
         EllipsoidIDDocument result = EllipsoidIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3971,6 +3997,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidNameDocument createEllipsoidNameDocument() {
         EllipsoidNameDocument result = EllipsoidNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3978,6 +4005,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidRefDocument createEllipsoidRefDocument() {
         EllipsoidRefDocument result = EllipsoidRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3985,6 +4013,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidRefType createEllipsoidRefType() {
         EllipsoidRefType result = EllipsoidRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3992,6 +4021,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EllipsoidType createEllipsoidType() {
         EllipsoidType result = EllipsoidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -3999,6 +4029,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringCRSDocument createEngineeringCRSDocument() {
         EngineeringCRSDocument result = EngineeringCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4006,6 +4037,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringCRSRefDocument createEngineeringCRSRefDocument() {
         EngineeringCRSRefDocument result = EngineeringCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4013,6 +4045,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringCRSRefType createEngineeringCRSRefType() {
         EngineeringCRSRefType result = EngineeringCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4020,6 +4053,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringCRSType createEngineeringCRSType() {
         EngineeringCRSType result = EngineeringCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4027,6 +4061,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringDatumDocument createEngineeringDatumDocument() {
         EngineeringDatumDocument result = EngineeringDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4034,6 +4069,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringDatumRefDocument createEngineeringDatumRefDocument() {
         EngineeringDatumRefDocument result = EngineeringDatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4041,6 +4077,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringDatumRefType createEngineeringDatumRefType() {
         EngineeringDatumRefType result = EngineeringDatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4048,6 +4085,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EngineeringDatumType createEngineeringDatumType() {
         EngineeringDatumType result = EngineeringDatumType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4055,6 +4093,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EnvelopeDocument createEnvelopeDocument() {
         EnvelopeDocument result = EnvelopeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4062,6 +4101,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EnvelopeType createEnvelopeType() {
         EnvelopeType result = EnvelopeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4069,6 +4109,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EnvelopeWithTimePeriodDocument createEnvelopeWithTimePeriodDocument() {
         EnvelopeWithTimePeriodDocument result = EnvelopeWithTimePeriodDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4076,6 +4117,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EnvelopeWithTimePeriodType createEnvelopeWithTimePeriodType() {
         EnvelopeWithTimePeriodType result = EnvelopeWithTimePeriodType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4083,6 +4125,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ExtentOfDocument createExtentOfDocument() {
         ExtentOfDocument result = ExtentOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4090,6 +4133,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ExtentType createExtentType() {
         ExtentType result = ExtentType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4097,6 +4141,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ExteriorDocument createExteriorDocument() {
         ExteriorDocument result = ExteriorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4104,6 +4149,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FaceDocument createFaceDocument() {
         FaceDocument result = FaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4111,6 +4157,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FaceType createFaceType() {
         FaceType result = FaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4118,6 +4165,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureArrayPropertyType createFeatureArrayPropertyType() {
         FeatureArrayPropertyType result = FeatureArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4125,6 +4173,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureCollectionDocument createFeatureCollectionDocument() {
         FeatureCollectionDocument result = FeatureCollectionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4132,6 +4181,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureCollectionType createFeatureCollectionType() {
         FeatureCollectionType result = FeatureCollectionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4139,6 +4189,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureDocument createFeatureDocument() {
         FeatureDocument result = FeatureDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4146,6 +4197,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureMemberDocument createFeatureMemberDocument() {
         FeatureMemberDocument result = FeatureMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4153,6 +4205,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureMembersDocument createFeatureMembersDocument() {
         FeatureMembersDocument result = FeatureMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4160,6 +4213,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeaturePropertyDocument createFeaturePropertyDocument() {
         FeaturePropertyDocument result = FeaturePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4167,6 +4221,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeaturePropertyType createFeaturePropertyType() {
         FeaturePropertyType result = FeaturePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4174,6 +4229,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureStyleDocument createFeatureStyleDocument() {
         FeatureStyleDocument result = FeatureStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4181,6 +4237,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureStylePropertyType createFeatureStylePropertyType() {
         FeatureStylePropertyType result = FeatureStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4188,6 +4245,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FeatureStyleType createFeatureStyleType() {
         FeatureStyleType result = FeatureStyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4195,6 +4253,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FileDocument createFileDocument() {
         FileDocument result = FileDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4202,6 +4261,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FileType createFileType() {
         FileType result = FileType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4209,6 +4269,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FileValueModelType createFileValueModelType() {
         FileValueModelType result = FileValueModelType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4216,6 +4277,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public FormulaType createFormulaType() {
         FormulaType result = FormulaType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4223,6 +4285,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralConversionDocument createGeneralConversionDocument() {
         GeneralConversionDocument result = GeneralConversionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4230,6 +4293,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralConversionRefDocument createGeneralConversionRefDocument() {
         GeneralConversionRefDocument result = GeneralConversionRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4237,6 +4301,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralConversionRefType createGeneralConversionRefType() {
         GeneralConversionRefType result = GeneralConversionRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4244,6 +4309,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralDerivedCRSDocument createGeneralDerivedCRSDocument() {
         GeneralDerivedCRSDocument result = GeneralDerivedCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4251,6 +4317,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralOperationParameterDocument createGeneralOperationParameterDocument() {
         GeneralOperationParameterDocument result = GeneralOperationParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4258,6 +4325,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralParameterValueDocument createGeneralParameterValueDocument() {
         GeneralParameterValueDocument result = GeneralParameterValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4265,6 +4333,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralTransformationDocument createGeneralTransformationDocument() {
         GeneralTransformationDocument result = GeneralTransformationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4272,6 +4341,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralTransformationRefDocument createGeneralTransformationRefDocument() {
         GeneralTransformationRefDocument result = GeneralTransformationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4279,6 +4349,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeneralTransformationRefType createGeneralTransformationRefType() {
         GeneralTransformationRefType result = GeneralTransformationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4286,6 +4357,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GenericMetaDataDocument createGenericMetaDataDocument() {
         GenericMetaDataDocument result = GenericMetaDataDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4293,6 +4365,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GenericMetaDataType createGenericMetaDataType() {
         GenericMetaDataType result = GenericMetaDataType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4300,6 +4373,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeocentricCRSDocument createGeocentricCRSDocument() {
         GeocentricCRSDocument result = GeocentricCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4307,6 +4381,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeocentricCRSRefDocument createGeocentricCRSRefDocument() {
         GeocentricCRSRefDocument result = GeocentricCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4314,6 +4389,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeocentricCRSRefType createGeocentricCRSRefType() {
         GeocentricCRSRefType result = GeocentricCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4321,6 +4397,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeocentricCRSType createGeocentricCRSType() {
         GeocentricCRSType result = GeocentricCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4328,6 +4405,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodesicDocument createGeodesicDocument() {
         GeodesicDocument result = GeodesicDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4335,6 +4413,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodesicStringDocument createGeodesicStringDocument() {
         GeodesicStringDocument result = GeodesicStringDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4342,6 +4421,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodesicStringType createGeodesicStringType() {
         GeodesicStringType result = GeodesicStringType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4349,6 +4429,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodesicType createGeodesicType() {
         GeodesicType result = GeodesicType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4356,6 +4437,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodeticDatumDocument createGeodeticDatumDocument() {
         GeodeticDatumDocument result = GeodeticDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4363,6 +4445,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodeticDatumRefDocument createGeodeticDatumRefDocument() {
         GeodeticDatumRefDocument result = GeodeticDatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4370,6 +4453,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodeticDatumRefType createGeodeticDatumRefType() {
         GeodeticDatumRefType result = GeodeticDatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4377,6 +4461,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeodeticDatumType createGeodeticDatumType() {
         GeodeticDatumType result = GeodeticDatumType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4384,6 +4469,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeographicCRSDocument createGeographicCRSDocument() {
         GeographicCRSDocument result = GeographicCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4391,6 +4477,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeographicCRSRefDocument createGeographicCRSRefDocument() {
         GeographicCRSRefDocument result = GeographicCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4398,6 +4485,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeographicCRSRefType createGeographicCRSRefType() {
         GeographicCRSRefType result = GeographicCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4405,6 +4493,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeographicCRSType createGeographicCRSType() {
         GeographicCRSType result = GeographicCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4412,6 +4501,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricAggregateDocument createGeometricAggregateDocument() {
         GeometricAggregateDocument result = GeometricAggregateDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4419,6 +4509,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricComplexDocument createGeometricComplexDocument() {
         GeometricComplexDocument result = GeometricComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4426,6 +4517,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricComplexPropertyType createGeometricComplexPropertyType() {
         GeometricComplexPropertyType result = GeometricComplexPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4433,6 +4525,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricComplexType createGeometricComplexType() {
         GeometricComplexType result = GeometricComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4440,6 +4533,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricPrimitiveDocument createGeometricPrimitiveDocument() {
         GeometricPrimitiveDocument result = GeometricPrimitiveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4447,6 +4541,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometricPrimitivePropertyType createGeometricPrimitivePropertyType() {
         GeometricPrimitivePropertyType result = GeometricPrimitivePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4454,6 +4549,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryArrayPropertyType createGeometryArrayPropertyType() {
         GeometryArrayPropertyType result = GeometryArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4461,6 +4557,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryDocument createGeometryDocument() {
         GeometryDocument result = GeometryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4468,6 +4565,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryMemberDocument createGeometryMemberDocument() {
         GeometryMemberDocument result = GeometryMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4475,6 +4573,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryMembersDocument createGeometryMembersDocument() {
         GeometryMembersDocument result = GeometryMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4482,6 +4581,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryPropertyType createGeometryPropertyType() {
         GeometryPropertyType result = GeometryPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4489,6 +4589,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryStyleDocument createGeometryStyleDocument() {
         GeometryStyleDocument result = GeometryStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4496,6 +4597,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryStylePropertyType createGeometryStylePropertyType() {
         GeometryStylePropertyType result = GeometryStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4503,6 +4605,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GeometryStyleType createGeometryStyleType() {
         GeometryStyleType result = GeometryStyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4510,6 +4613,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GMLDocument createGMLDocument() {
         GMLDocument result = GMLDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4517,6 +4621,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GraphStyleDocument createGraphStyleDocument() {
         GraphStyleDocument result = GraphStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4524,6 +4629,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GraphStylePropertyType createGraphStylePropertyType() {
         GraphStylePropertyType result = GraphStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4531,6 +4637,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GraphStyleType createGraphStyleType() {
         GraphStyleType result = GraphStyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4538,6 +4645,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GraphTypeType createGraphTypeType() {
         GraphTypeType result = GraphTypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4545,6 +4653,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GreenwichLongitudeDocument createGreenwichLongitudeDocument() {
         GreenwichLongitudeDocument result = GreenwichLongitudeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4552,6 +4661,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridCoverageDocument createGridCoverageDocument() {
         GridCoverageDocument result = GridCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4559,6 +4669,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridCoverageType createGridCoverageType() {
         GridCoverageType result = GridCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4566,6 +4677,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GriddedSurfaceDocument createGriddedSurfaceDocument() {
         GriddedSurfaceDocument result = GriddedSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4573,6 +4685,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridDocument createGridDocument() {
         GridDocument result = GridDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4580,6 +4693,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridDomainDocument createGridDomainDocument() {
         GridDomainDocument result = GridDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4587,6 +4701,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridDomainType createGridDomainType() {
         GridDomainType result = GridDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4594,6 +4709,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridEnvelopeType createGridEnvelopeType() {
         GridEnvelopeType result = GridEnvelopeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4601,6 +4717,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridFunctionDocument createGridFunctionDocument() {
         GridFunctionDocument result = GridFunctionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4608,6 +4725,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridFunctionType createGridFunctionType() {
         GridFunctionType result = GridFunctionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4615,6 +4733,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridLengthType createGridLengthType() {
         GridLengthType result = GridLengthType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4622,6 +4741,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridLimitsType createGridLimitsType() {
         GridLimitsType result = GridLimitsType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4629,6 +4749,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GridType createGridType() {
         GridType result = GridType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4636,6 +4757,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GroupIDDocument createGroupIDDocument() {
         GroupIDDocument result = GroupIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4643,6 +4765,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public GroupNameDocument createGroupNameDocument() {
         GroupNameDocument result = GroupNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4650,6 +4773,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public HistoryDocument createHistoryDocument() {
         HistoryDocument result = HistoryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4657,6 +4781,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public HistoryPropertyType createHistoryPropertyType() {
         HistoryPropertyType result = HistoryPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4664,6 +4789,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IdAttribute createIdAttribute() {
         IdAttribute result = IdAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4671,6 +4797,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IdentifierType createIdentifierType() {
         IdentifierType result = IdentifierType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4678,6 +4805,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageCRSDocument createImageCRSDocument() {
         ImageCRSDocument result = ImageCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4685,6 +4813,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageCRSRefDocument createImageCRSRefDocument() {
         ImageCRSRefDocument result = ImageCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4692,6 +4821,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageCRSRefType createImageCRSRefType() {
         ImageCRSRefType result = ImageCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4699,6 +4829,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageCRSType createImageCRSType() {
         ImageCRSType result = ImageCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4706,6 +4837,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageDatumDocument createImageDatumDocument() {
         ImageDatumDocument result = ImageDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4713,6 +4845,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageDatumRefDocument createImageDatumRefDocument() {
         ImageDatumRefDocument result = ImageDatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4720,6 +4853,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageDatumRefType createImageDatumRefType() {
         ImageDatumRefType result = ImageDatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4727,6 +4861,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImageDatumType createImageDatumType() {
         ImageDatumType result = ImageDatumType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4734,6 +4869,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ImplicitGeometryDocument createImplicitGeometryDocument() {
         ImplicitGeometryDocument result = ImplicitGeometryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4741,6 +4877,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IncludesCRSDocument createIncludesCRSDocument() {
         IncludesCRSDocument result = IncludesCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4748,6 +4885,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IncludesElementDocument createIncludesElementDocument() {
         IncludesElementDocument result = IncludesElementDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4755,6 +4893,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IncludesParameterDocument createIncludesParameterDocument() {
         IncludesParameterDocument result = IncludesParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4762,6 +4901,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IncludesValueDocument createIncludesValueDocument() {
         IncludesValueDocument result = IncludesValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4769,6 +4909,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IncrementOrder createIncrementOrder() {
         IncrementOrder result = IncrementOrder.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4776,6 +4917,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IndexMapDocument createIndexMapDocument() {
         IndexMapDocument result = IndexMapDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4783,6 +4925,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IndexMapType createIndexMapType() {
         IndexMapType result = IndexMapType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4790,6 +4933,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IndirectEntryDocument createIndirectEntryDocument() {
         IndirectEntryDocument result = IndirectEntryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4797,6 +4941,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IndirectEntryType createIndirectEntryType() {
         IndirectEntryType result = IndirectEntryType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4804,6 +4949,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InnerBoundaryIsDocument createInnerBoundaryIsDocument() {
         InnerBoundaryIsDocument result = InnerBoundaryIsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4811,6 +4957,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IntegerList createIntegerList() {
         IntegerList result = IntegerList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4818,6 +4965,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IntegerOrNull createIntegerOrNull() {
         IntegerOrNull result = IntegerOrNull.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4825,6 +4973,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IntegerOrNullList createIntegerOrNullList() {
         IntegerOrNullList result = IntegerOrNullList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4832,6 +4981,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IntegerValueDocument createIntegerValueDocument() {
         IntegerValueDocument result = IntegerValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4839,6 +4989,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IntegerValueListDocument createIntegerValueListDocument() {
         IntegerValueListDocument result = IntegerValueListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4846,6 +4997,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InteriorDocument createInteriorDocument() {
         InteriorDocument result = InteriorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4853,6 +5005,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InverseFlatteningDocument createInverseFlatteningDocument() {
         InverseFlatteningDocument result = InverseFlatteningDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4860,6 +5013,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IsolatedDocument createIsolatedDocument() {
         IsolatedDocument result = IsolatedDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4867,6 +5021,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IsolatedPropertyType createIsolatedPropertyType() {
         IsolatedPropertyType result = IsolatedPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4874,6 +5029,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public IsSphereDocument createIsSphereDocument() {
         IsSphereDocument result = IsSphereDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4881,6 +5037,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public KnotPropertyType createKnotPropertyType() {
         KnotPropertyType result = KnotPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4888,6 +5045,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public KnotType createKnotType() {
         KnotType result = KnotType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4895,6 +5053,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public KnotTypesType createKnotTypesType() {
         KnotTypesType result = KnotTypesType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4902,6 +5061,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LabelStyleDocument createLabelStyleDocument() {
         LabelStyleDocument result = LabelStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4909,6 +5069,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LabelStylePropertyType createLabelStylePropertyType() {
         LabelStylePropertyType result = LabelStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4916,6 +5077,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LabelStyleType createLabelStyleType() {
         LabelStyleType result = LabelStyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4923,6 +5085,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LengthType createLengthType() {
         LengthType result = LengthType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4930,6 +5093,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearCSDocument createLinearCSDocument() {
         LinearCSDocument result = LinearCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4937,6 +5101,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearCSRefDocument createLinearCSRefDocument() {
         LinearCSRefDocument result = LinearCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4944,6 +5109,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearCSRefType createLinearCSRefType() {
         LinearCSRefType result = LinearCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4951,6 +5117,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearCSType createLinearCSType() {
         LinearCSType result = LinearCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4958,6 +5125,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearRingDocument createLinearRingDocument() {
         LinearRingDocument result = LinearRingDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4965,6 +5133,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearRingPropertyType createLinearRingPropertyType() {
         LinearRingPropertyType result = LinearRingPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4972,6 +5141,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LinearRingType createLinearRingType() {
         LinearRingType result = LinearRingType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4979,6 +5149,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringDocument createLineStringDocument() {
         LineStringDocument result = LineStringDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4986,6 +5157,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringMemberDocument createLineStringMemberDocument() {
         LineStringMemberDocument result = LineStringMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -4993,6 +5165,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringPropertyDocument createLineStringPropertyDocument() {
         LineStringPropertyDocument result = LineStringPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5000,6 +5173,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringPropertyType createLineStringPropertyType() {
         LineStringPropertyType result = LineStringPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5007,6 +5181,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringSegmentArrayPropertyType createLineStringSegmentArrayPropertyType() {
         LineStringSegmentArrayPropertyType result = LineStringSegmentArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5014,6 +5189,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringSegmentDocument createLineStringSegmentDocument() {
         LineStringSegmentDocument result = LineStringSegmentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5021,6 +5197,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringSegmentType createLineStringSegmentType() {
         LineStringSegmentType result = LineStringSegmentType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5028,6 +5205,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineStringType createLineStringType() {
         LineStringType result = LineStringType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5035,6 +5213,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LineTypeType createLineTypeType() {
         LineTypeType result = LineTypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5042,6 +5221,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocationDocument createLocationDocument() {
         LocationDocument result = LocationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5049,6 +5229,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocationKeyWordDocument createLocationKeyWordDocument() {
         LocationKeyWordDocument result = LocationKeyWordDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5056,6 +5237,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocationPropertyType createLocationPropertyType() {
         LocationPropertyType result = LocationPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5063,6 +5245,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LocationStringDocument createLocationStringDocument() {
         LocationStringDocument result = LocationStringDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5070,6 +5253,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MappingRuleDocument createMappingRuleDocument() {
         MappingRuleDocument result = MappingRuleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5077,6 +5261,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MaximalComplexDocument createMaximalComplexDocument() {
         MaximalComplexDocument result = MaximalComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5084,6 +5269,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MaximumOccursDocument createMaximumOccursDocument() {
         MaximumOccursDocument result = MaximumOccursDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5091,6 +5277,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasureDescriptionDocument createMeasureDescriptionDocument() {
         MeasureDescriptionDocument result = MeasureDescriptionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5098,6 +5285,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasureDocument createMeasureDocument() {
         MeasureDocument result = MeasureDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5105,6 +5293,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasureListType createMeasureListType() {
         MeasureListType result = MeasureListType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5112,6 +5301,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasureOrNullListType createMeasureOrNullListType() {
         MeasureOrNullListType result = MeasureOrNullListType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5119,6 +5309,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeasureType createMeasureType() {
         MeasureType result = MeasureType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5126,6 +5317,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MemberDocument createMemberDocument() {
         MemberDocument result = MemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5133,6 +5325,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MembersDocument createMembersDocument() {
         MembersDocument result = MembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5140,6 +5333,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeridianIDDocument createMeridianIDDocument() {
         MeridianIDDocument result = MeridianIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5147,6 +5341,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MeridianNameDocument createMeridianNameDocument() {
         MeridianNameDocument result = MeridianNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5154,6 +5349,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MetaDataDocument createMetaDataDocument() {
         MetaDataDocument result = MetaDataDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5161,6 +5357,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MetaDataPropertyDocument createMetaDataPropertyDocument() {
         MetaDataPropertyDocument result = MetaDataPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5168,6 +5365,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MetaDataPropertyType createMetaDataPropertyType() {
         MetaDataPropertyType result = MetaDataPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5175,6 +5373,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MethodFormulaDocument createMethodFormulaDocument() {
         MethodFormulaDocument result = MethodFormulaDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5182,6 +5381,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MethodIDDocument createMethodIDDocument() {
         MethodIDDocument result = MethodIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5189,6 +5389,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MethodNameDocument createMethodNameDocument() {
         MethodNameDocument result = MethodNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5196,6 +5397,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MinimumOccursDocument createMinimumOccursDocument() {
         MinimumOccursDocument result = MinimumOccursDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5203,6 +5405,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MinutesDocument createMinutesDocument() {
         MinutesDocument result = MinutesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5210,6 +5413,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ModifiedCoordinateDocument createModifiedCoordinateDocument() {
         ModifiedCoordinateDocument result = ModifiedCoordinateDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5217,6 +5421,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MovingObjectStatusDocument createMovingObjectStatusDocument() {
         MovingObjectStatusDocument result = MovingObjectStatusDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5224,6 +5429,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MovingObjectStatusType createMovingObjectStatusType() {
         MovingObjectStatusType result = MovingObjectStatusType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5231,6 +5437,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCenterLineOfDocument createMultiCenterLineOfDocument() {
         MultiCenterLineOfDocument result = MultiCenterLineOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5238,6 +5445,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCenterOfDocument createMultiCenterOfDocument() {
         MultiCenterOfDocument result = MultiCenterOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5245,6 +5453,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCoverageDocument createMultiCoverageDocument() {
         MultiCoverageDocument result = MultiCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5252,6 +5461,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveCoverageDocument createMultiCurveCoverageDocument() {
         MultiCurveCoverageDocument result = MultiCurveCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5259,6 +5469,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveCoverageType createMultiCurveCoverageType() {
         MultiCurveCoverageType result = MultiCurveCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5266,6 +5477,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveDocument createMultiCurveDocument() {
         MultiCurveDocument result = MultiCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5273,6 +5485,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveDomainDocument createMultiCurveDomainDocument() {
         MultiCurveDomainDocument result = MultiCurveDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5280,6 +5493,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveDomainType createMultiCurveDomainType() {
         MultiCurveDomainType result = MultiCurveDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5287,6 +5501,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurvePropertyDocument createMultiCurvePropertyDocument() {
         MultiCurvePropertyDocument result = MultiCurvePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5294,6 +5509,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurvePropertyType createMultiCurvePropertyType() {
         MultiCurvePropertyType result = MultiCurvePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5301,6 +5517,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiCurveType createMultiCurveType() {
         MultiCurveType result = MultiCurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5308,6 +5525,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiEdgeOfDocument createMultiEdgeOfDocument() {
         MultiEdgeOfDocument result = MultiEdgeOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5315,6 +5533,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiExtentOfDocument createMultiExtentOfDocument() {
         MultiExtentOfDocument result = MultiExtentOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5322,6 +5541,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiGeometryDocument createMultiGeometryDocument() {
         MultiGeometryDocument result = MultiGeometryDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5329,6 +5549,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiGeometryPropertyDocument createMultiGeometryPropertyDocument() {
         MultiGeometryPropertyDocument result = MultiGeometryPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5336,6 +5557,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiGeometryPropertyType createMultiGeometryPropertyType() {
         MultiGeometryPropertyType result = MultiGeometryPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5343,6 +5565,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiGeometryType createMultiGeometryType() {
         MultiGeometryType result = MultiGeometryType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5350,6 +5573,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiLineStringDocument createMultiLineStringDocument() {
         MultiLineStringDocument result = MultiLineStringDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5357,6 +5581,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiLineStringPropertyType createMultiLineStringPropertyType() {
         MultiLineStringPropertyType result = MultiLineStringPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5364,6 +5589,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiLineStringType createMultiLineStringType() {
         MultiLineStringType result = MultiLineStringType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5371,6 +5597,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiLocationDocument createMultiLocationDocument() {
         MultiLocationDocument result = MultiLocationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5378,6 +5605,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointCoverageDocument createMultiPointCoverageDocument() {
         MultiPointCoverageDocument result = MultiPointCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5385,6 +5613,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointCoverageType createMultiPointCoverageType() {
         MultiPointCoverageType result = MultiPointCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5392,6 +5621,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointDocument createMultiPointDocument() {
         MultiPointDocument result = MultiPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5399,6 +5629,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointDomainDocument createMultiPointDomainDocument() {
         MultiPointDomainDocument result = MultiPointDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5406,6 +5637,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointDomainType createMultiPointDomainType() {
         MultiPointDomainType result = MultiPointDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5413,6 +5645,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointPropertyDocument createMultiPointPropertyDocument() {
         MultiPointPropertyDocument result = MultiPointPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5420,6 +5653,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointPropertyType createMultiPointPropertyType() {
         MultiPointPropertyType result = MultiPointPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5427,6 +5661,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPointType createMultiPointType() {
         MultiPointType result = MultiPointType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5434,6 +5669,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPolygonDocument createMultiPolygonDocument() {
         MultiPolygonDocument result = MultiPolygonDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5441,6 +5677,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPolygonPropertyType createMultiPolygonPropertyType() {
         MultiPolygonPropertyType result = MultiPolygonPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5448,6 +5685,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPolygonType createMultiPolygonType() {
         MultiPolygonType result = MultiPolygonType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5455,6 +5693,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiPositionDocument createMultiPositionDocument() {
         MultiPositionDocument result = MultiPositionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5462,6 +5701,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidCoverageDocument createMultiSolidCoverageDocument() {
         MultiSolidCoverageDocument result = MultiSolidCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5469,6 +5709,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidCoverageType createMultiSolidCoverageType() {
         MultiSolidCoverageType result = MultiSolidCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5476,6 +5717,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidDocument createMultiSolidDocument() {
         MultiSolidDocument result = MultiSolidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5483,6 +5725,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidDomainDocument createMultiSolidDomainDocument() {
         MultiSolidDomainDocument result = MultiSolidDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5490,6 +5733,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidDomainType createMultiSolidDomainType() {
         MultiSolidDomainType result = MultiSolidDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5497,6 +5741,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidPropertyDocument createMultiSolidPropertyDocument() {
         MultiSolidPropertyDocument result = MultiSolidPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5504,6 +5749,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidPropertyType createMultiSolidPropertyType() {
         MultiSolidPropertyType result = MultiSolidPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5511,6 +5757,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSolidType createMultiSolidType() {
         MultiSolidType result = MultiSolidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5518,6 +5765,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceCoverageDocument createMultiSurfaceCoverageDocument() {
         MultiSurfaceCoverageDocument result = MultiSurfaceCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5525,6 +5773,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceCoverageType createMultiSurfaceCoverageType() {
         MultiSurfaceCoverageType result = MultiSurfaceCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5532,6 +5781,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceDocument createMultiSurfaceDocument() {
         MultiSurfaceDocument result = MultiSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5539,6 +5789,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceDomainDocument createMultiSurfaceDomainDocument() {
         MultiSurfaceDomainDocument result = MultiSurfaceDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5546,6 +5797,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceDomainType createMultiSurfaceDomainType() {
         MultiSurfaceDomainType result = MultiSurfaceDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5553,6 +5805,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfacePropertyDocument createMultiSurfacePropertyDocument() {
         MultiSurfacePropertyDocument result = MultiSurfacePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5560,6 +5813,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfacePropertyType createMultiSurfacePropertyType() {
         MultiSurfacePropertyType result = MultiSurfacePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5567,6 +5821,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public MultiSurfaceType createMultiSurfaceType() {
         MultiSurfaceType result = MultiSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5574,6 +5829,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NameDocument createNameDocument() {
         NameDocument result = NameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5581,6 +5837,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NameList createNameList() {
         NameList result = NameList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5588,6 +5845,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NameOrNull createNameOrNull() {
         NameOrNull result = NameOrNull.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5595,6 +5853,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NameOrNullList createNameOrNullList() {
         NameOrNullList result = NameOrNullList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5602,6 +5861,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NCNameList createNCNameList() {
         NCNameList result = NCNameList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5609,6 +5869,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NodeDocument createNodeDocument() {
         NodeDocument result = NodeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5616,6 +5877,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NodeType createNodeType() {
         NodeType result = NodeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5623,6 +5885,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NullDocument createNullDocument() {
         NullDocument result = NullDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5630,6 +5893,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NullEnumeration createNullEnumeration() {
         NullEnumeration result = NullEnumeration.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5637,6 +5901,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public NullType createNullType() {
         NullType result = NullType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5644,6 +5909,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectDocument createObjectDocument() {
         ObjectDocument result = ObjectDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5651,6 +5917,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObliqueCartesianCSDocument createObliqueCartesianCSDocument() {
         ObliqueCartesianCSDocument result = ObliqueCartesianCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5658,6 +5925,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObliqueCartesianCSRefDocument createObliqueCartesianCSRefDocument() {
         ObliqueCartesianCSRefDocument result = ObliqueCartesianCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5665,6 +5933,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObliqueCartesianCSRefType createObliqueCartesianCSRefType() {
         ObliqueCartesianCSRefType result = ObliqueCartesianCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5672,6 +5941,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObliqueCartesianCSType createObliqueCartesianCSType() {
         ObliqueCartesianCSType result = ObliqueCartesianCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5679,6 +5949,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObservationDocument createObservationDocument() {
         ObservationDocument result = ObservationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5686,6 +5957,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObservationType createObservationType() {
         ObservationType result = ObservationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5693,6 +5965,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OffsetCurveDocument createOffsetCurveDocument() {
         OffsetCurveDocument result = OffsetCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5700,6 +5973,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OffsetCurveType createOffsetCurveType() {
         OffsetCurveType result = OffsetCurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5707,6 +5981,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationDocument createOperationDocument() {
         OperationDocument result = OperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5714,6 +5989,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationMethodDocument createOperationMethodDocument() {
         OperationMethodDocument result = OperationMethodDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5721,6 +5997,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationMethodRefDocument createOperationMethodRefDocument() {
         OperationMethodRefDocument result = OperationMethodRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5728,6 +6005,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationMethodRefType createOperationMethodRefType() {
         OperationMethodRefType result = OperationMethodRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5735,6 +6013,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationMethodType createOperationMethodType() {
         OperationMethodType result = OperationMethodType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5742,6 +6021,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterDocument createOperationParameterDocument() {
         OperationParameterDocument result = OperationParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5749,6 +6029,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterGroupDocument createOperationParameterGroupDocument() {
         OperationParameterGroupDocument result = OperationParameterGroupDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5756,6 +6037,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterGroupRefDocument createOperationParameterGroupRefDocument() {
         OperationParameterGroupRefDocument result = OperationParameterGroupRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5763,6 +6045,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterGroupRefType createOperationParameterGroupRefType() {
         OperationParameterGroupRefType result = OperationParameterGroupRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5770,6 +6053,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterGroupType createOperationParameterGroupType() {
         OperationParameterGroupType result = OperationParameterGroupType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5777,6 +6061,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterRefDocument createOperationParameterRefDocument() {
         OperationParameterRefDocument result = OperationParameterRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5784,6 +6069,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterRefType createOperationParameterRefType() {
         OperationParameterRefType result = OperationParameterRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5791,6 +6077,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationParameterType createOperationParameterType() {
         OperationParameterType result = OperationParameterType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5798,6 +6085,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationRefDocument createOperationRefDocument() {
         OperationRefDocument result = OperationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5805,6 +6093,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationRefType createOperationRefType() {
         OperationRefType result = OperationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5812,6 +6101,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OperationVersionDocument createOperationVersionDocument() {
         OperationVersionDocument result = OperationVersionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5819,6 +6109,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OrientableCurveDocument createOrientableCurveDocument() {
         OrientableCurveDocument result = OrientableCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5826,6 +6117,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OrientableCurveType createOrientableCurveType() {
         OrientableCurveType result = OrientableCurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5833,6 +6125,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OrientableSurfaceDocument createOrientableSurfaceDocument() {
         OrientableSurfaceDocument result = OrientableSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5840,6 +6133,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OrientableSurfaceType createOrientableSurfaceType() {
         OrientableSurfaceType result = OrientableSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5847,6 +6141,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OriginDocument createOriginDocument() {
         OriginDocument result = OriginDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5854,6 +6149,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public OuterBoundaryIsDocument createOuterBoundaryIsDocument() {
         OuterBoundaryIsDocument result = OuterBoundaryIsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5861,6 +6157,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterIDDocument createParameterIDDocument() {
         ParameterIDDocument result = ParameterIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5868,6 +6165,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterNameDocument createParameterNameDocument() {
         ParameterNameDocument result = ParameterNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5875,6 +6173,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterValueDocument createParameterValueDocument() {
         ParameterValueDocument result = ParameterValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5882,6 +6181,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterValueGroupDocument createParameterValueGroupDocument() {
         ParameterValueGroupDocument result = ParameterValueGroupDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5889,6 +6189,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterValueGroupType createParameterValueGroupType() {
         ParameterValueGroupType result = ParameterValueGroupType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5896,6 +6197,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParameterValueType createParameterValueType() {
         ParameterValueType result = ParameterValueType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5903,6 +6205,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ParametricCurveSurfaceDocument createParametricCurveSurfaceDocument() {
         ParametricCurveSurfaceDocument result = ParametricCurveSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5910,6 +6213,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PassThroughOperationDocument createPassThroughOperationDocument() {
         PassThroughOperationDocument result = PassThroughOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5917,6 +6221,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PassThroughOperationRefDocument createPassThroughOperationRefDocument() {
         PassThroughOperationRefDocument result = PassThroughOperationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5924,6 +6229,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PassThroughOperationRefType createPassThroughOperationRefType() {
         PassThroughOperationRefType result = PassThroughOperationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5931,6 +6237,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PassThroughOperationType createPassThroughOperationType() {
         PassThroughOperationType result = PassThroughOperationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5938,6 +6245,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PatchesDocument createPatchesDocument() {
         PatchesDocument result = PatchesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5945,6 +6253,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PixelInCellDocument createPixelInCellDocument() {
         PixelInCellDocument result = PixelInCellDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5952,6 +6261,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PixelInCellType createPixelInCellType() {
         PixelInCellType result = PixelInCellType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5959,6 +6269,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointArrayPropertyDocument createPointArrayPropertyDocument() {
         PointArrayPropertyDocument result = PointArrayPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5966,6 +6277,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointArrayPropertyType createPointArrayPropertyType() {
         PointArrayPropertyType result = PointArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5973,6 +6285,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointDocument createPointDocument() {
         PointDocument result = PointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5980,6 +6293,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointMemberDocument createPointMemberDocument() {
         PointMemberDocument result = PointMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5987,6 +6301,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointMembersDocument createPointMembersDocument() {
         PointMembersDocument result = PointMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -5994,6 +6309,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointPropertyDocument createPointPropertyDocument() {
         PointPropertyDocument result = PointPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6001,6 +6317,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointPropertyType createPointPropertyType() {
         PointPropertyType result = PointPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6008,6 +6325,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointRepDocument createPointRepDocument() {
         PointRepDocument result = PointRepDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6015,6 +6333,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PointType createPointType() {
         PointType result = PointType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6022,6 +6341,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolarCSDocument createPolarCSDocument() {
         PolarCSDocument result = PolarCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6029,6 +6349,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolarCSRefDocument createPolarCSRefDocument() {
         PolarCSRefDocument result = PolarCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6036,6 +6357,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolarCSRefType createPolarCSRefType() {
         PolarCSRefType result = PolarCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6043,6 +6365,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolarCSType createPolarCSType() {
         PolarCSType result = PolarCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6050,6 +6373,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonDocument createPolygonDocument() {
         PolygonDocument result = PolygonDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6057,6 +6381,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonMemberDocument createPolygonMemberDocument() {
         PolygonMemberDocument result = PolygonMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6064,6 +6389,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPatchArrayPropertyType createPolygonPatchArrayPropertyType() {
         PolygonPatchArrayPropertyType result = PolygonPatchArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6071,6 +6397,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPatchDocument createPolygonPatchDocument() {
         PolygonPatchDocument result = PolygonPatchDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6078,6 +6405,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPatchesDocument createPolygonPatchesDocument() {
         PolygonPatchesDocument result = PolygonPatchesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6085,6 +6413,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPatchType createPolygonPatchType() {
         PolygonPatchType result = PolygonPatchType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6092,6 +6421,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPropertyDocument createPolygonPropertyDocument() {
         PolygonPropertyDocument result = PolygonPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6099,6 +6429,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonPropertyType createPolygonPropertyType() {
         PolygonPropertyType result = PolygonPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6106,6 +6437,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolygonType createPolygonType() {
         PolygonType result = PolygonType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6113,6 +6445,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolyhedralSurfaceDocument createPolyhedralSurfaceDocument() {
         PolyhedralSurfaceDocument result = PolyhedralSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6120,6 +6453,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PolyhedralSurfaceType createPolyhedralSurfaceType() {
         PolyhedralSurfaceType result = PolyhedralSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6127,6 +6461,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PosDocument createPosDocument() {
         PosDocument result = PosDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6134,6 +6469,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PositionalAccuracyDocument createPositionalAccuracyDocument() {
         PositionalAccuracyDocument result = PositionalAccuracyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6141,6 +6477,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PositionDocument createPositionDocument() {
         PositionDocument result = PositionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6148,6 +6485,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PosListDocument createPosListDocument() {
         PosListDocument result = PosListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6155,6 +6493,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PrimeMeridianDocument createPrimeMeridianDocument() {
         PrimeMeridianDocument result = PrimeMeridianDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6162,6 +6501,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PrimeMeridianRefDocument createPrimeMeridianRefDocument() {
         PrimeMeridianRefDocument result = PrimeMeridianRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6169,6 +6509,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PrimeMeridianRefType createPrimeMeridianRefType() {
         PrimeMeridianRefType result = PrimeMeridianRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6176,6 +6517,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PrimeMeridianType createPrimeMeridianType() {
         PrimeMeridianType result = PrimeMeridianType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6183,6 +6525,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PriorityLocationDocument createPriorityLocationDocument() {
         PriorityLocationDocument result = PriorityLocationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6190,6 +6533,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public PriorityLocationPropertyType createPriorityLocationPropertyType() {
         PriorityLocationPropertyType result = PriorityLocationPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6197,6 +6541,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ProjectedCRSDocument createProjectedCRSDocument() {
         ProjectedCRSDocument result = ProjectedCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6204,6 +6549,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ProjectedCRSRefDocument createProjectedCRSRefDocument() {
         ProjectedCRSRefDocument result = ProjectedCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6211,6 +6557,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ProjectedCRSRefType createProjectedCRSRefType() {
         ProjectedCRSRefType result = ProjectedCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6218,6 +6565,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ProjectedCRSType createProjectedCRSType() {
         ProjectedCRSType result = ProjectedCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6225,6 +6573,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QNameList createQNameList() {
         QNameList result = QNameList.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6232,6 +6581,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityDocument createQuantityDocument() {
         QuantityDocument result = QuantityDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6239,6 +6589,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityExtentDocument createQuantityExtentDocument() {
         QuantityExtentDocument result = QuantityExtentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6246,6 +6597,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityExtentType createQuantityExtentType() {
         QuantityExtentType result = QuantityExtentType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6253,6 +6605,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityListDocument createQuantityListDocument() {
         QuantityListDocument result = QuantityListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6260,6 +6613,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityPropertyType createQuantityPropertyType() {
         QuantityPropertyType result = QuantityPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6267,6 +6621,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QuantityTypeDocument createQuantityTypeDocument() {
         QuantityTypeDocument result = QuantityTypeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6274,6 +6629,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public QueryGrammarEnumeration createQueryGrammarEnumeration() {
         QueryGrammarEnumeration result = QueryGrammarEnumeration.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6281,6 +6637,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RangeParametersDocument createRangeParametersDocument() {
         RangeParametersDocument result = RangeParametersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6288,6 +6645,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RangeParametersType createRangeParametersType() {
         RangeParametersType result = RangeParametersType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6295,6 +6653,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RangeSetDocument createRangeSetDocument() {
         RangeSetDocument result = RangeSetDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6302,6 +6661,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RangeSetType createRangeSetType() {
         RangeSetType result = RangeSetType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6309,6 +6669,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RealizationEpochDocument createRealizationEpochDocument() {
         RealizationEpochDocument result = RealizationEpochDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6316,6 +6677,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectangleDocument createRectangleDocument() {
         RectangleDocument result = RectangleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6323,6 +6685,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectangleType createRectangleType() {
         RectangleType result = RectangleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6330,6 +6693,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridCoverageDocument createRectifiedGridCoverageDocument() {
         RectifiedGridCoverageDocument result = RectifiedGridCoverageDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6337,6 +6701,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridCoverageType createRectifiedGridCoverageType() {
         RectifiedGridCoverageType result = RectifiedGridCoverageType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6344,6 +6709,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridDocument createRectifiedGridDocument() {
         RectifiedGridDocument result = RectifiedGridDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6351,6 +6717,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridDomainDocument createRectifiedGridDomainDocument() {
         RectifiedGridDomainDocument result = RectifiedGridDomainDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6358,6 +6725,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridDomainType createRectifiedGridDomainType() {
         RectifiedGridDomainType result = RectifiedGridDomainType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6365,6 +6733,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RectifiedGridType createRectifiedGridType() {
         RectifiedGridType result = RectifiedGridType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6372,6 +6741,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ReferenceDocument createReferenceDocument() {
         ReferenceDocument result = ReferenceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6379,6 +6749,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ReferenceSystemDocument createReferenceSystemDocument() {
         ReferenceSystemDocument result = ReferenceSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6386,6 +6757,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ReferenceSystemRefDocument createReferenceSystemRefDocument() {
         ReferenceSystemRefDocument result = ReferenceSystemRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6393,6 +6765,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ReferenceSystemRefType createReferenceSystemRefType() {
         ReferenceSystemRefType result = ReferenceSystemRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6400,6 +6773,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ReferenceType createReferenceType() {
         ReferenceType result = ReferenceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6407,6 +6781,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedTimeType createRelatedTimeType() {
         RelatedTimeType result = RelatedTimeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6414,6 +6789,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelativeInternalPositionalAccuracyDocument createRelativeInternalPositionalAccuracyDocument() {
         RelativeInternalPositionalAccuracyDocument result =
                 RelativeInternalPositionalAccuracyDocument.Factory.newInstance();
@@ -6422,6 +6798,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelativeInternalPositionalAccuracyType createRelativeInternalPositionalAccuracyType() {
         RelativeInternalPositionalAccuracyType result =
                 RelativeInternalPositionalAccuracyType.Factory.newInstance();
@@ -6430,6 +6807,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RemarksDocument createRemarksDocument() {
         RemarksDocument result = RemarksDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6437,6 +6815,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RemoteSchemaAttribute createRemoteSchemaAttribute() {
         RemoteSchemaAttribute result = RemoteSchemaAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6444,6 +6823,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResultDocument createResultDocument() {
         ResultDocument result = ResultDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6451,6 +6831,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResultOfDocument createResultOfDocument() {
         ResultOfDocument result = ResultOfDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6458,6 +6839,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RingDocument createRingDocument() {
         RingDocument result = RingDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6465,6 +6847,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RingPropertyType createRingPropertyType() {
         RingPropertyType result = RingPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6472,6 +6855,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RingType createRingType() {
         RingType result = RingType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6479,6 +6863,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RoughConversionToPreferredUnitDocument createRoughConversionToPreferredUnitDocument() {
         RoughConversionToPreferredUnitDocument result = RoughConversionToPreferredUnitDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6486,6 +6871,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RowIndexDocument createRowIndexDocument() {
         RowIndexDocument result = RowIndexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6493,6 +6879,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ScalarValuePropertyType createScalarValuePropertyType() {
         ScalarValuePropertyType result = ScalarValuePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6500,6 +6887,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ScaleType createScaleType() {
         ScaleType result = ScaleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6507,6 +6895,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ScopeDocument createScopeDocument() {
         ScopeDocument result = ScopeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6514,6 +6903,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SecondDefiningParameterDocument createSecondDefiningParameterDocument() {
         SecondDefiningParameterDocument result = SecondDefiningParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6521,6 +6911,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SecondDefiningParameterType createSecondDefiningParameterType() {
         SecondDefiningParameterType result = SecondDefiningParameterType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6528,6 +6919,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SecondsDocument createSecondsDocument() {
         SecondsDocument result = SecondsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6535,6 +6927,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SegmentsDocument createSegmentsDocument() {
         SegmentsDocument result = SegmentsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6542,6 +6935,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SemiMajorAxisDocument createSemiMajorAxisDocument() {
         SemiMajorAxisDocument result = SemiMajorAxisDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6549,6 +6943,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SemiMinorAxisDocument createSemiMinorAxisDocument() {
         SemiMinorAxisDocument result = SemiMinorAxisDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6556,6 +6951,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SequenceRuleNames createSequenceRuleNames() {
         SequenceRuleNames result = SequenceRuleNames.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6563,6 +6959,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SequenceRuleType createSequenceRuleType() {
         SequenceRuleType result = SequenceRuleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6570,6 +6967,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SignType createSignType() {
         SignType result = SignType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6577,6 +6975,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SingleOperationDocument createSingleOperationDocument() {
         SingleOperationDocument result = SingleOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6584,6 +6983,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SingleOperationRefDocument createSingleOperationRefDocument() {
         SingleOperationRefDocument result = SingleOperationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6591,6 +6991,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SingleOperationRefType createSingleOperationRefType() {
         SingleOperationRefType result = SingleOperationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6598,6 +6999,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidArrayPropertyDocument createSolidArrayPropertyDocument() {
         SolidArrayPropertyDocument result = SolidArrayPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6605,6 +7007,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidArrayPropertyType createSolidArrayPropertyType() {
         SolidArrayPropertyType result = SolidArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6612,6 +7015,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidDocument createSolidDocument() {
         SolidDocument result = SolidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6619,6 +7023,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidMemberDocument createSolidMemberDocument() {
         SolidMemberDocument result = SolidMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6626,6 +7031,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidMembersDocument createSolidMembersDocument() {
         SolidMembersDocument result = SolidMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6633,6 +7039,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidPropertyDocument createSolidPropertyDocument() {
         SolidPropertyDocument result = SolidPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6640,6 +7047,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidPropertyType createSolidPropertyType() {
         SolidPropertyType result = SolidPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6647,6 +7055,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SolidType createSolidType() {
         SolidType result = SolidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6654,6 +7063,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SourceCRSDocument createSourceCRSDocument() {
         SourceCRSDocument result = SourceCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6661,6 +7071,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SourceDimensionsDocument createSourceDimensionsDocument() {
         SourceDimensionsDocument result = SourceDimensionsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6668,6 +7079,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SpeedType createSpeedType() {
         SpeedType result = SpeedType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6675,6 +7087,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphereDocument createSphereDocument() {
         SphereDocument result = SphereDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6682,6 +7095,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphereType createSphereType() {
         SphereType result = SphereType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6689,6 +7103,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphericalCSDocument createSphericalCSDocument() {
         SphericalCSDocument result = SphericalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6696,6 +7111,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphericalCSRefDocument createSphericalCSRefDocument() {
         SphericalCSRefDocument result = SphericalCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6703,6 +7119,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphericalCSRefType createSphericalCSRefType() {
         SphericalCSRefType result = SphericalCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6710,6 +7127,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SphericalCSType createSphericalCSType() {
         SphericalCSType result = SphericalCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6717,6 +7135,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SrsIDDocument createSrsIDDocument() {
         SrsIDDocument result = SrsIDDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6724,6 +7143,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SrsNameDocument createSrsNameDocument() {
         SrsNameDocument result = SrsNameDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6731,6 +7151,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StatusDocument createStatusDocument() {
         StatusDocument result = StatusDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6738,6 +7159,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StrictAssociationDocument createStrictAssociationDocument() {
         StrictAssociationDocument result = StrictAssociationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6745,6 +7167,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StringOrNull createStringOrNull() {
         StringOrNull result = StringOrNull.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6752,6 +7175,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StringOrRefType createStringOrRefType() {
         StringOrRefType result = StringOrRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6759,6 +7183,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StringValueDocument createStringValueDocument() {
         StringValueDocument result = StringValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6766,6 +7191,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StyleDocument createStyleDocument() {
         StyleDocument result = StyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6773,6 +7199,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StyleType createStyleType() {
         StyleType result = StyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6780,6 +7207,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public StyleVariationType createStyleVariationType() {
         StyleVariationType result = StyleVariationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6787,6 +7215,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubComplexDocument createSubComplexDocument() {
         SubComplexDocument result = SubComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6794,6 +7223,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectDocument createSubjectDocument() {
         SubjectDocument result = SubjectDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6801,6 +7231,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SuccessionType createSuccessionType() {
         SuccessionType result = SuccessionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6808,6 +7239,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SuperComplexDocument createSuperComplexDocument() {
         SuperComplexDocument result = SuperComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6815,6 +7247,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceArrayPropertyDocument createSurfaceArrayPropertyDocument() {
         SurfaceArrayPropertyDocument result = SurfaceArrayPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6822,6 +7255,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceArrayPropertyType createSurfaceArrayPropertyType() {
         SurfaceArrayPropertyType result = SurfaceArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6829,6 +7263,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceDocument createSurfaceDocument() {
         SurfaceDocument result = SurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6836,6 +7271,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceInterpolationType createSurfaceInterpolationType() {
         SurfaceInterpolationType result = SurfaceInterpolationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6843,6 +7279,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceMemberDocument createSurfaceMemberDocument() {
         SurfaceMemberDocument result = SurfaceMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6850,6 +7287,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceMembersDocument createSurfaceMembersDocument() {
         SurfaceMembersDocument result = SurfaceMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6857,6 +7295,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfacePatchArrayPropertyType createSurfacePatchArrayPropertyType() {
         SurfacePatchArrayPropertyType result = SurfacePatchArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6864,6 +7303,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfacePatchDocument createSurfacePatchDocument() {
         SurfacePatchDocument result = SurfacePatchDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6871,6 +7311,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfacePropertyDocument createSurfacePropertyDocument() {
         SurfacePropertyDocument result = SurfacePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6878,6 +7319,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfacePropertyType createSurfacePropertyType() {
         SurfacePropertyType result = SurfacePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6885,6 +7327,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SurfaceType createSurfaceType() {
         SurfaceType result = SurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6892,6 +7335,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SymbolDocument createSymbolDocument() {
         SymbolDocument result = SymbolDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6899,6 +7343,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SymbolType createSymbolType() {
         SymbolType result = SymbolType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6906,6 +7351,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SymbolTypeEnumeration createSymbolTypeEnumeration() {
         SymbolTypeEnumeration result = SymbolTypeEnumeration.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6913,6 +7359,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TargetCRSDocument createTargetCRSDocument() {
         TargetCRSDocument result = TargetCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6920,6 +7367,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TargetDimensionsDocument createTargetDimensionsDocument() {
         TargetDimensionsDocument result = TargetDimensionsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6927,6 +7375,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TargetDocument createTargetDocument() {
         TargetDocument result = TargetDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6934,6 +7383,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TargetPropertyType createTargetPropertyType() {
         TargetPropertyType result = TargetPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6941,6 +7391,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCRSDocument createTemporalCRSDocument() {
         TemporalCRSDocument result = TemporalCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6948,6 +7399,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCRSRefDocument createTemporalCRSRefDocument() {
         TemporalCRSRefDocument result = TemporalCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6955,6 +7407,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCRSRefType createTemporalCRSRefType() {
         TemporalCRSRefType result = TemporalCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6962,6 +7415,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCRSType createTemporalCRSType() {
         TemporalCRSType result = TemporalCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6969,6 +7423,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCSDocument createTemporalCSDocument() {
         TemporalCSDocument result = TemporalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6976,6 +7431,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCSRefDocument createTemporalCSRefDocument() {
         TemporalCSRefDocument result = TemporalCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6983,6 +7439,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCSRefType createTemporalCSRefType() {
         TemporalCSRefType result = TemporalCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6990,6 +7447,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalCSType createTemporalCSType() {
         TemporalCSType result = TemporalCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -6997,6 +7455,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalDatumDocument createTemporalDatumDocument() {
         TemporalDatumDocument result = TemporalDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7004,6 +7463,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalDatumRefDocument createTemporalDatumRefDocument() {
         TemporalDatumRefDocument result = TemporalDatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7011,6 +7471,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalDatumRefType createTemporalDatumRefType() {
         TemporalDatumRefType result = TemporalDatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7018,6 +7479,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalDatumType createTemporalDatumType() {
         TemporalDatumType result = TemporalDatumType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7025,6 +7487,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TemporalExtentDocument createTemporalExtentDocument() {
         TemporalExtentDocument result = TemporalExtentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7032,6 +7495,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarDocument createTimeCalendarDocument() {
         TimeCalendarDocument result = TimeCalendarDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7039,6 +7503,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarEraDocument createTimeCalendarEraDocument() {
         TimeCalendarEraDocument result = TimeCalendarEraDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7046,6 +7511,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarEraPropertyType createTimeCalendarEraPropertyType() {
         TimeCalendarEraPropertyType result = TimeCalendarEraPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7053,6 +7519,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarEraType createTimeCalendarEraType() {
         TimeCalendarEraType result = TimeCalendarEraType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7060,6 +7527,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarPropertyType createTimeCalendarPropertyType() {
         TimeCalendarPropertyType result = TimeCalendarPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7067,6 +7535,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCalendarType createTimeCalendarType() {
         TimeCalendarType result = TimeCalendarType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7074,6 +7543,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeClockDocument createTimeClockDocument() {
         TimeClockDocument result = TimeClockDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7081,6 +7551,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeClockPropertyType createTimeClockPropertyType() {
         TimeClockPropertyType result = TimeClockPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7088,6 +7559,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeClockType createTimeClockType() {
         TimeClockType result = TimeClockType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7095,6 +7567,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeComplexDocument createTimeComplexDocument() {
         TimeComplexDocument result = TimeComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7102,6 +7575,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCoordinateSystemDocument createTimeCoordinateSystemDocument() {
         TimeCoordinateSystemDocument result = TimeCoordinateSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7109,6 +7583,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeCoordinateSystemType createTimeCoordinateSystemType() {
         TimeCoordinateSystemType result = TimeCoordinateSystemType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7116,6 +7591,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeEdgeDocument createTimeEdgeDocument() {
         TimeEdgeDocument result = TimeEdgeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7123,6 +7599,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeEdgePropertyType createTimeEdgePropertyType() {
         TimeEdgePropertyType result = TimeEdgePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7130,6 +7607,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeEdgeType createTimeEdgeType() {
         TimeEdgeType result = TimeEdgeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7137,6 +7615,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeGeometricPrimitiveDocument createTimeGeometricPrimitiveDocument() {
         TimeGeometricPrimitiveDocument result = TimeGeometricPrimitiveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7144,6 +7623,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeGeometricPrimitivePropertyType createTimeGeometricPrimitivePropertyType() {
         TimeGeometricPrimitivePropertyType result = TimeGeometricPrimitivePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7151,6 +7631,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeIndeterminateValueType createTimeIndeterminateValueType() {
         TimeIndeterminateValueType result = TimeIndeterminateValueType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7158,6 +7639,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeInstantDocument createTimeInstantDocument() {
         TimeInstantDocument result = TimeInstantDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7165,6 +7647,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeInstantPropertyType createTimeInstantPropertyType() {
         TimeInstantPropertyType result = TimeInstantPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7172,6 +7655,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeInstantType createTimeInstantType() {
         TimeInstantType result = TimeInstantType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7179,6 +7663,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeIntervalDocument createTimeIntervalDocument() {
         TimeIntervalDocument result = TimeIntervalDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7186,6 +7671,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeIntervalLengthType createTimeIntervalLengthType() {
         TimeIntervalLengthType result = TimeIntervalLengthType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7193,6 +7679,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeNodeDocument createTimeNodeDocument() {
         TimeNodeDocument result = TimeNodeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7200,6 +7687,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeNodePropertyType createTimeNodePropertyType() {
         TimeNodePropertyType result = TimeNodePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7207,6 +7695,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeNodeType createTimeNodeType() {
         TimeNodeType result = TimeNodeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7214,6 +7703,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeObjectDocument createTimeObjectDocument() {
         TimeObjectDocument result = TimeObjectDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7221,6 +7711,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeOrdinalEraDocument createTimeOrdinalEraDocument() {
         TimeOrdinalEraDocument result = TimeOrdinalEraDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7228,6 +7719,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeOrdinalEraPropertyType createTimeOrdinalEraPropertyType() {
         TimeOrdinalEraPropertyType result = TimeOrdinalEraPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7235,6 +7727,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeOrdinalEraType createTimeOrdinalEraType() {
         TimeOrdinalEraType result = TimeOrdinalEraType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7242,6 +7735,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeOrdinalReferenceSystemDocument createTimeOrdinalReferenceSystemDocument() {
         TimeOrdinalReferenceSystemDocument result = TimeOrdinalReferenceSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7249,6 +7743,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeOrdinalReferenceSystemType createTimeOrdinalReferenceSystemType() {
         TimeOrdinalReferenceSystemType result = TimeOrdinalReferenceSystemType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7256,6 +7751,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePeriodDocument createTimePeriodDocument() {
         TimePeriodDocument result = TimePeriodDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7263,6 +7759,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePeriodPropertyType createTimePeriodPropertyType() {
         TimePeriodPropertyType result = TimePeriodPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7270,6 +7767,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePeriodType createTimePeriodType() {
         TimePeriodType result = TimePeriodType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7277,6 +7775,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePositionDocument createTimePositionDocument() {
         TimePositionDocument result = TimePositionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7284,6 +7783,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePositionType createTimePositionType() {
         TimePositionType result = TimePositionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7291,6 +7791,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePositionUnion createTimePositionUnion() {
         TimePositionUnion result = TimePositionUnion.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7298,6 +7799,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePrimitiveDocument createTimePrimitiveDocument() {
         TimePrimitiveDocument result = TimePrimitiveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7305,6 +7807,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimePrimitivePropertyType createTimePrimitivePropertyType() {
         TimePrimitivePropertyType result = TimePrimitivePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7312,6 +7815,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeReferenceSystemDocument createTimeReferenceSystemDocument() {
         TimeReferenceSystemDocument result = TimeReferenceSystemDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7319,6 +7823,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeSliceDocument createTimeSliceDocument() {
         TimeSliceDocument result = TimeSliceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7326,6 +7831,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeTopologyComplexDocument createTimeTopologyComplexDocument() {
         TimeTopologyComplexDocument result = TimeTopologyComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7333,6 +7839,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeTopologyComplexPropertyType createTimeTopologyComplexPropertyType() {
         TimeTopologyComplexPropertyType result = TimeTopologyComplexPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7340,6 +7847,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeTopologyComplexType createTimeTopologyComplexType() {
         TimeTopologyComplexType result = TimeTopologyComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7347,6 +7855,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeTopologyPrimitiveDocument createTimeTopologyPrimitiveDocument() {
         TimeTopologyPrimitiveDocument result = TimeTopologyPrimitiveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7354,6 +7863,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeTopologyPrimitivePropertyType createTimeTopologyPrimitivePropertyType() {
         TimeTopologyPrimitivePropertyType result = TimeTopologyPrimitivePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7361,6 +7871,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeType createTimeType() {
         TimeType result = TimeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7368,6 +7879,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TimeUnitType createTimeUnitType() {
         TimeUnitType result = TimeUnitType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7375,6 +7887,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TinDocument createTinDocument() {
         TinDocument result = TinDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7382,6 +7895,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TinType createTinType() {
         TinType result = TinType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7389,6 +7903,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoComplexDocument createTopoComplexDocument() {
         TopoComplexDocument result = TopoComplexDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7396,6 +7911,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoComplexMemberType createTopoComplexMemberType() {
         TopoComplexMemberType result = TopoComplexMemberType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7403,6 +7919,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoComplexPropertyDocument createTopoComplexPropertyDocument() {
         TopoComplexPropertyDocument result = TopoComplexPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7410,6 +7927,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoComplexType createTopoComplexType() {
         TopoComplexType result = TopoComplexType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7417,6 +7935,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoCurveDocument createTopoCurveDocument() {
         TopoCurveDocument result = TopoCurveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7424,6 +7943,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoCurvePropertyDocument createTopoCurvePropertyDocument() {
         TopoCurvePropertyDocument result = TopoCurvePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7431,6 +7951,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoCurvePropertyType createTopoCurvePropertyType() {
         TopoCurvePropertyType result = TopoCurvePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7438,6 +7959,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoCurveType createTopoCurveType() {
         TopoCurveType result = TopoCurveType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7445,6 +7967,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopologyDocument createTopologyDocument() {
         TopologyDocument result = TopologyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7452,6 +7975,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopologyStyleDocument createTopologyStyleDocument() {
         TopologyStyleDocument result = TopologyStyleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7459,6 +7983,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopologyStylePropertyType createTopologyStylePropertyType() {
         TopologyStylePropertyType result = TopologyStylePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7466,6 +7991,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopologyStyleType createTopologyStyleType() {
         TopologyStyleType result = TopologyStyleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7473,6 +7999,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPointDocument createTopoPointDocument() {
         TopoPointDocument result = TopoPointDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7480,6 +8007,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPointPropertyDocument createTopoPointPropertyDocument() {
         TopoPointPropertyDocument result = TopoPointPropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7487,6 +8015,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPointPropertyType createTopoPointPropertyType() {
         TopoPointPropertyType result = TopoPointPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7494,6 +8023,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPointType createTopoPointType() {
         TopoPointType result = TopoPointType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7501,6 +8031,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPrimitiveArrayAssociationType createTopoPrimitiveArrayAssociationType() {
         TopoPrimitiveArrayAssociationType result = TopoPrimitiveArrayAssociationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7508,6 +8039,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPrimitiveDocument createTopoPrimitiveDocument() {
         TopoPrimitiveDocument result = TopoPrimitiveDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7515,6 +8047,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPrimitiveMemberDocument createTopoPrimitiveMemberDocument() {
         TopoPrimitiveMemberDocument result = TopoPrimitiveMemberDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7522,6 +8055,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPrimitiveMembersDocument createTopoPrimitiveMembersDocument() {
         TopoPrimitiveMembersDocument result = TopoPrimitiveMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7529,6 +8063,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoPrimitiveMemberType createTopoPrimitiveMemberType() {
         TopoPrimitiveMemberType result = TopoPrimitiveMemberType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7536,6 +8071,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSolidDocument createTopoSolidDocument() {
         TopoSolidDocument result = TopoSolidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7543,6 +8079,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSolidType createTopoSolidType() {
         TopoSolidType result = TopoSolidType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7550,6 +8087,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSurfaceDocument createTopoSurfaceDocument() {
         TopoSurfaceDocument result = TopoSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7557,6 +8095,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSurfacePropertyDocument createTopoSurfacePropertyDocument() {
         TopoSurfacePropertyDocument result = TopoSurfacePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7564,6 +8103,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSurfacePropertyType createTopoSurfacePropertyType() {
         TopoSurfacePropertyType result = TopoSurfacePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7571,6 +8111,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoSurfaceType createTopoSurfaceType() {
         TopoSurfaceType result = TopoSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7578,6 +8119,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoVolumeDocument createTopoVolumeDocument() {
         TopoVolumeDocument result = TopoVolumeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7585,6 +8127,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoVolumePropertyDocument createTopoVolumePropertyDocument() {
         TopoVolumePropertyDocument result = TopoVolumePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7592,6 +8135,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoVolumePropertyType createTopoVolumePropertyType() {
         TopoVolumePropertyType result = TopoVolumePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7599,6 +8143,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TopoVolumeType createTopoVolumeType() {
         TopoVolumeType result = TopoVolumeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7606,6 +8151,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TrackDocument createTrackDocument() {
         TrackDocument result = TrackDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7613,6 +8159,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TrackType createTrackType() {
         TrackType result = TrackType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7620,6 +8167,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TransformationDocument createTransformationDocument() {
         TransformationDocument result = TransformationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7627,6 +8175,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TransformationRefDocument createTransformationRefDocument() {
         TransformationRefDocument result = TransformationRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7634,6 +8183,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TransformationRefType createTransformationRefType() {
         TransformationRefType result = TransformationRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7641,6 +8191,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TransformationType createTransformationType() {
         TransformationType result = TransformationType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7648,6 +8199,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TransformAttribute createTransformAttribute() {
         TransformAttribute result = TransformAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7655,6 +8207,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TriangleDocument createTriangleDocument() {
         TriangleDocument result = TriangleDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7662,6 +8215,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TrianglePatchArrayPropertyType createTrianglePatchArrayPropertyType() {
         TrianglePatchArrayPropertyType result = TrianglePatchArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7669,6 +8223,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TrianglePatchesDocument createTrianglePatchesDocument() {
         TrianglePatchesDocument result = TrianglePatchesDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7676,6 +8231,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TriangleType createTriangleType() {
         TriangleType result = TriangleType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7683,6 +8239,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TriangulatedSurfaceDocument createTriangulatedSurfaceDocument() {
         TriangulatedSurfaceDocument result = TriangulatedSurfaceDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7690,6 +8247,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TriangulatedSurfaceType createTriangulatedSurfaceType() {
         TriangulatedSurfaceType result = TriangulatedSurfaceType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7697,6 +8255,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TupleListDocument createTupleListDocument() {
         TupleListDocument result = TupleListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7704,6 +8263,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UnitDefinitionDocument createUnitDefinitionDocument() {
         UnitDefinitionDocument result = UnitDefinitionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7711,6 +8271,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UnitDefinitionType createUnitDefinitionType() {
         UnitDefinitionType result = UnitDefinitionType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7718,6 +8279,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UnitOfMeasureDocument createUnitOfMeasureDocument() {
         UnitOfMeasureDocument result = UnitOfMeasureDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7725,6 +8287,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UnitOfMeasureType createUnitOfMeasureType() {
         UnitOfMeasureType result = UnitOfMeasureType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7732,6 +8295,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UomAttribute createUomAttribute() {
         UomAttribute result = UomAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7739,6 +8303,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UserDefinedCSDocument createUserDefinedCSDocument() {
         UserDefinedCSDocument result = UserDefinedCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7746,6 +8311,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UserDefinedCSRefDocument createUserDefinedCSRefDocument() {
         UserDefinedCSRefDocument result = UserDefinedCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7753,6 +8319,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UserDefinedCSRefType createUserDefinedCSRefType() {
         UserDefinedCSRefType result = UserDefinedCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7760,6 +8327,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UserDefinedCSType createUserDefinedCSType() {
         UserDefinedCSType result = UserDefinedCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7767,6 +8335,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesAxisDocument createUsesAxisDocument() {
         UsesAxisDocument result = UsesAxisDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7774,6 +8343,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesCartesianCSDocument createUsesCartesianCSDocument() {
         UsesCartesianCSDocument result = UsesCartesianCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7781,6 +8351,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesCSDocument createUsesCSDocument() {
         UsesCSDocument result = UsesCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7788,6 +8359,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesEllipsoidalCSDocument createUsesEllipsoidalCSDocument() {
         UsesEllipsoidalCSDocument result = UsesEllipsoidalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7795,6 +8367,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesEllipsoidDocument createUsesEllipsoidDocument() {
         UsesEllipsoidDocument result = UsesEllipsoidDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7802,6 +8375,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesEngineeringDatumDocument createUsesEngineeringDatumDocument() {
         UsesEngineeringDatumDocument result = UsesEngineeringDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7809,6 +8383,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesGeodeticDatumDocument createUsesGeodeticDatumDocument() {
         UsesGeodeticDatumDocument result = UsesGeodeticDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7816,6 +8391,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesImageDatumDocument createUsesImageDatumDocument() {
         UsesImageDatumDocument result = UsesImageDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7823,6 +8399,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesMethodDocument createUsesMethodDocument() {
         UsesMethodDocument result = UsesMethodDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7830,6 +8407,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesObliqueCartesianCSDocument createUsesObliqueCartesianCSDocument() {
         UsesObliqueCartesianCSDocument result = UsesObliqueCartesianCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7837,6 +8415,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesOperationDocument createUsesOperationDocument() {
         UsesOperationDocument result = UsesOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7844,6 +8423,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesParameterDocument createUsesParameterDocument() {
         UsesParameterDocument result = UsesParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7851,6 +8431,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesPrimeMeridianDocument createUsesPrimeMeridianDocument() {
         UsesPrimeMeridianDocument result = UsesPrimeMeridianDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7858,6 +8439,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesSingleOperationDocument createUsesSingleOperationDocument() {
         UsesSingleOperationDocument result = UsesSingleOperationDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7865,6 +8447,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesSphericalCSDocument createUsesSphericalCSDocument() {
         UsesSphericalCSDocument result = UsesSphericalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7872,6 +8455,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesTemporalCSDocument createUsesTemporalCSDocument() {
         UsesTemporalCSDocument result = UsesTemporalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7879,6 +8463,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesTemporalDatumDocument createUsesTemporalDatumDocument() {
         UsesTemporalDatumDocument result = UsesTemporalDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7886,6 +8471,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesValueDocument createUsesValueDocument() {
         UsesValueDocument result = UsesValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7893,6 +8479,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesVerticalCSDocument createUsesVerticalCSDocument() {
         UsesVerticalCSDocument result = UsesVerticalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7900,6 +8487,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsesVerticalDatumDocument createUsesVerticalDatumDocument() {
         UsesVerticalDatumDocument result = UsesVerticalDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7907,6 +8495,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public UsingDocument createUsingDocument() {
         UsingDocument result = UsingDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7914,6 +8503,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValidAreaDocument createValidAreaDocument() {
         ValidAreaDocument result = ValidAreaDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7921,6 +8511,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValidTimeDocument createValidTimeDocument() {
         ValidTimeDocument result = ValidTimeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7928,6 +8519,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueArrayDocument createValueArrayDocument() {
         ValueArrayDocument result = ValueArrayDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7935,6 +8527,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueArrayPropertyType createValueArrayPropertyType() {
         ValueArrayPropertyType result = ValueArrayPropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7942,6 +8535,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueArrayType createValueArrayType() {
         ValueArrayType result = ValueArrayType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7949,6 +8543,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueComponentDocument createValueComponentDocument() {
         ValueComponentDocument result = ValueComponentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7956,6 +8551,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueComponentsDocument createValueComponentsDocument() {
         ValueComponentsDocument result = ValueComponentsDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7963,6 +8559,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueDocument createValueDocument() {
         ValueDocument result = ValueDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7970,6 +8567,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueFileDocument createValueFileDocument() {
         ValueFileDocument result = ValueFileDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7977,6 +8575,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueListDocument createValueListDocument() {
         ValueListDocument result = ValueListDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7984,6 +8583,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValueOfParameterDocument createValueOfParameterDocument() {
         ValueOfParameterDocument result = ValueOfParameterDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7991,6 +8591,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValuePropertyDocument createValuePropertyDocument() {
         ValuePropertyDocument result = ValuePropertyDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -7998,6 +8599,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValuePropertyType createValuePropertyType() {
         ValuePropertyType result = ValuePropertyType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8005,6 +8607,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ValuesOfGroupDocument createValuesOfGroupDocument() {
         ValuesOfGroupDocument result = ValuesOfGroupDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8012,6 +8615,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VectorDocument createVectorDocument() {
         VectorDocument result = VectorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8019,6 +8623,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VectorType createVectorType() {
         VectorType result = VectorType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8026,6 +8631,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VersionDocument createVersionDocument() {
         VersionDocument result = VersionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8033,6 +8639,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCRSDocument createVerticalCRSDocument() {
         VerticalCRSDocument result = VerticalCRSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8040,6 +8647,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCRSRefDocument createVerticalCRSRefDocument() {
         VerticalCRSRefDocument result = VerticalCRSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8047,6 +8655,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCRSRefType createVerticalCRSRefType() {
         VerticalCRSRefType result = VerticalCRSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8054,6 +8663,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCRSType createVerticalCRSType() {
         VerticalCRSType result = VerticalCRSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8061,6 +8671,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCSDocument createVerticalCSDocument() {
         VerticalCSDocument result = VerticalCSDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8068,6 +8679,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCSRefDocument createVerticalCSRefDocument() {
         VerticalCSRefDocument result = VerticalCSRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8075,6 +8687,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCSRefType createVerticalCSRefType() {
         VerticalCSRefType result = VerticalCSRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8082,6 +8695,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalCSType createVerticalCSType() {
         VerticalCSType result = VerticalCSType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8089,6 +8703,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumDocument createVerticalDatumDocument() {
         VerticalDatumDocument result = VerticalDatumDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8096,6 +8711,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumRefDocument createVerticalDatumRefDocument() {
         VerticalDatumRefDocument result = VerticalDatumRefDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8103,6 +8719,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumRefType createVerticalDatumRefType() {
         VerticalDatumRefType result = VerticalDatumRefType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8110,6 +8727,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumType createVerticalDatumType() {
         VerticalDatumType result = VerticalDatumType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8117,6 +8735,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumTypeDocument createVerticalDatumTypeDocument() {
         VerticalDatumTypeDocument result = VerticalDatumTypeDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8124,6 +8743,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalDatumTypeType createVerticalDatumTypeType() {
         VerticalDatumTypeType result = VerticalDatumTypeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8131,6 +8751,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VerticalExtentDocument createVerticalExtentDocument() {
         VerticalExtentDocument result = VerticalExtentDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8138,6 +8759,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public VolumeType createVolumeType() {
         VolumeType result = VolumeType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8145,6 +8767,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ClassificationWrapDocument.ClassificationWrap createClassificationWrap() {
         ClassificationWrapDocument.ClassificationWrap result = ClassificationWrapDocument.ClassificationWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8152,6 +8775,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ClassificationWrapDocument.ClassificationWrap.Classification createClassification() {
         ClassificationWrapDocument.ClassificationWrap.Classification result = ClassificationWrapDocument.ClassificationWrap.Classification.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8159,6 +8783,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public DisplayStateEditionWrapDocument.DisplayStateEditionWrap createDisplayStateEditionWrap() {
         DisplayStateEditionWrapDocument.DisplayStateEditionWrap result = DisplayStateEditionWrapDocument.DisplayStateEditionWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8166,6 +8791,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EventWrapDocument.EventWrap createEventWrap() {
         EventWrapDocument.EventWrap result = EventWrapDocument.EventWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8173,6 +8799,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public EventWrapDocument.EventWrap.EventSet createEvent() {
         EventWrapDocument.EventWrap.EventSet result = EventWrapDocument.EventWrap.EventSet.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8180,6 +8807,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InscriptionsWrapDocument.InscriptionsWrap createInscriptionsWrap() {
         InscriptionsWrapDocument.InscriptionsWrap result = InscriptionsWrapDocument.InscriptionsWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8187,6 +8815,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public InscriptionsWrapDocument.InscriptionsWrap.Inscriptions createInscriptions() {
         InscriptionsWrapDocument.InscriptionsWrap.Inscriptions result =
                 InscriptionsWrapDocument.InscriptionsWrap.Inscriptions.Factory.newInstance();
@@ -8195,6 +8824,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LidoWrapDocument.LidoWrap createLidoWrap() {
         LidoWrapDocument.LidoWrap result = LidoWrapDocument.LidoWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8202,6 +8832,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public LidoWrapDocument.LidoWrap.Lido createLido() {
         LidoWrapDocument.LidoWrap.Lido result = LidoWrapDocument.LidoWrap.Lido.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8209,6 +8840,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectClassificationWrapDocument.ObjectClassificationWrap createObjectClassificationWrap() {
         ObjectClassificationWrapDocument.ObjectClassificationWrap result = ObjectClassificationWrapDocument.ObjectClassificationWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8216,6 +8848,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectDescriptionWrapDocument.ObjectDescriptionWrap createObjectDescriptionWrap() {
         ObjectDescriptionWrapDocument.ObjectDescriptionWrap result = ObjectDescriptionWrapDocument.ObjectDescriptionWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8223,6 +8856,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectIdentificationWrapDocument.ObjectIdentificationWrap createObjectIdentificationWrap() {
         ObjectIdentificationWrapDocument.ObjectIdentificationWrap result =
                 ObjectIdentificationWrapDocument.ObjectIdentificationWrap.Factory.newInstance();
@@ -8231,6 +8865,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap createObjectMeasurementsWrap() {
         ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap result = ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8238,6 +8873,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet createObjectMeasurements() {
         ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet result =
                 ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet.Factory.newInstance();
@@ -8246,6 +8882,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectRelationWrapDocument.ObjectRelationWrap createObjectRelationWrap() {
         ObjectRelationWrapDocument.ObjectRelationWrap result =
                 ObjectRelationWrapDocument.ObjectRelationWrap.Factory.newInstance();
@@ -8254,6 +8891,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap createObjectWorkTypeWrap() {
         ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap result =
                 ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.Factory.newInstance();
@@ -8262,6 +8900,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType createObjectWorkType() {
         ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType result =
                 ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType.Factory.newInstance();
@@ -8270,6 +8909,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RecordWrapDocument.RecordWrap createRecordWrap() {
         RecordWrapDocument.RecordWrap result = RecordWrapDocument.RecordWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8277,6 +8917,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedWorksWrapDocument.RelatedWorksWrap createRelatedWorksWrap() {
         RelatedWorksWrapDocument.RelatedWorksWrap result =
                 RelatedWorksWrapDocument.RelatedWorksWrap.Factory.newInstance();
@@ -8285,6 +8926,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet createRelatedWorks() {
         RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet result =
                 RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet.Factory.newInstance();
@@ -8293,6 +8935,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RepositoryWrapDocument.RepositoryWrap createRepositoryWrap() {
         RepositoryWrapDocument.RepositoryWrap result = RepositoryWrapDocument.RepositoryWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8300,6 +8943,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceWrapDocument.ResourceWrap createResourceWrap() {
         ResourceWrapDocument.ResourceWrap result = ResourceWrapDocument.ResourceWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8307,6 +8951,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public ResourceWrapDocument.ResourceWrap.ResourceSet createResource() {
         ResourceWrapDocument.ResourceWrap.ResourceSet result = ResourceWrapDocument.ResourceWrap.ResourceSet.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8314,6 +8959,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RightsWorkWrapDocument.RightsWorkWrap createRightsWorkWrap() {
         RightsWorkWrapDocument.RightsWorkWrap result = RightsWorkWrapDocument.RightsWorkWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8321,6 +8967,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet createRightsWork() {
         RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet result = RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8328,6 +8975,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectWrapDocument.SubjectWrap createSubjectWrap() {
         SubjectWrapDocument.SubjectWrap result = SubjectWrapDocument.SubjectWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8335,6 +8983,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public SubjectWrapDocument.SubjectWrap.SubjectSet createSubject() {
         SubjectWrapDocument.SubjectWrap.SubjectSet result = SubjectWrapDocument.SubjectWrap.SubjectSet.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8342,6 +8991,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleWrapDocument.TitleWrap createTitleWrap() {
         TitleWrapDocument.TitleWrap result = TitleWrapDocument.TitleWrap.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8349,6 +8999,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public TitleWrapDocument.TitleWrap.TitleSet createTitle() {
         TitleWrapDocument.TitleWrap.TitleSet result = TitleWrapDocument.TitleWrap.TitleSet.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8356,6 +9007,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public CurveMembersDocument createCurveMembersDocument() {
         CurveMembersDocument result = CurveMembersDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8363,6 +9015,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x2001.smil20.language.AnimateColorDocument createLanguageAnimateColorDocument() {
         org.w3.x2001.smil20.language.AnimateColorDocument result = org.w3.x2001.smil20.language.AnimateColorDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8370,6 +9023,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x2001.smil20.language.AnimateDocument createLanguageAnimateDocument() {
         org.w3.x2001.smil20.language.AnimateDocument result = org.w3.x2001.smil20.language.AnimateDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8377,6 +9031,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x2001.smil20.language.AnimateMotionDocument createLanguageAnimateMotionDocument() {
         org.w3.x2001.smil20.language.AnimateMotionDocument result = org.w3.x2001.smil20.language.AnimateMotionDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8384,6 +9039,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x2001.smil20.language.SetDocument createLanguageSetDocument() {
         org.w3.x2001.smil20.language.SetDocument result = org.w3.x2001.smil20.language.SetDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8391,6 +9047,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x1999.xlink.ArcDocument createXLinkArcDocument() {
         org.w3.x1999.xlink.ArcDocument result = org.w3.x1999.xlink.ArcDocument.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8398,6 +9055,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x1999.xlink.ArcType createXLinkArcType() {
         org.w3.x1999.xlink.ArcType result = org.w3.x1999.xlink.ArcType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8405,6 +9063,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x1999.xlink.LabelAttribute createXlinkLabelAttribute() {
         org.w3.x1999.xlink.LabelAttribute result = org.w3.x1999.xlink.LabelAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8412,6 +9071,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x1999.xlink.LabelType createXlinkLabelType() {
         org.w3.x1999.xlink.LabelType result = org.w3.x1999.xlink.LabelType.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
@@ -8419,6 +9079,7 @@ public class LIDOModuleImpl extends AbstractLIDOModule {
     }
 
     @Provides
+    @Override
     public org.w3.x1999.xlink.TypeAttribute createXlinkTypeAttribute() {
         org.w3.x1999.xlink.TypeAttribute result = org.w3.x1999.xlink.TypeAttribute.Factory.newInstance();
         getObjectFactory().injectChildMembers(result);
