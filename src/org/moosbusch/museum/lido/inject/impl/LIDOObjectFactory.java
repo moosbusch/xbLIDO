@@ -4,7 +4,6 @@
  */
 package org.moosbusch.museum.lido.inject.impl;
 
-import org.apache.xmlbeans.XmlObject;
 import org.lidoSchema.AdministrativeMetadataComplexType;
 import org.lidoSchema.DescriptiveMetadataComplexType;
 import org.lidoSchema.LidoWrapDocument;
@@ -24,7 +23,7 @@ public class LIDOObjectFactory extends AbstractMuseumXmlObjectFactory<LIDOModule
     }
 
     private void init() {
-        addXmlPostProcessor(new LidoElementPostProcessor());
+        registerXmlPostProcessor(Lido.class, new LidoElementPostProcessor());
     }
 
     @Override
@@ -37,28 +36,21 @@ public class LIDOObjectFactory extends AbstractMuseumXmlObjectFactory<LIDOModule
         return createTypedObject(LidoWrapDocument.class);
     }
 
-    private class LidoElementPostProcessor implements XmlPostProcessor {
+    private class LidoElementPostProcessor implements XmlPostProcessor<Lido> {
 
         @Override
-        public void postProcess(XmlObject xmlObject) {
-            if (xmlObject instanceof Lido) {
-                Lido lido = (Lido) xmlObject;
-                if (!containsAdministrativeMetadata(lido)) {
+        public void postProcess(Lido xmlObject) {
+                if (!containsAdministrativeMetadata(xmlObject)) {
                     AdministrativeMetadataComplexType adminMetadata =
                             createTypedObject(AdministrativeMetadataComplexType.class);
-                    lido.getAdministrativeMetadataList().add(adminMetadata);
+                    xmlObject.getAdministrativeMetadataList().add(adminMetadata);
                 }
-                if (!containsDescriptiveMetadata(lido)) {
+
+                if (!containsDescriptiveMetadata(xmlObject)) {
                     DescriptiveMetadataComplexType descMetadata = createTypedObject(
                             DescriptiveMetadataComplexType.class);
-                    lido.getDescriptiveMetadataList().add(descMetadata);
+                    xmlObject.getDescriptiveMetadataList().add(descMetadata);
                 }
-            }
-        }
-
-        @Override
-        public Class<Lido> getTargetClass() {
-            return Lido.class;
         }
 
         private boolean containsAdministrativeMetadata(Lido lido) {
