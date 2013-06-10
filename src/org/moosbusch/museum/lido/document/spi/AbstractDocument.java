@@ -11,7 +11,7 @@ import org.apache.xmlbeans.XmlException;
 import org.lidoSchema.LidoWrapDocument;
 import org.lidoSchema.LidoWrapDocument.LidoWrap;
 import org.lidoSchema.LidoWrapDocument.LidoWrap.Lido;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import org.moosbusch.museum.document.spi.AbstractXmlDocument;
 import org.moosbusch.museum.lido.document.Document;
 import org.moosbusch.museum.lido.inject.impl.LIDOObjectFactory;
 
@@ -20,7 +20,7 @@ import org.moosbusch.museum.lido.inject.impl.LIDOObjectFactory;
  * @author moosbusch
  */
 public abstract class AbstractDocument<T extends LIDOObjectFactory>
-        extends AbstractMuseumXmlDocument<LidoWrapDocument,T, LidoWrap,
+        extends AbstractXmlDocument<LidoWrapDocument,T, LidoWrap,
         Lido> implements Document<T> {
 
     public AbstractDocument() {
@@ -39,7 +39,7 @@ public abstract class AbstractDocument<T extends LIDOObjectFactory>
     }
 
     @Override
-    public Collection<Lido> getItems() {
+    public Collection<Lido> getRecords() {
         return getRootWrapperElement().getLidoWrap().getLidoList();
     }
 }

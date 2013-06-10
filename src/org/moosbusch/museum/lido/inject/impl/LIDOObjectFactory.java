@@ -8,15 +8,15 @@ import org.lidoSchema.AdministrativeMetadataComplexType;
 import org.lidoSchema.DescriptiveMetadataComplexType;
 import org.lidoSchema.LidoWrapDocument;
 import org.lidoSchema.LidoWrapDocument.LidoWrap.Lido;
-import org.moosbusch.museum.inject.evt.XmlPostProcessor;
-import org.moosbusch.museum.inject.spi.AbstractMuseumXmlObjectFactory;
+import org.moosbusch.museum.inject.XmlPostProcessor;
+import org.moosbusch.museum.inject.spi.AbstractXmlObjectFactory;
 import org.moosbusch.museum.lido.inject.LIDOModule;
 
 /**
  *
  * @author moosbusch
  */
-public class LIDOObjectFactory extends AbstractMuseumXmlObjectFactory<LIDOModule, LidoWrapDocument> {
+public class LIDOObjectFactory extends AbstractXmlObjectFactory<LIDOModule, LidoWrapDocument> {
 
     public LIDOObjectFactory() {
         init();
@@ -47,7 +47,8 @@ public class LIDOObjectFactory extends AbstractMuseumXmlObjectFactory<LIDOModule
                 }
 
                 if (!containsDescriptiveMetadata(xmlObject)) {
-                    DescriptiveMetadataComplexType descMetadata = createTypedObject(
+                    DescriptiveMetadataComplexType descMetadata =
+                            createTypedObject(
                             DescriptiveMetadataComplexType.class);
                     xmlObject.getDescriptiveMetadataList().add(descMetadata);
                 }

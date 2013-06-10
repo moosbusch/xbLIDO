@@ -102,7 +102,7 @@ import org.lidoSchema.TitleWrapDocument.TitleWrap;
 import org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet;
 import org.lidoSchema.TypeAttribute;
 import org.lidoSchema.WebResourceComplexType;
-import org.moosbusch.museum.inject.MuseumXmlModule;
+import org.moosbusch.museum.inject.XmlModule;
 import org.moosbusch.museum.lido.document.Document;
 import org.moosbusch.museum.lido.inject.impl.LIDOObjectFactory;
 
@@ -110,7 +110,7 @@ import org.moosbusch.museum.lido.inject.impl.LIDOObjectFactory;
  *
  * @author moosbusch
  */
-public interface LIDOModule extends MuseumXmlModule, GmlModule, Smil20Module, XLinkModule {
+public interface LIDOModule extends XmlModule, GmlModule, Smil20Module, XLinkModule {
 
     @Provides
     @Override
