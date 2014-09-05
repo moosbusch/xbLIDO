@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.lido.inject.annotation.SortOrder;
+import org.moosbusch.museum.inject.lido.annotation.SortOrder;
 /**
  * A document containing one inscriptionsWrap(@http://www.lido-schema.org) element.
  *

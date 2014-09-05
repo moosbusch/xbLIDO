@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.lido.inject.annotation;
+package org.moosbusch.museum.inject.lido.annotation;
 
 import com.google.inject.BindingAnnotation;
 import java.lang.annotation.ElementType;
