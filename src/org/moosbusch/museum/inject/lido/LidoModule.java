@@ -51,8 +51,6 @@ import org.lidoSchema.LegalBodyRefComplexType;
 import org.lidoSchema.LidoComplexType;
 import org.lidoSchema.LidoDocument;
 import org.lidoSchema.LidoWrapDocument;
-import org.lidoSchema.LidoWrapDocument.LidoWrap;
-import org.lidoSchema.LidoWrapDocument.LidoWrap.Lido;
 import org.lidoSchema.MaterialsTechComplexType;
 import org.lidoSchema.MaterialsTechSetComplexType;
 import org.lidoSchema.MeasurementsSetComplexType;
@@ -122,12 +120,21 @@ import org.moosbusch.museum.inject.lido.impl.DefaultLidoObjectFactory;
  */
 public interface LidoModule extends MuseumXmlModule, GmlModule, Smil20Module, XLinkModule {
 
-    @Override
-    public LidoXmlDocument<? extends DefaultLidoObjectFactory> createDocument();
+    public LidoXmlDocument<? extends DefaultLidoObjectFactory> createLidoXmlDocument();
 
     public String getRelatedEncoding();
 
     public ActorComplexType createLidoActorComplexType();
+
+    public LidoComplexType createLidoLidoComplexType();
+
+    public LidoDocument createLidoLidoDocument();
+
+    public LidoWrapDocument createLidoLidoWrapDocument();
+
+    public LidoWrapDocument.LidoWrap createLidoLidoWrap();
+
+    public LidoWrapDocument.LidoWrap.Lido createLidoLido();
 
     public ActorInRoleComplexType createLidoActorInRoleComplexType();
 
@@ -193,15 +200,7 @@ public interface LidoModule extends MuseumXmlModule, GmlModule, Smil20Module, XL
 
     public LegalBodyRefComplexType createLidoLegalBodyRefComplexType();
 
-    public LidoComplexType createLidoComplexType();
 
-    public LidoDocument createLidoDocument();
-
-    public LidoWrapDocument createLidoWrapDocument();
-
-    public LidoWrap createLidoWrap();
-
-    public Lido createLido();
 
     public MaterialsTechComplexType createLidoMaterialsTechComplexType();
 
