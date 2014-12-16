@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML actuateType(@http://www.w3.org/1999/xlink).
  *

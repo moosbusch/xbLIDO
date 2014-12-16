@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML UnitOfMeasureType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class UnitOfMeasureTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "uom" attribute
      */
-    @Inject(optional=true) public void setUom(java.lang.String uom)
+     public void setUom(java.lang.String uom)
     {
         synchronized (monitor())
         {

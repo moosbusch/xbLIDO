@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GridFunctionType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class GridFunctionTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "sequenceRule" element
      */
-    @Inject(optional=true) public void setSequenceRule(net.opengis.gml.SequenceRuleType sequenceRule)
+     public void setSequenceRule(net.opengis.gml.SequenceRuleType sequenceRule)
     {
         generatedSetterHelperImpl(sequenceRule, SEQUENCERULE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class GridFunctionTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "startPoint" element
      */
-    @Inject(optional=true) public void setStartPoint(java.util.List startPoint)
+     public void setStartPoint(java.util.List startPoint)
     {
         synchronized (monitor())
         {

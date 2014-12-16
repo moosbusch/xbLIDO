@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EllipsoidType(@http://www.opengis.net/gml).
  *
@@ -133,7 +133,7 @@ public class EllipsoidTypeImpl extends net.opengis.gml.impl.EllipsoidBaseTypeImp
     /**
      * Sets array of all "ellipsoidID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEllipsoidIDArray(net.opengis.gml.IdentifierType[] ellipsoidIDArray)
+     public void setEllipsoidIDArray(net.opengis.gml.IdentifierType[] ellipsoidIDArray)
     {
         check_orphaned();
         arraySetterHelper(ellipsoidIDArray, ELLIPSOIDID$0);
@@ -142,7 +142,7 @@ public class EllipsoidTypeImpl extends net.opengis.gml.impl.EllipsoidBaseTypeImp
     /**
      * Sets ith "ellipsoidID" element
      */
-    @Inject(optional=true) public void setEllipsoidIDArray(int i, net.opengis.gml.IdentifierType ellipsoidID)
+     public void setEllipsoidIDArray(int i, net.opengis.gml.IdentifierType ellipsoidID)
     {
         generatedSetterHelperImpl(ellipsoidID, ELLIPSOIDID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -220,7 +220,7 @@ public class EllipsoidTypeImpl extends net.opengis.gml.impl.EllipsoidBaseTypeImp
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -272,7 +272,7 @@ public class EllipsoidTypeImpl extends net.opengis.gml.impl.EllipsoidBaseTypeImp
     /**
      * Sets the "semiMajorAxis" element
      */
-    @Inject(optional=true) public void setSemiMajorAxis(net.opengis.gml.MeasureType semiMajorAxis)
+     public void setSemiMajorAxis(net.opengis.gml.MeasureType semiMajorAxis)
     {
         generatedSetterHelperImpl(semiMajorAxis, SEMIMAJORAXIS$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -312,7 +312,7 @@ public class EllipsoidTypeImpl extends net.opengis.gml.impl.EllipsoidBaseTypeImp
     /**
      * Sets the "secondDefiningParameter" element
      */
-    @Inject(optional=true) public void setSecondDefiningParameter(net.opengis.gml.SecondDefiningParameterType secondDefiningParameter)
+     public void setSecondDefiningParameter(net.opengis.gml.SecondDefiningParameterType secondDefiningParameter)
     {
         generatedSetterHelperImpl(secondDefiningParameter, SECONDDEFININGPARAMETER$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

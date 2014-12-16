@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one objectRelationWrap(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class ObjectRelationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "objectRelationWrap" element
      */
-    @Inject(optional=true) public void setObjectRelationWrap(org.lidoSchema.ObjectRelationWrapDocument.ObjectRelationWrap objectRelationWrap)
+     public void setObjectRelationWrap(org.lidoSchema.ObjectRelationWrapDocument.ObjectRelationWrap objectRelationWrap)
     {
         generatedSetterHelperImpl(objectRelationWrap, OBJECTRELATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -124,7 +124,7 @@ public class ObjectRelationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "subjectWrap" element
          */
-        @Inject(optional=true) public void setSubjectWrap(org.lidoSchema.SubjectWrapDocument.SubjectWrap subjectWrap)
+         public void setSubjectWrap(org.lidoSchema.SubjectWrapDocument.SubjectWrap subjectWrap)
         {
             generatedSetterHelperImpl(subjectWrap, SUBJECTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -188,7 +188,7 @@ public class ObjectRelationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "relatedWorksWrap" element
          */
-        @Inject(optional=true) public void setRelatedWorksWrap(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
+         public void setRelatedWorksWrap(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
         {
             generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

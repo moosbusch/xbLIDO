@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML legalBodyRefComplexType(@http://www.lido-schema.org).
  *
@@ -131,7 +131,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets array of all "legalBodyID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLegalBodyIDArray(org.lidoSchema.IdentifierComplexType[] legalBodyIDArray)
+     public void setLegalBodyIDArray(org.lidoSchema.IdentifierComplexType[] legalBodyIDArray)
     {
         check_orphaned();
         arraySetterHelper(legalBodyIDArray, LEGALBODYID$0);
@@ -140,7 +140,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets ith "legalBodyID" element
      */
-    @Inject(optional=true) public void setLegalBodyIDArray(int i, org.lidoSchema.IdentifierComplexType legalBodyID)
+     public void setLegalBodyIDArray(int i, org.lidoSchema.IdentifierComplexType legalBodyID)
     {
         generatedSetterHelperImpl(legalBodyID, LEGALBODYID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets array of all "legalBodyName" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLegalBodyNameArray(org.lidoSchema.AppellationComplexType[] legalBodyNameArray)
+     public void setLegalBodyNameArray(org.lidoSchema.AppellationComplexType[] legalBodyNameArray)
     {
         check_orphaned();
         arraySetterHelper(legalBodyNameArray, LEGALBODYNAME$2);
@@ -289,7 +289,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets ith "legalBodyName" element
      */
-    @Inject(optional=true) public void setLegalBodyNameArray(int i, org.lidoSchema.AppellationComplexType legalBodyName)
+     public void setLegalBodyNameArray(int i, org.lidoSchema.AppellationComplexType legalBodyName)
     {
         generatedSetterHelperImpl(legalBodyName, LEGALBODYNAME$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -429,7 +429,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets array of all "legalBodyWeblink" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLegalBodyWeblinkArray(org.lidoSchema.WebResourceComplexType[] legalBodyWeblinkArray)
+     public void setLegalBodyWeblinkArray(org.lidoSchema.WebResourceComplexType[] legalBodyWeblinkArray)
     {
         check_orphaned();
         arraySetterHelper(legalBodyWeblinkArray, LEGALBODYWEBLINK$4);
@@ -438,7 +438,7 @@ public class LegalBodyRefComplexTypeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets ith "legalBodyWeblink" element
      */
-    @Inject(optional=true) public void setLegalBodyWeblinkArray(int i, org.lidoSchema.WebResourceComplexType legalBodyWeblink)
+     public void setLegalBodyWeblinkArray(int i, org.lidoSchema.WebResourceComplexType legalBodyWeblink)
     {
         generatedSetterHelperImpl(legalBodyWeblink, LEGALBODYWEBLINK$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

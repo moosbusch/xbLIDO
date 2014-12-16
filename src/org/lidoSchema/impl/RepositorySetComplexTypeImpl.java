@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML repositorySetComplexType(@http://www.lido-schema.org).
  *
@@ -74,7 +74,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "repositoryName" element
      */
-    @Inject(optional=true) public void setRepositoryName(org.lidoSchema.LegalBodyRefComplexType repositoryName)
+     public void setRepositoryName(org.lidoSchema.LegalBodyRefComplexType repositoryName)
     {
         generatedSetterHelperImpl(repositoryName, REPOSITORYNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -200,7 +200,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "workID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setWorkIDArray(org.lidoSchema.RepositorySetComplexType.WorkID[] workIDArray)
+     public void setWorkIDArray(org.lidoSchema.RepositorySetComplexType.WorkID[] workIDArray)
     {
         check_orphaned();
         arraySetterHelper(workIDArray, WORKID$2);
@@ -209,7 +209,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "workID" element
      */
-    @Inject(optional=true) public void setWorkIDArray(int i, org.lidoSchema.RepositorySetComplexType.WorkID workID)
+     public void setWorkIDArray(int i, org.lidoSchema.RepositorySetComplexType.WorkID workID)
     {
         generatedSetterHelperImpl(workID, WORKID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -287,7 +287,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "repositoryLocation" element
      */
-    @Inject(optional=true) public void setRepositoryLocation(org.lidoSchema.PlaceComplexType repositoryLocation)
+     public void setRepositoryLocation(org.lidoSchema.PlaceComplexType repositoryLocation)
     {
         generatedSetterHelperImpl(repositoryLocation, REPOSITORYLOCATION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -365,7 +365,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
@@ -457,7 +457,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+     public void setSortorder(java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {
@@ -577,7 +577,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -669,7 +669,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -761,7 +761,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -853,7 +853,7 @@ public class RepositorySetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {

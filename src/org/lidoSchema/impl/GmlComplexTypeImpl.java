@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML gmlComplexType(@http://www.lido-schema.org).
  *
@@ -131,7 +131,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets array of all "Point" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointArray(net.opengis.gml.PointType[] pointArray)
+     public void setPointArray(net.opengis.gml.PointType[] pointArray)
     {
         check_orphaned();
         arraySetterHelper(pointArray, POINT$0);
@@ -140,7 +140,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets ith "Point" element
      */
-    @Inject(optional=true) public void setPointArray(int i, net.opengis.gml.PointType point)
+     public void setPointArray(int i, net.opengis.gml.PointType point)
     {
         generatedSetterHelperImpl(point, POINT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets array of all "LineString" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLineStringArray(net.opengis.gml.LineStringType[] lineStringArray)
+     public void setLineStringArray(net.opengis.gml.LineStringType[] lineStringArray)
     {
         check_orphaned();
         arraySetterHelper(lineStringArray, LINESTRING$2);
@@ -289,7 +289,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets ith "LineString" element
      */
-    @Inject(optional=true) public void setLineStringArray(int i, net.opengis.gml.LineStringType lineString)
+     public void setLineStringArray(int i, net.opengis.gml.LineStringType lineString)
     {
         generatedSetterHelperImpl(lineString, LINESTRING$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -429,7 +429,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets array of all "Polygon" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPolygonArray(net.opengis.gml.PolygonType[] polygonArray)
+     public void setPolygonArray(net.opengis.gml.PolygonType[] polygonArray)
     {
         check_orphaned();
         arraySetterHelper(polygonArray, POLYGON$4);
@@ -438,7 +438,7 @@ public class GmlComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets ith "Polygon" element
      */
-    @Inject(optional=true) public void setPolygonArray(int i, net.opengis.gml.PolygonType polygon)
+     public void setPolygonArray(int i, net.opengis.gml.PolygonType polygon)
     {
         generatedSetterHelperImpl(polygon, POLYGON$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

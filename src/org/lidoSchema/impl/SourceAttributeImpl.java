@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one source(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class SourceAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "source" attribute
      */
-    @Inject(optional=true) public void setSource(java.lang.String source)
+     public void setSource(java.lang.String source)
     {
         synchronized (monitor())
         {

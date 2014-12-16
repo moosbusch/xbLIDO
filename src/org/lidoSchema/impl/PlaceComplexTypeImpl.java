@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML placeComplexType(@http://www.lido-schema.org).
  *
@@ -139,7 +139,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "placeID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPlaceIDArray(org.lidoSchema.IdentifierComplexType[] placeIDArray)
+     public void setPlaceIDArray(org.lidoSchema.IdentifierComplexType[] placeIDArray)
     {
         check_orphaned();
         arraySetterHelper(placeIDArray, PLACEID$0);
@@ -148,7 +148,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "placeID" element
      */
-    @Inject(optional=true) public void setPlaceIDArray(int i, org.lidoSchema.IdentifierComplexType placeID)
+     public void setPlaceIDArray(int i, org.lidoSchema.IdentifierComplexType placeID)
     {
         generatedSetterHelperImpl(placeID, PLACEID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -288,7 +288,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "namePlaceSet" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNamePlaceSetArray(org.lidoSchema.AppellationComplexType[] namePlaceSetArray)
+     public void setNamePlaceSetArray(org.lidoSchema.AppellationComplexType[] namePlaceSetArray)
     {
         check_orphaned();
         arraySetterHelper(namePlaceSetArray, NAMEPLACESET$2);
@@ -297,7 +297,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "namePlaceSet" element
      */
-    @Inject(optional=true) public void setNamePlaceSetArray(int i, org.lidoSchema.AppellationComplexType namePlaceSet)
+     public void setNamePlaceSetArray(int i, org.lidoSchema.AppellationComplexType namePlaceSet)
     {
         generatedSetterHelperImpl(namePlaceSet, NAMEPLACESET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -437,7 +437,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "gml" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGmlArray(org.lidoSchema.PlaceComplexType.Gml[] gmlArray)
+     public void setGmlArray(org.lidoSchema.PlaceComplexType.Gml[] gmlArray)
     {
         check_orphaned();
         arraySetterHelper(gmlArray, GML$4);
@@ -446,7 +446,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "gml" element
      */
-    @Inject(optional=true) public void setGmlArray(int i, org.lidoSchema.PlaceComplexType.Gml gml)
+     public void setGmlArray(int i, org.lidoSchema.PlaceComplexType.Gml gml)
     {
         generatedSetterHelperImpl(gml, GML$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -586,7 +586,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "partOfPlace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPartOfPlaceArray(org.lidoSchema.PlaceComplexType[] partOfPlaceArray)
+     public void setPartOfPlaceArray(org.lidoSchema.PlaceComplexType[] partOfPlaceArray)
     {
         check_orphaned();
         arraySetterHelper(partOfPlaceArray, PARTOFPLACE$6);
@@ -595,7 +595,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "partOfPlace" element
      */
-    @Inject(optional=true) public void setPartOfPlaceArray(int i, org.lidoSchema.PlaceComplexType partOfPlace)
+     public void setPartOfPlaceArray(int i, org.lidoSchema.PlaceComplexType partOfPlace)
     {
         generatedSetterHelperImpl(partOfPlace, PARTOFPLACE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -735,7 +735,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "placeClassification" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPlaceClassificationArray(org.lidoSchema.PlaceComplexType.PlaceClassification[] placeClassificationArray)
+     public void setPlaceClassificationArray(org.lidoSchema.PlaceComplexType.PlaceClassification[] placeClassificationArray)
     {
         check_orphaned();
         arraySetterHelper(placeClassificationArray, PLACECLASSIFICATION$8);
@@ -744,7 +744,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "placeClassification" element
      */
-    @Inject(optional=true) public void setPlaceClassificationArray(int i, org.lidoSchema.PlaceComplexType.PlaceClassification placeClassification)
+     public void setPlaceClassificationArray(int i, org.lidoSchema.PlaceComplexType.PlaceClassification placeClassification)
     {
         generatedSetterHelperImpl(placeClassification, PLACECLASSIFICATION$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -836,7 +836,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "politicalEntity" attribute
      */
-    @Inject(optional=true) public void setPoliticalEntity(java.lang.String politicalEntity)
+     public void setPoliticalEntity(java.lang.String politicalEntity)
     {
         synchronized (monitor())
         {
@@ -928,7 +928,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "geographicalEntity" attribute
      */
-    @Inject(optional=true) public void setGeographicalEntity(java.lang.String geographicalEntity)
+     public void setGeographicalEntity(java.lang.String geographicalEntity)
     {
         synchronized (monitor())
         {
@@ -1037,7 +1037,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -1147,7 +1147,7 @@ public class PlaceComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

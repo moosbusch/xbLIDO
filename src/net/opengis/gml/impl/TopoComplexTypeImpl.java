@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TopoComplexType(@http://www.opengis.net/gml).
  *
@@ -63,7 +63,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets the "maximalComplex" element
      */
-    @Inject(optional=true) public void setMaximalComplex(net.opengis.gml.TopoComplexMemberType maximalComplex)
+     public void setMaximalComplex(net.opengis.gml.TopoComplexMemberType maximalComplex)
     {
         generatedSetterHelperImpl(maximalComplex, MAXIMALCOMPLEX$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets array of all "superComplex" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSuperComplexArray(net.opengis.gml.TopoComplexMemberType[] superComplexArray)
+     public void setSuperComplexArray(net.opengis.gml.TopoComplexMemberType[] superComplexArray)
     {
         check_orphaned();
         arraySetterHelper(superComplexArray, SUPERCOMPLEX$2);
@@ -186,7 +186,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets ith "superComplex" element
      */
-    @Inject(optional=true) public void setSuperComplexArray(int i, net.opengis.gml.TopoComplexMemberType superComplex)
+     public void setSuperComplexArray(int i, net.opengis.gml.TopoComplexMemberType superComplex)
     {
         generatedSetterHelperImpl(superComplex, SUPERCOMPLEX$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -326,7 +326,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets array of all "subComplex" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubComplexArray(net.opengis.gml.TopoComplexMemberType[] subComplexArray)
+     public void setSubComplexArray(net.opengis.gml.TopoComplexMemberType[] subComplexArray)
     {
         check_orphaned();
         arraySetterHelper(subComplexArray, SUBCOMPLEX$4);
@@ -335,7 +335,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets ith "subComplex" element
      */
-    @Inject(optional=true) public void setSubComplexArray(int i, net.opengis.gml.TopoComplexMemberType subComplex)
+     public void setSubComplexArray(int i, net.opengis.gml.TopoComplexMemberType subComplex)
     {
         generatedSetterHelperImpl(subComplex, SUBCOMPLEX$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -475,7 +475,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets array of all "topoPrimitiveMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTopoPrimitiveMemberArray(net.opengis.gml.TopoPrimitiveMemberType[] topoPrimitiveMemberArray)
+     public void setTopoPrimitiveMemberArray(net.opengis.gml.TopoPrimitiveMemberType[] topoPrimitiveMemberArray)
     {
         check_orphaned();
         arraySetterHelper(topoPrimitiveMemberArray, TOPOPRIMITIVEMEMBER$6);
@@ -484,7 +484,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets ith "topoPrimitiveMember" element
      */
-    @Inject(optional=true) public void setTopoPrimitiveMemberArray(int i, net.opengis.gml.TopoPrimitiveMemberType topoPrimitiveMember)
+     public void setTopoPrimitiveMemberArray(int i, net.opengis.gml.TopoPrimitiveMemberType topoPrimitiveMember)
     {
         generatedSetterHelperImpl(topoPrimitiveMember, TOPOPRIMITIVEMEMBER$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -562,7 +562,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets the "topoPrimitiveMembers" element
      */
-    @Inject(optional=true) public void setTopoPrimitiveMembers(net.opengis.gml.TopoPrimitiveArrayAssociationType topoPrimitiveMembers)
+     public void setTopoPrimitiveMembers(net.opengis.gml.TopoPrimitiveArrayAssociationType topoPrimitiveMembers)
     {
         generatedSetterHelperImpl(topoPrimitiveMembers, TOPOPRIMITIVEMEMBERS$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -648,7 +648,7 @@ public class TopoComplexTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets the "isMaximal" attribute
      */
-    @Inject(optional=true) public void setIsMaximal(boolean isMaximal)
+     public void setIsMaximal(boolean isMaximal)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractReferenceSystemBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class AbstractReferenceSystemBaseTypeImpl extends net.opengis.gml.impl.De
     /**
      * Sets the "srsName" element
      */
-    @Inject(optional=true) public void setSrsName(net.opengis.gml.CodeType srsName)
+     public void setSrsName(net.opengis.gml.CodeType srsName)
     {
         generatedSetterHelperImpl(srsName, SRSNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

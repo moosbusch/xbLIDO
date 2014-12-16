@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML UnitDefinitionType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class UnitDefinitionTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "quantityType" element
      */
-    @Inject(optional=true) public void setQuantityType(net.opengis.gml.StringOrRefType quantityType)
+     public void setQuantityType(net.opengis.gml.StringOrRefType quantityType)
     {
         generatedSetterHelperImpl(quantityType, QUANTITYTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -107,7 +107,7 @@ public class UnitDefinitionTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "catalogSymbol" element
      */
-    @Inject(optional=true) public void setCatalogSymbol(net.opengis.gml.CodeType catalogSymbol)
+     public void setCatalogSymbol(net.opengis.gml.CodeType catalogSymbol)
     {
         generatedSetterHelperImpl(catalogSymbol, CATALOGSYMBOL$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

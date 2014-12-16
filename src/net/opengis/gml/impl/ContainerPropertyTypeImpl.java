@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ContainerPropertyType(@http://www.opengis.net/gml).
  *
@@ -83,7 +83,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "Face" element
      */
-    @Inject(optional=true) public void setFace(net.opengis.gml.FaceType face)
+     public void setFace(net.opengis.gml.FaceType face)
     {
         generatedSetterHelperImpl(face, FACE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -147,7 +147,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "TopoSolid" element
      */
-    @Inject(optional=true) public void setTopoSolid(net.opengis.gml.TopoSolidType topoSolid)
+     public void setTopoSolid(net.opengis.gml.TopoSolidType topoSolid)
     {
         generatedSetterHelperImpl(topoSolid, TOPOSOLID$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -233,7 +233,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -325,7 +325,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -417,7 +417,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -509,7 +509,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -601,7 +601,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -693,7 +693,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -785,7 +785,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {
@@ -877,7 +877,7 @@ public class ContainerPropertyTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "remoteSchema" attribute
      */
-    @Inject(optional=true) public void setRemoteSchema(java.lang.String remoteSchema)
+     public void setRemoteSchema(java.lang.String remoteSchema)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one objectIdentificationWrap(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "objectIdentificationWrap" element
      */
-    @Inject(optional=true) public void setObjectIdentificationWrap(org.lidoSchema.ObjectIdentificationWrapDocument.ObjectIdentificationWrap objectIdentificationWrap)
+     public void setObjectIdentificationWrap(org.lidoSchema.ObjectIdentificationWrapDocument.ObjectIdentificationWrap objectIdentificationWrap)
     {
         generatedSetterHelperImpl(objectIdentificationWrap, OBJECTIDENTIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -120,7 +120,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "titleWrap" element
          */
-        @Inject(optional=true) public void setTitleWrap(org.lidoSchema.TitleWrapDocument.TitleWrap titleWrap)
+         public void setTitleWrap(org.lidoSchema.TitleWrapDocument.TitleWrap titleWrap)
         {
             generatedSetterHelperImpl(titleWrap, TITLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -172,7 +172,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "inscriptionsWrap" element
          */
-        @Inject(optional=true) public void setInscriptionsWrap(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
+         public void setInscriptionsWrap(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
         {
             generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -236,7 +236,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "repositoryWrap" element
          */
-        @Inject(optional=true) public void setRepositoryWrap(org.lidoSchema.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
+         public void setRepositoryWrap(org.lidoSchema.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
         {
             generatedSetterHelperImpl(repositoryWrap, REPOSITORYWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -300,7 +300,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "displayStateEditionWrap" element
          */
-        @Inject(optional=true) public void setDisplayStateEditionWrap(org.lidoSchema.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+         public void setDisplayStateEditionWrap(org.lidoSchema.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
         {
             generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -364,7 +364,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "objectDescriptionWrap" element
          */
-        @Inject(optional=true) public void setObjectDescriptionWrap(org.lidoSchema.ObjectDescriptionWrapDocument.ObjectDescriptionWrap objectDescriptionWrap)
+         public void setObjectDescriptionWrap(org.lidoSchema.ObjectDescriptionWrapDocument.ObjectDescriptionWrap objectDescriptionWrap)
         {
             generatedSetterHelperImpl(objectDescriptionWrap, OBJECTDESCRIPTIONWRAP$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -428,7 +428,7 @@ public class ObjectIdentificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "objectMeasurementsWrap" element
          */
-        @Inject(optional=true) public void setObjectMeasurementsWrap(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap objectMeasurementsWrap)
+         public void setObjectMeasurementsWrap(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap objectMeasurementsWrap)
         {
             generatedSetterHelperImpl(objectMeasurementsWrap, OBJECTMEASUREMENTSWRAP$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

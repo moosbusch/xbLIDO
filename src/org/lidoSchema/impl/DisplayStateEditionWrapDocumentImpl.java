@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one displayStateEditionWrap(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "displayStateEditionWrap" element
      */
-    @Inject(optional=true) public void setDisplayStateEditionWrap(org.lidoSchema.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+     public void setDisplayStateEditionWrap(org.lidoSchema.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
     {
         generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -188,7 +188,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayState" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDisplayStateArray(org.lidoSchema.TextComplexType[] displayStateArray)
+         public void setDisplayStateArray(org.lidoSchema.TextComplexType[] displayStateArray)
         {
             check_orphaned();
             arraySetterHelper(displayStateArray, DISPLAYSTATE$0);
@@ -197,7 +197,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayState" element
          */
-        @Inject(optional=true) public void setDisplayStateArray(int i, org.lidoSchema.TextComplexType displayState)
+         public void setDisplayStateArray(int i, org.lidoSchema.TextComplexType displayState)
         {
             generatedSetterHelperImpl(displayState, DISPLAYSTATE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -337,7 +337,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayEdition" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDisplayEditionArray(org.lidoSchema.TextComplexType[] displayEditionArray)
+         public void setDisplayEditionArray(org.lidoSchema.TextComplexType[] displayEditionArray)
         {
             check_orphaned();
             arraySetterHelper(displayEditionArray, DISPLAYEDITION$2);
@@ -346,7 +346,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayEdition" element
          */
-        @Inject(optional=true) public void setDisplayEditionArray(int i, org.lidoSchema.TextComplexType displayEdition)
+         public void setDisplayEditionArray(int i, org.lidoSchema.TextComplexType displayEdition)
         {
             generatedSetterHelperImpl(displayEdition, DISPLAYEDITION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -486,7 +486,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "sourceStateEdition" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceStateEditionArray(org.lidoSchema.TextComplexType[] sourceStateEditionArray)
+         public void setSourceStateEditionArray(org.lidoSchema.TextComplexType[] sourceStateEditionArray)
         {
             check_orphaned();
             arraySetterHelper(sourceStateEditionArray, SOURCESTATEEDITION$4);
@@ -495,7 +495,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "sourceStateEdition" element
          */
-        @Inject(optional=true) public void setSourceStateEditionArray(int i, org.lidoSchema.TextComplexType sourceStateEdition)
+         public void setSourceStateEditionArray(int i, org.lidoSchema.TextComplexType sourceStateEdition)
         {
             generatedSetterHelperImpl(sourceStateEdition, SOURCESTATEEDITION$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

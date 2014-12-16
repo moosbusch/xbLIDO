@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _association(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class AssociationDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "_association" element
      */
-    @Inject(optional=true) public void setAssociation(net.opengis.gml.AssociationType association)
+     public void setAssociation(net.opengis.gml.AssociationType association)
     {
         generatedSetterHelperImpl(association, ASSOCIATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

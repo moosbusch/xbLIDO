@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CoordinateSystemAxisBaseType(@http://www.opengis.net/gml).
  *
@@ -139,7 +139,7 @@ public class CoordinateSystemAxisBaseTypeImpl extends net.opengis.gml.impl.Defin
     /**
      * Sets array of all "name" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNameArray(net.opengis.gml.CodeType[] nameArray)
+     public void setNameArray(net.opengis.gml.CodeType[] nameArray)
     {
         check_orphaned();
         arraySetterHelper(nameArray, NAME$0, NAME$1);
@@ -148,7 +148,7 @@ public class CoordinateSystemAxisBaseTypeImpl extends net.opengis.gml.impl.Defin
     /**
      * Sets ith "name" element
      */
-    @Inject(optional=true) public void setNameArray(int i, net.opengis.gml.CodeType name)
+     public void setNameArray(int i, net.opengis.gml.CodeType name)
     {
         synchronized (monitor())
         {

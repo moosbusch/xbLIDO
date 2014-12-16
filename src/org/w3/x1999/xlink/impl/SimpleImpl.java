@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML simple(@http://www.w3.org/1999/xlink).
  *
@@ -99,7 +99,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -191,7 +191,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -283,7 +283,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -375,7 +375,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -467,7 +467,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -559,7 +559,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -651,7 +651,7 @@ public class SimpleImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML recordInfoSetComplexType(@http://www.lido-schema.org).
  *
@@ -133,7 +133,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "recordInfoID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRecordInfoIDArray(org.lidoSchema.IdentifierComplexType[] recordInfoIDArray)
+     public void setRecordInfoIDArray(org.lidoSchema.IdentifierComplexType[] recordInfoIDArray)
     {
         check_orphaned();
         arraySetterHelper(recordInfoIDArray, RECORDINFOID$0);
@@ -142,7 +142,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "recordInfoID" element
      */
-    @Inject(optional=true) public void setRecordInfoIDArray(int i, org.lidoSchema.IdentifierComplexType recordInfoID)
+     public void setRecordInfoIDArray(int i, org.lidoSchema.IdentifierComplexType recordInfoID)
     {
         generatedSetterHelperImpl(recordInfoID, RECORDINFOID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -282,7 +282,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "recordInfoLink" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRecordInfoLinkArray(org.lidoSchema.WebResourceComplexType[] recordInfoLinkArray)
+     public void setRecordInfoLinkArray(org.lidoSchema.WebResourceComplexType[] recordInfoLinkArray)
     {
         check_orphaned();
         arraySetterHelper(recordInfoLinkArray, RECORDINFOLINK$2);
@@ -291,7 +291,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "recordInfoLink" element
      */
-    @Inject(optional=true) public void setRecordInfoLinkArray(int i, org.lidoSchema.WebResourceComplexType recordInfoLink)
+     public void setRecordInfoLinkArray(int i, org.lidoSchema.WebResourceComplexType recordInfoLink)
     {
         generatedSetterHelperImpl(recordInfoLink, RECORDINFOLINK$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -431,7 +431,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "recordMetadataDate" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRecordMetadataDateArray(org.lidoSchema.RecordInfoSetComplexType.RecordMetadataDate[] recordMetadataDateArray)
+     public void setRecordMetadataDateArray(org.lidoSchema.RecordInfoSetComplexType.RecordMetadataDate[] recordMetadataDateArray)
     {
         check_orphaned();
         arraySetterHelper(recordMetadataDateArray, RECORDMETADATADATE$4);
@@ -440,7 +440,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "recordMetadataDate" element
      */
-    @Inject(optional=true) public void setRecordMetadataDateArray(int i, org.lidoSchema.RecordInfoSetComplexType.RecordMetadataDate recordMetadataDate)
+     public void setRecordMetadataDateArray(int i, org.lidoSchema.RecordInfoSetComplexType.RecordMetadataDate recordMetadataDate)
     {
         generatedSetterHelperImpl(recordMetadataDate, RECORDMETADATADATE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -532,7 +532,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
@@ -654,7 +654,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -746,7 +746,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -838,7 +838,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -930,7 +930,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -1022,7 +1022,7 @@ public class RecordInfoSetComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "source" attribute
          */
-        @Inject(optional=true) public void setSource(java.lang.String source)
+         public void setSource(java.lang.String source)
         {
             synchronized (monitor())
             {

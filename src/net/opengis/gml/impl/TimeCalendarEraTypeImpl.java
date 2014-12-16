@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeCalendarEraType(@http://www.opengis.net/gml).
  *
@@ -59,7 +59,7 @@ public class TimeCalendarEraTypeImpl extends net.opengis.gml.impl.DefinitionType
     /**
      * Sets the "referenceEvent" element
      */
-    @Inject(optional=true) public void setReferenceEvent(net.opengis.gml.StringOrRefType referenceEvent)
+     public void setReferenceEvent(net.opengis.gml.StringOrRefType referenceEvent)
     {
         generatedSetterHelperImpl(referenceEvent, REFERENCEEVENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -125,7 +125,7 @@ public class TimeCalendarEraTypeImpl extends net.opengis.gml.impl.DefinitionType
     /**
      * Sets the "referenceDate" element
      */
-    @Inject(optional=true) public void setReferenceDate(java.util.Calendar referenceDate)
+     public void setReferenceDate(java.util.Calendar referenceDate)
     {
         synchronized (monitor())
         {
@@ -205,7 +205,7 @@ public class TimeCalendarEraTypeImpl extends net.opengis.gml.impl.DefinitionType
     /**
      * Sets the "julianReference" element
      */
-    @Inject(optional=true) public void setJulianReference(java.math.BigDecimal julianReference)
+     public void setJulianReference(java.math.BigDecimal julianReference)
     {
         synchronized (monitor())
         {
@@ -259,7 +259,7 @@ public class TimeCalendarEraTypeImpl extends net.opengis.gml.impl.DefinitionType
     /**
      * Sets the "epochOfUse" element
      */
-    @Inject(optional=true) public void setEpochOfUse(net.opengis.gml.TimePeriodPropertyType epochOfUse)
+     public void setEpochOfUse(net.opengis.gml.TimePeriodPropertyType epochOfUse)
     {
         generatedSetterHelperImpl(epochOfUse, EPOCHOFUSE$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

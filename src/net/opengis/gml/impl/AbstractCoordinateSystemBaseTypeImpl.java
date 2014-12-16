@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractCoordinateSystemBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class AbstractCoordinateSystemBaseTypeImpl extends net.opengis.gml.impl.D
     /**
      * Sets the "csName" element
      */
-    @Inject(optional=true) public void setCsName(net.opengis.gml.CodeType csName)
+     public void setCsName(net.opengis.gml.CodeType csName)
     {
         generatedSetterHelperImpl(csName, CSNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

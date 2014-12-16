@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ArrayAssociationType(@http://www.opengis.net/gml).
  *
@@ -270,7 +270,7 @@ public class ArrayAssociationTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets array of all "_Object" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectArray(org.apache.xmlbeans.XmlObject[] objectArray)
+     public void setObjectArray(org.apache.xmlbeans.XmlObject[] objectArray)
     {
         check_orphaned();
         arraySetterHelper(objectArray, OBJECT$0, OBJECT$1);
@@ -279,7 +279,7 @@ public class ArrayAssociationTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets ith "_Object" element
      */
-    @Inject(optional=true) public void setObjectArray(int i, org.apache.xmlbeans.XmlObject object)
+     public void setObjectArray(int i, org.apache.xmlbeans.XmlObject object)
     {
         synchronized (monitor())
         {

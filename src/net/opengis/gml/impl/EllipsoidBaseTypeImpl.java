@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EllipsoidBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class EllipsoidBaseTypeImpl extends net.opengis.gml.impl.DefinitionTypeIm
     /**
      * Sets the "ellipsoidName" element
      */
-    @Inject(optional=true) public void setEllipsoidName(net.opengis.gml.CodeType ellipsoidName)
+     public void setEllipsoidName(net.opengis.gml.CodeType ellipsoidName)
     {
         generatedSetterHelperImpl(ellipsoidName, ELLIPSOIDNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

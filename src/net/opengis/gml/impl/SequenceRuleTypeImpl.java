@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SequenceRuleType(@http://www.opengis.net/gml).
  *
@@ -84,7 +84,7 @@ public class SequenceRuleTypeImpl extends org.apache.xmlbeans.impl.values.JavaSt
     /**
      * Sets the "order" attribute
      */
-    @Inject(optional=true) public void setOrder(net.opengis.gml.IncrementOrder.Enum order)
+     public void setOrder(net.opengis.gml.IncrementOrder.Enum order)
     {
         synchronized (monitor())
         {

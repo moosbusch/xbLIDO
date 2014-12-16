@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DegreesType(@http://www.opengis.net/gml).
  *
@@ -84,7 +84,7 @@ public class DegreesTypeImpl extends org.apache.xmlbeans.impl.values.JavaIntHold
     /**
      * Sets the "direction" attribute
      */
-    @Inject(optional=true) public void setDirection(java.lang.String direction)
+     public void setDirection(java.lang.String direction)
     {
         synchronized (monitor())
         {

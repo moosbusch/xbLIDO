@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DirectedObservationType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class DirectedObservationTypeImpl extends net.opengis.gml.impl.Observatio
     /**
      * Sets the "direction" element
      */
-    @Inject(optional=true) public void setDirection(net.opengis.gml.DirectionPropertyType direction)
+     public void setDirection(net.opengis.gml.DirectionPropertyType direction)
     {
         generatedSetterHelperImpl(direction, DIRECTION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

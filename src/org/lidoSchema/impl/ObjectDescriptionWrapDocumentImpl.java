@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one objectDescriptionWrap(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class ObjectDescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets the "objectDescriptionWrap" element
      */
-    @Inject(optional=true) public void setObjectDescriptionWrap(org.lidoSchema.ObjectDescriptionWrapDocument.ObjectDescriptionWrap objectDescriptionWrap)
+     public void setObjectDescriptionWrap(org.lidoSchema.ObjectDescriptionWrapDocument.ObjectDescriptionWrap objectDescriptionWrap)
     {
         generatedSetterHelperImpl(objectDescriptionWrap, OBJECTDESCRIPTIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class ObjectDescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets array of all "objectDescriptionSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setObjectDescriptionSetArray(org.lidoSchema.DescriptiveNoteComplexType[] objectDescriptionSetArray)
+         public void setObjectDescriptionSetArray(org.lidoSchema.DescriptiveNoteComplexType[] objectDescriptionSetArray)
         {
             check_orphaned();
             arraySetterHelper(objectDescriptionSetArray, OBJECTDESCRIPTIONSET$0);
@@ -193,7 +193,7 @@ public class ObjectDescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets ith "objectDescriptionSet" element
          */
-        @Inject(optional=true) public void setObjectDescriptionSetArray(int i, org.lidoSchema.DescriptiveNoteComplexType objectDescriptionSet)
+         public void setObjectDescriptionSetArray(int i, org.lidoSchema.DescriptiveNoteComplexType objectDescriptionSet)
         {
             generatedSetterHelperImpl(objectDescriptionSet, OBJECTDESCRIPTIONSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

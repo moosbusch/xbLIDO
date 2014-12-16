@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTimeSliceType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class AbstractTimeSliceTypeImpl extends net.opengis.gml.impl.AbstractGMLT
     /**
      * Sets the "validTime" element
      */
-    @Inject(optional=true) public void setValidTime(net.opengis.gml.TimePrimitivePropertyType validTime)
+     public void setValidTime(net.opengis.gml.TimePrimitivePropertyType validTime)
     {
         generatedSetterHelperImpl(validTime, VALIDTIME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -107,7 +107,7 @@ public class AbstractTimeSliceTypeImpl extends net.opengis.gml.impl.AbstractGMLT
     /**
      * Sets the "dataSource" element
      */
-    @Inject(optional=true) public void setDataSource(net.opengis.gml.StringOrRefType dataSource)
+     public void setDataSource(net.opengis.gml.StringOrRefType dataSource)
     {
         generatedSetterHelperImpl(dataSource, DATASOURCE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

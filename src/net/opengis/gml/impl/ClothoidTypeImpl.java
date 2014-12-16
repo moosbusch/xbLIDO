@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ClothoidType(@http://www.opengis.net/gml).
  *
@@ -59,7 +59,7 @@ public class ClothoidTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentT
     /**
      * Sets the "refLocation" element
      */
-    @Inject(optional=true) public void setRefLocation(net.opengis.gml.ClothoidType.RefLocation refLocation)
+     public void setRefLocation(net.opengis.gml.ClothoidType.RefLocation refLocation)
     {
         generatedSetterHelperImpl(refLocation, REFLOCATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -113,7 +113,7 @@ public class ClothoidTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentT
     /**
      * Sets the "scaleFactor" element
      */
-    @Inject(optional=true) public void setScaleFactor(java.math.BigDecimal scaleFactor)
+     public void setScaleFactor(java.math.BigDecimal scaleFactor)
     {
         synchronized (monitor())
         {
@@ -181,7 +181,7 @@ public class ClothoidTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentT
     /**
      * Sets the "startParameter" element
      */
-    @Inject(optional=true) public void setStartParameter(double startParameter)
+     public void setStartParameter(double startParameter)
     {
         synchronized (monitor())
         {
@@ -249,7 +249,7 @@ public class ClothoidTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentT
     /**
      * Sets the "endParameter" element
      */
-    @Inject(optional=true) public void setEndParameter(double endParameter)
+     public void setEndParameter(double endParameter)
     {
         synchronized (monitor())
         {
@@ -320,7 +320,7 @@ public class ClothoidTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentT
         /**
          * Sets the "AffinePlacement" element
          */
-        @Inject(optional=true) public void setAffinePlacement(net.opengis.gml.AffinePlacementType affinePlacement)
+         public void setAffinePlacement(net.opengis.gml.AffinePlacementType affinePlacement)
         {
             generatedSetterHelperImpl(affinePlacement, AFFINEPLACEMENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

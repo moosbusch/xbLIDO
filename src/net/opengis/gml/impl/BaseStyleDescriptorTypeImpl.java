@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BaseStyleDescriptorType(@http://www.opengis.net/gml).
  *
@@ -75,7 +75,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets the "spatialResolution" element
      */
-    @Inject(optional=true) public void setSpatialResolution(net.opengis.gml.ScaleType spatialResolution)
+     public void setSpatialResolution(net.opengis.gml.ScaleType spatialResolution)
     {
         generatedSetterHelperImpl(spatialResolution, SPATIALRESOLUTION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -201,7 +201,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets array of all "styleVariation" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setStyleVariationArray(net.opengis.gml.StyleVariationType[] styleVariationArray)
+     public void setStyleVariationArray(net.opengis.gml.StyleVariationType[] styleVariationArray)
     {
         check_orphaned();
         arraySetterHelper(styleVariationArray, STYLEVARIATION$2);
@@ -210,7 +210,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets ith "styleVariation" element
      */
-    @Inject(optional=true) public void setStyleVariationArray(int i, net.opengis.gml.StyleVariationType styleVariation)
+     public void setStyleVariationArray(int i, net.opengis.gml.StyleVariationType styleVariation)
     {
         generatedSetterHelperImpl(styleVariation, STYLEVARIATION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -350,7 +350,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets array of all "animate" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAnimateArray(org.w3.x2001.smil20.language.AnimateType[] animateArray)
+     public void setAnimateArray(org.w3.x2001.smil20.language.AnimateType[] animateArray)
     {
         check_orphaned();
         arraySetterHelper(animateArray, ANIMATE$4);
@@ -359,7 +359,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets ith "animate" element
      */
-    @Inject(optional=true) public void setAnimateArray(int i, org.w3.x2001.smil20.language.AnimateType animate)
+     public void setAnimateArray(int i, org.w3.x2001.smil20.language.AnimateType animate)
     {
         generatedSetterHelperImpl(animate, ANIMATE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -499,7 +499,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets array of all "animateMotion" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAnimateMotionArray(org.w3.x2001.smil20.language.AnimateMotionType[] animateMotionArray)
+     public void setAnimateMotionArray(org.w3.x2001.smil20.language.AnimateMotionType[] animateMotionArray)
     {
         check_orphaned();
         arraySetterHelper(animateMotionArray, ANIMATEMOTION$6);
@@ -508,7 +508,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets ith "animateMotion" element
      */
-    @Inject(optional=true) public void setAnimateMotionArray(int i, org.w3.x2001.smil20.language.AnimateMotionType animateMotion)
+     public void setAnimateMotionArray(int i, org.w3.x2001.smil20.language.AnimateMotionType animateMotion)
     {
         generatedSetterHelperImpl(animateMotion, ANIMATEMOTION$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -648,7 +648,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets array of all "animateColor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAnimateColorArray(org.w3.x2001.smil20.language.AnimateColorType[] animateColorArray)
+     public void setAnimateColorArray(org.w3.x2001.smil20.language.AnimateColorType[] animateColorArray)
     {
         check_orphaned();
         arraySetterHelper(animateColorArray, ANIMATECOLOR$8);
@@ -657,7 +657,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets ith "animateColor" element
      */
-    @Inject(optional=true) public void setAnimateColorArray(int i, org.w3.x2001.smil20.language.AnimateColorType animateColor)
+     public void setAnimateColorArray(int i, org.w3.x2001.smil20.language.AnimateColorType animateColor)
     {
         generatedSetterHelperImpl(animateColor, ANIMATECOLOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -797,7 +797,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets array of all "set" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSetArray(org.w3.x2001.smil20.language.SetType[] setArray)
+     public void setSetArray(org.w3.x2001.smil20.language.SetType[] setArray)
     {
         check_orphaned();
         arraySetterHelper(setArray, SET$10);
@@ -806,7 +806,7 @@ public class BaseStyleDescriptorTypeImpl extends net.opengis.gml.impl.AbstractGM
     /**
      * Sets ith "set" element
      */
-    @Inject(optional=true) public void setSetArray(int i, org.w3.x2001.smil20.language.SetType set)
+     public void setSetArray(int i, org.w3.x2001.smil20.language.SetType set)
     {
         generatedSetterHelperImpl(set, SET$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML FormulaType(@http://www.opengis.net/gml).
  *
@@ -85,7 +85,7 @@ public class FormulaTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "a" element
      */
-    @Inject(optional=true) public void setA(double a)
+     public void setA(double a)
     {
         synchronized (monitor())
         {
@@ -165,7 +165,7 @@ public class FormulaTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "b" element
      */
-    @Inject(optional=true) public void setB(double b)
+     public void setB(double b)
     {
         synchronized (monitor())
         {
@@ -233,7 +233,7 @@ public class FormulaTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "c" element
      */
-    @Inject(optional=true) public void setC(double c)
+     public void setC(double c)
     {
         synchronized (monitor())
         {
@@ -313,7 +313,7 @@ public class FormulaTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "d" element
      */
-    @Inject(optional=true) public void setD(double d)
+     public void setD(double d)
     {
         synchronized (monitor())
         {

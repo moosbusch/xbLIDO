@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright 2013 Gunnar Kappei.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.annotation.RelatedEncoding;
+package org.lidoSchema.impl;
 /**
  * An XML lidoComplexType(@http://www.lido-schema.org).
  *
@@ -138,7 +137,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "lidoRecID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLidoRecIDArray(org.lidoSchema.IdentifierComplexType[] lidoRecIDArray)
+     public void setLidoRecIDArray(org.lidoSchema.IdentifierComplexType[] lidoRecIDArray)
     {
         check_orphaned();
         arraySetterHelper(lidoRecIDArray, LIDORECID$0);
@@ -147,7 +146,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "lidoRecID" element
      */
-    @Inject(optional=true) public void setLidoRecIDArray(int i, org.lidoSchema.IdentifierComplexType lidoRecID)
+     public void setLidoRecIDArray(int i, org.lidoSchema.IdentifierComplexType lidoRecID)
     {
         generatedSetterHelperImpl(lidoRecID, LIDORECID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -287,7 +286,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "objectPublishedID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectPublishedIDArray(org.lidoSchema.IdentifierComplexType[] objectPublishedIDArray)
+     public void setObjectPublishedIDArray(org.lidoSchema.IdentifierComplexType[] objectPublishedIDArray)
     {
         check_orphaned();
         arraySetterHelper(objectPublishedIDArray, OBJECTPUBLISHEDID$2);
@@ -296,7 +295,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "objectPublishedID" element
      */
-    @Inject(optional=true) public void setObjectPublishedIDArray(int i, org.lidoSchema.IdentifierComplexType objectPublishedID)
+     public void setObjectPublishedIDArray(int i, org.lidoSchema.IdentifierComplexType objectPublishedID)
     {
         generatedSetterHelperImpl(objectPublishedID, OBJECTPUBLISHEDID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -374,7 +373,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "category" element
      */
-    @Inject(optional=true) public void setCategory(org.lidoSchema.ConceptComplexType category)
+     public void setCategory(org.lidoSchema.ConceptComplexType category)
     {
         generatedSetterHelperImpl(category, CATEGORY$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -500,7 +499,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "descriptiveMetadata" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDescriptiveMetadataArray(org.lidoSchema.DescriptiveMetadataComplexType[] descriptiveMetadataArray)
+     public void setDescriptiveMetadataArray(org.lidoSchema.DescriptiveMetadataComplexType[] descriptiveMetadataArray)
     {
         check_orphaned();
         arraySetterHelper(descriptiveMetadataArray, DESCRIPTIVEMETADATA$6);
@@ -509,7 +508,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "descriptiveMetadata" element
      */
-    @Inject(optional=true) public void setDescriptiveMetadataArray(int i, org.lidoSchema.DescriptiveMetadataComplexType descriptiveMetadata)
+     public void setDescriptiveMetadataArray(int i, org.lidoSchema.DescriptiveMetadataComplexType descriptiveMetadata)
     {
         generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -649,7 +648,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "administrativeMetadata" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAdministrativeMetadataArray(org.lidoSchema.AdministrativeMetadataComplexType[] administrativeMetadataArray)
+     public void setAdministrativeMetadataArray(org.lidoSchema.AdministrativeMetadataComplexType[] administrativeMetadataArray)
     {
         check_orphaned();
         arraySetterHelper(administrativeMetadataArray, ADMINISTRATIVEMETADATA$8);
@@ -658,7 +657,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "administrativeMetadata" element
      */
-    @Inject(optional=true) public void setAdministrativeMetadataArray(int i, org.lidoSchema.AdministrativeMetadataComplexType administrativeMetadata)
+     public void setAdministrativeMetadataArray(int i, org.lidoSchema.AdministrativeMetadataComplexType administrativeMetadata)
     {
         generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -750,7 +749,7 @@ public class LidoComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "relatedencoding" attribute
      */
-    @Inject(optional=true) public void setRelatedencoding(@RelatedEncoding java.lang.String relatedencoding)
+     public void setRelatedencoding(java.lang.String relatedencoding)
     {
         synchronized (monitor())
         {

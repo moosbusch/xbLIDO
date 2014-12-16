@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ImageCRSType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class ImageCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceSyst
     /**
      * Sets the "usesCartesianCS" element
      */
-    @Inject(optional=true) public void setUsesCartesianCS(net.opengis.gml.CartesianCSRefType usesCartesianCS)
+     public void setUsesCartesianCS(net.opengis.gml.CartesianCSRefType usesCartesianCS)
     {
         generatedSetterHelperImpl(usesCartesianCS, USESCARTESIANCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class ImageCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceSyst
     /**
      * Sets the "usesObliqueCartesianCS" element
      */
-    @Inject(optional=true) public void setUsesObliqueCartesianCS(net.opengis.gml.ObliqueCartesianCSRefType usesObliqueCartesianCS)
+     public void setUsesObliqueCartesianCS(net.opengis.gml.ObliqueCartesianCSRefType usesObliqueCartesianCS)
     {
         generatedSetterHelperImpl(usesObliqueCartesianCS, USESOBLIQUECARTESIANCS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class ImageCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceSyst
     /**
      * Sets the "usesImageDatum" element
      */
-    @Inject(optional=true) public void setUsesImageDatum(net.opengis.gml.ImageDatumRefType usesImageDatum)
+     public void setUsesImageDatum(net.opengis.gml.ImageDatumRefType usesImageDatum)
     {
         generatedSetterHelperImpl(usesImageDatum, USESIMAGEDATUM$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

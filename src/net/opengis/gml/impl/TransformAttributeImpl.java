@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one transform(@http://www.opengis.net/gml) attribute.
  *
@@ -79,7 +79,7 @@ public class TransformAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "transform" attribute
      */
-    @Inject(optional=true) public void setTransform(java.lang.String transform)
+     public void setTransform(java.lang.String transform)
     {
         synchronized (monitor())
         {

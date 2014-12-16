@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiLineStringType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class MultiLineStringTypeImpl extends net.opengis.gml.impl.AbstractGeomet
     /**
      * Sets array of all "lineStringMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLineStringMemberArray(net.opengis.gml.LineStringPropertyType[] lineStringMemberArray)
+     public void setLineStringMemberArray(net.opengis.gml.LineStringPropertyType[] lineStringMemberArray)
     {
         check_orphaned();
         arraySetterHelper(lineStringMemberArray, LINESTRINGMEMBER$0);
@@ -136,7 +136,7 @@ public class MultiLineStringTypeImpl extends net.opengis.gml.impl.AbstractGeomet
     /**
      * Sets ith "lineStringMember" element
      */
-    @Inject(optional=true) public void setLineStringMemberArray(int i, net.opengis.gml.LineStringPropertyType lineStringMember)
+     public void setLineStringMemberArray(int i, net.opengis.gml.LineStringPropertyType lineStringMember)
     {
         generatedSetterHelperImpl(lineStringMember, LINESTRINGMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

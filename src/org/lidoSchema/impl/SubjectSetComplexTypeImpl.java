@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML subjectSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class SubjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets array of all "displaySubject" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplaySubjectArray(org.lidoSchema.TextComplexType[] displaySubjectArray)
+     public void setDisplaySubjectArray(org.lidoSchema.TextComplexType[] displaySubjectArray)
     {
         check_orphaned();
         arraySetterHelper(displaySubjectArray, DISPLAYSUBJECT$0);
@@ -138,7 +138,7 @@ public class SubjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets ith "displaySubject" element
      */
-    @Inject(optional=true) public void setDisplaySubjectArray(int i, org.lidoSchema.TextComplexType displaySubject)
+     public void setDisplaySubjectArray(int i, org.lidoSchema.TextComplexType displaySubject)
     {
         generatedSetterHelperImpl(displaySubject, DISPLAYSUBJECT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class SubjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "subject" element
      */
-    @Inject(optional=true) public void setSubject(org.lidoSchema.SubjectComplexType subject)
+     public void setSubject(org.lidoSchema.SubjectComplexType subject)
     {
         generatedSetterHelperImpl(subject, SUBJECT$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

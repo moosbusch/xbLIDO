@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one TimePeriod(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TimePeriodDocumentImpl extends net.opengis.gml.impl.TimeGeometricPr
     /**
      * Sets the "TimePeriod" element
      */
-    @Inject(optional=true) public void setTimePeriod(net.opengis.gml.TimePeriodType timePeriod)
+     public void setTimePeriod(net.opengis.gml.TimePeriodType timePeriod)
     {
         generatedSetterHelperImpl(timePeriod, TIMEPERIOD$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML LabelStyleType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class LabelStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "style" element
      */
-    @Inject(optional=true) public void setStyle(java.lang.String style)
+     public void setStyle(java.lang.String style)
     {
         synchronized (monitor())
         {
@@ -123,7 +123,7 @@ public class LabelStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "label" element
      */
-    @Inject(optional=true) public void setLabel(net.opengis.gml.LabelType label)
+     public void setLabel(net.opengis.gml.LabelType label)
     {
         generatedSetterHelperImpl(label, LABEL$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

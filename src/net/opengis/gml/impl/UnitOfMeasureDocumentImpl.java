@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one unitOfMeasure(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class UnitOfMeasureDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "unitOfMeasure" element
      */
-    @Inject(optional=true) public void setUnitOfMeasure(net.opengis.gml.UnitOfMeasureType unitOfMeasure)
+     public void setUnitOfMeasure(net.opengis.gml.UnitOfMeasureType unitOfMeasure)
     {
         generatedSetterHelperImpl(unitOfMeasure, UNITOFMEASURE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

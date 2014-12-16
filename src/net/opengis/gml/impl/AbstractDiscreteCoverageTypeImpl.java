@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractDiscreteCoverageType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class AbstractDiscreteCoverageTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets the "coverageFunction" element
      */
-    @Inject(optional=true) public void setCoverageFunction(net.opengis.gml.CoverageFunctionType coverageFunction)
+     public void setCoverageFunction(net.opengis.gml.CoverageFunctionType coverageFunction)
     {
         generatedSetterHelperImpl(coverageFunction, COVERAGEFUNCTION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

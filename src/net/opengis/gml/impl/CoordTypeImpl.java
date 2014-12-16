@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CoordType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class CoordTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets the "X" element
      */
-    @Inject(optional=true) public void setX(java.math.BigDecimal x)
+     public void setX(java.math.BigDecimal x)
     {
         synchronized (monitor())
         {
@@ -151,7 +151,7 @@ public class CoordTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets the "Y" element
      */
-    @Inject(optional=true) public void setY(java.math.BigDecimal y)
+     public void setY(java.math.BigDecimal y)
     {
         synchronized (monitor())
         {
@@ -243,7 +243,7 @@ public class CoordTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets the "Z" element
      */
-    @Inject(optional=true) public void setZ(java.math.BigDecimal z)
+     public void setZ(java.math.BigDecimal z)
     {
         synchronized (monitor())
         {

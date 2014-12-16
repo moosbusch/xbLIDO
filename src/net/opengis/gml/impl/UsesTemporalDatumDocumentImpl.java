@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one usesTemporalDatum(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class UsesTemporalDatumDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "usesTemporalDatum" element
      */
-    @Inject(optional=true) public void setUsesTemporalDatum(net.opengis.gml.TemporalDatumRefType usesTemporalDatum)
+     public void setUsesTemporalDatum(net.opengis.gml.TemporalDatumRefType usesTemporalDatum)
     {
         generatedSetterHelperImpl(usesTemporalDatum, USESTEMPORALDATUM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

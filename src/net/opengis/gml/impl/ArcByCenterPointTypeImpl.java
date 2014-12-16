@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ArcByCenterPointType(@http://www.opengis.net/gml).
  *
@@ -83,7 +83,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "pos" element
      */
-    @Inject(optional=true) public void setPos(net.opengis.gml.DirectPositionType pos)
+     public void setPos(net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -147,7 +147,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "pointProperty" element
      */
-    @Inject(optional=true) public void setPointProperty(net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointProperty(net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -211,7 +211,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "pointRep" element
      */
-    @Inject(optional=true) public void setPointRep(net.opengis.gml.PointPropertyType pointRep)
+     public void setPointRep(net.opengis.gml.PointPropertyType pointRep)
     {
         generatedSetterHelperImpl(pointRep, POINTREP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -275,7 +275,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "posList" element
      */
-    @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+     public void setPosList(net.opengis.gml.DirectPositionListType posList)
     {
         generatedSetterHelperImpl(posList, POSLIST$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -339,7 +339,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "coordinates" element
      */
-    @Inject(optional=true) public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
+     public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
     {
         generatedSetterHelperImpl(coordinates, COORDINATES$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -391,7 +391,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "radius" element
      */
-    @Inject(optional=true) public void setRadius(net.opengis.gml.LengthType radius)
+     public void setRadius(net.opengis.gml.LengthType radius)
     {
         generatedSetterHelperImpl(radius, RADIUS$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -443,7 +443,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "startAngle" element
      */
-    @Inject(optional=true) public void setStartAngle(net.opengis.gml.AngleType startAngle)
+     public void setStartAngle(net.opengis.gml.AngleType startAngle)
     {
         generatedSetterHelperImpl(startAngle, STARTANGLE$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -507,7 +507,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "endAngle" element
      */
-    @Inject(optional=true) public void setEndAngle(net.opengis.gml.AngleType endAngle)
+     public void setEndAngle(net.opengis.gml.AngleType endAngle)
     {
         generatedSetterHelperImpl(endAngle, ENDANGLE$14, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -593,7 +593,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {
@@ -681,7 +681,7 @@ public class ArcByCenterPointTypeImpl extends net.opengis.gml.impl.AbstractCurve
     /**
      * Sets the "numArc" attribute
      */
-    @Inject(optional=true) public void setNumArc(java.math.BigInteger numArc)
+     public void setNumArc(java.math.BigInteger numArc)
     {
         synchronized (monitor())
         {

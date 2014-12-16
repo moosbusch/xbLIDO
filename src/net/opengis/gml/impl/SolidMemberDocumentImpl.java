@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one solidMember(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class SolidMemberDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "solidMember" element
      */
-    @Inject(optional=true) public void setSolidMember(net.opengis.gml.SolidPropertyType solidMember)
+     public void setSolidMember(net.opengis.gml.SolidPropertyType solidMember)
     {
         generatedSetterHelperImpl(solidMember, SOLIDMEMBER$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

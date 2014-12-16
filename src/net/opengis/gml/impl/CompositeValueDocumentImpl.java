@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one CompositeValue(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class CompositeValueDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "CompositeValue" element
      */
-    @Inject(optional=true) public void setCompositeValue(net.opengis.gml.CompositeValueType compositeValue)
+     public void setCompositeValue(net.opengis.gml.CompositeValueType compositeValue)
     {
         synchronized (monitor())
         {

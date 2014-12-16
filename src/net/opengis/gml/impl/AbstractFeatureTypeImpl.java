@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractFeatureType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class AbstractFeatureTypeImpl extends net.opengis.gml.impl.AbstractGMLTyp
     /**
      * Sets the "boundedBy" element
      */
-    @Inject(optional=true) public void setBoundedBy(net.opengis.gml.BoundingShapeType boundedBy)
+     public void setBoundedBy(net.opengis.gml.BoundingShapeType boundedBy)
     {
         generatedSetterHelperImpl(boundedBy, BOUNDEDBY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -135,7 +135,7 @@ public class AbstractFeatureTypeImpl extends net.opengis.gml.impl.AbstractGMLTyp
     /**
      * Sets the "location" element
      */
-    @Inject(optional=true) public void setLocation(net.opengis.gml.LocationPropertyType location)
+     public void setLocation(net.opengis.gml.LocationPropertyType location)
     {
         synchronized (monitor())
         {

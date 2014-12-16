@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TransformationType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class TransformationTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "usesMethod" element
      */
-    @Inject(optional=true) public void setUsesMethod(net.opengis.gml.OperationMethodRefType usesMethod)
+     public void setUsesMethod(net.opengis.gml.OperationMethodRefType usesMethod)
     {
         generatedSetterHelperImpl(usesMethod, USESMETHOD$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -169,7 +169,7 @@ public class TransformationTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets array of all "usesValue" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setUsesValueArray(net.opengis.gml.ParameterValueType[] usesValueArray)
+     public void setUsesValueArray(net.opengis.gml.ParameterValueType[] usesValueArray)
     {
         check_orphaned();
         arraySetterHelper(usesValueArray, USESVALUE$2);
@@ -178,7 +178,7 @@ public class TransformationTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets ith "usesValue" element
      */
-    @Inject(optional=true) public void setUsesValueArray(int i, net.opengis.gml.ParameterValueType usesValue)
+     public void setUsesValueArray(int i, net.opengis.gml.ParameterValueType usesValue)
     {
         generatedSetterHelperImpl(usesValue, USESVALUE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

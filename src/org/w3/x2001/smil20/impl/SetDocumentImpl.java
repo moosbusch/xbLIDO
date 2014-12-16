@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one set(@http://www.w3.org/2001/SMIL20/) element.
@@ -56,7 +56,7 @@ public class SetDocumentImpl extends org.w3.x2001.smil20.language.impl.SetDocume
     /**
      * Sets the "set" element
      */
-    @Inject(optional=true) public void setSet2(org.w3.x2001.smil20.language.SetType set2)
+     public void setSet2(org.w3.x2001.smil20.language.SetType set2)
     {
         generatedSetterHelperImpl(set2, SET2$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

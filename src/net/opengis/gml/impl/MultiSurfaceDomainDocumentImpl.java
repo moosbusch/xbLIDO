@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
-import com.google.inject.Inject;
+
 /**
  * A document containing one multiSurfaceDomain(@http://www.opengis.net/gml) element.
  *
@@ -55,7 +55,7 @@ public class MultiSurfaceDomainDocumentImpl extends net.opengis.gml.impl.DomainS
     /**
      * Sets the "multiSurfaceDomain" element
      */
-    @Inject(optional=true) public void setMultiSurfaceDomain(net.opengis.gml.MultiSurfaceDomainType multiSurfaceDomain)
+     public void setMultiSurfaceDomain(net.opengis.gml.MultiSurfaceDomainType multiSurfaceDomain)
     {
         generatedSetterHelperImpl(multiSurfaceDomain, MULTISURFACEDOMAIN$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

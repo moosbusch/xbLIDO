@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AngleChoiceType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class AngleChoiceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "angle" element
      */
-    @Inject(optional=true) public void setAngle(net.opengis.gml.MeasureType angle)
+     public void setAngle(net.opengis.gml.MeasureType angle)
     {
         generatedSetterHelperImpl(angle, ANGLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -131,7 +131,7 @@ public class AngleChoiceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "dmsAngle" element
      */
-    @Inject(optional=true) public void setDmsAngle(net.opengis.gml.DMSAngleType dmsAngle)
+     public void setDmsAngle(net.opengis.gml.DMSAngleType dmsAngle)
     {
         generatedSetterHelperImpl(dmsAngle, DMSANGLE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

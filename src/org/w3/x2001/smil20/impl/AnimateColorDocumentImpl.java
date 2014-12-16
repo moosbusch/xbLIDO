@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one animateColor(@http://www.w3.org/2001/SMIL20/) element.
@@ -56,7 +56,7 @@ public class AnimateColorDocumentImpl extends org.w3.x2001.smil20.language.impl.
     /**
      * Sets the "animateColor" element
      */
-    @Inject(optional=true) public void setAnimateColor2(org.w3.x2001.smil20.language.AnimateColorType animateColor2)
+     public void setAnimateColor2(org.w3.x2001.smil20.language.AnimateColorType animateColor2)
     {
         generatedSetterHelperImpl(animateColor2, ANIMATECOLOR2$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

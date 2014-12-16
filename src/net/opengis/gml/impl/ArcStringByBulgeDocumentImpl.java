@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one ArcStringByBulge(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class ArcStringByBulgeDocumentImpl extends net.opengis.gml.impl.CurveSegm
     /**
      * Sets the "ArcStringByBulge" element
      */
-    @Inject(optional=true) public void setArcStringByBulge(net.opengis.gml.ArcStringByBulgeType arcStringByBulge)
+     public void setArcStringByBulge(net.opengis.gml.ArcStringByBulgeType arcStringByBulge)
     {
         synchronized (monitor())
         {

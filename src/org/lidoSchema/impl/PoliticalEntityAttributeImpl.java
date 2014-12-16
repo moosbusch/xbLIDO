@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one politicalEntity(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class PoliticalEntityAttributeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "politicalEntity" attribute
      */
-    @Inject(optional=true) public void setPoliticalEntity(java.lang.String politicalEntity)
+     public void setPoliticalEntity(java.lang.String politicalEntity)
     {
         synchronized (monitor())
         {

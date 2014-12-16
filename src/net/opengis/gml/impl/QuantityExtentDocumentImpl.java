@@ -15,7 +15,7 @@
  */
 package net.opengis.gml.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one QuantityExtent(@http://www.opengis.net/gml) element.
@@ -56,7 +56,7 @@ public class QuantityExtentDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "QuantityExtent" element
      */
-    @Inject(optional=true) public void setQuantityExtent(net.opengis.gml.QuantityExtentType quantityExtent)
+     public void setQuantityExtent(net.opengis.gml.QuantityExtentType quantityExtent)
     {
         generatedSetterHelperImpl(quantityExtent, QUANTITYEXTENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

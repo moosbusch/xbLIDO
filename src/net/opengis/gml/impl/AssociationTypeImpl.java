@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AssociationType(@http://www.opengis.net/gml).
  *
@@ -224,7 +224,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "_Object" element
      */
-    @Inject(optional=true) public void setObject(org.apache.xmlbeans.XmlObject object)
+     public void setObject(org.apache.xmlbeans.XmlObject object)
     {
         synchronized (monitor())
         {
@@ -320,7 +320,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -412,7 +412,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -504,7 +504,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -596,7 +596,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -688,7 +688,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -780,7 +780,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -872,7 +872,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {
@@ -964,7 +964,7 @@ public class AssociationTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "remoteSchema" attribute
      */
-    @Inject(optional=true) public void setRemoteSchema(java.lang.String remoteSchema)
+     public void setRemoteSchema(java.lang.String remoteSchema)
     {
         synchronized (monitor())
         {

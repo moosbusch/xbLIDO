@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML VerticalCRSType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class VerticalCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets the "usesVerticalCS" element
      */
-    @Inject(optional=true) public void setUsesVerticalCS(net.opengis.gml.VerticalCSRefType usesVerticalCS)
+     public void setUsesVerticalCS(net.opengis.gml.VerticalCSRefType usesVerticalCS)
     {
         generatedSetterHelperImpl(usesVerticalCS, USESVERTICALCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -95,7 +95,7 @@ public class VerticalCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets the "usesVerticalDatum" element
      */
-    @Inject(optional=true) public void setUsesVerticalDatum(net.opengis.gml.VerticalDatumRefType usesVerticalDatum)
+     public void setUsesVerticalDatum(net.opengis.gml.VerticalDatumRefType usesVerticalDatum)
     {
         generatedSetterHelperImpl(usesVerticalDatum, USESVERTICALDATUM$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

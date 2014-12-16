@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CompositeSolidType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class CompositeSolidTypeImpl extends net.opengis.gml.impl.AbstractSolidTy
     /**
      * Sets array of all "solidMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSolidMemberArray(net.opengis.gml.SolidPropertyType[] solidMemberArray)
+     public void setSolidMemberArray(net.opengis.gml.SolidPropertyType[] solidMemberArray)
     {
         check_orphaned();
         arraySetterHelper(solidMemberArray, SOLIDMEMBER$0);
@@ -136,7 +136,7 @@ public class CompositeSolidTypeImpl extends net.opengis.gml.impl.AbstractSolidTy
     /**
      * Sets ith "solidMember" element
      */
-    @Inject(optional=true) public void setSolidMemberArray(int i, net.opengis.gml.SolidPropertyType solidMember)
+     public void setSolidMemberArray(int i, net.opengis.gml.SolidPropertyType solidMember)
     {
         generatedSetterHelperImpl(solidMember, SOLIDMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

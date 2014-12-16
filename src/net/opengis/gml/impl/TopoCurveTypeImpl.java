@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TopoCurveType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TopoCurveTypeImpl extends net.opengis.gml.impl.AbstractTopologyType
     /**
      * Sets array of all "directedEdge" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedEdgeArray(net.opengis.gml.DirectedEdgePropertyType[] directedEdgeArray)
+     public void setDirectedEdgeArray(net.opengis.gml.DirectedEdgePropertyType[] directedEdgeArray)
     {
         check_orphaned();
         arraySetterHelper(directedEdgeArray, DIRECTEDEDGE$0);
@@ -136,7 +136,7 @@ public class TopoCurveTypeImpl extends net.opengis.gml.impl.AbstractTopologyType
     /**
      * Sets ith "directedEdge" element
      */
-    @Inject(optional=true) public void setDirectedEdgeArray(int i, net.opengis.gml.DirectedEdgePropertyType directedEdge)
+     public void setDirectedEdgeArray(int i, net.opengis.gml.DirectedEdgePropertyType directedEdge)
     {
         generatedSetterHelperImpl(directedEdge, DIRECTEDEDGE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

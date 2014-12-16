@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML HistoryPropertyType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class HistoryPropertyTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets array of all "_TimeSlice" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTimeSliceArray(net.opengis.gml.AbstractTimeSliceType[] timeSliceArray)
+     public void setTimeSliceArray(net.opengis.gml.AbstractTimeSliceType[] timeSliceArray)
     {
         check_orphaned();
         arraySetterHelper(timeSliceArray, TIMESLICE$0, TIMESLICE$1);
@@ -140,7 +140,7 @@ public class HistoryPropertyTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets ith "_TimeSlice" element
      */
-    @Inject(optional=true) public void setTimeSliceArray(int i, net.opengis.gml.AbstractTimeSliceType timeSlice)
+     public void setTimeSliceArray(int i, net.opengis.gml.AbstractTimeSliceType timeSlice)
     {
         synchronized (monitor())
         {

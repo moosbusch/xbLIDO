@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one greenwichLongitude(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class GreenwichLongitudeDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "greenwichLongitude" element
      */
-    @Inject(optional=true) public void setGreenwichLongitude(net.opengis.gml.AngleChoiceType greenwichLongitude)
+     public void setGreenwichLongitude(net.opengis.gml.AngleChoiceType greenwichLongitude)
     {
         generatedSetterHelperImpl(greenwichLongitude, GREENWICHLONGITUDE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

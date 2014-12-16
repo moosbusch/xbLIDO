@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ConversionToPreferredUnitType(@http://www.opengis.net/gml).
  *
@@ -81,7 +81,7 @@ public class ConversionToPreferredUnitTypeImpl extends net.opengis.gml.impl.Unit
     /**
      * Sets the "factor" element
      */
-    @Inject(optional=true) public void setFactor(double factor)
+     public void setFactor(double factor)
     {
         synchronized (monitor())
         {
@@ -159,7 +159,7 @@ public class ConversionToPreferredUnitTypeImpl extends net.opengis.gml.impl.Unit
     /**
      * Sets the "formula" element
      */
-    @Inject(optional=true) public void setFormula(net.opengis.gml.FormulaType formula)
+     public void setFormula(net.opengis.gml.FormulaType formula)
     {
         generatedSetterHelperImpl(formula, FORMULA$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 
 /**
  * An XML actorInRoleSetComplexType(@http://www.lido-schema.org).
@@ -130,7 +130,7 @@ public class ActorInRoleSetComplexTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets array of all "displayActorInRole" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayActorInRoleArray(org.lidoSchema.TextComplexType[] displayActorInRoleArray)
+     public void setDisplayActorInRoleArray(org.lidoSchema.TextComplexType[] displayActorInRoleArray)
     {
         check_orphaned();
         arraySetterHelper(displayActorInRoleArray, DISPLAYACTORINROLE$0);
@@ -139,7 +139,7 @@ public class ActorInRoleSetComplexTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets ith "displayActorInRole" element
      */
-    @Inject(optional=true) public void setDisplayActorInRoleArray(int i, org.lidoSchema.TextComplexType displayActorInRole)
+     public void setDisplayActorInRoleArray(int i, org.lidoSchema.TextComplexType displayActorInRole)
     {
         generatedSetterHelperImpl(displayActorInRole, DISPLAYACTORINROLE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -217,7 +217,7 @@ public class ActorInRoleSetComplexTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "actorInRole" element
      */
-    @Inject(optional=true) public void setActorInRole(org.lidoSchema.ActorInRoleComplexType actorInRole)
+     public void setActorInRole(org.lidoSchema.ActorInRoleComplexType actorInRole)
     {
         generatedSetterHelperImpl(actorInRole, ACTORINROLE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

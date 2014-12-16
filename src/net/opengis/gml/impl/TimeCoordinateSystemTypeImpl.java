@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeCoordinateSystemType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class TimeCoordinateSystemTypeImpl extends net.opengis.gml.impl.AbstractT
     /**
      * Sets the "originPosition" element
      */
-    @Inject(optional=true) public void setOriginPosition(net.opengis.gml.TimePositionType originPosition)
+     public void setOriginPosition(net.opengis.gml.TimePositionType originPosition)
     {
         generatedSetterHelperImpl(originPosition, ORIGINPOSITION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class TimeCoordinateSystemTypeImpl extends net.opengis.gml.impl.AbstractT
     /**
      * Sets the "origin" element
      */
-    @Inject(optional=true) public void setOrigin(net.opengis.gml.TimeInstantPropertyType origin)
+     public void setOrigin(net.opengis.gml.TimeInstantPropertyType origin)
     {
         generatedSetterHelperImpl(origin, ORIGIN$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class TimeCoordinateSystemTypeImpl extends net.opengis.gml.impl.AbstractT
     /**
      * Sets the "interval" element
      */
-    @Inject(optional=true) public void setInterval(net.opengis.gml.TimeIntervalLengthType interval)
+     public void setInterval(net.opengis.gml.TimeIntervalLengthType interval)
     {
         generatedSetterHelperImpl(interval, INTERVAL$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

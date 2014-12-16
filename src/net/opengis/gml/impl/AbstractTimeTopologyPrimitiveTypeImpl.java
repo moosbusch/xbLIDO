@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTimeTopologyPrimitiveType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class AbstractTimeTopologyPrimitiveTypeImpl extends net.opengis.gml.impl.
     /**
      * Sets the "complex" element
      */
-    @Inject(optional=true) public void setComplex(net.opengis.gml.ReferenceType complex)
+     public void setComplex(net.opengis.gml.ReferenceType complex)
     {
         generatedSetterHelperImpl(complex, COMPLEX$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

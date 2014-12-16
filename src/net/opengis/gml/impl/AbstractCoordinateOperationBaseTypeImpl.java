@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
 /**
  * An XML AbstractCoordinateOperationBaseType(@http://www.opengis.net/gml).
@@ -54,7 +54,7 @@ public class AbstractCoordinateOperationBaseTypeImpl extends net.opengis.gml.imp
     /**
      * Sets the "coordinateOperationName" element
      */
-    @Inject(optional=true) public void setCoordinateOperationName(net.opengis.gml.CodeType coordinateOperationName)
+     public void setCoordinateOperationName(net.opengis.gml.CodeType coordinateOperationName)
     {
         generatedSetterHelperImpl(coordinateOperationName, COORDINATEOPERATIONNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

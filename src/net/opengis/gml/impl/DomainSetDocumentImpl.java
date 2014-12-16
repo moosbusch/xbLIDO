@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one domainSet(@http://www.opengis.net/gml) element.
  *
@@ -62,7 +62,7 @@ public class DomainSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "domainSet" element
      */
-    @Inject(optional=true) public void setDomainSet(net.opengis.gml.DomainSetType domainSet)
+     public void setDomainSet(net.opengis.gml.DomainSetType domainSet)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML titleEltType(@http://www.w3.org/1999/xlink).
  *
@@ -77,7 +77,7 @@ public class TitleEltTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -157,7 +157,7 @@ public class TitleEltTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {

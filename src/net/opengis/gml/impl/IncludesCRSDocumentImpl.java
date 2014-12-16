@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one includesCRS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class IncludesCRSDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "includesCRS" element
      */
-    @Inject(optional=true) public void setIncludesCRS(net.opengis.gml.CoordinateReferenceSystemRefType includesCRS)
+     public void setIncludesCRS(net.opengis.gml.CoordinateReferenceSystemRefType includesCRS)
     {
         generatedSetterHelperImpl(includesCRS, INCLUDESCRS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

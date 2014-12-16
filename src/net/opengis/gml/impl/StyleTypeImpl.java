@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML StyleType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class StyleTypeImpl extends net.opengis.gml.impl.AbstractStyleTypeImpl im
     /**
      * Sets array of all "featureStyle" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setFeatureStyleArray(net.opengis.gml.FeatureStylePropertyType[] featureStyleArray)
+     public void setFeatureStyleArray(net.opengis.gml.FeatureStylePropertyType[] featureStyleArray)
     {
         check_orphaned();
         arraySetterHelper(featureStyleArray, FEATURESTYLE$0);
@@ -138,7 +138,7 @@ public class StyleTypeImpl extends net.opengis.gml.impl.AbstractStyleTypeImpl im
     /**
      * Sets ith "featureStyle" element
      */
-    @Inject(optional=true) public void setFeatureStyleArray(int i, net.opengis.gml.FeatureStylePropertyType featureStyle)
+     public void setFeatureStyleArray(int i, net.opengis.gml.FeatureStylePropertyType featureStyle)
     {
         generatedSetterHelperImpl(featureStyle, FEATURESTYLE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class StyleTypeImpl extends net.opengis.gml.impl.AbstractStyleTypeImpl im
     /**
      * Sets the "graphStyle" element
      */
-    @Inject(optional=true) public void setGraphStyle(net.opengis.gml.GraphStylePropertyType graphStyle)
+     public void setGraphStyle(net.opengis.gml.GraphStylePropertyType graphStyle)
     {
         generatedSetterHelperImpl(graphStyle, GRAPHSTYLE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

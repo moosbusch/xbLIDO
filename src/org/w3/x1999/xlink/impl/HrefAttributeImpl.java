@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 
 /**
  * A document containing one href(@http://www.w3.org/1999/xlink) attribute.
@@ -80,7 +80,7 @@ public class HrefAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {

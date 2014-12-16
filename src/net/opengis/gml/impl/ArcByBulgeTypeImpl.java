@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ArcByBulgeType(@http://www.opengis.net/gml).
  *
@@ -137,7 +137,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+     public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
     {
         check_orphaned();
         arraySetterHelper(posArray, POS$0);
@@ -146,7 +146,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets ith "pos" element
      */
-    @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+     public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -286,7 +286,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+     public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
     {
         check_orphaned();
         arraySetterHelper(pointPropertyArray, POINTPROPERTY$2);
@@ -295,7 +295,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets ith "pointProperty" element
      */
-    @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -435,7 +435,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets array of all "pointRep" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
+     public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
     {
         check_orphaned();
         arraySetterHelper(pointRepArray, POINTREP$4);
@@ -444,7 +444,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets ith "pointRep" element
      */
-    @Inject(optional=true) public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
+     public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
     {
         generatedSetterHelperImpl(pointRep, POINTREP$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -665,7 +665,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets array of all "bulge" element
      */
-    @Inject(optional=true) public void setBulgeArray(double[] bulgeArray)
+     public void setBulgeArray(double[] bulgeArray)
     {
         synchronized (monitor())
         {
@@ -677,7 +677,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets ith "bulge" element
      */
-    @Inject(optional=true) public void setBulgeArray(int i, double bulge)
+     public void setBulgeArray(int i, double bulge)
     {
         synchronized (monitor())
         {
@@ -885,7 +885,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets array of all "normal" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNormalArray(net.opengis.gml.VectorType[] normalArray)
+     public void setNormalArray(net.opengis.gml.VectorType[] normalArray)
     {
         check_orphaned();
         arraySetterHelper(normalArray, NORMAL$8);
@@ -894,7 +894,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets ith "normal" element
      */
-    @Inject(optional=true) public void setNormalArray(int i, net.opengis.gml.VectorType normal)
+     public void setNormalArray(int i, net.opengis.gml.VectorType normal)
     {
         generatedSetterHelperImpl(normal, NORMAL$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -994,7 +994,7 @@ public class ArcByBulgeTypeImpl extends net.opengis.gml.impl.ArcStringByBulgeTyp
     /**
      * Sets the "numArc" attribute
      */
-    @Inject(optional=true) public void setNumArc(java.math.BigInteger numArc)
+     public void setNumArc(java.math.BigInteger numArc)
     {
         synchronized (monitor())
         {

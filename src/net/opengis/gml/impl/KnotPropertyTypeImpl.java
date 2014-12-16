@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML KnotPropertyType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class KnotPropertyTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "Knot" element
      */
-    @Inject(optional=true) public void setKnot(net.opengis.gml.KnotType knot)
+     public void setKnot(net.opengis.gml.KnotType knot)
     {
         generatedSetterHelperImpl(knot, KNOT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

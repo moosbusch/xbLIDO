@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _Topology(@http://www.opengis.net/gml) element.
  *
@@ -62,7 +62,7 @@ public class TopologyDocumentImpl extends net.opengis.gml.impl.GMLDocumentImpl i
     /**
      * Sets the "_Topology" element
      */
-    @Inject(optional=true) public void setTopology(net.opengis.gml.AbstractTopologyType topology)
+     public void setTopology(net.opengis.gml.AbstractTopologyType topology)
     {
         synchronized (monitor())
         {

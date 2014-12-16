@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DictionaryType(@http://www.opengis.net/gml).
  *
@@ -133,7 +133,7 @@ public class DictionaryTypeImpl extends net.opengis.gml.impl.DefinitionTypeImpl 
     /**
      * Sets array of all "dictionaryEntry" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDictionaryEntryArray(net.opengis.gml.DictionaryEntryType[] dictionaryEntryArray)
+     public void setDictionaryEntryArray(net.opengis.gml.DictionaryEntryType[] dictionaryEntryArray)
     {
         check_orphaned();
         arraySetterHelper(dictionaryEntryArray, DICTIONARYENTRY$0, DICTIONARYENTRY$1);
@@ -142,7 +142,7 @@ public class DictionaryTypeImpl extends net.opengis.gml.impl.DefinitionTypeImpl 
     /**
      * Sets ith "dictionaryEntry" element
      */
-    @Inject(optional=true) public void setDictionaryEntryArray(int i, net.opengis.gml.DictionaryEntryType dictionaryEntry)
+     public void setDictionaryEntryArray(int i, net.opengis.gml.DictionaryEntryType dictionaryEntry)
     {
         synchronized (monitor())
         {
@@ -292,7 +292,7 @@ public class DictionaryTypeImpl extends net.opengis.gml.impl.DefinitionTypeImpl 
     /**
      * Sets array of all "indirectEntry" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIndirectEntryArray(net.opengis.gml.IndirectEntryType[] indirectEntryArray)
+     public void setIndirectEntryArray(net.opengis.gml.IndirectEntryType[] indirectEntryArray)
     {
         check_orphaned();
         arraySetterHelper(indirectEntryArray, INDIRECTENTRY$2);
@@ -301,7 +301,7 @@ public class DictionaryTypeImpl extends net.opengis.gml.impl.DefinitionTypeImpl 
     /**
      * Sets ith "indirectEntry" element
      */
-    @Inject(optional=true) public void setIndirectEntryArray(int i, net.opengis.gml.IndirectEntryType indirectEntry)
+     public void setIndirectEntryArray(int i, net.opengis.gml.IndirectEntryType indirectEntry)
     {
         generatedSetterHelperImpl(indirectEntry, INDIRECTENTRY$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

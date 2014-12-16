@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ParameterValueType(@http://www.opengis.net/gml).
  *
@@ -81,7 +81,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "value" element
      */
-    @Inject(optional=true) public void setValue(net.opengis.gml.MeasureType value)
+     public void setValue(net.opengis.gml.MeasureType value)
     {
         generatedSetterHelperImpl(value, VALUE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "dmsAngleValue" element
      */
-    @Inject(optional=true) public void setDmsAngleValue(net.opengis.gml.DMSAngleType dmsAngleValue)
+     public void setDmsAngleValue(net.opengis.gml.DMSAngleType dmsAngleValue)
     {
         generatedSetterHelperImpl(dmsAngleValue, DMSANGLEVALUE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -223,7 +223,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "stringValue" element
      */
-    @Inject(optional=true) public void setStringValue1(java.lang.String stringValue1)
+     public void setStringValue1(java.lang.String stringValue1)
     {
         synchronized (monitor())
         {
@@ -315,7 +315,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "integerValue" element
      */
-    @Inject(optional=true) public void setIntegerValue(java.math.BigInteger integerValue)
+     public void setIntegerValue(java.math.BigInteger integerValue)
     {
         synchronized (monitor())
         {
@@ -407,7 +407,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "booleanValue" element
      */
-    @Inject(optional=true) public void setBooleanValue1(boolean booleanValue1)
+     public void setBooleanValue1(boolean booleanValue1)
     {
         synchronized (monitor())
         {
@@ -485,7 +485,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "valueList" element
      */
-    @Inject(optional=true) public void setValueList(net.opengis.gml.MeasureListType valueList)
+     public void setValueList(net.opengis.gml.MeasureListType valueList)
     {
         generatedSetterHelperImpl(valueList, VALUELIST$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -563,7 +563,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "integerValueList" element
      */
-    @Inject(optional=true) public void setIntegerValueList(java.util.List integerValueList)
+     public void setIntegerValueList(java.util.List integerValueList)
     {
         synchronized (monitor())
         {
@@ -655,7 +655,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "valueFile" element
      */
-    @Inject(optional=true) public void setValueFile(java.lang.String valueFile)
+     public void setValueFile(java.lang.String valueFile)
     {
         synchronized (monitor())
         {
@@ -721,7 +721,7 @@ public class ParameterValueTypeImpl extends net.opengis.gml.impl.AbstractGeneral
     /**
      * Sets the "valueOfParameter" element
      */
-    @Inject(optional=true) public void setValueOfParameter(net.opengis.gml.OperationParameterRefType valueOfParameter)
+     public void setValueOfParameter(net.opengis.gml.OperationParameterRefType valueOfParameter)
     {
         generatedSetterHelperImpl(valueOfParameter, VALUEOFPARAMETER$16, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

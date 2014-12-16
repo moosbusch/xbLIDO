@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one doubleOrNullTupleList(@http://www.opengis.net/gml) element.
  *
@@ -67,7 +67,7 @@ public class DoubleOrNullTupleListDocumentImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets the "doubleOrNullTupleList" element
      */
-    @Inject(optional=true) public void setDoubleOrNullTupleList(java.util.List doubleOrNullTupleList)
+     public void setDoubleOrNullTupleList(java.util.List doubleOrNullTupleList)
     {
         synchronized (monitor())
         {

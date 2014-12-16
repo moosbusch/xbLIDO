@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one VerticalCRS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class VerticalCRSDocumentImpl extends net.opengis.gml.impl.CoordinateRefe
     /**
      * Sets the "VerticalCRS" element
      */
-    @Inject(optional=true) public void setVerticalCRS(net.opengis.gml.VerticalCRSType verticalCRS)
+     public void setVerticalCRS(net.opengis.gml.VerticalCRSType verticalCRS)
     {
         generatedSetterHelperImpl(verticalCRS, VERTICALCRS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

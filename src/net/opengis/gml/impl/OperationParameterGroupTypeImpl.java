@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OperationParameterGroupType(@http://www.opengis.net/gml).
  *
@@ -133,7 +133,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets array of all "groupID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGroupIDArray(net.opengis.gml.IdentifierType[] groupIDArray)
+     public void setGroupIDArray(net.opengis.gml.IdentifierType[] groupIDArray)
     {
         check_orphaned();
         arraySetterHelper(groupIDArray, GROUPID$0);
@@ -142,7 +142,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets ith "groupID" element
      */
-    @Inject(optional=true) public void setGroupIDArray(int i, net.opengis.gml.IdentifierType groupID)
+     public void setGroupIDArray(int i, net.opengis.gml.IdentifierType groupID)
     {
         generatedSetterHelperImpl(groupID, GROUPID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -220,7 +220,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -298,7 +298,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets the "maximumOccurs" element
      */
-    @Inject(optional=true) public void setMaximumOccurs(java.math.BigInteger maximumOccurs)
+     public void setMaximumOccurs(java.math.BigInteger maximumOccurs)
     {
         synchronized (monitor())
         {
@@ -438,7 +438,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets array of all "includesParameter" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIncludesParameterArray(net.opengis.gml.AbstractGeneralOperationParameterRefType[] includesParameterArray)
+     public void setIncludesParameterArray(net.opengis.gml.AbstractGeneralOperationParameterRefType[] includesParameterArray)
     {
         check_orphaned();
         arraySetterHelper(includesParameterArray, INCLUDESPARAMETER$6);
@@ -447,7 +447,7 @@ public class OperationParameterGroupTypeImpl extends net.opengis.gml.impl.Operat
     /**
      * Sets ith "includesParameter" element
      */
-    @Inject(optional=true) public void setIncludesParameterArray(int i, net.opengis.gml.AbstractGeneralOperationParameterRefType includesParameter)
+     public void setIncludesParameterArray(int i, net.opengis.gml.AbstractGeneralOperationParameterRefType includesParameter)
     {
         generatedSetterHelperImpl(includesParameter, INCLUDESPARAMETER$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

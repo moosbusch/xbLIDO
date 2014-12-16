@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DerivedCRSTypeType(@http://www.opengis.net/gml).
  *
@@ -84,7 +84,7 @@ public class DerivedCRSTypeTypeImpl extends org.apache.xmlbeans.impl.values.Java
     /**
      * Sets the "codeSpace" attribute
      */
-    @Inject(optional=true) public void setCodeSpace(java.lang.String codeSpace)
+     public void setCodeSpace(java.lang.String codeSpace)
     {
         synchronized (monitor())
         {

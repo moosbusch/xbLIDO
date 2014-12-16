@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML actorSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class ActorSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets array of all "displayActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayActorArray(org.lidoSchema.TextComplexType[] displayActorArray)
+     public void setDisplayActorArray(org.lidoSchema.TextComplexType[] displayActorArray)
     {
         check_orphaned();
         arraySetterHelper(displayActorArray, DISPLAYACTOR$0);
@@ -138,7 +138,7 @@ public class ActorSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets ith "displayActor" element
      */
-    @Inject(optional=true) public void setDisplayActorArray(int i, org.lidoSchema.TextComplexType displayActor)
+     public void setDisplayActorArray(int i, org.lidoSchema.TextComplexType displayActor)
     {
         generatedSetterHelperImpl(displayActor, DISPLAYACTOR$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class ActorSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "actor" element
      */
-    @Inject(optional=true) public void setActor(org.lidoSchema.ActorComplexType actor)
+     public void setActor(org.lidoSchema.ActorComplexType actor)
     {
         generatedSetterHelperImpl(actor, ACTOR$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

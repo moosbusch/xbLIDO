@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one VerticalCS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class VerticalCSDocumentImpl extends net.opengis.gml.impl.CoordinateSyste
     /**
      * Sets the "VerticalCS" element
      */
-    @Inject(optional=true) public void setVerticalCS(net.opengis.gml.VerticalCSType verticalCS)
+     public void setVerticalCS(net.opengis.gml.VerticalCSType verticalCS)
     {
         generatedSetterHelperImpl(verticalCS, VERTICALCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

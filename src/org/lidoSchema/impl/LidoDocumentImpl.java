@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one lido(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class LidoDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "lido" element
      */
-    @Inject(optional=true) public void setLido(org.lidoSchema.LidoComplexType lido)
+     public void setLido(org.lidoSchema.LidoComplexType lido)
     {
         generatedSetterHelperImpl(lido, LIDO$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

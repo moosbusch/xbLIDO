@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML materialsTechSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class MaterialsTechSetComplexTypeImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets array of all "displayMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayMaterialsTechArray(org.lidoSchema.TextComplexType[] displayMaterialsTechArray)
+     public void setDisplayMaterialsTechArray(org.lidoSchema.TextComplexType[] displayMaterialsTechArray)
     {
         check_orphaned();
         arraySetterHelper(displayMaterialsTechArray, DISPLAYMATERIALSTECH$0);
@@ -138,7 +138,7 @@ public class MaterialsTechSetComplexTypeImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets ith "displayMaterialsTech" element
      */
-    @Inject(optional=true) public void setDisplayMaterialsTechArray(int i, org.lidoSchema.TextComplexType displayMaterialsTech)
+     public void setDisplayMaterialsTechArray(int i, org.lidoSchema.TextComplexType displayMaterialsTech)
     {
         generatedSetterHelperImpl(displayMaterialsTech, DISPLAYMATERIALSTECH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class MaterialsTechSetComplexTypeImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "materialsTech" element
      */
-    @Inject(optional=true) public void setMaterialsTech(org.lidoSchema.MaterialsTechComplexType materialsTech)
+     public void setMaterialsTech(org.lidoSchema.MaterialsTechComplexType materialsTech)
     {
         generatedSetterHelperImpl(materialsTech, MATERIALSTECH$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

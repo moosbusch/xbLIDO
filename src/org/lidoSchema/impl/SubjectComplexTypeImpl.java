@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML subjectComplexType(@http://www.lido-schema.org).
  *
@@ -142,7 +142,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "extentSubject" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setExtentSubjectArray(org.lidoSchema.TextComplexType[] extentSubjectArray)
+     public void setExtentSubjectArray(org.lidoSchema.TextComplexType[] extentSubjectArray)
     {
         check_orphaned();
         arraySetterHelper(extentSubjectArray, EXTENTSUBJECT$0);
@@ -151,7 +151,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "extentSubject" element
      */
-    @Inject(optional=true) public void setExtentSubjectArray(int i, org.lidoSchema.TextComplexType extentSubject)
+     public void setExtentSubjectArray(int i, org.lidoSchema.TextComplexType extentSubject)
     {
         generatedSetterHelperImpl(extentSubject, EXTENTSUBJECT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -291,7 +291,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectConcept" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectConceptArray(org.lidoSchema.SubjectComplexType.SubjectConcept[] subjectConceptArray)
+     public void setSubjectConceptArray(org.lidoSchema.SubjectComplexType.SubjectConcept[] subjectConceptArray)
     {
         check_orphaned();
         arraySetterHelper(subjectConceptArray, SUBJECTCONCEPT$2);
@@ -300,7 +300,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectConcept" element
      */
-    @Inject(optional=true) public void setSubjectConceptArray(int i, org.lidoSchema.SubjectComplexType.SubjectConcept subjectConcept)
+     public void setSubjectConceptArray(int i, org.lidoSchema.SubjectComplexType.SubjectConcept subjectConcept)
     {
         generatedSetterHelperImpl(subjectConcept, SUBJECTCONCEPT$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -440,7 +440,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectActorArray(org.lidoSchema.SubjectComplexType.SubjectActor[] subjectActorArray)
+     public void setSubjectActorArray(org.lidoSchema.SubjectComplexType.SubjectActor[] subjectActorArray)
     {
         check_orphaned();
         arraySetterHelper(subjectActorArray, SUBJECTACTOR$4);
@@ -449,7 +449,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectActor" element
      */
-    @Inject(optional=true) public void setSubjectActorArray(int i, org.lidoSchema.SubjectComplexType.SubjectActor subjectActor)
+     public void setSubjectActorArray(int i, org.lidoSchema.SubjectComplexType.SubjectActor subjectActor)
     {
         generatedSetterHelperImpl(subjectActor, SUBJECTACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -589,7 +589,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectDate" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectDateArray(org.lidoSchema.SubjectComplexType.SubjectDate[] subjectDateArray)
+     public void setSubjectDateArray(org.lidoSchema.SubjectComplexType.SubjectDate[] subjectDateArray)
     {
         check_orphaned();
         arraySetterHelper(subjectDateArray, SUBJECTDATE$6);
@@ -598,7 +598,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectDate" element
      */
-    @Inject(optional=true) public void setSubjectDateArray(int i, org.lidoSchema.SubjectComplexType.SubjectDate subjectDate)
+     public void setSubjectDateArray(int i, org.lidoSchema.SubjectComplexType.SubjectDate subjectDate)
     {
         generatedSetterHelperImpl(subjectDate, SUBJECTDATE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -738,7 +738,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectEvent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectEventArray(org.lidoSchema.SubjectComplexType.SubjectEvent[] subjectEventArray)
+     public void setSubjectEventArray(org.lidoSchema.SubjectComplexType.SubjectEvent[] subjectEventArray)
     {
         check_orphaned();
         arraySetterHelper(subjectEventArray, SUBJECTEVENT$8);
@@ -747,7 +747,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectEvent" element
      */
-    @Inject(optional=true) public void setSubjectEventArray(int i, org.lidoSchema.SubjectComplexType.SubjectEvent subjectEvent)
+     public void setSubjectEventArray(int i, org.lidoSchema.SubjectComplexType.SubjectEvent subjectEvent)
     {
         generatedSetterHelperImpl(subjectEvent, SUBJECTEVENT$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -887,7 +887,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectPlace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectPlaceArray(org.lidoSchema.SubjectComplexType.SubjectPlace[] subjectPlaceArray)
+     public void setSubjectPlaceArray(org.lidoSchema.SubjectComplexType.SubjectPlace[] subjectPlaceArray)
     {
         check_orphaned();
         arraySetterHelper(subjectPlaceArray, SUBJECTPLACE$10);
@@ -896,7 +896,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectPlace" element
      */
-    @Inject(optional=true) public void setSubjectPlaceArray(int i, org.lidoSchema.SubjectComplexType.SubjectPlace subjectPlace)
+     public void setSubjectPlaceArray(int i, org.lidoSchema.SubjectComplexType.SubjectPlace subjectPlace)
     {
         generatedSetterHelperImpl(subjectPlace, SUBJECTPLACE$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1036,7 +1036,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "subjectObject" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSubjectObjectArray(org.lidoSchema.SubjectComplexType.SubjectObject[] subjectObjectArray)
+     public void setSubjectObjectArray(org.lidoSchema.SubjectComplexType.SubjectObject[] subjectObjectArray)
     {
         check_orphaned();
         arraySetterHelper(subjectObjectArray, SUBJECTOBJECT$12);
@@ -1045,7 +1045,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "subjectObject" element
      */
-    @Inject(optional=true) public void setSubjectObjectArray(int i, org.lidoSchema.SubjectComplexType.SubjectObject subjectObject)
+     public void setSubjectObjectArray(int i, org.lidoSchema.SubjectComplexType.SubjectObject subjectObject)
     {
         generatedSetterHelperImpl(subjectObject, SUBJECTOBJECT$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1137,7 +1137,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
@@ -1246,7 +1246,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1356,7 +1356,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1466,7 +1466,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1576,7 +1576,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1686,7 +1686,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1796,7 +1796,7 @@ public class SubjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

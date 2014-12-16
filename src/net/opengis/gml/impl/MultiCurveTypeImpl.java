@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML MultiCurveType(@http://www.opengis.net/gml).
@@ -132,7 +132,7 @@ public class MultiCurveTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets array of all "curveMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCurveMemberArray(net.opengis.gml.CurvePropertyType[] curveMemberArray)
+     public void setCurveMemberArray(net.opengis.gml.CurvePropertyType[] curveMemberArray)
     {
         check_orphaned();
         arraySetterHelper(curveMemberArray, CURVEMEMBER$0);
@@ -141,7 +141,7 @@ public class MultiCurveTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets ith "curveMember" element
      */
-    @Inject(optional=true) public void setCurveMemberArray(int i, net.opengis.gml.CurvePropertyType curveMember)
+     public void setCurveMemberArray(int i, net.opengis.gml.CurvePropertyType curveMember)
     {
         generatedSetterHelperImpl(curveMember, CURVEMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -219,7 +219,7 @@ public class MultiCurveTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets the "curveMembers" element
      */
-    @Inject(optional=true) public void setCurveMembers(net.opengis.gml.CurveArrayPropertyType curveMembers)
+     public void setCurveMembers(net.opengis.gml.CurveArrayPropertyType curveMembers)
     {
         generatedSetterHelperImpl(curveMembers, CURVEMEMBERS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

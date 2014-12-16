@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CompositeValueType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class CompositeValueTypeImpl extends net.opengis.gml.impl.AbstractGMLType
     /**
      * Sets array of all "valueComponent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setValueComponentArray(net.opengis.gml.ValuePropertyType[] valueComponentArray)
+     public void setValueComponentArray(net.opengis.gml.ValuePropertyType[] valueComponentArray)
     {
         check_orphaned();
         arraySetterHelper(valueComponentArray, VALUECOMPONENT$0);
@@ -138,7 +138,7 @@ public class CompositeValueTypeImpl extends net.opengis.gml.impl.AbstractGMLType
     /**
      * Sets ith "valueComponent" element
      */
-    @Inject(optional=true) public void setValueComponentArray(int i, net.opengis.gml.ValuePropertyType valueComponent)
+     public void setValueComponentArray(int i, net.opengis.gml.ValuePropertyType valueComponent)
     {
         generatedSetterHelperImpl(valueComponent, VALUECOMPONENT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class CompositeValueTypeImpl extends net.opengis.gml.impl.AbstractGMLType
     /**
      * Sets the "valueComponents" element
      */
-    @Inject(optional=true) public void setValueComponents(net.opengis.gml.ValueArrayPropertyType valueComponents)
+     public void setValueComponents(net.opengis.gml.ValueArrayPropertyType valueComponents)
     {
         generatedSetterHelperImpl(valueComponents, VALUECOMPONENTS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

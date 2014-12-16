@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractCurveSegmentType(@http://www.opengis.net/gml).
  *
@@ -91,7 +91,7 @@ public class AbstractCurveSegmentTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "numDerivativesAtStart" attribute
      */
-    @Inject(optional=true) public void setNumDerivativesAtStart(java.math.BigInteger numDerivativesAtStart)
+     public void setNumDerivativesAtStart(java.math.BigInteger numDerivativesAtStart)
     {
         synchronized (monitor())
         {
@@ -191,7 +191,7 @@ public class AbstractCurveSegmentTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "numDerivativesAtEnd" attribute
      */
-    @Inject(optional=true) public void setNumDerivativesAtEnd(java.math.BigInteger numDerivativesAtEnd)
+     public void setNumDerivativesAtEnd(java.math.BigInteger numDerivativesAtEnd)
     {
         synchronized (monitor())
         {
@@ -291,7 +291,7 @@ public class AbstractCurveSegmentTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "numDerivativeInterior" attribute
      */
-    @Inject(optional=true) public void setNumDerivativeInterior(java.math.BigInteger numDerivativeInterior)
+     public void setNumDerivativeInterior(java.math.BigInteger numDerivativeInterior)
     {
         synchronized (monitor())
         {

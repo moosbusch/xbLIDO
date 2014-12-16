@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OperationMethodBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class OperationMethodBaseTypeImpl extends net.opengis.gml.impl.Definition
     /**
      * Sets the "methodName" element
      */
-    @Inject(optional=true) public void setMethodName(net.opengis.gml.CodeType methodName)
+     public void setMethodName(net.opengis.gml.CodeType methodName)
     {
         generatedSetterHelperImpl(methodName, METHODNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

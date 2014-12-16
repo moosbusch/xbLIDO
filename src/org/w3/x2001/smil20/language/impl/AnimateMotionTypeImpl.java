@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.language.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML animateMotionType(@http://www.w3.org/2001/SMIL20/Language).
@@ -128,7 +128,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "id" attribute
      */
-    @Inject(optional=true) public void setId(java.lang.String id)
+     public void setId(java.lang.String id)
     {
         synchronized (monitor())
         {
@@ -220,7 +220,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "class" attribute
      */
-    @Inject(optional=true) public void setClass1(java.lang.String class1)
+     public void setClass1(java.lang.String class1)
     {
         synchronized (monitor())
         {
@@ -312,7 +312,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {
@@ -404,7 +404,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "alt" attribute
      */
-    @Inject(optional=true) public void setAlt(java.lang.String alt)
+     public void setAlt(java.lang.String alt)
     {
         synchronized (monitor())
         {
@@ -496,7 +496,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "longdesc" attribute
      */
-    @Inject(optional=true) public void setLongdesc(java.lang.String longdesc)
+     public void setLongdesc(java.lang.String longdesc)
     {
         synchronized (monitor())
         {
@@ -588,7 +588,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "begin" attribute
      */
-    @Inject(optional=true) public void setBegin(java.lang.String begin)
+     public void setBegin(java.lang.String begin)
     {
         synchronized (monitor())
         {
@@ -680,7 +680,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "end" attribute
      */
-    @Inject(optional=true) public void setEnd(java.lang.String end)
+     public void setEnd(java.lang.String end)
     {
         synchronized (monitor())
         {
@@ -772,7 +772,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "dur" attribute
      */
-    @Inject(optional=true) public void setDur(java.lang.String dur)
+     public void setDur(java.lang.String dur)
     {
         synchronized (monitor())
         {
@@ -864,7 +864,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "repeatDur" attribute
      */
-    @Inject(optional=true) public void setRepeatDur(java.lang.String repeatDur)
+     public void setRepeatDur(java.lang.String repeatDur)
     {
         synchronized (monitor())
         {
@@ -956,7 +956,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "repeatCount" attribute
      */
-    @Inject(optional=true) public void setRepeatCount(java.math.BigDecimal repeatCount)
+     public void setRepeatCount(java.math.BigDecimal repeatCount)
     {
         synchronized (monitor())
         {
@@ -1048,7 +1048,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "repeat" attribute
      */
-    @Inject(optional=true) public void setRepeat(java.math.BigInteger repeat)
+     public void setRepeat(java.math.BigInteger repeat)
     {
         synchronized (monitor())
         {
@@ -1140,7 +1140,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "min" attribute
      */
-    @Inject(optional=true) public void setMin(java.lang.String min)
+     public void setMin(java.lang.String min)
     {
         synchronized (monitor())
         {
@@ -1232,7 +1232,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "max" attribute
      */
-    @Inject(optional=true) public void setMax(java.lang.String max)
+     public void setMax(java.lang.String max)
     {
         synchronized (monitor())
         {
@@ -1332,7 +1332,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "syncBehavior" attribute
      */
-    @Inject(optional=true) public void setSyncBehavior(org.w3.x2001.smil20.SyncBehaviorType.Enum syncBehavior)
+     public void setSyncBehavior(org.w3.x2001.smil20.SyncBehaviorType.Enum syncBehavior)
     {
         synchronized (monitor())
         {
@@ -1424,7 +1424,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "syncTolerance" attribute
      */
-    @Inject(optional=true) public void setSyncTolerance(java.lang.String syncTolerance)
+     public void setSyncTolerance(java.lang.String syncTolerance)
     {
         synchronized (monitor())
         {
@@ -1524,7 +1524,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "syncBehaviorDefault" attribute
      */
-    @Inject(optional=true) public void setSyncBehaviorDefault(org.w3.x2001.smil20.SyncBehaviorDefaultType.Enum syncBehaviorDefault)
+     public void setSyncBehaviorDefault(org.w3.x2001.smil20.SyncBehaviorDefaultType.Enum syncBehaviorDefault)
     {
         synchronized (monitor())
         {
@@ -1624,7 +1624,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "syncToleranceDefault" attribute
      */
-    @Inject(optional=true) public void setSyncToleranceDefault(java.lang.String syncToleranceDefault)
+     public void setSyncToleranceDefault(java.lang.String syncToleranceDefault)
     {
         synchronized (monitor())
         {
@@ -1724,7 +1724,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "restart" attribute
      */
-    @Inject(optional=true) public void setRestart(org.w3.x2001.smil20.RestartTimingType.Enum restart)
+     public void setRestart(org.w3.x2001.smil20.RestartTimingType.Enum restart)
     {
         synchronized (monitor())
         {
@@ -1824,7 +1824,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "restartDefault" attribute
      */
-    @Inject(optional=true) public void setRestartDefault(org.w3.x2001.smil20.RestartDefaultType.Enum restartDefault)
+     public void setRestartDefault(org.w3.x2001.smil20.RestartDefaultType.Enum restartDefault)
     {
         synchronized (monitor())
         {
@@ -1924,7 +1924,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "fill" attribute
      */
-    @Inject(optional=true) public void setFill(org.w3.x2001.smil20.FillTimingAttrsType.Enum fill)
+     public void setFill(org.w3.x2001.smil20.FillTimingAttrsType.Enum fill)
     {
         synchronized (monitor())
         {
@@ -2024,7 +2024,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "fillDefault" attribute
      */
-    @Inject(optional=true) public void setFillDefault(org.w3.x2001.smil20.FillDefaultType.Enum fillDefault)
+     public void setFillDefault(org.w3.x2001.smil20.FillDefaultType.Enum fillDefault)
     {
         synchronized (monitor())
         {
@@ -2116,7 +2116,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "targetElement" attribute
      */
-    @Inject(optional=true) public void setTargetElement(java.lang.String targetElement)
+     public void setTargetElement(java.lang.String targetElement)
     {
         synchronized (monitor())
         {
@@ -2216,7 +2216,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "calcMode" attribute
      */
-    @Inject(optional=true) public void setCalcMode(org.w3.x2001.smil20.language.AnimateMotionType.CalcMode.Enum calcMode)
+     public void setCalcMode(org.w3.x2001.smil20.language.AnimateMotionType.CalcMode.Enum calcMode)
     {
         synchronized (monitor())
         {
@@ -2316,7 +2316,7 @@ public class AnimateMotionTypeImpl extends org.w3.x2001.smil20.impl.AnimateMotio
     /**
      * Sets the "skip-content" attribute
      */
-    @Inject(optional=true) public void setSkipContent(boolean skipContent)
+     public void setSkipContent(boolean skipContent)
     {
         synchronized (monitor())
         {

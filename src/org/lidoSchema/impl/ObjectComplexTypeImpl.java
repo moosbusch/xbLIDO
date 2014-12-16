@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML objectComplexType(@http://www.lido-schema.org).
  *
@@ -131,7 +131,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "objectWebResource" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectWebResourceArray(org.lidoSchema.WebResourceComplexType[] objectWebResourceArray)
+     public void setObjectWebResourceArray(org.lidoSchema.WebResourceComplexType[] objectWebResourceArray)
     {
         check_orphaned();
         arraySetterHelper(objectWebResourceArray, OBJECTWEBRESOURCE$0);
@@ -140,7 +140,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "objectWebResource" element
      */
-    @Inject(optional=true) public void setObjectWebResourceArray(int i, org.lidoSchema.WebResourceComplexType objectWebResource)
+     public void setObjectWebResourceArray(int i, org.lidoSchema.WebResourceComplexType objectWebResource)
     {
         generatedSetterHelperImpl(objectWebResource, OBJECTWEBRESOURCE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "objectID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectIDArray(org.lidoSchema.IdentifierComplexType[] objectIDArray)
+     public void setObjectIDArray(org.lidoSchema.IdentifierComplexType[] objectIDArray)
     {
         check_orphaned();
         arraySetterHelper(objectIDArray, OBJECTID$2);
@@ -289,7 +289,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "objectID" element
      */
-    @Inject(optional=true) public void setObjectIDArray(int i, org.lidoSchema.IdentifierComplexType objectID)
+     public void setObjectIDArray(int i, org.lidoSchema.IdentifierComplexType objectID)
     {
         generatedSetterHelperImpl(objectID, OBJECTID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -429,7 +429,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "objectNote" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectNoteArray(org.lidoSchema.ObjectComplexType.ObjectNote[] objectNoteArray)
+     public void setObjectNoteArray(org.lidoSchema.ObjectComplexType.ObjectNote[] objectNoteArray)
     {
         check_orphaned();
         arraySetterHelper(objectNoteArray, OBJECTNOTE$4);
@@ -438,7 +438,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "objectNote" element
      */
-    @Inject(optional=true) public void setObjectNoteArray(int i, org.lidoSchema.ObjectComplexType.ObjectNote objectNote)
+     public void setObjectNoteArray(int i, org.lidoSchema.ObjectComplexType.ObjectNote objectNote)
     {
         generatedSetterHelperImpl(objectNote, OBJECTNOTE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -558,7 +558,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -650,7 +650,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -742,7 +742,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -834,7 +834,7 @@ public class ObjectComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

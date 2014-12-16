@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one _CoordinateOperation(@http://www.opengis.net/gml) element.
@@ -67,7 +67,7 @@ public class CoordinateOperationDocumentImpl extends net.opengis.gml.impl.Defini
     /**
      * Sets the "_CoordinateOperation" element
      */
-    @Inject(optional=true) public void setCoordinateOperation(net.opengis.gml.AbstractCoordinateOperationType coordinateOperation)
+     public void setCoordinateOperation(net.opengis.gml.AbstractCoordinateOperationType coordinateOperation)
     {
         synchronized (monitor())
         {

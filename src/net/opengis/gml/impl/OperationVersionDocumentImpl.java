@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one operationVersion(@http://www.opengis.net/gml) element.
  *
@@ -67,7 +67,7 @@ public class OperationVersionDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "operationVersion" element
      */
-    @Inject(optional=true) public void setOperationVersion(java.lang.String operationVersion)
+     public void setOperationVersion(java.lang.String operationVersion)
     {
         synchronized (monitor())
         {

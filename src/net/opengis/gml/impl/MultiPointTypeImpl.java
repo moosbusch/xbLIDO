@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiPointType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class MultiPointTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets array of all "pointMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointMemberArray(net.opengis.gml.PointPropertyType[] pointMemberArray)
+     public void setPointMemberArray(net.opengis.gml.PointPropertyType[] pointMemberArray)
     {
         check_orphaned();
         arraySetterHelper(pointMemberArray, POINTMEMBER$0);
@@ -138,7 +138,7 @@ public class MultiPointTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets ith "pointMember" element
      */
-    @Inject(optional=true) public void setPointMemberArray(int i, net.opengis.gml.PointPropertyType pointMember)
+     public void setPointMemberArray(int i, net.opengis.gml.PointPropertyType pointMember)
     {
         generatedSetterHelperImpl(pointMember, POINTMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class MultiPointTypeImpl extends net.opengis.gml.impl.AbstractGeometricAg
     /**
      * Sets the "pointMembers" element
      */
-    @Inject(optional=true) public void setPointMembers(net.opengis.gml.PointArrayPropertyType pointMembers)
+     public void setPointMembers(net.opengis.gml.PointArrayPropertyType pointMembers)
     {
         generatedSetterHelperImpl(pointMembers, POINTMEMBERS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

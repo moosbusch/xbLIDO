@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML IndirectEntryType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class IndirectEntryTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "DefinitionProxy" element
      */
-    @Inject(optional=true) public void setDefinitionProxy(net.opengis.gml.DefinitionProxyType definitionProxy)
+     public void setDefinitionProxy(net.opengis.gml.DefinitionProxyType definitionProxy)
     {
         generatedSetterHelperImpl(definitionProxy, DEFINITIONPROXY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _Coverage(@http://www.opengis.net/gml) element.
  *
@@ -64,7 +64,7 @@ public class CoverageDocumentImpl extends net.opengis.gml.impl.FeatureDocumentIm
     /**
      * Sets the "_Coverage" element
      */
-    @Inject(optional=true) public void setCoverage(net.opengis.gml.AbstractCoverageType coverage)
+     public void setCoverage(net.opengis.gml.AbstractCoverageType coverage)
     {
         synchronized (monitor())
         {

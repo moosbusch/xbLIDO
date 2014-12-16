@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _TimeGeometricPrimitive(@http://www.opengis.net/gml) element.
  *
@@ -58,7 +58,7 @@ public class TimeGeometricPrimitiveDocumentImpl extends net.opengis.gml.impl.Tim
     /**
      * Sets the "_TimeGeometricPrimitive" element
      */
-    @Inject(optional=true) public void setTimeGeometricPrimitive(net.opengis.gml.AbstractTimeGeometricPrimitiveType timeGeometricPrimitive)
+     public void setTimeGeometricPrimitive(net.opengis.gml.AbstractTimeGeometricPrimitiveType timeGeometricPrimitive)
     {
         synchronized (monitor())
         {

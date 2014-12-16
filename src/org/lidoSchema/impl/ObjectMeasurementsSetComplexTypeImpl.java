@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML objectMeasurementsSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class ObjectMeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.im
     /**
      * Sets array of all "displayObjectMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayObjectMeasurementsArray(org.lidoSchema.TextComplexType[] displayObjectMeasurementsArray)
+     public void setDisplayObjectMeasurementsArray(org.lidoSchema.TextComplexType[] displayObjectMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(displayObjectMeasurementsArray, DISPLAYOBJECTMEASUREMENTS$0);
@@ -138,7 +138,7 @@ public class ObjectMeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.im
     /**
      * Sets ith "displayObjectMeasurements" element
      */
-    @Inject(optional=true) public void setDisplayObjectMeasurementsArray(int i, org.lidoSchema.TextComplexType displayObjectMeasurements)
+     public void setDisplayObjectMeasurementsArray(int i, org.lidoSchema.TextComplexType displayObjectMeasurements)
     {
         generatedSetterHelperImpl(displayObjectMeasurements, DISPLAYOBJECTMEASUREMENTS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class ObjectMeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "objectMeasurements" element
      */
-    @Inject(optional=true) public void setObjectMeasurements(org.lidoSchema.ObjectMeasurementsComplexType objectMeasurements)
+     public void setObjectMeasurements(org.lidoSchema.ObjectMeasurementsComplexType objectMeasurements)
     {
         generatedSetterHelperImpl(objectMeasurements, OBJECTMEASUREMENTS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

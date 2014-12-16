@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one rangeParameters(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class RangeParametersDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "rangeParameters" element
      */
-    @Inject(optional=true) public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
+     public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
     {
         generatedSetterHelperImpl(rangeParameters, RANGEPARAMETERS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

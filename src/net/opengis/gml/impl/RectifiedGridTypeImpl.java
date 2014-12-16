@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML RectifiedGridType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class RectifiedGridTypeImpl extends net.opengis.gml.impl.GridTypeImpl imp
     /**
      * Sets the "origin" element
      */
-    @Inject(optional=true) public void setOrigin(net.opengis.gml.PointPropertyType origin)
+     public void setOrigin(net.opengis.gml.PointPropertyType origin)
     {
         generatedSetterHelperImpl(origin, ORIGIN$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -169,7 +169,7 @@ public class RectifiedGridTypeImpl extends net.opengis.gml.impl.GridTypeImpl imp
     /**
      * Sets array of all "offsetVector" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setOffsetVectorArray(net.opengis.gml.VectorType[] offsetVectorArray)
+     public void setOffsetVectorArray(net.opengis.gml.VectorType[] offsetVectorArray)
     {
         check_orphaned();
         arraySetterHelper(offsetVectorArray, OFFSETVECTOR$2);
@@ -178,7 +178,7 @@ public class RectifiedGridTypeImpl extends net.opengis.gml.impl.GridTypeImpl imp
     /**
      * Sets ith "offsetVector" element
      */
-    @Inject(optional=true) public void setOffsetVectorArray(int i, net.opengis.gml.VectorType offsetVector)
+     public void setOffsetVectorArray(int i, net.opengis.gml.VectorType offsetVector)
     {
         generatedSetterHelperImpl(offsetVector, OFFSETVECTOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

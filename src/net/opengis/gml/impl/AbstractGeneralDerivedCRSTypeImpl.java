@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractGeneralDerivedCRSType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class AbstractGeneralDerivedCRSTypeImpl extends net.opengis.gml.impl.Abst
     /**
      * Sets the "baseCRS" element
      */
-    @Inject(optional=true) public void setBaseCRS(net.opengis.gml.CoordinateReferenceSystemRefType baseCRS)
+     public void setBaseCRS(net.opengis.gml.CoordinateReferenceSystemRefType baseCRS)
     {
         generatedSetterHelperImpl(baseCRS, BASECRS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -95,7 +95,7 @@ public class AbstractGeneralDerivedCRSTypeImpl extends net.opengis.gml.impl.Abst
     /**
      * Sets the "definedByConversion" element
      */
-    @Inject(optional=true) public void setDefinedByConversion(net.opengis.gml.GeneralConversionRefType definedByConversion)
+     public void setDefinedByConversion(net.opengis.gml.GeneralConversionRefType definedByConversion)
     {
         generatedSetterHelperImpl(definedByConversion, DEFINEDBYCONVERSION$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

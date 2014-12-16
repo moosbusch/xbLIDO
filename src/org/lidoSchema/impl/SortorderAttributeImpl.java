@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one sortorder(@http://www.lido-schema.org) attribute.
  *
@@ -80,7 +80,7 @@ public class SortorderAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+     public void setSortorder(java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {

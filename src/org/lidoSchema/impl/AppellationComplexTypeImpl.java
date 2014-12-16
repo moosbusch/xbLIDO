@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML appellationComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "appellationValue" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAppellationValueArray(org.lidoSchema.AppellationComplexType.AppellationValue[] appellationValueArray)
+     public void setAppellationValueArray(org.lidoSchema.AppellationComplexType.AppellationValue[] appellationValueArray)
     {
         check_orphaned();
         arraySetterHelper(appellationValueArray, APPELLATIONVALUE$0);
@@ -138,7 +138,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "appellationValue" element
      */
-    @Inject(optional=true) public void setAppellationValueArray(int i, org.lidoSchema.AppellationComplexType.AppellationValue appellationValue)
+     public void setAppellationValueArray(int i, org.lidoSchema.AppellationComplexType.AppellationValue appellationValue)
     {
         generatedSetterHelperImpl(appellationValue, APPELLATIONVALUE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -278,7 +278,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "sourceAppellation" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSourceAppellationArray(org.lidoSchema.AppellationComplexType.SourceAppellation[] sourceAppellationArray)
+     public void setSourceAppellationArray(org.lidoSchema.AppellationComplexType.SourceAppellation[] sourceAppellationArray)
     {
         check_orphaned();
         arraySetterHelper(sourceAppellationArray, SOURCEAPPELLATION$2);
@@ -287,7 +287,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "sourceAppellation" element
      */
-    @Inject(optional=true) public void setSourceAppellationArray(int i, org.lidoSchema.AppellationComplexType.SourceAppellation sourceAppellation)
+     public void setSourceAppellationArray(int i, org.lidoSchema.AppellationComplexType.SourceAppellation sourceAppellation)
     {
         generatedSetterHelperImpl(sourceAppellation, SOURCEAPPELLATION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -407,7 +407,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "pref" attribute
          */
-        @Inject(optional=true) public void setPref(java.lang.String pref)
+         public void setPref(java.lang.String pref)
         {
             synchronized (monitor())
             {
@@ -499,7 +499,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -591,7 +591,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -683,7 +683,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -802,7 +802,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -894,7 +894,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -986,7 +986,7 @@ public class AppellationComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CompositeSurfaceType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class CompositeSurfaceTypeImpl extends net.opengis.gml.impl.AbstractSurfa
     /**
      * Sets array of all "surfaceMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSurfaceMemberArray(net.opengis.gml.SurfacePropertyType[] surfaceMemberArray)
+     public void setSurfaceMemberArray(net.opengis.gml.SurfacePropertyType[] surfaceMemberArray)
     {
         check_orphaned();
         arraySetterHelper(surfaceMemberArray, SURFACEMEMBER$0);
@@ -136,7 +136,7 @@ public class CompositeSurfaceTypeImpl extends net.opengis.gml.impl.AbstractSurfa
     /**
      * Sets ith "surfaceMember" element
      */
-    @Inject(optional=true) public void setSurfaceMemberArray(int i, net.opengis.gml.SurfacePropertyType surfaceMember)
+     public void setSurfaceMemberArray(int i, net.opengis.gml.SurfacePropertyType surfaceMember)
     {
         generatedSetterHelperImpl(surfaceMember, SURFACEMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

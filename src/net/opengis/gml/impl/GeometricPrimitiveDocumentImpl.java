@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _GeometricPrimitive(@http://www.opengis.net/gml) element.
  *
@@ -73,7 +73,7 @@ public class GeometricPrimitiveDocumentImpl extends net.opengis.gml.impl.Geometr
     /**
      * Sets the "_GeometricPrimitive" element
      */
-    @Inject(optional=true) public void setGeometricPrimitive(net.opengis.gml.AbstractGeometricPrimitiveType geometricPrimitive)
+     public void setGeometricPrimitive(net.opengis.gml.AbstractGeometricPrimitiveType geometricPrimitive)
     {
         synchronized (monitor())
         {

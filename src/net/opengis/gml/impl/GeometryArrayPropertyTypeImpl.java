@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeometryArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -163,7 +163,7 @@ public class GeometryArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets array of all "_Geometry" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGeometryArray(net.opengis.gml.AbstractGeometryType[] geometryArray)
+     public void setGeometryArray(net.opengis.gml.AbstractGeometryType[] geometryArray)
     {
         check_orphaned();
         arraySetterHelper(geometryArray, GEOMETRY$0, GEOMETRY$1);
@@ -172,7 +172,7 @@ public class GeometryArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets ith "_Geometry" element
      */
-    @Inject(optional=true) public void setGeometryArray(int i, net.opengis.gml.AbstractGeometryType geometry)
+     public void setGeometryArray(int i, net.opengis.gml.AbstractGeometryType geometry)
     {
         synchronized (monitor())
         {

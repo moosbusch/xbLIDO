@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one MultiCurve(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class MultiCurveDocumentImpl extends net.opengis.gml.impl.GeometricAggreg
     /**
      * Sets the "MultiCurve" element
      */
-    @Inject(optional=true) public void setMultiCurve(net.opengis.gml.MultiCurveType multiCurve)
+     public void setMultiCurve(net.opengis.gml.MultiCurveType multiCurve)
     {
         generatedSetterHelperImpl(multiCurve, MULTICURVE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

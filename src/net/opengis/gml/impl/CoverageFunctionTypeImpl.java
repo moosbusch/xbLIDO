@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CoverageFunctionType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class CoverageFunctionTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "MappingRule" element
      */
-    @Inject(optional=true) public void setMappingRule(net.opengis.gml.StringOrRefType mappingRule)
+     public void setMappingRule(net.opengis.gml.StringOrRefType mappingRule)
     {
         generatedSetterHelperImpl(mappingRule, MAPPINGRULE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -135,7 +135,7 @@ public class CoverageFunctionTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "GridFunction" element
      */
-    @Inject(optional=true) public void setGridFunction(net.opengis.gml.GridFunctionType gridFunction)
+     public void setGridFunction(net.opengis.gml.GridFunctionType gridFunction)
     {
         synchronized (monitor())
         {

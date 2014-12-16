@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DefinitionType(@http://www.opengis.net/gml).
  *
@@ -141,7 +141,7 @@ public class DefinitionTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl
     /**
      * Sets array of all "name" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNameArray(net.opengis.gml.CodeType[] nameArray)
+     public void setNameArray(net.opengis.gml.CodeType[] nameArray)
     {
         check_orphaned();
         arraySetterHelper(nameArray, NAME$0, NAME$1);
@@ -150,7 +150,7 @@ public class DefinitionTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl
     /**
      * Sets ith "name" element
      */
-    @Inject(optional=true) public void setNameArray(int i, net.opengis.gml.CodeType name)
+     public void setNameArray(int i, net.opengis.gml.CodeType name)
     {
         synchronized (monitor())
         {
@@ -252,7 +252,7 @@ public class DefinitionTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl
     /**
      * Sets the "id" attribute
      */
-    @Inject(optional=true) public void setId(java.lang.String id)
+     public void setId(java.lang.String id)
     {
         synchronized (monitor())
         {

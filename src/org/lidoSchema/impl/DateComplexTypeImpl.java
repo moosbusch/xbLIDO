@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML dateComplexType(@http://www.lido-schema.org).
  *
@@ -67,7 +67,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "earliestDate" element
      */
-    @Inject(optional=true) public void setEarliestDate(org.lidoSchema.DateComplexType.EarliestDate earliestDate)
+     public void setEarliestDate(org.lidoSchema.DateComplexType.EarliestDate earliestDate)
     {
         generatedSetterHelperImpl(earliestDate, EARLIESTDATE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -131,7 +131,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "latestDate" element
      */
-    @Inject(optional=true) public void setLatestDate(org.lidoSchema.DateComplexType.LatestDate latestDate)
+     public void setLatestDate(org.lidoSchema.DateComplexType.LatestDate latestDate)
     {
         generatedSetterHelperImpl(latestDate, LATESTDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -237,7 +237,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "source" attribute
          */
-        @Inject(optional=true) public void setSource(java.lang.String source)
+         public void setSource(java.lang.String source)
         {
             synchronized (monitor())
             {
@@ -421,7 +421,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -513,7 +513,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -634,7 +634,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -726,7 +726,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "source" attribute
          */
-        @Inject(optional=true) public void setSource(java.lang.String source)
+         public void setSource(java.lang.String source)
         {
             synchronized (monitor())
             {
@@ -818,7 +818,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -910,7 +910,7 @@ public class DateComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {

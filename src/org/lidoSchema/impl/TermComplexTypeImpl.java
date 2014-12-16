@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML termComplexType(@http://www.lido-schema.org).
  *
@@ -92,7 +92,7 @@ public class TermComplexTypeImpl extends org.apache.xmlbeans.impl.values.JavaStr
     /**
      * Sets the "pref" attribute
      */
-    @Inject(optional=true) public void setPref(java.lang.String pref)
+     public void setPref(java.lang.String pref)
     {
         synchronized (monitor())
         {
@@ -192,7 +192,7 @@ public class TermComplexTypeImpl extends org.apache.xmlbeans.impl.values.JavaStr
     /**
      * Sets the "addedSearchTerm" attribute
      */
-    @Inject(optional=true) public void setAddedSearchTerm(org.lidoSchema.AddedSearchTermAttribute.AddedSearchTerm.Enum addedSearchTerm)
+     public void setAddedSearchTerm(org.lidoSchema.AddedSearchTermAttribute.AddedSearchTerm.Enum addedSearchTerm)
     {
         synchronized (monitor())
         {
@@ -284,7 +284,7 @@ public class TermComplexTypeImpl extends org.apache.xmlbeans.impl.values.JavaStr
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {
@@ -376,7 +376,7 @@ public class TermComplexTypeImpl extends org.apache.xmlbeans.impl.values.JavaStr
     /**
      * Sets the "encodinganalog" attribute
      */
-    @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+     public void setEncodinganalog(java.lang.String encodinganalog)
     {
         synchronized (monitor())
         {
@@ -468,7 +468,7 @@ public class TermComplexTypeImpl extends org.apache.xmlbeans.impl.values.JavaStr
     /**
      * Sets the "label" attribute
      */
-    @Inject(optional=true) public void setLabel(java.lang.String label)
+     public void setLabel(java.lang.String label)
     {
         synchronized (monitor())
         {

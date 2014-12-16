@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ConcatenatedOperationType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class ConcatenatedOperationTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets array of all "usesSingleOperation" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setUsesSingleOperationArray(net.opengis.gml.SingleOperationRefType[] usesSingleOperationArray)
+     public void setUsesSingleOperationArray(net.opengis.gml.SingleOperationRefType[] usesSingleOperationArray)
     {
         check_orphaned();
         arraySetterHelper(usesSingleOperationArray, USESSINGLEOPERATION$0);
@@ -136,7 +136,7 @@ public class ConcatenatedOperationTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets ith "usesSingleOperation" element
      */
-    @Inject(optional=true) public void setUsesSingleOperationArray(int i, net.opengis.gml.SingleOperationRefType usesSingleOperation)
+     public void setUsesSingleOperationArray(int i, net.opengis.gml.SingleOperationRefType usesSingleOperation)
     {
         generatedSetterHelperImpl(usesSingleOperation, USESSINGLEOPERATION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

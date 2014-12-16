@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DerivedUnitType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class DerivedUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitionType
     /**
      * Sets array of all "derivationUnitTerm" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDerivationUnitTermArray(net.opengis.gml.DerivationUnitTermType[] derivationUnitTermArray)
+     public void setDerivationUnitTermArray(net.opengis.gml.DerivationUnitTermType[] derivationUnitTermArray)
     {
         check_orphaned();
         arraySetterHelper(derivationUnitTermArray, DERIVATIONUNITTERM$0);
@@ -136,7 +136,7 @@ public class DerivedUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitionType
     /**
      * Sets ith "derivationUnitTerm" element
      */
-    @Inject(optional=true) public void setDerivationUnitTermArray(int i, net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
+     public void setDerivationUnitTermArray(int i, net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
     {
         generatedSetterHelperImpl(derivationUnitTerm, DERIVATIONUNITTERM$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

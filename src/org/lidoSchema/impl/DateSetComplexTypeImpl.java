@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML dateSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class DateSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "displayDate" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayDateArray(org.lidoSchema.TextComplexType[] displayDateArray)
+     public void setDisplayDateArray(org.lidoSchema.TextComplexType[] displayDateArray)
     {
         check_orphaned();
         arraySetterHelper(displayDateArray, DISPLAYDATE$0);
@@ -138,7 +138,7 @@ public class DateSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "displayDate" element
      */
-    @Inject(optional=true) public void setDisplayDateArray(int i, org.lidoSchema.TextComplexType displayDate)
+     public void setDisplayDateArray(int i, org.lidoSchema.TextComplexType displayDate)
     {
         generatedSetterHelperImpl(displayDate, DISPLAYDATE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class DateSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "date" element
      */
-    @Inject(optional=true) public void setDate(org.lidoSchema.DateComplexType date)
+     public void setDate(org.lidoSchema.DateComplexType date)
     {
         generatedSetterHelperImpl(date, DATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

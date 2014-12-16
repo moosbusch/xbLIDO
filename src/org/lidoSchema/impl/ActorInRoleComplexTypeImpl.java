@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML actorInRoleComplexType(@http://www.lido-schema.org).
  *
@@ -60,7 +60,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "actor" element
      */
-    @Inject(optional=true) public void setActor(org.lidoSchema.ActorComplexType actor)
+     public void setActor(org.lidoSchema.ActorComplexType actor)
     {
         generatedSetterHelperImpl(actor, ACTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -174,7 +174,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "roleActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRoleActorArray(org.lidoSchema.ActorInRoleComplexType.RoleActor[] roleActorArray)
+     public void setRoleActorArray(org.lidoSchema.ActorInRoleComplexType.RoleActor[] roleActorArray)
     {
         check_orphaned();
         arraySetterHelper(roleActorArray, ROLEACTOR$2);
@@ -183,7 +183,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "roleActor" element
      */
-    @Inject(optional=true) public void setRoleActorArray(int i, org.lidoSchema.ActorInRoleComplexType.RoleActor roleActor)
+     public void setRoleActorArray(int i, org.lidoSchema.ActorInRoleComplexType.RoleActor roleActor)
     {
         generatedSetterHelperImpl(roleActor, ROLEACTOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -323,7 +323,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "attributionQualifierActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAttributionQualifierActorArray(org.lidoSchema.TextComplexType[] attributionQualifierActorArray)
+     public void setAttributionQualifierActorArray(org.lidoSchema.TextComplexType[] attributionQualifierActorArray)
     {
         check_orphaned();
         arraySetterHelper(attributionQualifierActorArray, ATTRIBUTIONQUALIFIERACTOR$4);
@@ -332,7 +332,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "attributionQualifierActor" element
      */
-    @Inject(optional=true) public void setAttributionQualifierActorArray(int i, org.lidoSchema.TextComplexType attributionQualifierActor)
+     public void setAttributionQualifierActorArray(int i, org.lidoSchema.TextComplexType attributionQualifierActor)
     {
         generatedSetterHelperImpl(attributionQualifierActor, ATTRIBUTIONQUALIFIERACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -472,7 +472,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "extentActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setExtentActorArray(org.lidoSchema.TextComplexType[] extentActorArray)
+     public void setExtentActorArray(org.lidoSchema.TextComplexType[] extentActorArray)
     {
         check_orphaned();
         arraySetterHelper(extentActorArray, EXTENTACTOR$6);
@@ -481,7 +481,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "extentActor" element
      */
-    @Inject(optional=true) public void setExtentActorArray(int i, org.lidoSchema.TextComplexType extentActor)
+     public void setExtentActorArray(int i, org.lidoSchema.TextComplexType extentActor)
     {
         generatedSetterHelperImpl(extentActor, EXTENTACTOR$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -590,7 +590,7 @@ public class ActorInRoleComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

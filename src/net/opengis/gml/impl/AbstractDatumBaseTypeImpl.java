@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractDatumBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class AbstractDatumBaseTypeImpl extends net.opengis.gml.impl.DefinitionTy
     /**
      * Sets the "datumName" element
      */
-    @Inject(optional=true) public void setDatumName(net.opengis.gml.CodeType datumName)
+     public void setDatumName(net.opengis.gml.CodeType datumName)
     {
         generatedSetterHelperImpl(datumName, DATUMNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

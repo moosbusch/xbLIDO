@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one status(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class StatusDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "status" element
      */
-    @Inject(optional=true) public void setStatus(net.opengis.gml.StringOrRefType status)
+     public void setStatus(net.opengis.gml.StringOrRefType status)
     {
         generatedSetterHelperImpl(status, STATUS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

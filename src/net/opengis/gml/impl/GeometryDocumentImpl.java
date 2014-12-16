@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _Geometry(@http://www.opengis.net/gml) element.
  *
@@ -89,7 +89,7 @@ public class GeometryDocumentImpl extends net.opengis.gml.impl.GMLDocumentImpl i
     /**
      * Sets the "_Geometry" element
      */
-    @Inject(optional=true) public void setGeometry(net.opengis.gml.AbstractGeometryType geometry)
+     public void setGeometry(net.opengis.gml.AbstractGeometryType geometry)
     {
         synchronized (monitor())
         {

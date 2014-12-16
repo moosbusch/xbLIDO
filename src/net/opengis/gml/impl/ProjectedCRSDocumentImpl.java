@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one ProjectedCRS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class ProjectedCRSDocumentImpl extends net.opengis.gml.impl.GeneralDerive
     /**
      * Sets the "ProjectedCRS" element
      */
-    @Inject(optional=true) public void setProjectedCRS(net.opengis.gml.ProjectedCRSType projectedCRS)
+     public void setProjectedCRS(net.opengis.gml.ProjectedCRSType projectedCRS)
     {
         generatedSetterHelperImpl(projectedCRS, PROJECTEDCRS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

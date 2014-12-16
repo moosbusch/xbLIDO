@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML FileType(@http://www.opengis.net/gml).
  *
@@ -61,7 +61,7 @@ public class FileTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "rangeParameters" element
      */
-    @Inject(optional=true) public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
+     public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
     {
         generatedSetterHelperImpl(rangeParameters, RANGEPARAMETERS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -115,7 +115,7 @@ public class FileTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "fileName" element
      */
-    @Inject(optional=true) public void setFileName(java.lang.String fileName)
+     public void setFileName(java.lang.String fileName)
     {
         synchronized (monitor())
         {
@@ -183,7 +183,7 @@ public class FileTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "fileStructure" element
      */
-    @Inject(optional=true) public void setFileStructure(net.opengis.gml.FileValueModelType.Enum fileStructure)
+     public void setFileStructure(net.opengis.gml.FileValueModelType.Enum fileStructure)
     {
         synchronized (monitor())
         {
@@ -263,7 +263,7 @@ public class FileTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "mimeType" element
      */
-    @Inject(optional=true) public void setMimeType(java.lang.String mimeType)
+     public void setMimeType(java.lang.String mimeType)
     {
         synchronized (monitor())
         {
@@ -355,7 +355,7 @@ public class FileTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "compression" element
      */
-    @Inject(optional=true) public void setCompression(java.lang.String compression)
+     public void setCompression(java.lang.String compression)
     {
         synchronized (monitor())
         {

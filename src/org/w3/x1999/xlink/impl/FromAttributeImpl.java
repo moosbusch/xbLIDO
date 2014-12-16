@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one from(@http://www.w3.org/1999/xlink) attribute.
  *
@@ -79,7 +79,7 @@ public class FromAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "from" attribute
      */
-    @Inject(optional=true) public void setFrom(java.lang.String from)
+     public void setFrom(java.lang.String from)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OrientableCurveType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class OrientableCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveT
     /**
      * Sets the "baseCurve" element
      */
-    @Inject(optional=true) public void setBaseCurve(net.opengis.gml.CurvePropertyType baseCurve)
+     public void setBaseCurve(net.opengis.gml.CurvePropertyType baseCurve)
     {
         generatedSetterHelperImpl(baseCurve, BASECURVE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -129,7 +129,7 @@ public class OrientableCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveT
     /**
      * Sets the "orientation" attribute
      */
-    @Inject(optional=true) public void setOrientation(net.opengis.gml.SignType.Enum orientation)
+     public void setOrientation(net.opengis.gml.SignType.Enum orientation)
     {
         synchronized (monitor())
         {

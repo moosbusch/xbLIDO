@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one OrientableSurface(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class OrientableSurfaceDocumentImpl extends net.opengis.gml.impl.SurfaceD
     /**
      * Sets the "OrientableSurface" element
      */
-    @Inject(optional=true) public void setOrientableSurface(net.opengis.gml.OrientableSurfaceType orientableSurface)
+     public void setOrientableSurface(net.opengis.gml.OrientableSurfaceType orientableSurface)
     {
         generatedSetterHelperImpl(orientableSurface, ORIENTABLESURFACE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

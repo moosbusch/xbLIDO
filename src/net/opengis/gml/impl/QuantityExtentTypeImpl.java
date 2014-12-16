@@ -15,7 +15,7 @@
  */
 package net.opengis.gml.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML QuantityExtentType(@http://www.opengis.net/gml).
@@ -75,7 +75,7 @@ public class QuantityExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlL
     /**
      * Sets the "uom" attribute
      */
-    @Inject(optional=true) public void setUom(java.lang.String uom)
+     public void setUom(java.lang.String uom)
     {
         synchronized (monitor())
         {

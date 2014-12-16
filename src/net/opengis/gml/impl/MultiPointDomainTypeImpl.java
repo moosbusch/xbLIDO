@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
-import com.google.inject.Inject;
+
 /**
  * An XML MultiPointDomainType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class MultiPointDomainTypeImpl extends net.opengis.gml.impl.DomainSetType
     /**
      * Sets the "MultiPoint" element
      */
-    @Inject(optional=true) public void setMultiPoint(net.opengis.gml.MultiPointType multiPoint)
+     public void setMultiPoint(net.opengis.gml.MultiPointType multiPoint)
     {
         generatedSetterHelperImpl(multiPoint, MULTIPOINT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

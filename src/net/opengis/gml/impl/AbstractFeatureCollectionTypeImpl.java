@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractFeatureCollectionType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class AbstractFeatureCollectionTypeImpl extends net.opengis.gml.impl.Abst
     /**
      * Sets array of all "featureMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setFeatureMemberArray(net.opengis.gml.FeaturePropertyType[] featureMemberArray)
+     public void setFeatureMemberArray(net.opengis.gml.FeaturePropertyType[] featureMemberArray)
     {
         check_orphaned();
         arraySetterHelper(featureMemberArray, FEATUREMEMBER$0);
@@ -138,7 +138,7 @@ public class AbstractFeatureCollectionTypeImpl extends net.opengis.gml.impl.Abst
     /**
      * Sets ith "featureMember" element
      */
-    @Inject(optional=true) public void setFeatureMemberArray(int i, net.opengis.gml.FeaturePropertyType featureMember)
+     public void setFeatureMemberArray(int i, net.opengis.gml.FeaturePropertyType featureMember)
     {
         generatedSetterHelperImpl(featureMember, FEATUREMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class AbstractFeatureCollectionTypeImpl extends net.opengis.gml.impl.Abst
     /**
      * Sets the "featureMembers" element
      */
-    @Inject(optional=true) public void setFeatureMembers(net.opengis.gml.FeatureArrayPropertyType featureMembers)
+     public void setFeatureMembers(net.opengis.gml.FeatureArrayPropertyType featureMembers)
     {
         generatedSetterHelperImpl(featureMembers, FEATUREMEMBERS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

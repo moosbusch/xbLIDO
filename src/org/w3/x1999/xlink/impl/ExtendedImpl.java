@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML extended(@http://www.w3.org/1999/xlink).
  *
@@ -139,7 +139,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets array of all "title" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
+     public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
     {
         check_orphaned();
         arraySetterHelper(titleArray, TITLE2$12);
@@ -148,7 +148,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets ith "title" element
      */
-    @Inject(optional=true) public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
+     public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
     {
         generatedSetterHelperImpl(title, TITLE2$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -288,7 +288,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets array of all "resource" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourceArray(org.w3.x1999.xlink.ResourceType[] resourceArray)
+     public void setResourceArray(org.w3.x1999.xlink.ResourceType[] resourceArray)
     {
         check_orphaned();
         arraySetterHelper(resourceArray, RESOURCE$2);
@@ -297,7 +297,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets ith "resource" element
      */
-    @Inject(optional=true) public void setResourceArray(int i, org.w3.x1999.xlink.ResourceType resource)
+     public void setResourceArray(int i, org.w3.x1999.xlink.ResourceType resource)
     {
         generatedSetterHelperImpl(resource, RESOURCE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -437,7 +437,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets array of all "locator" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setLocatorArray(org.w3.x1999.xlink.LocatorType[] locatorArray)
+     public void setLocatorArray(org.w3.x1999.xlink.LocatorType[] locatorArray)
     {
         check_orphaned();
         arraySetterHelper(locatorArray, LOCATOR$4);
@@ -446,7 +446,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets ith "locator" element
      */
-    @Inject(optional=true) public void setLocatorArray(int i, org.w3.x1999.xlink.LocatorType locator)
+     public void setLocatorArray(int i, org.w3.x1999.xlink.LocatorType locator)
     {
         generatedSetterHelperImpl(locator, LOCATOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -586,7 +586,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets array of all "arc" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setArcArray(org.w3.x1999.xlink.ArcType[] arcArray)
+     public void setArcArray(org.w3.x1999.xlink.ArcType[] arcArray)
     {
         check_orphaned();
         arraySetterHelper(arcArray, ARC$6);
@@ -595,7 +595,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets ith "arc" element
      */
-    @Inject(optional=true) public void setArcArray(int i, org.w3.x1999.xlink.ArcType arc)
+     public void setArcArray(int i, org.w3.x1999.xlink.ArcType arc)
     {
         generatedSetterHelperImpl(arc, ARC$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -683,7 +683,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -763,7 +763,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -855,7 +855,7 @@ public class ExtendedImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle2(java.lang.String title2)
+     public void setTitle2(java.lang.String title2)
     {
         synchronized (monitor())
         {

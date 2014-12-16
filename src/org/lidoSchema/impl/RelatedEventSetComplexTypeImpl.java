@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML relatedEventSetComplexType(@http://www.lido-schema.org).
  *
@@ -67,7 +67,7 @@ public class RelatedEventSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "relatedEvent" element
      */
-    @Inject(optional=true) public void setRelatedEvent(org.lidoSchema.EventSetComplexType relatedEvent)
+     public void setRelatedEvent(org.lidoSchema.EventSetComplexType relatedEvent)
     {
         generatedSetterHelperImpl(relatedEvent, RELATEDEVENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -131,7 +131,7 @@ public class RelatedEventSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "relatedEventRelType" element
      */
-    @Inject(optional=true) public void setRelatedEventRelType(org.lidoSchema.ConceptComplexType relatedEventRelType)
+     public void setRelatedEventRelType(org.lidoSchema.ConceptComplexType relatedEventRelType)
     {
         generatedSetterHelperImpl(relatedEventRelType, RELATEDEVENTRELTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

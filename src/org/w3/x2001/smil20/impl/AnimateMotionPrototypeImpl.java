@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML animateMotionPrototype(@http://www.w3.org/2001/SMIL20/).
@@ -102,7 +102,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "additive" attribute
      */
-    @Inject(optional=true) public void setAdditive(org.w3.x2001.smil20.AnimateMotionPrototype.Additive.Enum additive)
+     public void setAdditive(org.w3.x2001.smil20.AnimateMotionPrototype.Additive.Enum additive)
     {
         synchronized (monitor())
         {
@@ -202,7 +202,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "accumulate" attribute
      */
-    @Inject(optional=true) public void setAccumulate(org.w3.x2001.smil20.AnimateMotionPrototype.Accumulate.Enum accumulate)
+     public void setAccumulate(org.w3.x2001.smil20.AnimateMotionPrototype.Accumulate.Enum accumulate)
     {
         synchronized (monitor())
         {
@@ -294,7 +294,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "to" attribute
      */
-    @Inject(optional=true) public void setTo(java.lang.String to)
+     public void setTo(java.lang.String to)
     {
         synchronized (monitor())
         {
@@ -386,7 +386,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "from" attribute
      */
-    @Inject(optional=true) public void setFrom(java.lang.String from)
+     public void setFrom(java.lang.String from)
     {
         synchronized (monitor())
         {
@@ -478,7 +478,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "by" attribute
      */
-    @Inject(optional=true) public void setBy(java.lang.String by)
+     public void setBy(java.lang.String by)
     {
         synchronized (monitor())
         {
@@ -570,7 +570,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "values" attribute
      */
-    @Inject(optional=true) public void setValues(java.lang.String values)
+     public void setValues(java.lang.String values)
     {
         synchronized (monitor())
         {
@@ -662,7 +662,7 @@ public class AnimateMotionPrototypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "origin" attribute
      */
-    @Inject(optional=true) public void setOrigin(java.lang.String origin)
+     public void setOrigin(java.lang.String origin)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTimeReferenceSystemType(@http://www.opengis.net/gml).
  *
@@ -79,7 +79,7 @@ public class AbstractTimeReferenceSystemTypeImpl extends net.opengis.gml.impl.De
     /**
      * Sets the "domainOfValidity" element
      */
-    @Inject(optional=true) public void setDomainOfValidity(java.lang.String domainOfValidity)
+     public void setDomainOfValidity(java.lang.String domainOfValidity)
     {
         synchronized (monitor())
         {

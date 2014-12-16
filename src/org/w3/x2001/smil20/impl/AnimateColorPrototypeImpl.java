@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML animateColorPrototype(@http://www.w3.org/2001/SMIL20/).
@@ -84,7 +84,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "attributeName" attribute
      */
-    @Inject(optional=true) public void setAttributeName(java.lang.String attributeName)
+     public void setAttributeName(java.lang.String attributeName)
     {
         synchronized (monitor())
         {
@@ -172,7 +172,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "attributeType" attribute
      */
-    @Inject(optional=true) public void setAttributeType(org.w3.x2001.smil20.AnimateColorPrototype.AttributeType.Enum attributeType)
+     public void setAttributeType(org.w3.x2001.smil20.AnimateColorPrototype.AttributeType.Enum attributeType)
     {
         synchronized (monitor())
         {
@@ -272,7 +272,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "additive" attribute
      */
-    @Inject(optional=true) public void setAdditive(org.w3.x2001.smil20.AnimateColorPrototype.Additive.Enum additive)
+     public void setAdditive(org.w3.x2001.smil20.AnimateColorPrototype.Additive.Enum additive)
     {
         synchronized (monitor())
         {
@@ -372,7 +372,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "accumulate" attribute
      */
-    @Inject(optional=true) public void setAccumulate(org.w3.x2001.smil20.AnimateColorPrototype.Accumulate.Enum accumulate)
+     public void setAccumulate(org.w3.x2001.smil20.AnimateColorPrototype.Accumulate.Enum accumulate)
     {
         synchronized (monitor())
         {
@@ -464,7 +464,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "to" attribute
      */
-    @Inject(optional=true) public void setTo(java.lang.String to)
+     public void setTo(java.lang.String to)
     {
         synchronized (monitor())
         {
@@ -556,7 +556,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "from" attribute
      */
-    @Inject(optional=true) public void setFrom(java.lang.String from)
+     public void setFrom(java.lang.String from)
     {
         synchronized (monitor())
         {
@@ -648,7 +648,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "by" attribute
      */
-    @Inject(optional=true) public void setBy(java.lang.String by)
+     public void setBy(java.lang.String by)
     {
         synchronized (monitor())
         {
@@ -740,7 +740,7 @@ public class AnimateColorPrototypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "values" attribute
      */
-    @Inject(optional=true) public void setValues(java.lang.String values)
+     public void setValues(java.lang.String values)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BoundedFeatureType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class BoundedFeatureTypeImpl extends net.opengis.gml.impl.AbstractFeature
     /**
      * Sets the "boundedBy" element
      */
-    @Inject(optional=true) public void setBoundedBy(net.opengis.gml.BoundingShapeType boundedBy)
+     public void setBoundedBy(net.opengis.gml.BoundingShapeType boundedBy)
     {
         generatedSetterHelperImpl(boundedBy, BOUNDEDBY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GraphStyleType(@http://www.opengis.net/gml).
  *
@@ -95,7 +95,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "planar" element
      */
-    @Inject(optional=true) public void setPlanar(boolean planar)
+     public void setPlanar(boolean planar)
     {
         synchronized (monitor())
         {
@@ -187,7 +187,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "directed" element
      */
-    @Inject(optional=true) public void setDirected(boolean directed)
+     public void setDirected(boolean directed)
     {
         synchronized (monitor())
         {
@@ -279,7 +279,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "grid" element
      */
-    @Inject(optional=true) public void setGrid(boolean grid)
+     public void setGrid(boolean grid)
     {
         synchronized (monitor())
         {
@@ -371,7 +371,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "minDistance" element
      */
-    @Inject(optional=true) public void setMinDistance(double minDistance)
+     public void setMinDistance(double minDistance)
     {
         synchronized (monitor())
         {
@@ -463,7 +463,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "minAngle" element
      */
-    @Inject(optional=true) public void setMinAngle(double minAngle)
+     public void setMinAngle(double minAngle)
     {
         synchronized (monitor())
         {
@@ -555,7 +555,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "graphType" element
      */
-    @Inject(optional=true) public void setGraphType(net.opengis.gml.GraphTypeType.Enum graphType)
+     public void setGraphType(net.opengis.gml.GraphTypeType.Enum graphType)
     {
         synchronized (monitor())
         {
@@ -647,7 +647,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "drawingType" element
      */
-    @Inject(optional=true) public void setDrawingType(net.opengis.gml.DrawingTypeType.Enum drawingType)
+     public void setDrawingType(net.opengis.gml.DrawingTypeType.Enum drawingType)
     {
         synchronized (monitor())
         {
@@ -739,7 +739,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets the "lineType" element
      */
-    @Inject(optional=true) public void setLineType(net.opengis.gml.LineTypeType.Enum lineType)
+     public void setLineType(net.opengis.gml.LineTypeType.Enum lineType)
     {
         synchronized (monitor())
         {
@@ -960,7 +960,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets array of all "aestheticCriteria" element
      */
-    @Inject(optional=true) public void setAestheticCriteriaArray(net.opengis.gml.AesheticCriteriaType.Enum[] aestheticCriteriaArray)
+     public void setAestheticCriteriaArray(net.opengis.gml.AesheticCriteriaType.Enum[] aestheticCriteriaArray)
     {
         synchronized (monitor())
         {
@@ -972,7 +972,7 @@ public class GraphStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescriptor
     /**
      * Sets ith "aestheticCriteria" element
      */
-    @Inject(optional=true) public void setAestheticCriteriaArray(int i, net.opengis.gml.AesheticCriteriaType.Enum aestheticCriteria)
+     public void setAestheticCriteriaArray(int i, net.opengis.gml.AesheticCriteriaType.Enum aestheticCriteria)
     {
         synchronized (monitor())
         {

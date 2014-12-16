@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _SingleOperation(@http://www.opengis.net/gml) element.
  *
@@ -62,7 +62,7 @@ public class SingleOperationDocumentImpl extends net.opengis.gml.impl.Coordinate
     /**
      * Sets the "_SingleOperation" element
      */
-    @Inject(optional=true) public void setSingleOperation(net.opengis.gml.AbstractCoordinateOperationType singleOperation)
+     public void setSingleOperation(net.opengis.gml.AbstractCoordinateOperationType singleOperation)
     {
         synchronized (monitor())
         {

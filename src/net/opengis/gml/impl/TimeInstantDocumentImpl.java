@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one TimeInstant(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TimeInstantDocumentImpl extends net.opengis.gml.impl.TimeGeometricP
     /**
      * Sets the "TimeInstant" element
      */
-    @Inject(optional=true) public void setTimeInstant(net.opengis.gml.TimeInstantType timeInstant)
+     public void setTimeInstant(net.opengis.gml.TimeInstantType timeInstant)
     {
         generatedSetterHelperImpl(timeInstant, TIMEINSTANT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

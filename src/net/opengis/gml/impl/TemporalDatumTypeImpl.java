@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TemporalDatumType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class TemporalDatumTypeImpl extends net.opengis.gml.impl.TemporalDatumBas
     /**
      * Sets the "origin" element
      */
-    @Inject(optional=true) public void setOrigin(java.util.Calendar origin)
+     public void setOrigin(java.util.Calendar origin)
     {
         synchronized (monitor())
         {

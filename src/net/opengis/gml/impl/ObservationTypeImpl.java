@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ObservationType(@http://www.opengis.net/gml).
  *
@@ -63,7 +63,7 @@ public class ObservationTypeImpl extends net.opengis.gml.impl.AbstractFeatureTyp
     /**
      * Sets the "validTime" element
      */
-    @Inject(optional=true) public void setValidTime(net.opengis.gml.TimePrimitivePropertyType validTime)
+     public void setValidTime(net.opengis.gml.TimePrimitivePropertyType validTime)
     {
         generatedSetterHelperImpl(validTime, VALIDTIME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -115,7 +115,7 @@ public class ObservationTypeImpl extends net.opengis.gml.impl.AbstractFeatureTyp
     /**
      * Sets the "using" element
      */
-    @Inject(optional=true) public void setUsing(net.opengis.gml.FeaturePropertyType using)
+     public void setUsing(net.opengis.gml.FeaturePropertyType using)
     {
         generatedSetterHelperImpl(using, USING$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -179,7 +179,7 @@ public class ObservationTypeImpl extends net.opengis.gml.impl.AbstractFeatureTyp
     /**
      * Sets the "target" element
      */
-    @Inject(optional=true) public void setTarget(net.opengis.gml.TargetPropertyType targetValue)
+     public void setTarget(net.opengis.gml.TargetPropertyType targetValue)
     {
         synchronized (monitor())
         {
@@ -241,7 +241,7 @@ public class ObservationTypeImpl extends net.opengis.gml.impl.AbstractFeatureTyp
     /**
      * Sets the "resultOf" element
      */
-    @Inject(optional=true) public void setResultOf(net.opengis.gml.AssociationType resultOf)
+     public void setResultOf(net.opengis.gml.AssociationType resultOf)
     {
         generatedSetterHelperImpl(resultOf, RESULTOF$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

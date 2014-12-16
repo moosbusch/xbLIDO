@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeometryStyleType(@http://www.opengis.net/gml).
  *
@@ -73,7 +73,7 @@ public class GeometryStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "symbol" element
      */
-    @Inject(optional=true) public void setSymbol(net.opengis.gml.SymbolType symbol)
+     public void setSymbol(net.opengis.gml.SymbolType symbol)
     {
         generatedSetterHelperImpl(symbol, SYMBOL$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -151,7 +151,7 @@ public class GeometryStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "style" element
      */
-    @Inject(optional=true) public void setStyle(java.lang.String style)
+     public void setStyle(java.lang.String style)
     {
         synchronized (monitor())
         {
@@ -229,7 +229,7 @@ public class GeometryStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "labelStyle" element
      */
-    @Inject(optional=true) public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
+     public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
     {
         generatedSetterHelperImpl(labelStyle, LABELSTYLE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -307,7 +307,7 @@ public class GeometryStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "geometryProperty" attribute
      */
-    @Inject(optional=true) public void setGeometryProperty(java.lang.String geometryProperty)
+     public void setGeometryProperty(java.lang.String geometryProperty)
     {
         synchronized (monitor())
         {
@@ -399,7 +399,7 @@ public class GeometryStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "geometryType" attribute
      */
-    @Inject(optional=true) public void setGeometryType(java.lang.String geometryType)
+     public void setGeometryType(java.lang.String geometryType)
     {
         synchronized (monitor())
         {

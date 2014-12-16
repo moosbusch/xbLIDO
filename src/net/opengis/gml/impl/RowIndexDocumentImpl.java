@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one rowIndex(@http://www.opengis.net/gml) element.
  *
@@ -67,7 +67,7 @@ public class RowIndexDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "rowIndex" element
      */
-    @Inject(optional=true) public void setRowIndex(java.math.BigInteger rowIndex)
+     public void setRowIndex(java.math.BigInteger rowIndex)
     {
         synchronized (monitor())
         {

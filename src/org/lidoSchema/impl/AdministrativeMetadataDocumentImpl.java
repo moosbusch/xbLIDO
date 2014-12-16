@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one administrativeMetadata(@http://www.lido-schema.org) element.
  *
@@ -53,7 +53,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "administrativeMetadata" element
      */
-    @Inject(optional=true) public void setAdministrativeMetadata(org.lidoSchema.AdministrativeMetadataComplexType administrativeMetadata)
+     public void setAdministrativeMetadata(org.lidoSchema.AdministrativeMetadataComplexType administrativeMetadata)
     {
         generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one EllipsoidalCS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class EllipsoidalCSDocumentImpl extends net.opengis.gml.impl.CoordinateSy
     /**
      * Sets the "EllipsoidalCS" element
      */
-    @Inject(optional=true) public void setEllipsoidalCS(net.opengis.gml.EllipsoidalCSType ellipsoidalCS)
+     public void setEllipsoidalCS(net.opengis.gml.EllipsoidalCSType ellipsoidalCS)
     {
         generatedSetterHelperImpl(ellipsoidalCS, ELLIPSOIDALCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

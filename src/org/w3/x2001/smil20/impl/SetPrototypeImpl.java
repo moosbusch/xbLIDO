@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * An XML setPrototype(@http://www.w3.org/2001/SMIL20/).
@@ -74,7 +74,7 @@ public class SetPrototypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "attributeName" attribute
      */
-    @Inject(optional=true) public void setAttributeName(java.lang.String attributeName)
+     public void setAttributeName(java.lang.String attributeName)
     {
         synchronized (monitor())
         {
@@ -162,7 +162,7 @@ public class SetPrototypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "attributeType" attribute
      */
-    @Inject(optional=true) public void setAttributeType(org.w3.x2001.smil20.SetPrototype.AttributeType.Enum attributeType)
+     public void setAttributeType(org.w3.x2001.smil20.SetPrototype.AttributeType.Enum attributeType)
     {
         synchronized (monitor())
         {
@@ -254,7 +254,7 @@ public class SetPrototypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "to" attribute
      */
-    @Inject(optional=true) public void setTo(java.lang.String to)
+     public void setTo(java.lang.String to)
     {
         synchronized (monitor())
         {

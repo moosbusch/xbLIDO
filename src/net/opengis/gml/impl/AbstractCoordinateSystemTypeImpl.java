@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractCoordinateSystemType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class AbstractCoordinateSystemTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets array of all "csID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCsIDArray(net.opengis.gml.IdentifierType[] csIDArray)
+     public void setCsIDArray(net.opengis.gml.IdentifierType[] csIDArray)
     {
         check_orphaned();
         arraySetterHelper(csIDArray, CSID$0);
@@ -140,7 +140,7 @@ public class AbstractCoordinateSystemTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets ith "csID" element
      */
-    @Inject(optional=true) public void setCsIDArray(int i, net.opengis.gml.IdentifierType csID)
+     public void setCsIDArray(int i, net.opengis.gml.IdentifierType csID)
     {
         generatedSetterHelperImpl(csID, CSID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -218,7 +218,7 @@ public class AbstractCoordinateSystemTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -344,7 +344,7 @@ public class AbstractCoordinateSystemTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets array of all "usesAxis" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setUsesAxisArray(net.opengis.gml.CoordinateSystemAxisRefType[] usesAxisArray)
+     public void setUsesAxisArray(net.opengis.gml.CoordinateSystemAxisRefType[] usesAxisArray)
     {
         check_orphaned();
         arraySetterHelper(usesAxisArray, USESAXIS$4);
@@ -353,7 +353,7 @@ public class AbstractCoordinateSystemTypeImpl extends net.opengis.gml.impl.Abstr
     /**
      * Sets ith "usesAxis" element
      */
-    @Inject(optional=true) public void setUsesAxisArray(int i, net.opengis.gml.CoordinateSystemAxisRefType usesAxis)
+     public void setUsesAxisArray(int i, net.opengis.gml.CoordinateSystemAxisRefType usesAxis)
     {
         generatedSetterHelperImpl(usesAxis, USESAXIS$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

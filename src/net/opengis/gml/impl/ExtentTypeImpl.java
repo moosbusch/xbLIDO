@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ExtentType(@http://www.opengis.net/gml).
  *
@@ -73,7 +73,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets the "description" element
      */
-    @Inject(optional=true) public void setDescription(net.opengis.gml.StringOrRefType description)
+     public void setDescription(net.opengis.gml.StringOrRefType description)
     {
         generatedSetterHelperImpl(description, DESCRIPTION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -199,7 +199,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets array of all "boundingBox" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setBoundingBoxArray(net.opengis.gml.EnvelopeType[] boundingBoxArray)
+     public void setBoundingBoxArray(net.opengis.gml.EnvelopeType[] boundingBoxArray)
     {
         check_orphaned();
         arraySetterHelper(boundingBoxArray, BOUNDINGBOX$2);
@@ -208,7 +208,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets ith "boundingBox" element
      */
-    @Inject(optional=true) public void setBoundingBoxArray(int i, net.opengis.gml.EnvelopeType boundingBox)
+     public void setBoundingBoxArray(int i, net.opengis.gml.EnvelopeType boundingBox)
     {
         generatedSetterHelperImpl(boundingBox, BOUNDINGBOX$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -348,7 +348,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets array of all "boundingPolygon" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setBoundingPolygonArray(net.opengis.gml.PolygonType[] boundingPolygonArray)
+     public void setBoundingPolygonArray(net.opengis.gml.PolygonType[] boundingPolygonArray)
     {
         check_orphaned();
         arraySetterHelper(boundingPolygonArray, BOUNDINGPOLYGON$4);
@@ -357,7 +357,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets ith "boundingPolygon" element
      */
-    @Inject(optional=true) public void setBoundingPolygonArray(int i, net.opengis.gml.PolygonType boundingPolygon)
+     public void setBoundingPolygonArray(int i, net.opengis.gml.PolygonType boundingPolygon)
     {
         generatedSetterHelperImpl(boundingPolygon, BOUNDINGPOLYGON$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -497,7 +497,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets array of all "verticalExtent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setVerticalExtentArray(net.opengis.gml.EnvelopeType[] verticalExtentArray)
+     public void setVerticalExtentArray(net.opengis.gml.EnvelopeType[] verticalExtentArray)
     {
         check_orphaned();
         arraySetterHelper(verticalExtentArray, VERTICALEXTENT$6);
@@ -506,7 +506,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets ith "verticalExtent" element
      */
-    @Inject(optional=true) public void setVerticalExtentArray(int i, net.opengis.gml.EnvelopeType verticalExtent)
+     public void setVerticalExtentArray(int i, net.opengis.gml.EnvelopeType verticalExtent)
     {
         generatedSetterHelperImpl(verticalExtent, VERTICALEXTENT$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -646,7 +646,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets array of all "temporalExtent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTemporalExtentArray(net.opengis.gml.TimePeriodType[] temporalExtentArray)
+     public void setTemporalExtentArray(net.opengis.gml.TimePeriodType[] temporalExtentArray)
     {
         check_orphaned();
         arraySetterHelper(temporalExtentArray, TEMPORALEXTENT$8);
@@ -655,7 +655,7 @@ public class ExtentTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets ith "temporalExtent" element
      */
-    @Inject(optional=true) public void setTemporalExtentArray(int i, net.opengis.gml.TimePeriodType temporalExtent)
+     public void setTemporalExtentArray(int i, net.opengis.gml.TimePeriodType temporalExtent)
     {
         generatedSetterHelperImpl(temporalExtent, TEMPORALEXTENT$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

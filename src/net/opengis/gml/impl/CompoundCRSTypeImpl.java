@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CompoundCRSType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class CompoundCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets array of all "includesCRS" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIncludesCRSArray(net.opengis.gml.CoordinateReferenceSystemRefType[] includesCRSArray)
+     public void setIncludesCRSArray(net.opengis.gml.CoordinateReferenceSystemRefType[] includesCRSArray)
     {
         check_orphaned();
         arraySetterHelper(includesCRSArray, INCLUDESCRS$0);
@@ -136,7 +136,7 @@ public class CompoundCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets ith "includesCRS" element
      */
-    @Inject(optional=true) public void setIncludesCRSArray(int i, net.opengis.gml.CoordinateReferenceSystemRefType includesCRS)
+     public void setIncludesCRSArray(int i, net.opengis.gml.CoordinateReferenceSystemRefType includesCRS)
     {
         generatedSetterHelperImpl(includesCRS, INCLUDESCRS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OffsetCurveType(@http://www.opengis.net/gml).
  *
@@ -57,7 +57,7 @@ public class OffsetCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveSegme
     /**
      * Sets the "offsetBase" element
      */
-    @Inject(optional=true) public void setOffsetBase(net.opengis.gml.CurvePropertyType offsetBase)
+     public void setOffsetBase(net.opengis.gml.CurvePropertyType offsetBase)
     {
         generatedSetterHelperImpl(offsetBase, OFFSETBASE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -97,7 +97,7 @@ public class OffsetCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveSegme
     /**
      * Sets the "distance" element
      */
-    @Inject(optional=true) public void setDistance(net.opengis.gml.LengthType distance)
+     public void setDistance(net.opengis.gml.LengthType distance)
     {
         generatedSetterHelperImpl(distance, DISTANCE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -149,7 +149,7 @@ public class OffsetCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveSegme
     /**
      * Sets the "refDirection" element
      */
-    @Inject(optional=true) public void setRefDirection(net.opengis.gml.VectorType refDirection)
+     public void setRefDirection(net.opengis.gml.VectorType refDirection)
     {
         generatedSetterHelperImpl(refDirection, REFDIRECTION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

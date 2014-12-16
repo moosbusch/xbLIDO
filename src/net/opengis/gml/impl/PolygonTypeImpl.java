@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PolygonType(@http://www.opengis.net/gml).
  *
@@ -75,7 +75,7 @@ public class PolygonTypeImpl extends net.opengis.gml.impl.AbstractSurfaceTypeImp
     /**
      * Sets the "exterior" element
      */
-    @Inject(optional=true) public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
+     public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
     {
         synchronized (monitor())
         {
@@ -211,7 +211,7 @@ public class PolygonTypeImpl extends net.opengis.gml.impl.AbstractSurfaceTypeImp
     /**
      * Sets array of all "interior" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setInteriorArray(net.opengis.gml.AbstractRingPropertyType[] interiorArray)
+     public void setInteriorArray(net.opengis.gml.AbstractRingPropertyType[] interiorArray)
     {
         check_orphaned();
         arraySetterHelper(interiorArray, INTERIOR$2, INTERIOR$3);
@@ -220,7 +220,7 @@ public class PolygonTypeImpl extends net.opengis.gml.impl.AbstractSurfaceTypeImp
     /**
      * Sets ith "interior" element
      */
-    @Inject(optional=true) public void setInteriorArray(int i, net.opengis.gml.AbstractRingPropertyType interior)
+     public void setInteriorArray(int i, net.opengis.gml.AbstractRingPropertyType interior)
     {
         synchronized (monitor())
         {

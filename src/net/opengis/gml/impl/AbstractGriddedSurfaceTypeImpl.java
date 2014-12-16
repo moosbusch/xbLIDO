@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractGriddedSurfaceType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
     /**
      * Sets array of all "row" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRowArray(net.opengis.gml.AbstractGriddedSurfaceType.Row[] rowArray)
+     public void setRowArray(net.opengis.gml.AbstractGriddedSurfaceType.Row[] rowArray)
     {
         check_orphaned();
         arraySetterHelper(rowArray, ROW$0);
@@ -140,7 +140,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
     /**
      * Sets ith "row" element
      */
-    @Inject(optional=true) public void setRowArray(int i, net.opengis.gml.AbstractGriddedSurfaceType.Row row)
+     public void setRowArray(int i, net.opengis.gml.AbstractGriddedSurfaceType.Row row)
     {
         generatedSetterHelperImpl(row, ROW$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -232,7 +232,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
     /**
      * Sets the "rows" element
      */
-    @Inject(optional=true) public void setRows(java.math.BigInteger rows)
+     public void setRows(java.math.BigInteger rows)
     {
         synchronized (monitor())
         {
@@ -324,7 +324,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
     /**
      * Sets the "columns" element
      */
-    @Inject(optional=true) public void setColumns(java.math.BigInteger columns)
+     public void setColumns(java.math.BigInteger columns)
     {
         synchronized (monitor())
         {
@@ -423,7 +423,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
         /**
          * Sets the "posList" element
          */
-        @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+         public void setPosList(net.opengis.gml.DirectPositionListType posList)
         {
             generatedSetterHelperImpl(posList, POSLIST$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -549,7 +549,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
         /**
          * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+         public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
         {
             check_orphaned();
             arraySetterHelper(posArray, POS$2);
@@ -558,7 +558,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
         /**
          * Sets ith "pos" element
          */
-        @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+         public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
         {
             generatedSetterHelperImpl(pos, POS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -698,7 +698,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
         /**
          * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+         public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
         {
             check_orphaned();
             arraySetterHelper(pointPropertyArray, POINTPROPERTY$4);
@@ -707,7 +707,7 @@ public class AbstractGriddedSurfaceTypeImpl extends net.opengis.gml.impl.Abstrac
         /**
          * Sets ith "pointProperty" element
          */
-        @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+         public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
         {
             generatedSetterHelperImpl(pointProperty, POINTPROPERTY$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML IndexMapType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class IndexMapTypeImpl extends net.opengis.gml.impl.GridFunctionTypeImpl 
     /**
      * Sets the "lookUpTable" element
      */
-    @Inject(optional=true) public void setLookUpTable(java.util.List lookUpTable)
+     public void setLookUpTable(java.util.List lookUpTable)
     {
         synchronized (monitor())
         {

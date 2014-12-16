@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one type(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class TypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {

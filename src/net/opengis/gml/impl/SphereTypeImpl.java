@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SphereType(@http://www.opengis.net/gml).
  *
@@ -89,7 +89,7 @@ public class SphereTypeImpl extends net.opengis.gml.impl.AbstractGriddedSurfaceT
     /**
      * Sets the "horizontalCurveType" attribute
      */
-    @Inject(optional=true) public void setHorizontalCurveType(net.opengis.gml.CurveInterpolationType.Enum horizontalCurveType)
+     public void setHorizontalCurveType(net.opengis.gml.CurveInterpolationType.Enum horizontalCurveType)
     {
         synchronized (monitor())
         {
@@ -189,7 +189,7 @@ public class SphereTypeImpl extends net.opengis.gml.impl.AbstractGriddedSurfaceT
     /**
      * Sets the "verticalCurveType" attribute
      */
-    @Inject(optional=true) public void setVerticalCurveType(net.opengis.gml.CurveInterpolationType.Enum verticalCurveType)
+     public void setVerticalCurveType(net.opengis.gml.CurveInterpolationType.Enum verticalCurveType)
     {
         synchronized (monitor())
         {

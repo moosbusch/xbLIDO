@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML objectSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class ObjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets array of all "displayObject" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayObjectArray(org.lidoSchema.TextComplexType[] displayObjectArray)
+     public void setDisplayObjectArray(org.lidoSchema.TextComplexType[] displayObjectArray)
     {
         check_orphaned();
         arraySetterHelper(displayObjectArray, DISPLAYOBJECT$0);
@@ -138,7 +138,7 @@ public class ObjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets ith "displayObject" element
      */
-    @Inject(optional=true) public void setDisplayObjectArray(int i, org.lidoSchema.TextComplexType displayObject)
+     public void setDisplayObjectArray(int i, org.lidoSchema.TextComplexType displayObject)
     {
         generatedSetterHelperImpl(displayObject, DISPLAYOBJECT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class ObjectSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "object" element
      */
-    @Inject(optional=true) public void setObject(org.lidoSchema.ObjectComplexType object)
+     public void setObject(org.lidoSchema.ObjectComplexType object)
     {
         generatedSetterHelperImpl(object, OBJECT$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

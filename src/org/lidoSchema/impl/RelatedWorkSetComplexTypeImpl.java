@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML relatedWorkSetComplexType(@http://www.lido-schema.org).
  *
@@ -67,7 +67,7 @@ public class RelatedWorkSetComplexTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "relatedWork" element
      */
-    @Inject(optional=true) public void setRelatedWork(org.lidoSchema.ObjectSetComplexType relatedWork)
+     public void setRelatedWork(org.lidoSchema.ObjectSetComplexType relatedWork)
     {
         generatedSetterHelperImpl(relatedWork, RELATEDWORK$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -131,7 +131,7 @@ public class RelatedWorkSetComplexTypeImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "relatedWorkRelType" element
      */
-    @Inject(optional=true) public void setRelatedWorkRelType(org.lidoSchema.ConceptComplexType relatedWorkRelType)
+     public void setRelatedWorkRelType(org.lidoSchema.ConceptComplexType relatedWorkRelType)
     {
         generatedSetterHelperImpl(relatedWorkRelType, RELATEDWORKRELTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

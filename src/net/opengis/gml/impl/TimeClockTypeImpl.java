@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeClockType(@http://www.opengis.net/gml).
  *
@@ -59,7 +59,7 @@ public class TimeClockTypeImpl extends net.opengis.gml.impl.AbstractTimeReferenc
     /**
      * Sets the "referenceEvent" element
      */
-    @Inject(optional=true) public void setReferenceEvent(net.opengis.gml.StringOrRefType referenceEvent)
+     public void setReferenceEvent(net.opengis.gml.StringOrRefType referenceEvent)
     {
         generatedSetterHelperImpl(referenceEvent, REFERENCEEVENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -113,7 +113,7 @@ public class TimeClockTypeImpl extends net.opengis.gml.impl.AbstractTimeReferenc
     /**
      * Sets the "referenceTime" element
      */
-    @Inject(optional=true) public void setReferenceTime(java.util.Calendar referenceTime)
+     public void setReferenceTime(java.util.Calendar referenceTime)
     {
         synchronized (monitor())
         {
@@ -181,7 +181,7 @@ public class TimeClockTypeImpl extends net.opengis.gml.impl.AbstractTimeReferenc
     /**
      * Sets the "utcReference" element
      */
-    @Inject(optional=true) public void setUtcReference(java.util.Calendar utcReference)
+     public void setUtcReference(java.util.Calendar utcReference)
     {
         synchronized (monitor())
         {
@@ -309,7 +309,7 @@ public class TimeClockTypeImpl extends net.opengis.gml.impl.AbstractTimeReferenc
     /**
      * Sets array of all "dateBasis" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDateBasisArray(net.opengis.gml.TimeCalendarPropertyType[] dateBasisArray)
+     public void setDateBasisArray(net.opengis.gml.TimeCalendarPropertyType[] dateBasisArray)
     {
         check_orphaned();
         arraySetterHelper(dateBasisArray, DATEBASIS$6);
@@ -318,7 +318,7 @@ public class TimeClockTypeImpl extends net.opengis.gml.impl.AbstractTimeReferenc
     /**
      * Sets ith "dateBasis" element
      */
-    @Inject(optional=true) public void setDateBasisArray(int i, net.opengis.gml.TimeCalendarPropertyType dateBasis)
+     public void setDateBasisArray(int i, net.opengis.gml.TimeCalendarPropertyType dateBasis)
     {
         generatedSetterHelperImpl(dateBasis, DATEBASIS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

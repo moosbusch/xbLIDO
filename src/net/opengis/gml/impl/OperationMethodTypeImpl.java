@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OperationMethodType(@http://www.opengis.net/gml).
  *
@@ -137,7 +137,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets array of all "methodID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMethodIDArray(net.opengis.gml.IdentifierType[] methodIDArray)
+     public void setMethodIDArray(net.opengis.gml.IdentifierType[] methodIDArray)
     {
         check_orphaned();
         arraySetterHelper(methodIDArray, METHODID$0);
@@ -146,7 +146,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets ith "methodID" element
      */
-    @Inject(optional=true) public void setMethodIDArray(int i, net.opengis.gml.IdentifierType methodID)
+     public void setMethodIDArray(int i, net.opengis.gml.IdentifierType methodID)
     {
         generatedSetterHelperImpl(methodID, METHODID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -224,7 +224,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -276,7 +276,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets the "methodFormula" element
      */
-    @Inject(optional=true) public void setMethodFormula(net.opengis.gml.CodeType methodFormula)
+     public void setMethodFormula(net.opengis.gml.CodeType methodFormula)
     {
         generatedSetterHelperImpl(methodFormula, METHODFORMULA$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -330,7 +330,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets the "sourceDimensions" element
      */
-    @Inject(optional=true) public void setSourceDimensions(java.math.BigInteger sourceDimensions)
+     public void setSourceDimensions(java.math.BigInteger sourceDimensions)
     {
         synchronized (monitor())
         {
@@ -398,7 +398,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets the "targetDimensions" element
      */
-    @Inject(optional=true) public void setTargetDimensions(java.math.BigInteger targetDimensions)
+     public void setTargetDimensions(java.math.BigInteger targetDimensions)
     {
         synchronized (monitor())
         {
@@ -526,7 +526,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets array of all "usesParameter" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setUsesParameterArray(net.opengis.gml.AbstractGeneralOperationParameterRefType[] usesParameterArray)
+     public void setUsesParameterArray(net.opengis.gml.AbstractGeneralOperationParameterRefType[] usesParameterArray)
     {
         check_orphaned();
         arraySetterHelper(usesParameterArray, USESPARAMETER$10);
@@ -535,7 +535,7 @@ public class OperationMethodTypeImpl extends net.opengis.gml.impl.OperationMetho
     /**
      * Sets ith "usesParameter" element
      */
-    @Inject(optional=true) public void setUsesParameterArray(int i, net.opengis.gml.AbstractGeneralOperationParameterRefType usesParameter)
+     public void setUsesParameterArray(int i, net.opengis.gml.AbstractGeneralOperationParameterRefType usesParameter)
     {
         generatedSetterHelperImpl(usesParameter, USESPARAMETER$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

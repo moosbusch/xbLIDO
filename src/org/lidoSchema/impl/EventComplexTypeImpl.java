@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML eventComplexType(@http://www.lido-schema.org).
  *
@@ -154,7 +154,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventIDArray(org.lidoSchema.IdentifierComplexType[] eventIDArray)
+     public void setEventIDArray(org.lidoSchema.IdentifierComplexType[] eventIDArray)
     {
         check_orphaned();
         arraySetterHelper(eventIDArray, EVENTID$0);
@@ -163,7 +163,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventID" element
      */
-    @Inject(optional=true) public void setEventIDArray(int i, org.lidoSchema.IdentifierComplexType eventID)
+     public void setEventIDArray(int i, org.lidoSchema.IdentifierComplexType eventID)
     {
         generatedSetterHelperImpl(eventID, EVENTID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -229,7 +229,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "eventType" element
      */
-    @Inject(optional=true) public void setEventType(org.lidoSchema.ConceptComplexType eventType)
+     public void setEventType(org.lidoSchema.ConceptComplexType eventType)
     {
         generatedSetterHelperImpl(eventType, EVENTTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -343,7 +343,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "roleInEvent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRoleInEventArray(org.lidoSchema.ConceptComplexType[] roleInEventArray)
+     public void setRoleInEventArray(org.lidoSchema.ConceptComplexType[] roleInEventArray)
     {
         check_orphaned();
         arraySetterHelper(roleInEventArray, ROLEINEVENT$4);
@@ -352,7 +352,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "roleInEvent" element
      */
-    @Inject(optional=true) public void setRoleInEventArray(int i, org.lidoSchema.ConceptComplexType roleInEvent)
+     public void setRoleInEventArray(int i, org.lidoSchema.ConceptComplexType roleInEvent)
     {
         generatedSetterHelperImpl(roleInEvent, ROLEINEVENT$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -492,7 +492,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventName" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventNameArray(org.lidoSchema.AppellationComplexType[] eventNameArray)
+     public void setEventNameArray(org.lidoSchema.AppellationComplexType[] eventNameArray)
     {
         check_orphaned();
         arraySetterHelper(eventNameArray, EVENTNAME$6);
@@ -501,7 +501,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventName" element
      */
-    @Inject(optional=true) public void setEventNameArray(int i, org.lidoSchema.AppellationComplexType eventName)
+     public void setEventNameArray(int i, org.lidoSchema.AppellationComplexType eventName)
     {
         generatedSetterHelperImpl(eventName, EVENTNAME$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -641,7 +641,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventActorArray(org.lidoSchema.EventComplexType.EventActor[] eventActorArray)
+     public void setEventActorArray(org.lidoSchema.EventComplexType.EventActor[] eventActorArray)
     {
         check_orphaned();
         arraySetterHelper(eventActorArray, EVENTACTOR$8);
@@ -650,7 +650,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventActor" element
      */
-    @Inject(optional=true) public void setEventActorArray(int i, org.lidoSchema.EventComplexType.EventActor eventActor)
+     public void setEventActorArray(int i, org.lidoSchema.EventComplexType.EventActor eventActor)
     {
         generatedSetterHelperImpl(eventActor, EVENTACTOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -790,7 +790,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "culture" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCultureArray(org.lidoSchema.EventComplexType.Culture[] cultureArray)
+     public void setCultureArray(org.lidoSchema.EventComplexType.Culture[] cultureArray)
     {
         check_orphaned();
         arraySetterHelper(cultureArray, CULTURE$10);
@@ -799,7 +799,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "culture" element
      */
-    @Inject(optional=true) public void setCultureArray(int i, org.lidoSchema.EventComplexType.Culture culture)
+     public void setCultureArray(int i, org.lidoSchema.EventComplexType.Culture culture)
     {
         generatedSetterHelperImpl(culture, CULTURE$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -877,7 +877,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "eventDate" element
      */
-    @Inject(optional=true) public void setEventDate(org.lidoSchema.DateSetComplexType eventDate)
+     public void setEventDate(org.lidoSchema.DateSetComplexType eventDate)
     {
         generatedSetterHelperImpl(eventDate, EVENTDATE$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -1003,7 +1003,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "periodName" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPeriodNameArray(org.lidoSchema.EventComplexType.PeriodName[] periodNameArray)
+     public void setPeriodNameArray(org.lidoSchema.EventComplexType.PeriodName[] periodNameArray)
     {
         check_orphaned();
         arraySetterHelper(periodNameArray, PERIODNAME$14);
@@ -1012,7 +1012,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "periodName" element
      */
-    @Inject(optional=true) public void setPeriodNameArray(int i, org.lidoSchema.EventComplexType.PeriodName periodName)
+     public void setPeriodNameArray(int i, org.lidoSchema.EventComplexType.PeriodName periodName)
     {
         generatedSetterHelperImpl(periodName, PERIODNAME$14, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1152,7 +1152,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventPlace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventPlaceArray(org.lidoSchema.EventComplexType.EventPlace[] eventPlaceArray)
+     public void setEventPlaceArray(org.lidoSchema.EventComplexType.EventPlace[] eventPlaceArray)
     {
         check_orphaned();
         arraySetterHelper(eventPlaceArray, EVENTPLACE$16);
@@ -1161,7 +1161,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventPlace" element
      */
-    @Inject(optional=true) public void setEventPlaceArray(int i, org.lidoSchema.EventComplexType.EventPlace eventPlace)
+     public void setEventPlaceArray(int i, org.lidoSchema.EventComplexType.EventPlace eventPlace)
     {
         generatedSetterHelperImpl(eventPlace, EVENTPLACE$16, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1301,7 +1301,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventMethod" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventMethodArray(org.lidoSchema.EventComplexType.EventMethod[] eventMethodArray)
+     public void setEventMethodArray(org.lidoSchema.EventComplexType.EventMethod[] eventMethodArray)
     {
         check_orphaned();
         arraySetterHelper(eventMethodArray, EVENTMETHOD$18);
@@ -1310,7 +1310,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventMethod" element
      */
-    @Inject(optional=true) public void setEventMethodArray(int i, org.lidoSchema.EventComplexType.EventMethod eventMethod)
+     public void setEventMethodArray(int i, org.lidoSchema.EventComplexType.EventMethod eventMethod)
     {
         generatedSetterHelperImpl(eventMethod, EVENTMETHOD$18, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1450,7 +1450,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventMaterialsTechArray(org.lidoSchema.EventComplexType.EventMaterialsTech[] eventMaterialsTechArray)
+     public void setEventMaterialsTechArray(org.lidoSchema.EventComplexType.EventMaterialsTech[] eventMaterialsTechArray)
     {
         check_orphaned();
         arraySetterHelper(eventMaterialsTechArray, EVENTMATERIALSTECH$20);
@@ -1459,7 +1459,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventMaterialsTech" element
      */
-    @Inject(optional=true) public void setEventMaterialsTechArray(int i, org.lidoSchema.EventComplexType.EventMaterialsTech eventMaterialsTech)
+     public void setEventMaterialsTechArray(int i, org.lidoSchema.EventComplexType.EventMaterialsTech eventMaterialsTech)
     {
         generatedSetterHelperImpl(eventMaterialsTech, EVENTMATERIALSTECH$20, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1599,7 +1599,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "thingPresent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setThingPresentArray(org.lidoSchema.EventComplexType.ThingPresent[] thingPresentArray)
+     public void setThingPresentArray(org.lidoSchema.EventComplexType.ThingPresent[] thingPresentArray)
     {
         check_orphaned();
         arraySetterHelper(thingPresentArray, THINGPRESENT$22);
@@ -1608,7 +1608,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "thingPresent" element
      */
-    @Inject(optional=true) public void setThingPresentArray(int i, org.lidoSchema.EventComplexType.ThingPresent thingPresent)
+     public void setThingPresentArray(int i, org.lidoSchema.EventComplexType.ThingPresent thingPresent)
     {
         generatedSetterHelperImpl(thingPresent, THINGPRESENT$22, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1748,7 +1748,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "relatedEventSet" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRelatedEventSetArray(org.lidoSchema.EventComplexType.RelatedEventSet[] relatedEventSetArray)
+     public void setRelatedEventSetArray(org.lidoSchema.EventComplexType.RelatedEventSet[] relatedEventSetArray)
     {
         check_orphaned();
         arraySetterHelper(relatedEventSetArray, RELATEDEVENTSET$24);
@@ -1757,7 +1757,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "relatedEventSet" element
      */
-    @Inject(optional=true) public void setRelatedEventSetArray(int i, org.lidoSchema.EventComplexType.RelatedEventSet relatedEventSet)
+     public void setRelatedEventSetArray(int i, org.lidoSchema.EventComplexType.RelatedEventSet relatedEventSet)
     {
         generatedSetterHelperImpl(relatedEventSet, RELATEDEVENTSET$24, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1897,7 +1897,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "eventDescriptionSet" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setEventDescriptionSetArray(org.lidoSchema.DescriptiveNoteComplexType[] eventDescriptionSetArray)
+     public void setEventDescriptionSetArray(org.lidoSchema.DescriptiveNoteComplexType[] eventDescriptionSetArray)
     {
         check_orphaned();
         arraySetterHelper(eventDescriptionSetArray, EVENTDESCRIPTIONSET$26);
@@ -1906,7 +1906,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "eventDescriptionSet" element
      */
-    @Inject(optional=true) public void setEventDescriptionSetArray(int i, org.lidoSchema.DescriptiveNoteComplexType eventDescriptionSet)
+     public void setEventDescriptionSetArray(int i, org.lidoSchema.DescriptiveNoteComplexType eventDescriptionSet)
     {
         generatedSetterHelperImpl(eventDescriptionSet, EVENTDESCRIPTIONSET$26, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -2015,7 +2015,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2125,7 +2125,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2237,7 +2237,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -2329,7 +2329,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2441,7 +2441,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -2533,7 +2533,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2643,7 +2643,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2753,7 +2753,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2863,7 +2863,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2973,7 +2973,7 @@ public class EventComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

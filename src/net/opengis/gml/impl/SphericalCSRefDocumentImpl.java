@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one sphericalCSRef(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class SphericalCSRefDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "sphericalCSRef" element
      */
-    @Inject(optional=true) public void setSphericalCSRef(net.opengis.gml.SphericalCSRefType sphericalCSRef)
+     public void setSphericalCSRef(net.opengis.gml.SphericalCSRefType sphericalCSRef)
     {
         generatedSetterHelperImpl(sphericalCSRef, SPHERICALCSREF$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AffinePlacementType(@http://www.opengis.net/gml).
  *
@@ -59,7 +59,7 @@ public class AffinePlacementTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "location" element
      */
-    @Inject(optional=true) public void setLocation(net.opengis.gml.DirectPositionType location)
+     public void setLocation(net.opengis.gml.DirectPositionType location)
     {
         generatedSetterHelperImpl(location, LOCATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -173,7 +173,7 @@ public class AffinePlacementTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets array of all "refDirection" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRefDirectionArray(net.opengis.gml.VectorType[] refDirectionArray)
+     public void setRefDirectionArray(net.opengis.gml.VectorType[] refDirectionArray)
     {
         check_orphaned();
         arraySetterHelper(refDirectionArray, REFDIRECTION$2);
@@ -182,7 +182,7 @@ public class AffinePlacementTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets ith "refDirection" element
      */
-    @Inject(optional=true) public void setRefDirectionArray(int i, net.opengis.gml.VectorType refDirection)
+     public void setRefDirectionArray(int i, net.opengis.gml.VectorType refDirection)
     {
         generatedSetterHelperImpl(refDirection, REFDIRECTION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -262,7 +262,7 @@ public class AffinePlacementTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "inDimension" element
      */
-    @Inject(optional=true) public void setInDimension(java.math.BigInteger inDimension)
+     public void setInDimension(java.math.BigInteger inDimension)
     {
         synchronized (monitor())
         {
@@ -330,7 +330,7 @@ public class AffinePlacementTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "outDimension" element
      */
-    @Inject(optional=true) public void setOutDimension(java.math.BigInteger outDimension)
+     public void setOutDimension(java.math.BigInteger outDimension)
     {
         synchronized (monitor())
         {

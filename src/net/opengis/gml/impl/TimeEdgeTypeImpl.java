@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeEdgeType(@http://www.opengis.net/gml).
  *
@@ -57,7 +57,7 @@ public class TimeEdgeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets the "start" element
      */
-    @Inject(optional=true) public void setStart(net.opengis.gml.TimeNodePropertyType start)
+     public void setStart(net.opengis.gml.TimeNodePropertyType start)
     {
         generatedSetterHelperImpl(start, START$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -97,7 +97,7 @@ public class TimeEdgeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets the "end" element
      */
-    @Inject(optional=true) public void setEnd(net.opengis.gml.TimeNodePropertyType end)
+     public void setEnd(net.opengis.gml.TimeNodePropertyType end)
     {
         generatedSetterHelperImpl(end, END$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -149,7 +149,7 @@ public class TimeEdgeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets the "extent" element
      */
-    @Inject(optional=true) public void setExtent(net.opengis.gml.TimePeriodPropertyType extent)
+     public void setExtent(net.opengis.gml.TimePeriodPropertyType extent)
     {
         generatedSetterHelperImpl(extent, EXTENT$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

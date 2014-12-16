@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiCurveCoverageType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class MultiCurveCoverageTypeImpl extends net.opengis.gml.impl.AbstractDis
     /**
      * Sets the "multiCurveDomain" element
      */
-    @Inject(optional=true) public void setMultiCurveDomain(net.opengis.gml.MultiCurveDomainType multiCurveDomain)
+     public void setMultiCurveDomain(net.opengis.gml.MultiCurveDomainType multiCurveDomain)
     {
         generatedSetterHelperImpl(multiCurveDomain, MULTICURVEDOMAIN$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

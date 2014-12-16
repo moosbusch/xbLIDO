@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TopologyStyleType(@http://www.opengis.net/gml).
  *
@@ -73,7 +73,7 @@ public class TopologyStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "symbol" element
      */
-    @Inject(optional=true) public void setSymbol(net.opengis.gml.SymbolType symbol)
+     public void setSymbol(net.opengis.gml.SymbolType symbol)
     {
         generatedSetterHelperImpl(symbol, SYMBOL$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -151,7 +151,7 @@ public class TopologyStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "style" element
      */
-    @Inject(optional=true) public void setStyle(java.lang.String style)
+     public void setStyle(java.lang.String style)
     {
         synchronized (monitor())
         {
@@ -229,7 +229,7 @@ public class TopologyStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "labelStyle" element
      */
-    @Inject(optional=true) public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
+     public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
     {
         generatedSetterHelperImpl(labelStyle, LABELSTYLE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -307,7 +307,7 @@ public class TopologyStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "topologyProperty" attribute
      */
-    @Inject(optional=true) public void setTopologyProperty(java.lang.String topologyProperty)
+     public void setTopologyProperty(java.lang.String topologyProperty)
     {
         synchronized (monitor())
         {
@@ -399,7 +399,7 @@ public class TopologyStyleTypeImpl extends net.opengis.gml.impl.BaseStyleDescrip
     /**
      * Sets the "topologyType" attribute
      */
-    @Inject(optional=true) public void setTopologyType(java.lang.String topologyType)
+     public void setTopologyType(java.lang.String topologyType)
     {
         synchronized (monitor())
         {

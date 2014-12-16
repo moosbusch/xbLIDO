@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML conceptComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class ConceptComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "conceptID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setConceptIDArray(org.lidoSchema.IdentifierComplexType[] conceptIDArray)
+     public void setConceptIDArray(org.lidoSchema.IdentifierComplexType[] conceptIDArray)
     {
         check_orphaned();
         arraySetterHelper(conceptIDArray, CONCEPTID$0);
@@ -138,7 +138,7 @@ public class ConceptComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "conceptID" element
      */
-    @Inject(optional=true) public void setConceptIDArray(int i, org.lidoSchema.IdentifierComplexType conceptID)
+     public void setConceptIDArray(int i, org.lidoSchema.IdentifierComplexType conceptID)
     {
         generatedSetterHelperImpl(conceptID, CONCEPTID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -278,7 +278,7 @@ public class ConceptComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets array of all "term" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTermArray(org.lidoSchema.TermComplexType[] termArray)
+     public void setTermArray(org.lidoSchema.TermComplexType[] termArray)
     {
         check_orphaned();
         arraySetterHelper(termArray, TERM$2);
@@ -287,7 +287,7 @@ public class ConceptComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets ith "term" element
      */
-    @Inject(optional=true) public void setTermArray(int i, org.lidoSchema.TermComplexType term)
+     public void setTermArray(int i, org.lidoSchema.TermComplexType term)
     {
         generatedSetterHelperImpl(term, TERM$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

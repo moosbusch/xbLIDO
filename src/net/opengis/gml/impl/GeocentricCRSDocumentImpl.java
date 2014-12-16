@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one GeocentricCRS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class GeocentricCRSDocumentImpl extends net.opengis.gml.impl.CoordinateRe
     /**
      * Sets the "GeocentricCRS" element
      */
-    @Inject(optional=true) public void setGeocentricCRS(net.opengis.gml.GeocentricCRSType geocentricCRS)
+     public void setGeocentricCRS(net.opengis.gml.GeocentricCRSType geocentricCRS)
     {
         generatedSetterHelperImpl(geocentricCRS, GEOCENTRICCRS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

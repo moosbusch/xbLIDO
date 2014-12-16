@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.annotation.Language;
+package org.lidoSchema.impl;  
+
 /**
  * An XML descriptiveMetadataComplexType(@http://www.lido-schema.org).
  *
@@ -62,7 +62,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "objectClassificationWrap" element
      */
-    @Inject(optional=true) public void setObjectClassificationWrap(org.lidoSchema.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
+     public void setObjectClassificationWrap(org.lidoSchema.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
     {
         generatedSetterHelperImpl(objectClassificationWrap, OBJECTCLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -102,7 +102,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "objectIdentificationWrap" element
      */
-    @Inject(optional=true) public void setObjectIdentificationWrap(org.lidoSchema.ObjectIdentificationWrapDocument.ObjectIdentificationWrap objectIdentificationWrap)
+     public void setObjectIdentificationWrap(org.lidoSchema.ObjectIdentificationWrapDocument.ObjectIdentificationWrap objectIdentificationWrap)
     {
         generatedSetterHelperImpl(objectIdentificationWrap, OBJECTIDENTIFICATIONWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -154,7 +154,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "eventWrap" element
      */
-    @Inject(optional=true) public void setEventWrap(org.lidoSchema.EventWrapDocument.EventWrap eventWrap)
+     public void setEventWrap(org.lidoSchema.EventWrapDocument.EventWrap eventWrap)
     {
         generatedSetterHelperImpl(eventWrap, EVENTWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -218,7 +218,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "objectRelationWrap" element
      */
-    @Inject(optional=true) public void setObjectRelationWrap(org.lidoSchema.ObjectRelationWrapDocument.ObjectRelationWrap objectRelationWrap)
+     public void setObjectRelationWrap(org.lidoSchema.ObjectRelationWrapDocument.ObjectRelationWrap objectRelationWrap)
     {
         generatedSetterHelperImpl(objectRelationWrap, OBJECTRELATIONWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -284,7 +284,7 @@ public class DescriptiveMetadataComplexTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(@Language java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {

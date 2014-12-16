@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one subjectWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "subjectWrap" element
      */
-    @Inject(optional=true) public void setSubjectWrap(org.lidoSchema.SubjectWrapDocument.SubjectWrap subjectWrap)
+     public void setSubjectWrap(org.lidoSchema.SubjectWrapDocument.SubjectWrap subjectWrap)
     {
         generatedSetterHelperImpl(subjectWrap, SUBJECTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "subjectSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSubjectSetArray(org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet[] subjectSetArray)
+         public void setSubjectSetArray(org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet[] subjectSetArray)
         {
             check_orphaned();
             arraySetterHelper(subjectSetArray, SUBJECTSET$0);
@@ -194,7 +194,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "subjectSet" element
          */
-        @Inject(optional=true) public void setSubjectSetArray(int i, org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet subjectSet)
+         public void setSubjectSetArray(int i, org.lidoSchema.SubjectWrapDocument.SubjectWrap.SubjectSet subjectSet)
         {
             generatedSetterHelperImpl(subjectSet, SUBJECTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -303,7 +303,7 @@ public class SubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

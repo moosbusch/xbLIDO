@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TopoSurfaceType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TopoSurfaceTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets array of all "directedFace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedFaceArray(net.opengis.gml.DirectedFacePropertyType[] directedFaceArray)
+     public void setDirectedFaceArray(net.opengis.gml.DirectedFacePropertyType[] directedFaceArray)
     {
         check_orphaned();
         arraySetterHelper(directedFaceArray, DIRECTEDFACE$0);
@@ -136,7 +136,7 @@ public class TopoSurfaceTypeImpl extends net.opengis.gml.impl.AbstractTopologyTy
     /**
      * Sets ith "directedFace" element
      */
-    @Inject(optional=true) public void setDirectedFaceArray(int i, net.opengis.gml.DirectedFacePropertyType directedFace)
+     public void setDirectedFaceArray(int i, net.opengis.gml.DirectedFacePropertyType directedFace)
     {
         generatedSetterHelperImpl(directedFace, DIRECTEDFACE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

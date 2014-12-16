@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one temporalCRSRef(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TemporalCRSRefDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "temporalCRSRef" element
      */
-    @Inject(optional=true) public void setTemporalCRSRef(net.opengis.gml.TemporalCRSRefType temporalCRSRef)
+     public void setTemporalCRSRef(net.opengis.gml.TemporalCRSRefType temporalCRSRef)
     {
         generatedSetterHelperImpl(temporalCRSRef, TEMPORALCRSREF$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

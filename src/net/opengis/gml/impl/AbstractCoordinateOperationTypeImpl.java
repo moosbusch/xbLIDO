@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractCoordinateOperationType(@http://www.opengis.net/gml).
  *
@@ -147,7 +147,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets array of all "coordinateOperationID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCoordinateOperationIDArray(net.opengis.gml.IdentifierType[] coordinateOperationIDArray)
+     public void setCoordinateOperationIDArray(net.opengis.gml.IdentifierType[] coordinateOperationIDArray)
     {
         check_orphaned();
         arraySetterHelper(coordinateOperationIDArray, COORDINATEOPERATIONID$0);
@@ -156,7 +156,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets ith "coordinateOperationID" element
      */
-    @Inject(optional=true) public void setCoordinateOperationIDArray(int i, net.opengis.gml.IdentifierType coordinateOperationID)
+     public void setCoordinateOperationIDArray(int i, net.opengis.gml.IdentifierType coordinateOperationID)
     {
         generatedSetterHelperImpl(coordinateOperationID, COORDINATEOPERATIONID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -234,7 +234,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -312,7 +312,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "operationVersion" element
      */
-    @Inject(optional=true) public void setOperationVersion(java.lang.String operationVersion)
+     public void setOperationVersion(java.lang.String operationVersion)
     {
         synchronized (monitor())
         {
@@ -390,7 +390,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "validArea" element
      */
-    @Inject(optional=true) public void setValidArea(net.opengis.gml.ExtentType validArea)
+     public void setValidArea(net.opengis.gml.ExtentType validArea)
     {
         generatedSetterHelperImpl(validArea, VALIDAREA$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -468,7 +468,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "scope" element
      */
-    @Inject(optional=true) public void setScope(java.lang.String scope)
+     public void setScope(java.lang.String scope)
     {
         synchronized (monitor())
         {
@@ -608,7 +608,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets array of all "_positionalAccuracy" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPositionalAccuracyArray(net.opengis.gml.AbstractPositionalAccuracyType[] positionalAccuracyArray)
+     public void setPositionalAccuracyArray(net.opengis.gml.AbstractPositionalAccuracyType[] positionalAccuracyArray)
     {
         check_orphaned();
         arraySetterHelper(positionalAccuracyArray, POSITIONALACCURACY$10, POSITIONALACCURACY$11);
@@ -617,7 +617,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets ith "_positionalAccuracy" element
      */
-    @Inject(optional=true) public void setPositionalAccuracyArray(int i, net.opengis.gml.AbstractPositionalAccuracyType positionalAccuracy)
+     public void setPositionalAccuracyArray(int i, net.opengis.gml.AbstractPositionalAccuracyType positionalAccuracy)
     {
         synchronized (monitor())
         {
@@ -705,7 +705,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "sourceCRS" element
      */
-    @Inject(optional=true) public void setSourceCRS(net.opengis.gml.CRSRefType sourceCRS)
+     public void setSourceCRS(net.opengis.gml.CRSRefType sourceCRS)
     {
         generatedSetterHelperImpl(sourceCRS, SOURCECRS$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -769,7 +769,7 @@ public class AbstractCoordinateOperationTypeImpl extends net.opengis.gml.impl.Ab
     /**
      * Sets the "targetCRS" element
      */
-    @Inject(optional=true) public void setTargetCRS(net.opengis.gml.CRSRefType targetCRS)
+     public void setTargetCRS(net.opengis.gml.CRSRefType targetCRS)
     {
         generatedSetterHelperImpl(targetCRS, TARGETCRS$14, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

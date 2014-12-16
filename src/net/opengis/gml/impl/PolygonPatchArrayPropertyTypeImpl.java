@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PolygonPatchArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class PolygonPatchArrayPropertyTypeImpl extends net.opengis.gml.impl.Surf
     /**
      * Sets array of all "PolygonPatch" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPolygonPatchArray(net.opengis.gml.PolygonPatchType[] polygonPatchArray)
+     public void setPolygonPatchArray(net.opengis.gml.PolygonPatchType[] polygonPatchArray)
     {
         check_orphaned();
         arraySetterHelper(polygonPatchArray, POLYGONPATCH$0);
@@ -136,7 +136,7 @@ public class PolygonPatchArrayPropertyTypeImpl extends net.opengis.gml.impl.Surf
     /**
      * Sets ith "PolygonPatch" element
      */
-    @Inject(optional=true) public void setPolygonPatchArray(int i, net.opengis.gml.PolygonPatchType polygonPatch)
+     public void setPolygonPatchArray(int i, net.opengis.gml.PolygonPatchType polygonPatch)
     {
         generatedSetterHelperImpl(polygonPatch, POLYGONPATCH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

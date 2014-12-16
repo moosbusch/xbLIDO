@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML RelatedTimeType(@http://www.opengis.net/gml).
  *
@@ -79,7 +79,7 @@ public class RelatedTimeTypeImpl extends net.opengis.gml.impl.TimePrimitivePrope
     /**
      * Sets the "relativePosition" attribute
      */
-    @Inject(optional=true) public void setRelativePosition(net.opengis.gml.RelatedTimeType.RelativePosition.Enum relativePosition)
+     public void setRelativePosition(net.opengis.gml.RelatedTimeType.RelativePosition.Enum relativePosition)
     {
         synchronized (monitor())
         {

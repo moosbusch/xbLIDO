@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PolygonPatchType(@http://www.opengis.net/gml).
  *
@@ -77,7 +77,7 @@ public class PolygonPatchTypeImpl extends net.opengis.gml.impl.AbstractSurfacePa
     /**
      * Sets the "exterior" element
      */
-    @Inject(optional=true) public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
+     public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
     {
         synchronized (monitor())
         {
@@ -213,7 +213,7 @@ public class PolygonPatchTypeImpl extends net.opengis.gml.impl.AbstractSurfacePa
     /**
      * Sets array of all "interior" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setInteriorArray(net.opengis.gml.AbstractRingPropertyType[] interiorArray)
+     public void setInteriorArray(net.opengis.gml.AbstractRingPropertyType[] interiorArray)
     {
         check_orphaned();
         arraySetterHelper(interiorArray, INTERIOR$2, INTERIOR$3);
@@ -222,7 +222,7 @@ public class PolygonPatchTypeImpl extends net.opengis.gml.impl.AbstractSurfacePa
     /**
      * Sets ith "interior" element
      */
-    @Inject(optional=true) public void setInteriorArray(int i, net.opengis.gml.AbstractRingPropertyType interior)
+     public void setInteriorArray(int i, net.opengis.gml.AbstractRingPropertyType interior)
     {
         synchronized (monitor())
         {
@@ -332,7 +332,7 @@ public class PolygonPatchTypeImpl extends net.opengis.gml.impl.AbstractSurfacePa
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.SurfaceInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.SurfaceInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {

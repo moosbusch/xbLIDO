@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML webResourceComplexType(@http://www.lido-schema.org).
  *
@@ -92,7 +92,7 @@ public class WebResourceComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "pref" attribute
      */
-    @Inject(optional=true) public void setPref(java.lang.String pref)
+     public void setPref(java.lang.String pref)
     {
         synchronized (monitor())
         {
@@ -184,7 +184,7 @@ public class WebResourceComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "formatResource" attribute
      */
-    @Inject(optional=true) public void setFormatResource(java.lang.String formatResource)
+     public void setFormatResource(java.lang.String formatResource)
     {
         synchronized (monitor())
         {
@@ -276,7 +276,7 @@ public class WebResourceComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {
@@ -368,7 +368,7 @@ public class WebResourceComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "encodinganalog" attribute
      */
-    @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+     public void setEncodinganalog(java.lang.String encodinganalog)
     {
         synchronized (monitor())
         {
@@ -460,7 +460,7 @@ public class WebResourceComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "label" attribute
      */
-    @Inject(optional=true) public void setLabel(java.lang.String label)
+     public void setLabel(java.lang.String label)
     {
         synchronized (monitor())
         {

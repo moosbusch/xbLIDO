@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one title(@http://www.w3.org/1999/xlink) element.
  *
@@ -53,7 +53,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "title" element
      */
-    @Inject(optional=true) public void setTitle(org.w3.x1999.xlink.TitleEltType title)
+     public void setTitle(org.w3.x1999.xlink.TitleEltType title)
     {
         generatedSetterHelperImpl(title, TITLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

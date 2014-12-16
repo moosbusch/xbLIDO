@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DirectPositionType(@http://www.opengis.net/gml).
  *
@@ -90,7 +90,7 @@ public class DirectPositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlL
     /**
      * Sets the "srsName" attribute
      */
-    @Inject(optional=true) public void setSrsName(java.lang.String srsName)
+     public void setSrsName(java.lang.String srsName)
     {
         synchronized (monitor())
         {
@@ -182,7 +182,7 @@ public class DirectPositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlL
     /**
      * Sets the "srsDimension" attribute
      */
-    @Inject(optional=true) public void setSrsDimension(java.math.BigInteger srsDimension)
+     public void setSrsDimension(java.math.BigInteger srsDimension)
     {
         synchronized (monitor())
         {
@@ -274,7 +274,7 @@ public class DirectPositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlL
     /**
      * Sets the "axisLabels" attribute
      */
-    @Inject(optional=true) public void setAxisLabels(java.util.List axisLabels)
+     public void setAxisLabels(java.util.List axisLabels)
     {
         synchronized (monitor())
         {
@@ -366,7 +366,7 @@ public class DirectPositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlL
     /**
      * Sets the "uomLabels" attribute
      */
-    @Inject(optional=true) public void setUomLabels(java.util.List uomLabels)
+     public void setUomLabels(java.util.List uomLabels)
     {
         synchronized (monitor())
         {

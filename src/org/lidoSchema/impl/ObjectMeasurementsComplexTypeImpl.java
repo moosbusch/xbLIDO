@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML objectMeasurementsComplexType(@http://www.lido-schema.org).
  *
@@ -138,7 +138,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "measurementsSet" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMeasurementsSetArray(org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet[] measurementsSetArray)
+     public void setMeasurementsSetArray(org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet[] measurementsSetArray)
     {
         check_orphaned();
         arraySetterHelper(measurementsSetArray, MEASUREMENTSSET$0);
@@ -147,7 +147,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "measurementsSet" element
      */
-    @Inject(optional=true) public void setMeasurementsSetArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet measurementsSet)
+     public void setMeasurementsSetArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.MeasurementsSet measurementsSet)
     {
         generatedSetterHelperImpl(measurementsSet, MEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -287,7 +287,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "extentMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setExtentMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements[] extentMeasurementsArray)
+     public void setExtentMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements[] extentMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(extentMeasurementsArray, EXTENTMEASUREMENTS$2);
@@ -296,7 +296,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "extentMeasurements" element
      */
-    @Inject(optional=true) public void setExtentMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements extentMeasurements)
+     public void setExtentMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ExtentMeasurements extentMeasurements)
     {
         generatedSetterHelperImpl(extentMeasurements, EXTENTMEASUREMENTS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -436,7 +436,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "qualifierMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setQualifierMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements[] qualifierMeasurementsArray)
+     public void setQualifierMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements[] qualifierMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(qualifierMeasurementsArray, QUALIFIERMEASUREMENTS$4);
@@ -445,7 +445,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "qualifierMeasurements" element
      */
-    @Inject(optional=true) public void setQualifierMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements qualifierMeasurements)
+     public void setQualifierMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.QualifierMeasurements qualifierMeasurements)
     {
         generatedSetterHelperImpl(qualifierMeasurements, QUALIFIERMEASUREMENTS$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -585,7 +585,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "formatMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setFormatMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements[] formatMeasurementsArray)
+     public void setFormatMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements[] formatMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(formatMeasurementsArray, FORMATMEASUREMENTS$6);
@@ -594,7 +594,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "formatMeasurements" element
      */
-    @Inject(optional=true) public void setFormatMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements formatMeasurements)
+     public void setFormatMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.FormatMeasurements formatMeasurements)
     {
         generatedSetterHelperImpl(formatMeasurements, FORMATMEASUREMENTS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -734,7 +734,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "shapeMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setShapeMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements[] shapeMeasurementsArray)
+     public void setShapeMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements[] shapeMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(shapeMeasurementsArray, SHAPEMEASUREMENTS$8);
@@ -743,7 +743,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "shapeMeasurements" element
      */
-    @Inject(optional=true) public void setShapeMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements shapeMeasurements)
+     public void setShapeMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ShapeMeasurements shapeMeasurements)
     {
         generatedSetterHelperImpl(shapeMeasurements, SHAPEMEASUREMENTS$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -883,7 +883,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "scaleMeasurements" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setScaleMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements[] scaleMeasurementsArray)
+     public void setScaleMeasurementsArray(org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements[] scaleMeasurementsArray)
     {
         check_orphaned();
         arraySetterHelper(scaleMeasurementsArray, SCALEMEASUREMENTS$10);
@@ -892,7 +892,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "scaleMeasurements" element
      */
-    @Inject(optional=true) public void setScaleMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements scaleMeasurements)
+     public void setScaleMeasurementsArray(int i, org.lidoSchema.ObjectMeasurementsComplexType.ScaleMeasurements scaleMeasurements)
     {
         generatedSetterHelperImpl(scaleMeasurements, SCALEMEASUREMENTS$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1001,7 +1001,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1122,7 +1122,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -1214,7 +1214,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -1306,7 +1306,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -1398,7 +1398,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1519,7 +1519,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -1611,7 +1611,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -1703,7 +1703,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -1795,7 +1795,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -1916,7 +1916,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -2008,7 +2008,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -2100,7 +2100,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -2192,7 +2192,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2313,7 +2313,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -2405,7 +2405,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -2497,7 +2497,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -2589,7 +2589,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2710,7 +2710,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -2802,7 +2802,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -2894,7 +2894,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -2986,7 +2986,7 @@ public class ObjectMeasurementsComplexTypeImpl extends org.apache.xmlbeans.impl.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

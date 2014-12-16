@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ValueArrayType(@http://www.opengis.net/gml).
  *
@@ -81,7 +81,7 @@ public class ValueArrayTypeImpl extends net.opengis.gml.impl.CompositeValueTypeI
     /**
      * Sets the "codeSpace" attribute
      */
-    @Inject(optional=true) public void setCodeSpace(java.lang.String codeSpace)
+     public void setCodeSpace(java.lang.String codeSpace)
     {
         synchronized (monitor())
         {
@@ -173,7 +173,7 @@ public class ValueArrayTypeImpl extends net.opengis.gml.impl.CompositeValueTypeI
     /**
      * Sets the "uom" attribute
      */
-    @Inject(optional=true) public void setUom(java.lang.String uom)
+     public void setUom(java.lang.String uom)
     {
         synchronized (monitor())
         {

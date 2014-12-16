@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _DiscreteCoverage(@http://www.opengis.net/gml) element.
  *
@@ -62,7 +62,7 @@ public class DiscreteCoverageDocumentImpl extends net.opengis.gml.impl.CoverageD
     /**
      * Sets the "_DiscreteCoverage" element
      */
-    @Inject(optional=true) public void setDiscreteCoverage(net.opengis.gml.AbstractDiscreteCoverageType discreteCoverage)
+     public void setDiscreteCoverage(net.opengis.gml.AbstractDiscreteCoverageType discreteCoverage)
     {
         synchronized (monitor())
         {

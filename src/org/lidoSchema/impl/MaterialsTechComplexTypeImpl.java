@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML materialsTechComplexType(@http://www.lido-schema.org).
  *
@@ -132,7 +132,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "termMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTermMaterialsTechArray(org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech[] termMaterialsTechArray)
+     public void setTermMaterialsTechArray(org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech[] termMaterialsTechArray)
     {
         check_orphaned();
         arraySetterHelper(termMaterialsTechArray, TERMMATERIALSTECH$0);
@@ -141,7 +141,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "termMaterialsTech" element
      */
-    @Inject(optional=true) public void setTermMaterialsTechArray(int i, org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech termMaterialsTech)
+     public void setTermMaterialsTechArray(int i, org.lidoSchema.MaterialsTechComplexType.TermMaterialsTech termMaterialsTech)
     {
         generatedSetterHelperImpl(termMaterialsTech, TERMMATERIALSTECH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -281,7 +281,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "extentMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setExtentMaterialsTechArray(org.lidoSchema.TextComplexType[] extentMaterialsTechArray)
+     public void setExtentMaterialsTechArray(org.lidoSchema.TextComplexType[] extentMaterialsTechArray)
     {
         check_orphaned();
         arraySetterHelper(extentMaterialsTechArray, EXTENTMATERIALSTECH$2);
@@ -290,7 +290,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "extentMaterialsTech" element
      */
-    @Inject(optional=true) public void setExtentMaterialsTechArray(int i, org.lidoSchema.TextComplexType extentMaterialsTech)
+     public void setExtentMaterialsTechArray(int i, org.lidoSchema.TextComplexType extentMaterialsTech)
     {
         generatedSetterHelperImpl(extentMaterialsTech, EXTENTMATERIALSTECH$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -430,7 +430,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "sourceMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSourceMaterialsTechArray(org.lidoSchema.TextComplexType[] sourceMaterialsTechArray)
+     public void setSourceMaterialsTechArray(org.lidoSchema.TextComplexType[] sourceMaterialsTechArray)
     {
         check_orphaned();
         arraySetterHelper(sourceMaterialsTechArray, SOURCEMATERIALSTECH$4);
@@ -439,7 +439,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "sourceMaterialsTech" element
      */
-    @Inject(optional=true) public void setSourceMaterialsTechArray(int i, org.lidoSchema.TextComplexType sourceMaterialsTech)
+     public void setSourceMaterialsTechArray(int i, org.lidoSchema.TextComplexType sourceMaterialsTech)
     {
         generatedSetterHelperImpl(sourceMaterialsTech, SOURCEMATERIALSTECH$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -550,7 +550,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -642,7 +642,7 @@ public class MaterialsTechComplexTypeImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

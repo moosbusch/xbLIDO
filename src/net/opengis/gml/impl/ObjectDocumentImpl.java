@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _Object(@http://www.opengis.net/gml) element.
  *
@@ -196,7 +196,7 @@ public class ObjectDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "_Object" element
      */
-    @Inject(optional=true) public void setObject(org.apache.xmlbeans.XmlObject object)
+     public void setObject(org.apache.xmlbeans.XmlObject object)
     {
         synchronized (monitor())
         {

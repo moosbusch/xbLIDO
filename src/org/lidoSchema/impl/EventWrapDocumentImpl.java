@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one eventWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "eventWrap" element
      */
-    @Inject(optional=true) public void setEventWrap(org.lidoSchema.EventWrapDocument.EventWrap eventWrap)
+     public void setEventWrap(org.lidoSchema.EventWrapDocument.EventWrap eventWrap)
     {
         generatedSetterHelperImpl(eventWrap, EVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "eventSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setEventSetArray(org.lidoSchema.EventWrapDocument.EventWrap.EventSet[] eventSetArray)
+         public void setEventSetArray(org.lidoSchema.EventWrapDocument.EventWrap.EventSet[] eventSetArray)
         {
             check_orphaned();
             arraySetterHelper(eventSetArray, EVENTSET$0);
@@ -194,7 +194,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "eventSet" element
          */
-        @Inject(optional=true) public void setEventSetArray(int i, org.lidoSchema.EventWrapDocument.EventWrap.EventSet eventSet)
+         public void setEventSetArray(int i, org.lidoSchema.EventWrapDocument.EventWrap.EventSet eventSet)
         {
             generatedSetterHelperImpl(eventSet, EVENTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -303,7 +303,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

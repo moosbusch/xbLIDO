@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML VerticalDatumType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class VerticalDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumTyp
     /**
      * Sets the "verticalDatumType" element
      */
-    @Inject(optional=true) public void setVerticalDatumType(net.opengis.gml.VerticalDatumTypeType verticalDatumType)
+     public void setVerticalDatumType(net.opengis.gml.VerticalDatumTypeType verticalDatumType)
     {
         generatedSetterHelperImpl(verticalDatumType, VERTICALDATUMTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

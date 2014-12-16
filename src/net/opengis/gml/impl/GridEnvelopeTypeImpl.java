@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GridEnvelopeType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class GridEnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "low" element
      */
-    @Inject(optional=true) public void setLow(java.util.List low)
+     public void setLow(java.util.List low)
     {
         synchronized (monitor())
         {
@@ -137,7 +137,7 @@ public class GridEnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "high" element
      */
-    @Inject(optional=true) public void setHigh(java.util.List high)
+     public void setHigh(java.util.List high)
     {
         synchronized (monitor())
         {

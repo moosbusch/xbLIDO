@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiSolidCoverageType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class MultiSolidCoverageTypeImpl extends net.opengis.gml.impl.AbstractDis
     /**
      * Sets the "multiSolidDomain" element
      */
-    @Inject(optional=true) public void setMultiSolidDomain(net.opengis.gml.MultiSolidDomainType multiSolidDomain)
+     public void setMultiSolidDomain(net.opengis.gml.MultiSolidDomainType multiSolidDomain)
     {
         generatedSetterHelperImpl(multiSolidDomain, MULTISOLIDDOMAIN$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

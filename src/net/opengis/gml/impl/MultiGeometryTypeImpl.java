@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiGeometryType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class MultiGeometryTypeImpl extends net.opengis.gml.impl.AbstractGeometri
     /**
      * Sets array of all "geometryMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGeometryMemberArray(net.opengis.gml.GeometryPropertyType[] geometryMemberArray)
+     public void setGeometryMemberArray(net.opengis.gml.GeometryPropertyType[] geometryMemberArray)
     {
         check_orphaned();
         arraySetterHelper(geometryMemberArray, GEOMETRYMEMBER$0);
@@ -138,7 +138,7 @@ public class MultiGeometryTypeImpl extends net.opengis.gml.impl.AbstractGeometri
     /**
      * Sets ith "geometryMember" element
      */
-    @Inject(optional=true) public void setGeometryMemberArray(int i, net.opengis.gml.GeometryPropertyType geometryMember)
+     public void setGeometryMemberArray(int i, net.opengis.gml.GeometryPropertyType geometryMember)
     {
         generatedSetterHelperImpl(geometryMember, GEOMETRYMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class MultiGeometryTypeImpl extends net.opengis.gml.impl.AbstractGeometri
     /**
      * Sets the "geometryMembers" element
      */
-    @Inject(optional=true) public void setGeometryMembers(net.opengis.gml.GeometryArrayPropertyType geometryMembers)
+     public void setGeometryMembers(net.opengis.gml.GeometryArrayPropertyType geometryMembers)
     {
         generatedSetterHelperImpl(geometryMembers, GEOMETRYMEMBERS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

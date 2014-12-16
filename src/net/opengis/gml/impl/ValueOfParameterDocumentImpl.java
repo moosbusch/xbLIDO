@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one valueOfParameter(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class ValueOfParameterDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "valueOfParameter" element
      */
-    @Inject(optional=true) public void setValueOfParameter(net.opengis.gml.OperationParameterRefType valueOfParameter)
+     public void setValueOfParameter(net.opengis.gml.OperationParameterRefType valueOfParameter)
     {
         generatedSetterHelperImpl(valueOfParameter, VALUEOFPARAMETER$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

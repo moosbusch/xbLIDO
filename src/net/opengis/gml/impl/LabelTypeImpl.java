@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML LabelType(@http://www.opengis.net/gml).
  *
@@ -210,7 +210,7 @@ public class LabelTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets array of all "LabelExpression" element
      */
-    @Inject(optional=true) public void setLabelExpressionArray(java.lang.String[] labelExpressionArray)
+     public void setLabelExpressionArray(java.lang.String[] labelExpressionArray)
     {
         synchronized (monitor())
         {
@@ -222,7 +222,7 @@ public class LabelTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets ith "LabelExpression" element
      */
-    @Inject(optional=true) public void setLabelExpressionArray(int i, java.lang.String labelExpression)
+     public void setLabelExpressionArray(int i, java.lang.String labelExpression)
     {
         synchronized (monitor())
         {
@@ -382,7 +382,7 @@ public class LabelTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     /**
      * Sets the "transform" attribute
      */
-    @Inject(optional=true) public void setTransform(java.lang.String transform)
+     public void setTransform(java.lang.String transform)
     {
         synchronized (monitor())
         {

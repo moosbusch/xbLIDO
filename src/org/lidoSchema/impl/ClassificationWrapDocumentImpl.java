@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one classificationWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "classificationWrap" element
      */
-    @Inject(optional=true) public void setClassificationWrap(org.lidoSchema.ClassificationWrapDocument.ClassificationWrap classificationWrap)
+     public void setClassificationWrap(org.lidoSchema.ClassificationWrapDocument.ClassificationWrap classificationWrap)
     {
         generatedSetterHelperImpl(classificationWrap, CLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "classification" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setClassificationArray(org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification[] classificationArray)
+         public void setClassificationArray(org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification[] classificationArray)
         {
             check_orphaned();
             arraySetterHelper(classificationArray, CLASSIFICATION$0);
@@ -194,7 +194,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "classification" element
          */
-        @Inject(optional=true) public void setClassificationArray(int i, org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification classification)
+         public void setClassificationArray(int i, org.lidoSchema.ClassificationWrapDocument.ClassificationWrap.Classification classification)
         {
             generatedSetterHelperImpl(classification, CLASSIFICATION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -305,7 +305,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             /**
              * Sets the "type" attribute
              */
-            @Inject(optional=true) public void setType(java.lang.String type)
+             public void setType(java.lang.String type)
             {
                 synchronized (monitor())
                 {
@@ -397,7 +397,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

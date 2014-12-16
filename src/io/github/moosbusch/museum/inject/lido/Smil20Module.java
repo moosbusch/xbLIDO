@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.lido;
+package io.github.moosbusch.museum.inject.lido;
 
 import com.google.inject.Module;
 import org.w3.x2001.smil20.AnimateColorDocument;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CovarianceMatrixType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class CovarianceMatrixTypeImpl extends net.opengis.gml.impl.AbstractPosit
     /**
      * Sets array of all "unitOfMeasure" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setUnitOfMeasureArray(net.opengis.gml.UnitOfMeasureType[] unitOfMeasureArray)
+     public void setUnitOfMeasureArray(net.opengis.gml.UnitOfMeasureType[] unitOfMeasureArray)
     {
         check_orphaned();
         arraySetterHelper(unitOfMeasureArray, UNITOFMEASURE$0);
@@ -138,7 +138,7 @@ public class CovarianceMatrixTypeImpl extends net.opengis.gml.impl.AbstractPosit
     /**
      * Sets ith "unitOfMeasure" element
      */
-    @Inject(optional=true) public void setUnitOfMeasureArray(int i, net.opengis.gml.UnitOfMeasureType unitOfMeasure)
+     public void setUnitOfMeasureArray(int i, net.opengis.gml.UnitOfMeasureType unitOfMeasure)
     {
         generatedSetterHelperImpl(unitOfMeasure, UNITOFMEASURE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -278,7 +278,7 @@ public class CovarianceMatrixTypeImpl extends net.opengis.gml.impl.AbstractPosit
     /**
      * Sets array of all "includesElement" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIncludesElementArray(net.opengis.gml.CovarianceElementType[] includesElementArray)
+     public void setIncludesElementArray(net.opengis.gml.CovarianceElementType[] includesElementArray)
     {
         check_orphaned();
         arraySetterHelper(includesElementArray, INCLUDESELEMENT$2);
@@ -287,7 +287,7 @@ public class CovarianceMatrixTypeImpl extends net.opengis.gml.impl.AbstractPosit
     /**
      * Sets ith "includesElement" element
      */
-    @Inject(optional=true) public void setIncludesElementArray(int i, net.opengis.gml.CovarianceElementType includesElement)
+     public void setIncludesElementArray(int i, net.opengis.gml.CovarianceElementType includesElement)
     {
         generatedSetterHelperImpl(includesElement, INCLUDESELEMENT$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

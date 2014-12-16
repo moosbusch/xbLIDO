@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one CubicSpline(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CubicSplineDocumentImpl extends net.opengis.gml.impl.CurveSegmentDo
     /**
      * Sets the "CubicSpline" element
      */
-    @Inject(optional=true) public void setCubicSpline(net.opengis.gml.CubicSplineType cubicSpline)
+     public void setCubicSpline(net.opengis.gml.CubicSplineType cubicSpline)
     {
         generatedSetterHelperImpl(cubicSpline, CUBICSPLINE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

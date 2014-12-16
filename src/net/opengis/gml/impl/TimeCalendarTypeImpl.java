@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeCalendarType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TimeCalendarTypeImpl extends net.opengis.gml.impl.AbstractTimeRefer
     /**
      * Sets array of all "referenceFrame" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setReferenceFrameArray(net.opengis.gml.TimeCalendarEraPropertyType[] referenceFrameArray)
+     public void setReferenceFrameArray(net.opengis.gml.TimeCalendarEraPropertyType[] referenceFrameArray)
     {
         check_orphaned();
         arraySetterHelper(referenceFrameArray, REFERENCEFRAME$0);
@@ -136,7 +136,7 @@ public class TimeCalendarTypeImpl extends net.opengis.gml.impl.AbstractTimeRefer
     /**
      * Sets ith "referenceFrame" element
      */
-    @Inject(optional=true) public void setReferenceFrameArray(int i, net.opengis.gml.TimeCalendarEraPropertyType referenceFrame)
+     public void setReferenceFrameArray(int i, net.opengis.gml.TimeCalendarEraPropertyType referenceFrame)
     {
         generatedSetterHelperImpl(referenceFrame, REFERENCEFRAME$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

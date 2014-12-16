@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one animateMotion(@http://www.w3.org/2001/SMIL20/) element.
@@ -56,7 +56,7 @@ public class AnimateMotionDocumentImpl extends org.w3.x2001.smil20.language.impl
     /**
      * Sets the "animateMotion" element
      */
-    @Inject(optional=true) public void setAnimateMotion2(org.w3.x2001.smil20.language.AnimateMotionType animateMotion2)
+     public void setAnimateMotion2(org.w3.x2001.smil20.language.AnimateMotionType animateMotion2)
     {
         generatedSetterHelperImpl(animateMotion2, ANIMATEMOTION2$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

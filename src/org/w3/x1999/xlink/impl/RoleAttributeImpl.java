@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one role(@http://www.w3.org/1999/xlink) attribute.
  *
@@ -79,7 +79,7 @@ public class RoleAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {

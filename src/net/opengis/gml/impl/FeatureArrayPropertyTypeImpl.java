@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML FeatureArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -144,7 +144,7 @@ public class FeatureArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets array of all "_Feature" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setFeatureArray(net.opengis.gml.AbstractFeatureType[] featureArray)
+     public void setFeatureArray(net.opengis.gml.AbstractFeatureType[] featureArray)
     {
         check_orphaned();
         arraySetterHelper(featureArray, FEATURE$0, FEATURE$1);
@@ -153,7 +153,7 @@ public class FeatureArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets ith "_Feature" element
      */
-    @Inject(optional=true) public void setFeatureArray(int i, net.opengis.gml.AbstractFeatureType feature)
+     public void setFeatureArray(int i, net.opengis.gml.AbstractFeatureType feature)
     {
         synchronized (monitor())
         {

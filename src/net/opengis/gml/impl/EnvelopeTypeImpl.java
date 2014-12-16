@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EnvelopeType(@http://www.opengis.net/gml).
  *
@@ -81,7 +81,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "lowerCorner" element
      */
-    @Inject(optional=true) public void setLowerCorner(net.opengis.gml.DirectPositionType lowerCorner)
+     public void setLowerCorner(net.opengis.gml.DirectPositionType lowerCorner)
     {
         generatedSetterHelperImpl(lowerCorner, LOWERCORNER$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "upperCorner" element
      */
-    @Inject(optional=true) public void setUpperCorner(net.opengis.gml.DirectPositionType upperCorner)
+     public void setUpperCorner(net.opengis.gml.DirectPositionType upperCorner)
     {
         generatedSetterHelperImpl(upperCorner, UPPERCORNER$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -271,7 +271,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "coord" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCoordArray(net.opengis.gml.CoordType[] coordArray)
+     public void setCoordArray(net.opengis.gml.CoordType[] coordArray)
     {
         check_orphaned();
         arraySetterHelper(coordArray, COORD$4);
@@ -280,7 +280,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "coord" element
      */
-    @Inject(optional=true) public void setCoordArray(int i, net.opengis.gml.CoordType coord)
+     public void setCoordArray(int i, net.opengis.gml.CoordType coord)
     {
         generatedSetterHelperImpl(coord, COORD$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -420,7 +420,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+     public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
     {
         check_orphaned();
         arraySetterHelper(posArray, POS$6);
@@ -429,7 +429,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "pos" element
      */
-    @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+     public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -507,7 +507,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "coordinates" element
      */
-    @Inject(optional=true) public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
+     public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
     {
         generatedSetterHelperImpl(coordinates, COORDINATES$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -585,7 +585,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "srsName" attribute
      */
-    @Inject(optional=true) public void setSrsName(java.lang.String srsName)
+     public void setSrsName(java.lang.String srsName)
     {
         synchronized (monitor())
         {
@@ -677,7 +677,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "srsDimension" attribute
      */
-    @Inject(optional=true) public void setSrsDimension(java.math.BigInteger srsDimension)
+     public void setSrsDimension(java.math.BigInteger srsDimension)
     {
         synchronized (monitor())
         {
@@ -769,7 +769,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "axisLabels" attribute
      */
-    @Inject(optional=true) public void setAxisLabels(java.util.List axisLabels)
+     public void setAxisLabels(java.util.List axisLabels)
     {
         synchronized (monitor())
         {
@@ -861,7 +861,7 @@ public class EnvelopeTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "uomLabels" attribute
      */
-    @Inject(optional=true) public void setUomLabels(java.util.List uomLabels)
+     public void setUomLabels(java.util.List uomLabels)
     {
         synchronized (monitor())
         {

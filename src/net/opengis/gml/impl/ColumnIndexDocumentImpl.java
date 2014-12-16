@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one columnIndex(@http://www.opengis.net/gml) element.
  *
@@ -67,7 +67,7 @@ public class ColumnIndexDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "columnIndex" element
      */
-    @Inject(optional=true) public void setColumnIndex(java.math.BigInteger columnIndex)
+     public void setColumnIndex(java.math.BigInteger columnIndex)
     {
         synchronized (monitor())
         {

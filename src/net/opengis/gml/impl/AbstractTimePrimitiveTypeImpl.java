@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTimePrimitiveType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class AbstractTimePrimitiveTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets array of all "relatedTime" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRelatedTimeArray(net.opengis.gml.RelatedTimeType[] relatedTimeArray)
+     public void setRelatedTimeArray(net.opengis.gml.RelatedTimeType[] relatedTimeArray)
     {
         check_orphaned();
         arraySetterHelper(relatedTimeArray, RELATEDTIME$0);
@@ -136,7 +136,7 @@ public class AbstractTimePrimitiveTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets ith "relatedTime" element
      */
-    @Inject(optional=true) public void setRelatedTimeArray(int i, net.opengis.gml.RelatedTimeType relatedTime)
+     public void setRelatedTimeArray(int i, net.opengis.gml.RelatedTimeType relatedTime)
     {
         generatedSetterHelperImpl(relatedTime, RELATEDTIME$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

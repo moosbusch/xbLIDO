@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeTopologyComplexType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TimeTopologyComplexTypeImpl extends net.opengis.gml.impl.AbstractTi
     /**
      * Sets array of all "primitive" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPrimitiveArray(net.opengis.gml.TimeTopologyPrimitivePropertyType[] primitiveArray)
+     public void setPrimitiveArray(net.opengis.gml.TimeTopologyPrimitivePropertyType[] primitiveArray)
     {
         check_orphaned();
         arraySetterHelper(primitiveArray, PRIMITIVE$0);
@@ -136,7 +136,7 @@ public class TimeTopologyComplexTypeImpl extends net.opengis.gml.impl.AbstractTi
     /**
      * Sets ith "primitive" element
      */
-    @Inject(optional=true) public void setPrimitiveArray(int i, net.opengis.gml.TimeTopologyPrimitivePropertyType primitive)
+     public void setPrimitiveArray(int i, net.opengis.gml.TimeTopologyPrimitivePropertyType primitive)
     {
         generatedSetterHelperImpl(primitive, PRIMITIVE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

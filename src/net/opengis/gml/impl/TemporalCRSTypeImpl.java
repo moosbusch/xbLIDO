@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TemporalCRSType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class TemporalCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets the "usesTemporalCS" element
      */
-    @Inject(optional=true) public void setUsesTemporalCS(net.opengis.gml.TemporalCSRefType usesTemporalCS)
+     public void setUsesTemporalCS(net.opengis.gml.TemporalCSRefType usesTemporalCS)
     {
         generatedSetterHelperImpl(usesTemporalCS, USESTEMPORALCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -95,7 +95,7 @@ public class TemporalCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenceS
     /**
      * Sets the "usesTemporalDatum" element
      */
-    @Inject(optional=true) public void setUsesTemporalDatum(net.opengis.gml.TemporalDatumRefType usesTemporalDatum)
+     public void setUsesTemporalDatum(net.opengis.gml.TemporalDatumRefType usesTemporalDatum)
     {
         generatedSetterHelperImpl(usesTemporalDatum, USESTEMPORALDATUM$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

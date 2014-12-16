@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BezierType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class BezierTypeImpl extends net.opengis.gml.impl.BSplineTypeImpl impleme
     /**
      * Sets array of all "knot" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setKnotArray(net.opengis.gml.KnotPropertyType[] knotArray)
+     public void setKnotArray(net.opengis.gml.KnotPropertyType[] knotArray)
     {
         check_orphaned();
         arraySetterHelper(knotArray, KNOT$0);
@@ -138,7 +138,7 @@ public class BezierTypeImpl extends net.opengis.gml.impl.BSplineTypeImpl impleme
     /**
      * Sets ith "knot" element
      */
-    @Inject(optional=true) public void setKnotArray(int i, net.opengis.gml.KnotPropertyType knot)
+     public void setKnotArray(int i, net.opengis.gml.KnotPropertyType knot)
     {
         generatedSetterHelperImpl(knot, KNOT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -238,7 +238,7 @@ public class BezierTypeImpl extends net.opengis.gml.impl.BSplineTypeImpl impleme
     /**
      * Sets the "isPolynomial" attribute
      */
-    @Inject(optional=true) public void setIsPolynomial(boolean isPolynomial)
+     public void setIsPolynomial(boolean isPolynomial)
     {
         synchronized (monitor())
         {

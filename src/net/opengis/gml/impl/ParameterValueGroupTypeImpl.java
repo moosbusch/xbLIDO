@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ParameterValueGroupType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class ParameterValueGroupTypeImpl extends net.opengis.gml.impl.AbstractGe
     /**
      * Sets array of all "includesValue" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIncludesValueArray(net.opengis.gml.AbstractGeneralParameterValueType[] includesValueArray)
+     public void setIncludesValueArray(net.opengis.gml.AbstractGeneralParameterValueType[] includesValueArray)
     {
         check_orphaned();
         arraySetterHelper(includesValueArray, INCLUDESVALUE$0);
@@ -138,7 +138,7 @@ public class ParameterValueGroupTypeImpl extends net.opengis.gml.impl.AbstractGe
     /**
      * Sets ith "includesValue" element
      */
-    @Inject(optional=true) public void setIncludesValueArray(int i, net.opengis.gml.AbstractGeneralParameterValueType includesValue)
+     public void setIncludesValueArray(int i, net.opengis.gml.AbstractGeneralParameterValueType includesValue)
     {
         generatedSetterHelperImpl(includesValue, INCLUDESVALUE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -204,7 +204,7 @@ public class ParameterValueGroupTypeImpl extends net.opengis.gml.impl.AbstractGe
     /**
      * Sets the "valuesOfGroup" element
      */
-    @Inject(optional=true) public void setValuesOfGroup(net.opengis.gml.OperationParameterGroupRefType valuesOfGroup)
+     public void setValuesOfGroup(net.opengis.gml.OperationParameterGroupRefType valuesOfGroup)
     {
         generatedSetterHelperImpl(valuesOfGroup, VALUESOFGROUP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BaseUnitType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class BaseUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitionTypeImp
     /**
      * Sets the "unitsSystem" element
      */
-    @Inject(optional=true) public void setUnitsSystem(net.opengis.gml.ReferenceType unitsSystem)
+     public void setUnitsSystem(net.opengis.gml.ReferenceType unitsSystem)
     {
         generatedSetterHelperImpl(unitsSystem, UNITSSYSTEM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

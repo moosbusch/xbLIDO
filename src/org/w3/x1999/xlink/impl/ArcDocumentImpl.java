@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one arc(@http://www.w3.org/1999/xlink) element.
  *
@@ -53,7 +53,7 @@ public class ArcDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "arc" element
      */
-    @Inject(optional=true) public void setArc(org.w3.x1999.xlink.ArcType arc)
+     public void setArc(org.w3.x1999.xlink.ArcType arc)
     {
         generatedSetterHelperImpl(arc, ARC$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbsoluteExternalPositionalAccuracyType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class AbsoluteExternalPositionalAccuracyTypeImpl extends net.opengis.gml.
     /**
      * Sets the "result" element
      */
-    @Inject(optional=true) public void setResult(net.opengis.gml.MeasureType result)
+     public void setResult(net.opengis.gml.MeasureType result)
     {
         generatedSetterHelperImpl(result, RESULT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

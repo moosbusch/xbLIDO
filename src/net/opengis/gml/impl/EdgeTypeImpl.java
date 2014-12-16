@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EdgeType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class EdgeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets array of all "directedNode" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedNodeArray(net.opengis.gml.DirectedNodePropertyType[] directedNodeArray)
+     public void setDirectedNodeArray(net.opengis.gml.DirectedNodePropertyType[] directedNodeArray)
     {
         check_orphaned();
         arraySetterHelper(directedNodeArray, DIRECTEDNODE$0);
@@ -140,7 +140,7 @@ public class EdgeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets ith "directedNode" element
      */
-    @Inject(optional=true) public void setDirectedNodeArray(int i, net.opengis.gml.DirectedNodePropertyType directedNode)
+     public void setDirectedNodeArray(int i, net.opengis.gml.DirectedNodePropertyType directedNode)
     {
         generatedSetterHelperImpl(directedNode, DIRECTEDNODE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class EdgeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets array of all "directedFace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedFaceArray(net.opengis.gml.DirectedFacePropertyType[] directedFaceArray)
+     public void setDirectedFaceArray(net.opengis.gml.DirectedFacePropertyType[] directedFaceArray)
     {
         check_orphaned();
         arraySetterHelper(directedFaceArray, DIRECTEDFACE$2);
@@ -289,7 +289,7 @@ public class EdgeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets ith "directedFace" element
      */
-    @Inject(optional=true) public void setDirectedFaceArray(int i, net.opengis.gml.DirectedFacePropertyType directedFace)
+     public void setDirectedFaceArray(int i, net.opengis.gml.DirectedFacePropertyType directedFace)
     {
         generatedSetterHelperImpl(directedFace, DIRECTEDFACE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -367,7 +367,7 @@ public class EdgeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets the "curveProperty" element
      */
-    @Inject(optional=true) public void setCurveProperty(net.opengis.gml.CurvePropertyType curveProperty)
+     public void setCurveProperty(net.opengis.gml.CurvePropertyType curveProperty)
     {
         generatedSetterHelperImpl(curveProperty, CURVEPROPERTY$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTimeGeometricPrimitiveType(@http://www.opengis.net/gml).
  *
@@ -87,7 +87,7 @@ public class AbstractTimeGeometricPrimitiveTypeImpl extends net.opengis.gml.impl
     /**
      * Sets the "frame" attribute
      */
-    @Inject(optional=true) public void setFrame(java.lang.String frame)
+     public void setFrame(java.lang.String frame)
     {
         synchronized (monitor())
         {

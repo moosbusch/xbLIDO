@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.lido;
+package io.github.moosbusch.museum.document.lido;
 
 import org.lidoSchema.LidoWrapDocument;
 import org.lidoSchema.LidoWrapDocument.LidoWrap;
 import org.lidoSchema.LidoWrapDocument.LidoWrap.Lido;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.inject.lido.impl.DefaultLidoObjectFactory;
+import io.github.moosbusch.museum.document.MuseumXmlDocument;
+import io.github.moosbusch.museum.document.MuseumXmlDocument;
+import io.github.moosbusch.museum.document.lido.impl.DefaultLidoObjectFactory;
 
 /**
  *

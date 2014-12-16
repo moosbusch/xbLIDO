@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one title(@http://www.w3.org/1999/xlink) attribute.
  *
@@ -79,7 +79,7 @@ public class TitleAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {

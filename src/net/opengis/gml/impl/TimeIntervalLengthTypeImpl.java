@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeIntervalLengthType(@http://www.opengis.net/gml).
  *
@@ -76,7 +76,7 @@ public class TimeIntervalLengthTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "unit" attribute
      */
-    @Inject(optional=true) public void setUnit(java.lang.String unit)
+     public void setUnit(java.lang.String unit)
     {
         synchronized (monitor())
         {
@@ -156,7 +156,7 @@ public class TimeIntervalLengthTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "radix" attribute
      */
-    @Inject(optional=true) public void setRadix(java.math.BigInteger radix)
+     public void setRadix(java.math.BigInteger radix)
     {
         synchronized (monitor())
         {
@@ -248,7 +248,7 @@ public class TimeIntervalLengthTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "factor" attribute
      */
-    @Inject(optional=true) public void setFactor(java.math.BigInteger factor)
+     public void setFactor(java.math.BigInteger factor)
     {
         synchronized (monitor())
         {

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one multiSurfaceProperty(@http://www.opengis.net/gml) element.
@@ -56,7 +56,7 @@ public class MultiSurfacePropertyDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "multiSurfaceProperty" element
      */
-    @Inject(optional=true) public void setMultiSurfaceProperty(net.opengis.gml.MultiSurfacePropertyType multiSurfaceProperty)
+     public void setMultiSurfaceProperty(net.opengis.gml.MultiSurfacePropertyType multiSurfaceProperty)
     {
         generatedSetterHelperImpl(multiSurfaceProperty, MULTISURFACEPROPERTY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

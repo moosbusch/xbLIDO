@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML IdentifierType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class IdentifierTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "name" element
      */
-    @Inject(optional=true) public void setName(net.opengis.gml.CodeType name)
+     public void setName(net.opengis.gml.CodeType name)
     {
         synchronized (monitor())
         {
@@ -145,7 +145,7 @@ public class IdentifierTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "version" element
      */
-    @Inject(optional=true) public void setVersion(java.lang.String version)
+     public void setVersion(java.lang.String version)
     {
         synchronized (monitor())
         {
@@ -223,7 +223,7 @@ public class IdentifierTypeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

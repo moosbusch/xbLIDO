@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML RangeParametersType(@http://www.opengis.net/gml).
  *
@@ -121,7 +121,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "Boolean" element
      */
-    @Inject(optional=true) public void setBoolean(boolean xboolean)
+     public void setBoolean(boolean xboolean)
     {
         synchronized (monitor())
         {
@@ -199,7 +199,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "Category" element
      */
-    @Inject(optional=true) public void setCategory(net.opengis.gml.CodeType category)
+     public void setCategory(net.opengis.gml.CodeType category)
     {
         generatedSetterHelperImpl(category, CATEGORY$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -263,7 +263,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "Quantity" element
      */
-    @Inject(optional=true) public void setQuantity(net.opengis.gml.MeasureType quantity)
+     public void setQuantity(net.opengis.gml.MeasureType quantity)
     {
         generatedSetterHelperImpl(quantity, QUANTITY$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -341,7 +341,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "Count" element
      */
-    @Inject(optional=true) public void setCount(java.math.BigInteger count)
+     public void setCount(java.math.BigInteger count)
     {
         synchronized (monitor())
         {
@@ -433,7 +433,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "BooleanList" element
      */
-    @Inject(optional=true) public void setBooleanList(java.util.List booleanList)
+     public void setBooleanList(java.util.List booleanList)
     {
         synchronized (monitor())
         {
@@ -511,7 +511,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "CategoryList" element
      */
-    @Inject(optional=true) public void setCategoryList(net.opengis.gml.CodeOrNullListType categoryList)
+     public void setCategoryList(net.opengis.gml.CodeOrNullListType categoryList)
     {
         generatedSetterHelperImpl(categoryList, CATEGORYLIST$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -575,7 +575,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "QuantityList" element
      */
-    @Inject(optional=true) public void setQuantityList(net.opengis.gml.MeasureOrNullListType quantityList)
+     public void setQuantityList(net.opengis.gml.MeasureOrNullListType quantityList)
     {
         generatedSetterHelperImpl(quantityList, QUANTITYLIST$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -653,7 +653,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "CountList" element
      */
-    @Inject(optional=true) public void setCountList(java.util.List countList)
+     public void setCountList(java.util.List countList)
     {
         synchronized (monitor())
         {
@@ -731,7 +731,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "CategoryExtent" element
      */
-    @Inject(optional=true) public void setCategoryExtent(net.opengis.gml.CategoryExtentType categoryExtent)
+     public void setCategoryExtent(net.opengis.gml.CategoryExtentType categoryExtent)
     {
         generatedSetterHelperImpl(categoryExtent, CATEGORYEXTENT$16, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -795,7 +795,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "QuantityExtent" element
      */
-    @Inject(optional=true) public void setQuantityExtent(net.opengis.gml.QuantityExtentType quantityExtent)
+     public void setQuantityExtent(net.opengis.gml.QuantityExtentType quantityExtent)
     {
         generatedSetterHelperImpl(quantityExtent, QUANTITYEXTENT$18, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -873,7 +873,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "CountExtent" element
      */
-    @Inject(optional=true) public void setCountExtent(java.util.List countExtent)
+     public void setCountExtent(java.util.List countExtent)
     {
         synchronized (monitor())
         {
@@ -951,7 +951,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "CompositeValue" element
      */
-    @Inject(optional=true) public void setCompositeValue(net.opengis.gml.CompositeValueType compositeValue)
+     public void setCompositeValue(net.opengis.gml.CompositeValueType compositeValue)
     {
         synchronized (monitor())
         {
@@ -1047,7 +1047,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -1139,7 +1139,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -1231,7 +1231,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -1323,7 +1323,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -1415,7 +1415,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -1507,7 +1507,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -1599,7 +1599,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {
@@ -1691,7 +1691,7 @@ public class RangeParametersTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "remoteSchema" attribute
      */
-    @Inject(optional=true) public void setRemoteSchema(java.lang.String remoteSchema)
+     public void setRemoteSchema(java.lang.String remoteSchema)
     {
         synchronized (monitor())
         {

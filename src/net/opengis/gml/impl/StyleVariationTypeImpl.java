@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML StyleVariationType(@http://www.opengis.net/gml).
  *
@@ -74,7 +74,7 @@ public class StyleVariationTypeImpl extends org.apache.xmlbeans.impl.values.Java
     /**
      * Sets the "styleProperty" attribute
      */
-    @Inject(optional=true) public void setStyleProperty(java.lang.String styleProperty)
+     public void setStyleProperty(java.lang.String styleProperty)
     {
         synchronized (monitor())
         {
@@ -154,7 +154,7 @@ public class StyleVariationTypeImpl extends org.apache.xmlbeans.impl.values.Java
     /**
      * Sets the "featurePropertyRange" attribute
      */
-    @Inject(optional=true) public void setFeaturePropertyRange(java.lang.String featurePropertyRange)
+     public void setFeaturePropertyRange(java.lang.String featurePropertyRange)
     {
         synchronized (monitor())
         {

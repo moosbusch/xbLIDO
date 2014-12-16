@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one BaseUnit(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class BaseUnitDocumentImpl extends net.opengis.gml.impl.UnitDefinitionDoc
     /**
      * Sets the "BaseUnit" element
      */
-    @Inject(optional=true) public void setBaseUnit(net.opengis.gml.BaseUnitType baseUnit)
+     public void setBaseUnit(net.opengis.gml.BaseUnitType baseUnit)
     {
         generatedSetterHelperImpl(baseUnit, BASEUNIT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

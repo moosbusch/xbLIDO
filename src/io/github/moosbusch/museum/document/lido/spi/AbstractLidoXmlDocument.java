@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.lido.spi;
+package io.github.moosbusch.museum.document.lido.spi;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,10 +22,10 @@ import org.apache.xmlbeans.XmlException;
 import org.lidoSchema.LidoWrapDocument;
 import org.lidoSchema.LidoWrapDocument.LidoWrap;
 import org.lidoSchema.LidoWrapDocument.LidoWrap.Lido;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
-import org.moosbusch.museum.document.lido.LidoXmlDocument;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
-import org.moosbusch.museum.inject.lido.impl.DefaultLidoObjectFactory;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import io.github.moosbusch.museum.document.lido.LidoXmlDocument;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import io.github.moosbusch.museum.document.lido.impl.DefaultLidoObjectFactory;
 
 /**
  *

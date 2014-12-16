@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PointArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class PointArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Point" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointArray(net.opengis.gml.PointType[] pointArray)
+     public void setPointArray(net.opengis.gml.PointType[] pointArray)
     {
         check_orphaned();
         arraySetterHelper(pointArray, POINT$0);
@@ -136,7 +136,7 @@ public class PointArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Point" element
      */
-    @Inject(optional=true) public void setPointArray(int i, net.opengis.gml.PointType point)
+     public void setPointArray(int i, net.opengis.gml.PointType point)
     {
         generatedSetterHelperImpl(point, POINT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BoundingShapeType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class BoundingShapeTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "Envelope" element
      */
-    @Inject(optional=true) public void setEnvelope(net.opengis.gml.EnvelopeType envelope)
+     public void setEnvelope(net.opengis.gml.EnvelopeType envelope)
     {
         synchronized (monitor())
         {
@@ -159,7 +159,7 @@ public class BoundingShapeTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "Null" element
      */
-    @Inject(optional=true) public void setNull(java.lang.Object xnull)
+     public void setNull(java.lang.Object xnull)
     {
         synchronized (monitor())
         {

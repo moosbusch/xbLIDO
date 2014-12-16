@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DerivationUnitTermType(@http://www.opengis.net/gml).
  *
@@ -79,7 +79,7 @@ public class DerivationUnitTermTypeImpl extends net.opengis.gml.impl.UnitOfMeasu
     /**
      * Sets the "exponent" attribute
      */
-    @Inject(optional=true) public void setExponent(java.math.BigInteger exponent)
+     public void setExponent(java.math.BigInteger exponent)
     {
         synchronized (monitor())
         {

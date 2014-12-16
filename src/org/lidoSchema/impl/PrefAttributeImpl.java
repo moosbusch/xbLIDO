@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one pref(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class PrefAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "pref" attribute
      */
-    @Inject(optional=true) public void setPref(java.lang.String pref)
+     public void setPref(java.lang.String pref)
     {
         synchronized (monitor())
         {

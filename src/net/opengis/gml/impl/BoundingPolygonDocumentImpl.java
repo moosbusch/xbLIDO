@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one boundingPolygon(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class BoundingPolygonDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "boundingPolygon" element
      */
-    @Inject(optional=true) public void setBoundingPolygon(net.opengis.gml.PolygonType boundingPolygon)
+     public void setBoundingPolygon(net.opengis.gml.PolygonType boundingPolygon)
     {
         generatedSetterHelperImpl(boundingPolygon, BOUNDINGPOLYGON$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

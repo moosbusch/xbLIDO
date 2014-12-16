@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BagType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class BagTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl implem
     /**
      * Sets array of all "member" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMemberArray(net.opengis.gml.AssociationType[] memberArray)
+     public void setMemberArray(net.opengis.gml.AssociationType[] memberArray)
     {
         check_orphaned();
         arraySetterHelper(memberArray, MEMBER$0);
@@ -138,7 +138,7 @@ public class BagTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl implem
     /**
      * Sets ith "member" element
      */
-    @Inject(optional=true) public void setMemberArray(int i, net.opengis.gml.AssociationType member)
+     public void setMemberArray(int i, net.opengis.gml.AssociationType member)
     {
         generatedSetterHelperImpl(member, MEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class BagTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl implem
     /**
      * Sets the "members" element
      */
-    @Inject(optional=true) public void setMembers(net.opengis.gml.ArrayAssociationType members)
+     public void setMembers(net.opengis.gml.ArrayAssociationType members)
     {
         generatedSetterHelperImpl(members, MEMBERS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

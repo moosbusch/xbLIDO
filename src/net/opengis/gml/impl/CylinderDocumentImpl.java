@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Cylinder(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CylinderDocumentImpl extends net.opengis.gml.impl.GriddedSurfaceDoc
     /**
      * Sets the "Cylinder" element
      */
-    @Inject(optional=true) public void setCylinder(net.opengis.gml.CylinderType cylinder)
+     public void setCylinder(net.opengis.gml.CylinderType cylinder)
     {
         generatedSetterHelperImpl(cylinder, CYLINDER$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

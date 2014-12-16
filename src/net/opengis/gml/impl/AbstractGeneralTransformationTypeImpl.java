@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractGeneralTransformationType(@http://www.opengis.net/gml).
  *
@@ -83,7 +83,7 @@ public class AbstractGeneralTransformationTypeImpl extends net.opengis.gml.impl.
     /**
      * Sets the "operationVersion" element
      */
-    @Inject(optional=true) public void setOperationVersion(java.lang.String operationVersion)
+     public void setOperationVersion(java.lang.String operationVersion)
     {
         synchronized (monitor())
         {
@@ -161,7 +161,7 @@ public class AbstractGeneralTransformationTypeImpl extends net.opengis.gml.impl.
     /**
      * Sets the "sourceCRS" element
      */
-    @Inject(optional=true) public void setSourceCRS(net.opengis.gml.CRSRefType sourceCRS)
+     public void setSourceCRS(net.opengis.gml.CRSRefType sourceCRS)
     {
         generatedSetterHelperImpl(sourceCRS, SOURCECRS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -225,7 +225,7 @@ public class AbstractGeneralTransformationTypeImpl extends net.opengis.gml.impl.
     /**
      * Sets the "targetCRS" element
      */
-    @Inject(optional=true) public void setTargetCRS(net.opengis.gml.CRSRefType targetCRS)
+     public void setTargetCRS(net.opengis.gml.CRSRefType targetCRS)
     {
         generatedSetterHelperImpl(targetCRS, TARGETCRS$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

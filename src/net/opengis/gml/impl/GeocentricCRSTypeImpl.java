@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeocentricCRSType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class GeocentricCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenc
     /**
      * Sets the "usesCartesianCS" element
      */
-    @Inject(optional=true) public void setUsesCartesianCS(net.opengis.gml.CartesianCSRefType usesCartesianCS)
+     public void setUsesCartesianCS(net.opengis.gml.CartesianCSRefType usesCartesianCS)
     {
         generatedSetterHelperImpl(usesCartesianCS, USESCARTESIANCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class GeocentricCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenc
     /**
      * Sets the "usesSphericalCS" element
      */
-    @Inject(optional=true) public void setUsesSphericalCS(net.opengis.gml.SphericalCSRefType usesSphericalCS)
+     public void setUsesSphericalCS(net.opengis.gml.SphericalCSRefType usesSphericalCS)
     {
         generatedSetterHelperImpl(usesSphericalCS, USESSPHERICALCS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class GeocentricCRSTypeImpl extends net.opengis.gml.impl.AbstractReferenc
     /**
      * Sets the "usesGeodeticDatum" element
      */
-    @Inject(optional=true) public void setUsesGeodeticDatum(net.opengis.gml.GeodeticDatumRefType usesGeodeticDatum)
+     public void setUsesGeodeticDatum(net.opengis.gml.GeodeticDatumRefType usesGeodeticDatum)
     {
         generatedSetterHelperImpl(usesGeodeticDatum, USESGEODETICDATUM$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

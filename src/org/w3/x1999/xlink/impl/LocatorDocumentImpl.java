@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one locator(@http://www.w3.org/1999/xlink) element.
  *
@@ -53,7 +53,7 @@ public class LocatorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "locator" element
      */
-    @Inject(optional=true) public void setLocator(org.w3.x1999.xlink.LocatorType locator)
+     public void setLocator(org.w3.x1999.xlink.LocatorType locator)
     {
         generatedSetterHelperImpl(locator, LOCATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

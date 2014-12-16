@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CurveSegmentArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -145,7 +145,7 @@ public class CurveSegmentArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "_CurveSegment" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCurveSegmentArray(net.opengis.gml.AbstractCurveSegmentType[] curveSegmentArray)
+     public void setCurveSegmentArray(net.opengis.gml.AbstractCurveSegmentType[] curveSegmentArray)
     {
         check_orphaned();
         arraySetterHelper(curveSegmentArray, CURVESEGMENT$0, CURVESEGMENT$1);
@@ -154,7 +154,7 @@ public class CurveSegmentArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "_CurveSegment" element
      */
-    @Inject(optional=true) public void setCurveSegmentArray(int i, net.opengis.gml.AbstractCurveSegmentType curveSegment)
+     public void setCurveSegmentArray(int i, net.opengis.gml.AbstractCurveSegmentType curveSegment)
     {
         synchronized (monitor())
         {

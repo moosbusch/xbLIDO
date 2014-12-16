@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ValueArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -381,7 +381,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Boolean" element
      */
-    @Inject(optional=true) public void setBooleanArray(boolean[] xbooleanArray)
+     public void setBooleanArray(boolean[] xbooleanArray)
     {
         synchronized (monitor())
         {
@@ -393,7 +393,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Boolean" element
      */
-    @Inject(optional=true) public void setBooleanArray(int i, boolean xboolean)
+     public void setBooleanArray(int i, boolean xboolean)
     {
         synchronized (monitor())
         {
@@ -601,7 +601,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Category" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCategoryArray(net.opengis.gml.CodeType[] categoryArray)
+     public void setCategoryArray(net.opengis.gml.CodeType[] categoryArray)
     {
         check_orphaned();
         arraySetterHelper(categoryArray, CATEGORY$2);
@@ -610,7 +610,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Category" element
      */
-    @Inject(optional=true) public void setCategoryArray(int i, net.opengis.gml.CodeType category)
+     public void setCategoryArray(int i, net.opengis.gml.CodeType category)
     {
         generatedSetterHelperImpl(category, CATEGORY$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -750,7 +750,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Quantity" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setQuantityArray(net.opengis.gml.MeasureType[] quantityArray)
+     public void setQuantityArray(net.opengis.gml.MeasureType[] quantityArray)
     {
         check_orphaned();
         arraySetterHelper(quantityArray, QUANTITY$4);
@@ -759,7 +759,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Quantity" element
      */
-    @Inject(optional=true) public void setQuantityArray(int i, net.opengis.gml.MeasureType quantity)
+     public void setQuantityArray(int i, net.opengis.gml.MeasureType quantity)
     {
         generatedSetterHelperImpl(quantity, QUANTITY$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -980,7 +980,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Count" element
      */
-    @Inject(optional=true) public void setCountArray(java.math.BigInteger[] countArray)
+     public void setCountArray(java.math.BigInteger[] countArray)
     {
         synchronized (monitor())
         {
@@ -992,7 +992,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Count" element
      */
-    @Inject(optional=true) public void setCountArray(int i, java.math.BigInteger count)
+     public void setCountArray(int i, java.math.BigInteger count)
     {
         synchronized (monitor())
         {
@@ -1281,7 +1281,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "BooleanList" element
      */
-    @Inject(optional=true) public void setBooleanListArray(java.util.List[] booleanListArray)
+     public void setBooleanListArray(java.util.List[] booleanListArray)
     {
         synchronized (monitor())
         {
@@ -1293,7 +1293,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "BooleanList" element
      */
-    @Inject(optional=true) public void setBooleanListArray(int i, java.util.List booleanList)
+     public void setBooleanListArray(int i, java.util.List booleanList)
     {
         synchronized (monitor())
         {
@@ -1501,7 +1501,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "CategoryList" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCategoryListArray(net.opengis.gml.CodeOrNullListType[] categoryListArray)
+     public void setCategoryListArray(net.opengis.gml.CodeOrNullListType[] categoryListArray)
     {
         check_orphaned();
         arraySetterHelper(categoryListArray, CATEGORYLIST$10);
@@ -1510,7 +1510,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "CategoryList" element
      */
-    @Inject(optional=true) public void setCategoryListArray(int i, net.opengis.gml.CodeOrNullListType categoryList)
+     public void setCategoryListArray(int i, net.opengis.gml.CodeOrNullListType categoryList)
     {
         generatedSetterHelperImpl(categoryList, CATEGORYLIST$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1650,7 +1650,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "QuantityList" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setQuantityListArray(net.opengis.gml.MeasureOrNullListType[] quantityListArray)
+     public void setQuantityListArray(net.opengis.gml.MeasureOrNullListType[] quantityListArray)
     {
         check_orphaned();
         arraySetterHelper(quantityListArray, QUANTITYLIST$12);
@@ -1659,7 +1659,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "QuantityList" element
      */
-    @Inject(optional=true) public void setQuantityListArray(int i, net.opengis.gml.MeasureOrNullListType quantityList)
+     public void setQuantityListArray(int i, net.opengis.gml.MeasureOrNullListType quantityList)
     {
         generatedSetterHelperImpl(quantityList, QUANTITYLIST$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1880,7 +1880,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "CountList" element
      */
-    @Inject(optional=true) public void setCountListArray(java.util.List[] countListArray)
+     public void setCountListArray(java.util.List[] countListArray)
     {
         synchronized (monitor())
         {
@@ -1892,7 +1892,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "CountList" element
      */
-    @Inject(optional=true) public void setCountListArray(int i, java.util.List countList)
+     public void setCountListArray(int i, java.util.List countList)
     {
         synchronized (monitor())
         {
@@ -2100,7 +2100,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "CategoryExtent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCategoryExtentArray(net.opengis.gml.CategoryExtentType[] categoryExtentArray)
+     public void setCategoryExtentArray(net.opengis.gml.CategoryExtentType[] categoryExtentArray)
     {
         check_orphaned();
         arraySetterHelper(categoryExtentArray, CATEGORYEXTENT$16);
@@ -2109,7 +2109,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "CategoryExtent" element
      */
-    @Inject(optional=true) public void setCategoryExtentArray(int i, net.opengis.gml.CategoryExtentType categoryExtent)
+     public void setCategoryExtentArray(int i, net.opengis.gml.CategoryExtentType categoryExtent)
     {
         generatedSetterHelperImpl(categoryExtent, CATEGORYEXTENT$16, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -2249,7 +2249,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "QuantityExtent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setQuantityExtentArray(net.opengis.gml.QuantityExtentType[] quantityExtentArray)
+     public void setQuantityExtentArray(net.opengis.gml.QuantityExtentType[] quantityExtentArray)
     {
         check_orphaned();
         arraySetterHelper(quantityExtentArray, QUANTITYEXTENT$18);
@@ -2258,7 +2258,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "QuantityExtent" element
      */
-    @Inject(optional=true) public void setQuantityExtentArray(int i, net.opengis.gml.QuantityExtentType quantityExtent)
+     public void setQuantityExtentArray(int i, net.opengis.gml.QuantityExtentType quantityExtent)
     {
         generatedSetterHelperImpl(quantityExtent, QUANTITYEXTENT$18, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -2479,7 +2479,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "CountExtent" element
      */
-    @Inject(optional=true) public void setCountExtentArray(java.util.List[] countExtentArray)
+     public void setCountExtentArray(java.util.List[] countExtentArray)
     {
         synchronized (monitor())
         {
@@ -2491,7 +2491,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "CountExtent" element
      */
-    @Inject(optional=true) public void setCountExtentArray(int i, java.util.List countExtent)
+     public void setCountExtentArray(int i, java.util.List countExtent)
     {
         synchronized (monitor())
         {
@@ -2699,7 +2699,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "CompositeValue" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCompositeValueArray(net.opengis.gml.CompositeValueType[] compositeValueArray)
+     public void setCompositeValueArray(net.opengis.gml.CompositeValueType[] compositeValueArray)
     {
         check_orphaned();
         arraySetterHelper(compositeValueArray, COMPOSITEVALUE$22, COMPOSITEVALUE$23);
@@ -2708,7 +2708,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "CompositeValue" element
      */
-    @Inject(optional=true) public void setCompositeValueArray(int i, net.opengis.gml.CompositeValueType compositeValue)
+     public void setCompositeValueArray(int i, net.opengis.gml.CompositeValueType compositeValue)
     {
         synchronized (monitor())
         {
@@ -2858,7 +2858,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "_Object" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setObjectArray(org.apache.xmlbeans.XmlObject[] objectArray)
+     public void setObjectArray(org.apache.xmlbeans.XmlObject[] objectArray)
     {
         check_orphaned();
         arraySetterHelper(objectArray, OBJECT$24, OBJECT$25);
@@ -2867,7 +2867,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "_Object" element
      */
-    @Inject(optional=true) public void setObjectArray(int i, org.apache.xmlbeans.XmlObject object)
+     public void setObjectArray(int i, org.apache.xmlbeans.XmlObject object)
     {
         synchronized (monitor())
         {
@@ -3098,7 +3098,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "Null" element
      */
-    @Inject(optional=true) public void setNullArray(java.lang.Object[] xnullArray)
+     public void setNullArray(java.lang.Object[] xnullArray)
     {
         synchronized (monitor())
         {
@@ -3110,7 +3110,7 @@ public class ValueArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "Null" element
      */
-    @Inject(optional=true) public void setNullArray(int i, java.lang.Object xnull)
+     public void setNullArray(int i, java.lang.Object xnull)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Triangle(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TriangleDocumentImpl extends net.opengis.gml.impl.SurfacePatchDocum
     /**
      * Sets the "Triangle" element
      */
-    @Inject(optional=true) public void setTriangle(net.opengis.gml.TriangleType triangle)
+     public void setTriangle(net.opengis.gml.TriangleType triangle)
     {
         generatedSetterHelperImpl(triangle, TRIANGLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

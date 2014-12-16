@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one CategoryExtent(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CategoryExtentDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "CategoryExtent" element
      */
-    @Inject(optional=true) public void setCategoryExtent(net.opengis.gml.CategoryExtentType categoryExtent)
+     public void setCategoryExtent(net.opengis.gml.CategoryExtentType categoryExtent)
     {
         generatedSetterHelperImpl(categoryExtent, CATEGORYEXTENT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CurveArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -134,7 +134,7 @@ public class CurveArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "_Curve" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCurveArray(net.opengis.gml.AbstractCurveType[] curveArray)
+     public void setCurveArray(net.opengis.gml.AbstractCurveType[] curveArray)
     {
         check_orphaned();
         arraySetterHelper(curveArray, CURVE$0, CURVE$1);
@@ -143,7 +143,7 @@ public class CurveArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "_Curve" element
      */
-    @Inject(optional=true) public void setCurveArray(int i, net.opengis.gml.AbstractCurveType curve)
+     public void setCurveArray(int i, net.opengis.gml.AbstractCurveType curve)
     {
         synchronized (monitor())
         {

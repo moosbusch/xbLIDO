@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML KnotType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class KnotTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "value" element
      */
-    @Inject(optional=true) public void setValue(double value)
+     public void setValue(double value)
     {
         synchronized (monitor())
         {
@@ -139,7 +139,7 @@ public class KnotTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "multiplicity" element
      */
-    @Inject(optional=true) public void setMultiplicity(java.math.BigInteger multiplicity)
+     public void setMultiplicity(java.math.BigInteger multiplicity)
     {
         synchronized (monitor())
         {
@@ -207,7 +207,7 @@ public class KnotTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     /**
      * Sets the "weight" element
      */
-    @Inject(optional=true) public void setWeight(double weight)
+     public void setWeight(double weight)
     {
         synchronized (monitor())
         {

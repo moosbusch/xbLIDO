@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Point(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class PointDocumentImpl extends net.opengis.gml.impl.GeometricPrimitiveDo
     /**
      * Sets the "Point" element
      */
-    @Inject(optional=true) public void setPoint(net.opengis.gml.PointType point)
+     public void setPoint(net.opengis.gml.PointType point)
     {
         generatedSetterHelperImpl(point, POINT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

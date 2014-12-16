@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML arcType(@http://www.w3.org/1999/xlink).
  *
@@ -141,7 +141,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets array of all "title" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
+     public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
     {
         check_orphaned();
         arraySetterHelper(titleArray, TITLE2$6);
@@ -150,7 +150,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets ith "title" element
      */
-    @Inject(optional=true) public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
+     public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
     {
         generatedSetterHelperImpl(title, TITLE2$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -238,7 +238,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -318,7 +318,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -410,7 +410,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle2(java.lang.String title2)
+     public void setTitle2(java.lang.String title2)
     {
         synchronized (monitor())
         {
@@ -502,7 +502,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -594,7 +594,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {
@@ -686,7 +686,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "from" attribute
      */
-    @Inject(optional=true) public void setFrom(java.lang.String from)
+     public void setFrom(java.lang.String from)
     {
         synchronized (monitor())
         {
@@ -778,7 +778,7 @@ public class ArcTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     /**
      * Sets the "to" attribute
      */
-    @Inject(optional=true) public void setTo(java.lang.String to)
+     public void setTo(java.lang.String to)
     {
         synchronized (monitor())
         {

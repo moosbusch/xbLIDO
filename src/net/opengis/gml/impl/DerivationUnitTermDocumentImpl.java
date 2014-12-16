@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one derivationUnitTerm(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class DerivationUnitTermDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "derivationUnitTerm" element
      */
-    @Inject(optional=true) public void setDerivationUnitTerm(net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
+     public void setDerivationUnitTerm(net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
     {
         generatedSetterHelperImpl(derivationUnitTerm, DERIVATIONUNITTERM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

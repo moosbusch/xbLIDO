@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeometricComplexType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class GeometricComplexTypeImpl extends net.opengis.gml.impl.AbstractGeome
     /**
      * Sets array of all "element" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setElementArray(net.opengis.gml.GeometricPrimitivePropertyType[] elementArray)
+     public void setElementArray(net.opengis.gml.GeometricPrimitivePropertyType[] elementArray)
     {
         check_orphaned();
         arraySetterHelper(elementArray, ELEMENT$0);
@@ -136,7 +136,7 @@ public class GeometricComplexTypeImpl extends net.opengis.gml.impl.AbstractGeome
     /**
      * Sets ith "element" element
      */
-    @Inject(optional=true) public void setElementArray(int i, net.opengis.gml.GeometricPrimitivePropertyType element)
+     public void setElementArray(int i, net.opengis.gml.GeometricPrimitivePropertyType element)
     {
         generatedSetterHelperImpl(element, ELEMENT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

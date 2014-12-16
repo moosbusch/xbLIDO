@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.language.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one animate(@http://www.w3.org/2001/SMIL20/Language) element.
@@ -60,7 +60,7 @@ public class AnimateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "animate" element
      */
-    @Inject(optional=true) public void setAnimate(org.w3.x2001.smil20.language.AnimateType animate)
+     public void setAnimate(org.w3.x2001.smil20.language.AnimateType animate)
     {
         synchronized (monitor())
         {

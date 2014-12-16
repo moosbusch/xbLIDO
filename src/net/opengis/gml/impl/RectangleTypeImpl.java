@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML RectangleType(@http://www.opengis.net/gml).
  *
@@ -59,7 +59,7 @@ public class RectangleTypeImpl extends net.opengis.gml.impl.AbstractSurfacePatch
     /**
      * Sets the "exterior" element
      */
-    @Inject(optional=true) public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
+     public void setExterior(net.opengis.gml.AbstractRingPropertyType exterior)
     {
         synchronized (monitor())
         {
@@ -143,7 +143,7 @@ public class RectangleTypeImpl extends net.opengis.gml.impl.AbstractSurfacePatch
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.SurfaceInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.SurfaceInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {

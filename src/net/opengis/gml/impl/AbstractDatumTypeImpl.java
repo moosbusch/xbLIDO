@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractDatumType(@http://www.opengis.net/gml).
  *
@@ -137,7 +137,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets array of all "datumID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDatumIDArray(net.opengis.gml.IdentifierType[] datumIDArray)
+     public void setDatumIDArray(net.opengis.gml.IdentifierType[] datumIDArray)
     {
         check_orphaned();
         arraySetterHelper(datumIDArray, DATUMID$0);
@@ -146,7 +146,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets ith "datumID" element
      */
-    @Inject(optional=true) public void setDatumIDArray(int i, net.opengis.gml.IdentifierType datumID)
+     public void setDatumIDArray(int i, net.opengis.gml.IdentifierType datumID)
     {
         generatedSetterHelperImpl(datumID, DATUMID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -224,7 +224,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -288,7 +288,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets the "anchorPoint" element
      */
-    @Inject(optional=true) public void setAnchorPoint(net.opengis.gml.CodeType anchorPoint)
+     public void setAnchorPoint(net.opengis.gml.CodeType anchorPoint)
     {
         generatedSetterHelperImpl(anchorPoint, ANCHORPOINT$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -366,7 +366,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets the "realizationEpoch" element
      */
-    @Inject(optional=true) public void setRealizationEpoch(java.util.Calendar realizationEpoch)
+     public void setRealizationEpoch(java.util.Calendar realizationEpoch)
     {
         synchronized (monitor())
         {
@@ -444,7 +444,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets the "validArea" element
      */
-    @Inject(optional=true) public void setValidArea(net.opengis.gml.ExtentType validArea)
+     public void setValidArea(net.opengis.gml.ExtentType validArea)
     {
         generatedSetterHelperImpl(validArea, VALIDAREA$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -522,7 +522,7 @@ public class AbstractDatumTypeImpl extends net.opengis.gml.impl.AbstractDatumBas
     /**
      * Sets the "scope" element
      */
-    @Inject(optional=true) public void setScope(java.lang.String scope)
+     public void setScope(java.lang.String scope)
     {
         synchronized (monitor())
         {

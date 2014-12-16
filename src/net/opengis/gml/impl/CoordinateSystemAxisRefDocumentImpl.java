@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one coordinateSystemAxisRef(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CoordinateSystemAxisRefDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "coordinateSystemAxisRef" element
      */
-    @Inject(optional=true) public void setCoordinateSystemAxisRef(net.opengis.gml.CoordinateSystemAxisRefType coordinateSystemAxisRef)
+     public void setCoordinateSystemAxisRef(net.opengis.gml.CoordinateSystemAxisRefType coordinateSystemAxisRef)
     {
         generatedSetterHelperImpl(coordinateSystemAxisRef, COORDINATESYSTEMAXISREF$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CompositeCurveType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class CompositeCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveTy
     /**
      * Sets array of all "curveMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCurveMemberArray(net.opengis.gml.CurvePropertyType[] curveMemberArray)
+     public void setCurveMemberArray(net.opengis.gml.CurvePropertyType[] curveMemberArray)
     {
         check_orphaned();
         arraySetterHelper(curveMemberArray, CURVEMEMBER$0);
@@ -136,7 +136,7 @@ public class CompositeCurveTypeImpl extends net.opengis.gml.impl.AbstractCurveTy
     /**
      * Sets ith "curveMember" element
      */
-    @Inject(optional=true) public void setCurveMemberArray(int i, net.opengis.gml.CurvePropertyType curveMember)
+     public void setCurveMemberArray(int i, net.opengis.gml.CurvePropertyType curveMember)
     {
         generatedSetterHelperImpl(curveMember, CURVEMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

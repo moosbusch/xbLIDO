@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one uom(@http://www.opengis.net/gml) attribute.
  *
@@ -79,7 +79,7 @@ public class UomAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "uom" attribute
      */
-    @Inject(optional=true) public void setUom(java.lang.String uom)
+     public void setUom(java.lang.String uom)
     {
         synchronized (monitor())
         {

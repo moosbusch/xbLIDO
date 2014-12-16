@@ -15,7 +15,7 @@
  */
 package net.opengis.gml.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one QuantityList(@http://www.opengis.net/gml) element.
@@ -56,7 +56,7 @@ public class QuantityListDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "QuantityList" element
      */
-    @Inject(optional=true) public void setQuantityList(net.opengis.gml.MeasureOrNullListType quantityList)
+     public void setQuantityList(net.opengis.gml.MeasureOrNullListType quantityList)
     {
         generatedSetterHelperImpl(quantityList, QUANTITYLIST$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one interior(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class InteriorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "interior" element
      */
-    @Inject(optional=true) public void setInterior(net.opengis.gml.AbstractRingPropertyType interior)
+     public void setInterior(net.opengis.gml.AbstractRingPropertyType interior)
     {
         synchronized (monitor())
         {

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one rightsWorkWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "rightsWorkWrap" element
      */
-    @Inject(optional=true) public void setRightsWorkWrap(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap rightsWorkWrap)
+     public void setRightsWorkWrap(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap rightsWorkWrap)
     {
         generatedSetterHelperImpl(rightsWorkWrap, RIGHTSWORKWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "rightsWorkSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRightsWorkSetArray(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet[] rightsWorkSetArray)
+         public void setRightsWorkSetArray(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet[] rightsWorkSetArray)
         {
             check_orphaned();
             arraySetterHelper(rightsWorkSetArray, RIGHTSWORKSET$0);
@@ -194,7 +194,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "rightsWorkSet" element
          */
-        @Inject(optional=true) public void setRightsWorkSetArray(int i, org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet rightsWorkSet)
+         public void setRightsWorkSetArray(int i, org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap.RightsWorkSet rightsWorkSet)
         {
             generatedSetterHelperImpl(rightsWorkSet, RIGHTSWORKSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -303,7 +303,7 @@ public class RightsWorkWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TopoVolumeType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TopoVolumeTypeImpl extends net.opengis.gml.impl.AbstractTopologyTyp
     /**
      * Sets array of all "directedTopoSolid" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedTopoSolidArray(net.opengis.gml.DirectedTopoSolidPropertyType[] directedTopoSolidArray)
+     public void setDirectedTopoSolidArray(net.opengis.gml.DirectedTopoSolidPropertyType[] directedTopoSolidArray)
     {
         check_orphaned();
         arraySetterHelper(directedTopoSolidArray, DIRECTEDTOPOSOLID$0);
@@ -136,7 +136,7 @@ public class TopoVolumeTypeImpl extends net.opengis.gml.impl.AbstractTopologyTyp
     /**
      * Sets ith "directedTopoSolid" element
      */
-    @Inject(optional=true) public void setDirectedTopoSolidArray(int i, net.opengis.gml.DirectedTopoSolidPropertyType directedTopoSolid)
+     public void setDirectedTopoSolidArray(int i, net.opengis.gml.DirectedTopoSolidPropertyType directedTopoSolid)
     {
         generatedSetterHelperImpl(directedTopoSolid, DIRECTEDTOPOSOLID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

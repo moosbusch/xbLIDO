@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EnvelopeWithTimePeriodType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class EnvelopeWithTimePeriodTypeImpl extends net.opengis.gml.impl.Envelop
     /**
      * Sets array of all "timePosition" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTimePositionArray(net.opengis.gml.TimePositionType[] timePositionArray)
+     public void setTimePositionArray(net.opengis.gml.TimePositionType[] timePositionArray)
     {
         check_orphaned();
         arraySetterHelper(timePositionArray, TIMEPOSITION$0);
@@ -138,7 +138,7 @@ public class EnvelopeWithTimePeriodTypeImpl extends net.opengis.gml.impl.Envelop
     /**
      * Sets ith "timePosition" element
      */
-    @Inject(optional=true) public void setTimePositionArray(int i, net.opengis.gml.TimePositionType timePosition)
+     public void setTimePositionArray(int i, net.opengis.gml.TimePositionType timePosition)
     {
         generatedSetterHelperImpl(timePosition, TIMEPOSITION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -238,7 +238,7 @@ public class EnvelopeWithTimePeriodTypeImpl extends net.opengis.gml.impl.Envelop
     /**
      * Sets the "frame" attribute
      */
-    @Inject(optional=true) public void setFrame(java.lang.String frame)
+     public void setFrame(java.lang.String frame)
     {
         synchronized (monitor())
         {

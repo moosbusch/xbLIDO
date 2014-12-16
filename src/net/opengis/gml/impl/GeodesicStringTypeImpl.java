@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeodesicStringType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets the "posList" element
      */
-    @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+     public void setPosList(net.opengis.gml.DirectPositionListType posList)
     {
         generatedSetterHelperImpl(posList, POSLIST$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -197,7 +197,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+     public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
     {
         check_orphaned();
         arraySetterHelper(posArray, POS$2);
@@ -206,7 +206,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets ith "pos" element
      */
-    @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+     public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -346,7 +346,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+     public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
     {
         check_orphaned();
         arraySetterHelper(pointPropertyArray, POINTPROPERTY$4);
@@ -355,7 +355,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets ith "pointProperty" element
      */
-    @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -455,7 +455,7 @@ public class GeodesicStringTypeImpl extends net.opengis.gml.impl.AbstractCurveSe
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {

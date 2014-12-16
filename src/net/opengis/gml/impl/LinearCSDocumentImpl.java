@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one LinearCS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class LinearCSDocumentImpl extends net.opengis.gml.impl.CoordinateSystemD
     /**
      * Sets the "LinearCS" element
      */
-    @Inject(optional=true) public void setLinearCS(net.opengis.gml.LinearCSType linearCS)
+     public void setLinearCS(net.opengis.gml.LinearCSType linearCS)
     {
         generatedSetterHelperImpl(linearCS, LINEARCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

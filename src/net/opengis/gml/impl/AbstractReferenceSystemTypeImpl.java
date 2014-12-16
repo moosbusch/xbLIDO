@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractReferenceSystemType(@http://www.opengis.net/gml).
  *
@@ -133,7 +133,7 @@ public class AbstractReferenceSystemTypeImpl extends net.opengis.gml.impl.Abstra
     /**
      * Sets array of all "srsID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSrsIDArray(net.opengis.gml.IdentifierType[] srsIDArray)
+     public void setSrsIDArray(net.opengis.gml.IdentifierType[] srsIDArray)
     {
         check_orphaned();
         arraySetterHelper(srsIDArray, SRSID$0);
@@ -142,7 +142,7 @@ public class AbstractReferenceSystemTypeImpl extends net.opengis.gml.impl.Abstra
     /**
      * Sets ith "srsID" element
      */
-    @Inject(optional=true) public void setSrsIDArray(int i, net.opengis.gml.IdentifierType srsID)
+     public void setSrsIDArray(int i, net.opengis.gml.IdentifierType srsID)
     {
         generatedSetterHelperImpl(srsID, SRSID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -220,7 +220,7 @@ public class AbstractReferenceSystemTypeImpl extends net.opengis.gml.impl.Abstra
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -284,7 +284,7 @@ public class AbstractReferenceSystemTypeImpl extends net.opengis.gml.impl.Abstra
     /**
      * Sets the "validArea" element
      */
-    @Inject(optional=true) public void setValidArea(net.opengis.gml.ExtentType validArea)
+     public void setValidArea(net.opengis.gml.ExtentType validArea)
     {
         generatedSetterHelperImpl(validArea, VALIDAREA$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -362,7 +362,7 @@ public class AbstractReferenceSystemTypeImpl extends net.opengis.gml.impl.Abstra
     /**
      * Sets the "scope" element
      */
-    @Inject(optional=true) public void setScope(java.lang.String scope)
+     public void setScope(java.lang.String scope)
     {
         synchronized (monitor())
         {

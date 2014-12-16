@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MovingObjectStatusType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "location" element
      */
-    @Inject(optional=true) public void setLocation(net.opengis.gml.LocationPropertyType location)
+     public void setLocation(net.opengis.gml.LocationPropertyType location)
     {
         synchronized (monitor())
         {
@@ -129,7 +129,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "speed" element
      */
-    @Inject(optional=true) public void setSpeed(net.opengis.gml.MeasureType speed)
+     public void setSpeed(net.opengis.gml.MeasureType speed)
     {
         generatedSetterHelperImpl(speed, SPEED$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -193,7 +193,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "bearing" element
      */
-    @Inject(optional=true) public void setBearing(net.opengis.gml.DirectionPropertyType bearing)
+     public void setBearing(net.opengis.gml.DirectionPropertyType bearing)
     {
         generatedSetterHelperImpl(bearing, BEARING$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -257,7 +257,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "acceleration" element
      */
-    @Inject(optional=true) public void setAcceleration(net.opengis.gml.MeasureType acceleration)
+     public void setAcceleration(net.opengis.gml.MeasureType acceleration)
     {
         generatedSetterHelperImpl(acceleration, ACCELERATION$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -321,7 +321,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "elevation" element
      */
-    @Inject(optional=true) public void setElevation(net.opengis.gml.MeasureType elevation)
+     public void setElevation(net.opengis.gml.MeasureType elevation)
     {
         generatedSetterHelperImpl(elevation, ELEVATION$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -385,7 +385,7 @@ public class MovingObjectStatusTypeImpl extends net.opengis.gml.impl.AbstractTim
     /**
      * Sets the "status" element
      */
-    @Inject(optional=true) public void setStatus(net.opengis.gml.StringOrRefType status)
+     public void setStatus(net.opengis.gml.StringOrRefType status)
     {
         generatedSetterHelperImpl(status, STATUS$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

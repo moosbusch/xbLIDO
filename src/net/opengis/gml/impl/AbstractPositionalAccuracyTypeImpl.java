@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractPositionalAccuracyType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class AbstractPositionalAccuracyTypeImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "measureDescription" element
      */
-    @Inject(optional=true) public void setMeasureDescription(net.opengis.gml.CodeType measureDescription)
+     public void setMeasureDescription(net.opengis.gml.CodeType measureDescription)
     {
         generatedSetterHelperImpl(measureDescription, MEASUREDESCRIPTION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

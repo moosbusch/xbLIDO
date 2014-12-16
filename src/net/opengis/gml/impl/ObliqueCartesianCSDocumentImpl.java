@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one ObliqueCartesianCS(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class ObliqueCartesianCSDocumentImpl extends net.opengis.gml.impl.Coordin
     /**
      * Sets the "ObliqueCartesianCS" element
      */
-    @Inject(optional=true) public void setObliqueCartesianCS(net.opengis.gml.ObliqueCartesianCSType obliqueCartesianCS)
+     public void setObliqueCartesianCS(net.opengis.gml.ObliqueCartesianCSType obliqueCartesianCS)
     {
         generatedSetterHelperImpl(obliqueCartesianCS, OBLIQUECARTESIANCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

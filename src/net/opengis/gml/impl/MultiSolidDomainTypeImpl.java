@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiSolidDomainType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class MultiSolidDomainTypeImpl extends net.opengis.gml.impl.DomainSetType
     /**
      * Sets the "MultiSolid" element
      */
-    @Inject(optional=true) public void setMultiSolid(net.opengis.gml.MultiSolidType multiSolid)
+     public void setMultiSolid(net.opengis.gml.MultiSolidType multiSolid)
     {
         generatedSetterHelperImpl(multiSolid, MULTISOLID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

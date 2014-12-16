@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractGeometryType(@http://www.opengis.net/gml).
  *
@@ -87,7 +87,7 @@ public class AbstractGeometryTypeImpl extends net.opengis.gml.impl.AbstractGMLTy
     /**
      * Sets the "gid" attribute
      */
-    @Inject(optional=true) public void setGid(java.lang.String gid)
+     public void setGid(java.lang.String gid)
     {
         synchronized (monitor())
         {
@@ -179,7 +179,7 @@ public class AbstractGeometryTypeImpl extends net.opengis.gml.impl.AbstractGMLTy
     /**
      * Sets the "srsName" attribute
      */
-    @Inject(optional=true) public void setSrsName(java.lang.String srsName)
+     public void setSrsName(java.lang.String srsName)
     {
         synchronized (monitor())
         {
@@ -271,7 +271,7 @@ public class AbstractGeometryTypeImpl extends net.opengis.gml.impl.AbstractGMLTy
     /**
      * Sets the "srsDimension" attribute
      */
-    @Inject(optional=true) public void setSrsDimension(java.math.BigInteger srsDimension)
+     public void setSrsDimension(java.math.BigInteger srsDimension)
     {
         synchronized (monitor())
         {
@@ -363,7 +363,7 @@ public class AbstractGeometryTypeImpl extends net.opengis.gml.impl.AbstractGMLTy
     /**
      * Sets the "axisLabels" attribute
      */
-    @Inject(optional=true) public void setAxisLabels(java.util.List axisLabels)
+     public void setAxisLabels(java.util.List axisLabels)
     {
         synchronized (monitor())
         {
@@ -455,7 +455,7 @@ public class AbstractGeometryTypeImpl extends net.opengis.gml.impl.AbstractGMLTy
     /**
      * Sets the "uomLabels" attribute
      */
-    @Inject(optional=true) public void setUomLabels(java.util.List uomLabels)
+     public void setUomLabels(java.util.List uomLabels)
     {
         synchronized (monitor())
         {

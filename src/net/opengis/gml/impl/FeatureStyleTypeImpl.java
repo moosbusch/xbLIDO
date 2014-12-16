@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML FeatureStyleType(@http://www.opengis.net/gml).
  *
@@ -91,7 +91,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets the "featureConstraint" element
      */
-    @Inject(optional=true) public void setFeatureConstraint(java.lang.String featureConstraint)
+     public void setFeatureConstraint(java.lang.String featureConstraint)
     {
         synchronized (monitor())
         {
@@ -231,7 +231,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets array of all "geometryStyle" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGeometryStyleArray(net.opengis.gml.GeometryStylePropertyType[] geometryStyleArray)
+     public void setGeometryStyleArray(net.opengis.gml.GeometryStylePropertyType[] geometryStyleArray)
     {
         check_orphaned();
         arraySetterHelper(geometryStyleArray, GEOMETRYSTYLE$2);
@@ -240,7 +240,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets ith "geometryStyle" element
      */
-    @Inject(optional=true) public void setGeometryStyleArray(int i, net.opengis.gml.GeometryStylePropertyType geometryStyle)
+     public void setGeometryStyleArray(int i, net.opengis.gml.GeometryStylePropertyType geometryStyle)
     {
         generatedSetterHelperImpl(geometryStyle, GEOMETRYSTYLE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -380,7 +380,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets array of all "topologyStyle" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTopologyStyleArray(net.opengis.gml.TopologyStylePropertyType[] topologyStyleArray)
+     public void setTopologyStyleArray(net.opengis.gml.TopologyStylePropertyType[] topologyStyleArray)
     {
         check_orphaned();
         arraySetterHelper(topologyStyleArray, TOPOLOGYSTYLE$4);
@@ -389,7 +389,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets ith "topologyStyle" element
      */
-    @Inject(optional=true) public void setTopologyStyleArray(int i, net.opengis.gml.TopologyStylePropertyType topologyStyle)
+     public void setTopologyStyleArray(int i, net.opengis.gml.TopologyStylePropertyType topologyStyle)
     {
         generatedSetterHelperImpl(topologyStyle, TOPOLOGYSTYLE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -467,7 +467,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets the "labelStyle" element
      */
-    @Inject(optional=true) public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
+     public void setLabelStyle(net.opengis.gml.LabelStylePropertyType labelStyle)
     {
         generatedSetterHelperImpl(labelStyle, LABELSTYLE$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -545,7 +545,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets the "featureType" attribute
      */
-    @Inject(optional=true) public void setFeatureType(java.lang.String featureType)
+     public void setFeatureType(java.lang.String featureType)
     {
         synchronized (monitor())
         {
@@ -637,7 +637,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets the "baseType" attribute
      */
-    @Inject(optional=true) public void setBaseType(java.lang.String baseType)
+     public void setBaseType(java.lang.String baseType)
     {
         synchronized (monitor())
         {
@@ -729,7 +729,7 @@ public class FeatureStyleTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeIm
     /**
      * Sets the "queryGrammar" attribute
      */
-    @Inject(optional=true) public void setQueryGrammar(net.opengis.gml.QueryGrammarEnumeration.Enum queryGrammar)
+     public void setQueryGrammar(net.opengis.gml.QueryGrammarEnumeration.Enum queryGrammar)
     {
         synchronized (monitor())
         {

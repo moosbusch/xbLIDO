@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML locatorType(@http://www.w3.org/1999/xlink).
  *
@@ -137,7 +137,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets array of all "title" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
+     public void setTitleArray(org.w3.x1999.xlink.TitleEltType[] titleArray)
     {
         check_orphaned();
         arraySetterHelper(titleArray, TITLE2$8);
@@ -146,7 +146,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets ith "title" element
      */
-    @Inject(optional=true) public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
+     public void setTitleArray(int i, org.w3.x1999.xlink.TitleEltType title)
     {
         generatedSetterHelperImpl(title, TITLE2$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -234,7 +234,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -302,7 +302,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -382,7 +382,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -474,7 +474,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle2(java.lang.String title2)
+     public void setTitle2(java.lang.String title2)
     {
         synchronized (monitor())
         {
@@ -566,7 +566,7 @@ public class LocatorTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "label" attribute
      */
-    @Inject(optional=true) public void setLabel(java.lang.String label)
+     public void setLabel(java.lang.String label)
     {
         synchronized (monitor())
         {

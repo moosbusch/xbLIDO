@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PassThroughOperationType(@http://www.opengis.net/gml).
  *
@@ -210,7 +210,7 @@ public class PassThroughOperationTypeImpl extends net.opengis.gml.impl.AbstractC
     /**
      * Sets array of all "modifiedCoordinate" element
      */
-    @Inject(optional=true) public void setModifiedCoordinateArray(java.math.BigInteger[] modifiedCoordinateArray)
+     public void setModifiedCoordinateArray(java.math.BigInteger[] modifiedCoordinateArray)
     {
         synchronized (monitor())
         {
@@ -222,7 +222,7 @@ public class PassThroughOperationTypeImpl extends net.opengis.gml.impl.AbstractC
     /**
      * Sets ith "modifiedCoordinate" element
      */
-    @Inject(optional=true) public void setModifiedCoordinateArray(int i, java.math.BigInteger modifiedCoordinate)
+     public void setModifiedCoordinateArray(int i, java.math.BigInteger modifiedCoordinate)
     {
         synchronized (monitor())
         {
@@ -356,7 +356,7 @@ public class PassThroughOperationTypeImpl extends net.opengis.gml.impl.AbstractC
     /**
      * Sets the "usesOperation" element
      */
-    @Inject(optional=true) public void setUsesOperation(net.opengis.gml.OperationRefType usesOperation)
+     public void setUsesOperation(net.opengis.gml.OperationRefType usesOperation)
     {
         generatedSetterHelperImpl(usesOperation, USESOPERATION$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Arc(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class ArcDocumentImpl extends net.opengis.gml.impl.ArcStringDocumentImpl 
     /**
      * Sets the "Arc" element
      */
-    @Inject(optional=true) public void setArc(net.opengis.gml.ArcType arc)
+     public void setArc(net.opengis.gml.ArcType arc)
     {
         synchronized (monitor())
         {

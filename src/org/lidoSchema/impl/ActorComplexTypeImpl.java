@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML actorComplexType(@http://www.lido-schema.org).
  *
@@ -138,7 +138,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "actorID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setActorIDArray(org.lidoSchema.IdentifierComplexType[] actorIDArray)
+     public void setActorIDArray(org.lidoSchema.IdentifierComplexType[] actorIDArray)
     {
         check_orphaned();
         arraySetterHelper(actorIDArray, ACTORID$0);
@@ -147,7 +147,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "actorID" element
      */
-    @Inject(optional=true) public void setActorIDArray(int i, org.lidoSchema.IdentifierComplexType actorID)
+     public void setActorIDArray(int i, org.lidoSchema.IdentifierComplexType actorID)
     {
         generatedSetterHelperImpl(actorID, ACTORID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -287,7 +287,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "nameActorSet" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNameActorSetArray(org.lidoSchema.AppellationComplexType[] nameActorSetArray)
+     public void setNameActorSetArray(org.lidoSchema.AppellationComplexType[] nameActorSetArray)
     {
         check_orphaned();
         arraySetterHelper(nameActorSetArray, NAMEACTORSET$2);
@@ -296,7 +296,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "nameActorSet" element
      */
-    @Inject(optional=true) public void setNameActorSetArray(int i, org.lidoSchema.AppellationComplexType nameActorSet)
+     public void setNameActorSetArray(int i, org.lidoSchema.AppellationComplexType nameActorSet)
     {
         generatedSetterHelperImpl(nameActorSet, NAMEACTORSET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -436,7 +436,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "nationalityActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNationalityActorArray(org.lidoSchema.ActorComplexType.NationalityActor[] nationalityActorArray)
+     public void setNationalityActorArray(org.lidoSchema.ActorComplexType.NationalityActor[] nationalityActorArray)
     {
         check_orphaned();
         arraySetterHelper(nationalityActorArray, NATIONALITYACTOR$4);
@@ -445,7 +445,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "nationalityActor" element
      */
-    @Inject(optional=true) public void setNationalityActorArray(int i, org.lidoSchema.ActorComplexType.NationalityActor nationalityActor)
+     public void setNationalityActorArray(int i, org.lidoSchema.ActorComplexType.NationalityActor nationalityActor)
     {
         generatedSetterHelperImpl(nationalityActor, NATIONALITYACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -523,7 +523,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "vitalDatesActor" element
      */
-    @Inject(optional=true) public void setVitalDatesActor(org.lidoSchema.DateComplexType vitalDatesActor)
+     public void setVitalDatesActor(org.lidoSchema.DateComplexType vitalDatesActor)
     {
         generatedSetterHelperImpl(vitalDatesActor, VITALDATESACTOR$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -649,7 +649,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets array of all "genderActor" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setGenderActorArray(org.lidoSchema.TextComplexType[] genderActorArray)
+     public void setGenderActorArray(org.lidoSchema.TextComplexType[] genderActorArray)
     {
         check_orphaned();
         arraySetterHelper(genderActorArray, GENDERACTOR$8);
@@ -658,7 +658,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets ith "genderActor" element
      */
-    @Inject(optional=true) public void setGenderActorArray(int i, org.lidoSchema.TextComplexType genderActor)
+     public void setGenderActorArray(int i, org.lidoSchema.TextComplexType genderActor)
     {
         generatedSetterHelperImpl(genderActor, GENDERACTOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -750,7 +750,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
@@ -859,7 +859,7 @@ public class ActorComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

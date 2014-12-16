@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SolidArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -132,7 +132,7 @@ public class SolidArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "_Solid" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSolidArray(net.opengis.gml.AbstractSolidType[] solidArray)
+     public void setSolidArray(net.opengis.gml.AbstractSolidType[] solidArray)
     {
         check_orphaned();
         arraySetterHelper(solidArray, SOLID$0, SOLID$1);
@@ -141,7 +141,7 @@ public class SolidArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "_Solid" element
      */
-    @Inject(optional=true) public void setSolidArray(int i, net.opengis.gml.AbstractSolidType solid)
+     public void setSolidArray(int i, net.opengis.gml.AbstractSolidType solid)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GridType(@http://www.opengis.net/gml).
  *
@@ -57,7 +57,7 @@ public class GridTypeImpl extends net.opengis.gml.impl.AbstractGeometryTypeImpl 
     /**
      * Sets the "limits" element
      */
-    @Inject(optional=true) public void setLimits(net.opengis.gml.GridLimitsType limits)
+     public void setLimits(net.opengis.gml.GridLimitsType limits)
     {
         generatedSetterHelperImpl(limits, LIMITS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -252,7 +252,7 @@ public class GridTypeImpl extends net.opengis.gml.impl.AbstractGeometryTypeImpl 
     /**
      * Sets array of all "axisName" element
      */
-    @Inject(optional=true) public void setAxisNameArray(java.lang.String[] axisNameArray)
+     public void setAxisNameArray(java.lang.String[] axisNameArray)
     {
         synchronized (monitor())
         {
@@ -264,7 +264,7 @@ public class GridTypeImpl extends net.opengis.gml.impl.AbstractGeometryTypeImpl 
     /**
      * Sets ith "axisName" element
      */
-    @Inject(optional=true) public void setAxisNameArray(int i, java.lang.String axisName)
+     public void setAxisNameArray(int i, java.lang.String axisName)
     {
         synchronized (monitor())
         {
@@ -412,7 +412,7 @@ public class GridTypeImpl extends net.opengis.gml.impl.AbstractGeometryTypeImpl 
     /**
      * Sets the "dimension" attribute
      */
-    @Inject(optional=true) public void setDimension(java.math.BigInteger dimension)
+     public void setDimension(java.math.BigInteger dimension)
     {
         synchronized (monitor())
         {

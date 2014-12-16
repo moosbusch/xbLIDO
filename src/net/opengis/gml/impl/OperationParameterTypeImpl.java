@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML OperationParameterType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class OperationParameterTypeImpl extends net.opengis.gml.impl.OperationPa
     /**
      * Sets array of all "parameterID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setParameterIDArray(net.opengis.gml.IdentifierType[] parameterIDArray)
+     public void setParameterIDArray(net.opengis.gml.IdentifierType[] parameterIDArray)
     {
         check_orphaned();
         arraySetterHelper(parameterIDArray, PARAMETERID$0);
@@ -138,7 +138,7 @@ public class OperationParameterTypeImpl extends net.opengis.gml.impl.OperationPa
     /**
      * Sets ith "parameterID" element
      */
-    @Inject(optional=true) public void setParameterIDArray(int i, net.opengis.gml.IdentifierType parameterID)
+     public void setParameterIDArray(int i, net.opengis.gml.IdentifierType parameterID)
     {
         generatedSetterHelperImpl(parameterID, PARAMETERID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class OperationParameterTypeImpl extends net.opengis.gml.impl.OperationPa
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

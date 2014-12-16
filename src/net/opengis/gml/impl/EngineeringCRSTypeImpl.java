@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML EngineeringCRSType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class EngineeringCRSTypeImpl extends net.opengis.gml.impl.AbstractReferen
     /**
      * Sets the "usesCS" element
      */
-    @Inject(optional=true) public void setUsesCS(net.opengis.gml.CoordinateSystemRefType usesCS)
+     public void setUsesCS(net.opengis.gml.CoordinateSystemRefType usesCS)
     {
         generatedSetterHelperImpl(usesCS, USESCS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -95,7 +95,7 @@ public class EngineeringCRSTypeImpl extends net.opengis.gml.impl.AbstractReferen
     /**
      * Sets the "usesEngineeringDatum" element
      */
-    @Inject(optional=true) public void setUsesEngineeringDatum(net.opengis.gml.EngineeringDatumRefType usesEngineeringDatum)
+     public void setUsesEngineeringDatum(net.opengis.gml.EngineeringDatumRefType usesEngineeringDatum)
     {
         generatedSetterHelperImpl(usesEngineeringDatum, USESENGINEERINGDATUM$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

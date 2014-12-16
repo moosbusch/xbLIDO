@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML rightsComplexType(@http://www.lido-schema.org).
  *
@@ -134,7 +134,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "rightsType" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRightsTypeArray(org.lidoSchema.ConceptComplexType[] rightsTypeArray)
+     public void setRightsTypeArray(org.lidoSchema.ConceptComplexType[] rightsTypeArray)
     {
         check_orphaned();
         arraySetterHelper(rightsTypeArray, RIGHTSTYPE$0);
@@ -143,7 +143,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "rightsType" element
      */
-    @Inject(optional=true) public void setRightsTypeArray(int i, org.lidoSchema.ConceptComplexType rightsType)
+     public void setRightsTypeArray(int i, org.lidoSchema.ConceptComplexType rightsType)
     {
         generatedSetterHelperImpl(rightsType, RIGHTSTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -221,7 +221,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "rightsDate" element
      */
-    @Inject(optional=true) public void setRightsDate(org.lidoSchema.DateComplexType rightsDate)
+     public void setRightsDate(org.lidoSchema.DateComplexType rightsDate)
     {
         generatedSetterHelperImpl(rightsDate, RIGHTSDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -347,7 +347,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "rightsHolder" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRightsHolderArray(org.lidoSchema.RightsComplexType.RightsHolder[] rightsHolderArray)
+     public void setRightsHolderArray(org.lidoSchema.RightsComplexType.RightsHolder[] rightsHolderArray)
     {
         check_orphaned();
         arraySetterHelper(rightsHolderArray, RIGHTSHOLDER$4);
@@ -356,7 +356,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "rightsHolder" element
      */
-    @Inject(optional=true) public void setRightsHolderArray(int i, org.lidoSchema.RightsComplexType.RightsHolder rightsHolder)
+     public void setRightsHolderArray(int i, org.lidoSchema.RightsComplexType.RightsHolder rightsHolder)
     {
         generatedSetterHelperImpl(rightsHolder, RIGHTSHOLDER$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -496,7 +496,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets array of all "creditLine" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCreditLineArray(org.lidoSchema.TextComplexType[] creditLineArray)
+     public void setCreditLineArray(org.lidoSchema.TextComplexType[] creditLineArray)
     {
         check_orphaned();
         arraySetterHelper(creditLineArray, CREDITLINE$6);
@@ -505,7 +505,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets ith "creditLine" element
      */
-    @Inject(optional=true) public void setCreditLineArray(int i, org.lidoSchema.TextComplexType creditLine)
+     public void setCreditLineArray(int i, org.lidoSchema.TextComplexType creditLine)
     {
         generatedSetterHelperImpl(creditLine, CREDITLINE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -614,7 +614,7 @@ public class RightsComplexTypeImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

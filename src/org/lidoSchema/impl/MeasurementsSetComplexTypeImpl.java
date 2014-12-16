@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML measurementsSetComplexType(@http://www.lido-schema.org).
  *
@@ -131,7 +131,7 @@ public class MeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets array of all "measurementType" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMeasurementTypeArray(org.lidoSchema.TextComplexType[] measurementTypeArray)
+     public void setMeasurementTypeArray(org.lidoSchema.TextComplexType[] measurementTypeArray)
     {
         check_orphaned();
         arraySetterHelper(measurementTypeArray, MEASUREMENTTYPE$0);
@@ -140,7 +140,7 @@ public class MeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets ith "measurementType" element
      */
-    @Inject(optional=true) public void setMeasurementTypeArray(int i, org.lidoSchema.TextComplexType measurementType)
+     public void setMeasurementTypeArray(int i, org.lidoSchema.TextComplexType measurementType)
     {
         generatedSetterHelperImpl(measurementType, MEASUREMENTTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class MeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets array of all "measurementUnit" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMeasurementUnitArray(org.lidoSchema.TextComplexType[] measurementUnitArray)
+     public void setMeasurementUnitArray(org.lidoSchema.TextComplexType[] measurementUnitArray)
     {
         check_orphaned();
         arraySetterHelper(measurementUnitArray, MEASUREMENTUNIT$2);
@@ -289,7 +289,7 @@ public class MeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets ith "measurementUnit" element
      */
-    @Inject(optional=true) public void setMeasurementUnitArray(int i, org.lidoSchema.TextComplexType measurementUnit)
+     public void setMeasurementUnitArray(int i, org.lidoSchema.TextComplexType measurementUnit)
     {
         generatedSetterHelperImpl(measurementUnit, MEASUREMENTUNIT$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -355,7 +355,7 @@ public class MeasurementsSetComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "measurementValue" element
      */
-    @Inject(optional=true) public void setMeasurementValue(org.lidoSchema.TextComplexType measurementValue)
+     public void setMeasurementValue(org.lidoSchema.TextComplexType measurementValue)
     {
         generatedSetterHelperImpl(measurementValue, MEASUREMENTVALUE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

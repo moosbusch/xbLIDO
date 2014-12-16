@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.annotation.Language;
+package org.lidoSchema.impl;  
+
 /**
  * An XML administrativeMetadataComplexType(@http://www.lido-schema.org).
  *
@@ -72,7 +72,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "rightsWorkWrap" element
      */
-    @Inject(optional=true) public void setRightsWorkWrap(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap rightsWorkWrap)
+     public void setRightsWorkWrap(org.lidoSchema.RightsWorkWrapDocument.RightsWorkWrap rightsWorkWrap)
     {
         generatedSetterHelperImpl(rightsWorkWrap, RIGHTSWORKWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -124,7 +124,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "recordWrap" element
      */
-    @Inject(optional=true) public void setRecordWrap(org.lidoSchema.RecordWrapDocument.RecordWrap recordWrap)
+     public void setRecordWrap(org.lidoSchema.RecordWrapDocument.RecordWrap recordWrap)
     {
         generatedSetterHelperImpl(recordWrap, RECORDWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -176,7 +176,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "resourceWrap" element
      */
-    @Inject(optional=true) public void setResourceWrap(org.lidoSchema.ResourceWrapDocument.ResourceWrap resourceWrap)
+     public void setResourceWrap(org.lidoSchema.ResourceWrapDocument.ResourceWrap resourceWrap)
     {
         generatedSetterHelperImpl(resourceWrap, RESOURCEWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -242,7 +242,7 @@ public class AdministrativeMetadataComplexTypeImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(@Language java.lang.String lang)
+     public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {

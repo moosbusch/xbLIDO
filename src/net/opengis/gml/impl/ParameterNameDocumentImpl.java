@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one parameterName(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class ParameterNameDocumentImpl extends net.opengis.gml.impl.NameDocument
     /**
      * Sets the "parameterName" element
      */
-    @Inject(optional=true) public void setParameterName(net.opengis.gml.CodeType parameterName)
+     public void setParameterName(net.opengis.gml.CodeType parameterName)
     {
         generatedSetterHelperImpl(parameterName, PARAMETERNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

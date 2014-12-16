@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeOrdinalEraType(@http://www.opengis.net/gml).
  *
@@ -137,7 +137,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets array of all "relatedTime" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRelatedTimeArray(net.opengis.gml.RelatedTimeType[] relatedTimeArray)
+     public void setRelatedTimeArray(net.opengis.gml.RelatedTimeType[] relatedTimeArray)
     {
         check_orphaned();
         arraySetterHelper(relatedTimeArray, RELATEDTIME$0);
@@ -146,7 +146,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets ith "relatedTime" element
      */
-    @Inject(optional=true) public void setRelatedTimeArray(int i, net.opengis.gml.RelatedTimeType relatedTime)
+     public void setRelatedTimeArray(int i, net.opengis.gml.RelatedTimeType relatedTime)
     {
         generatedSetterHelperImpl(relatedTime, RELATEDTIME$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -212,7 +212,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "start" element
      */
-    @Inject(optional=true) public void setStart(net.opengis.gml.TimeNodePropertyType start)
+     public void setStart(net.opengis.gml.TimeNodePropertyType start)
     {
         generatedSetterHelperImpl(start, START$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -252,7 +252,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "end" element
      */
-    @Inject(optional=true) public void setEnd(net.opengis.gml.TimeNodePropertyType end)
+     public void setEnd(net.opengis.gml.TimeNodePropertyType end)
     {
         generatedSetterHelperImpl(end, END$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -304,7 +304,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "extent" element
      */
-    @Inject(optional=true) public void setExtent(net.opengis.gml.TimePeriodPropertyType extent)
+     public void setExtent(net.opengis.gml.TimePeriodPropertyType extent)
     {
         generatedSetterHelperImpl(extent, EXTENT$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -430,7 +430,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets array of all "member" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMemberArray(net.opengis.gml.TimeOrdinalEraPropertyType[] memberArray)
+     public void setMemberArray(net.opengis.gml.TimeOrdinalEraPropertyType[] memberArray)
     {
         check_orphaned();
         arraySetterHelper(memberArray, MEMBER$8);
@@ -439,7 +439,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets ith "member" element
      */
-    @Inject(optional=true) public void setMemberArray(int i, net.opengis.gml.TimeOrdinalEraPropertyType member)
+     public void setMemberArray(int i, net.opengis.gml.TimeOrdinalEraPropertyType member)
     {
         generatedSetterHelperImpl(member, MEMBER$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -517,7 +517,7 @@ public class TimeOrdinalEraTypeImpl extends net.opengis.gml.impl.DefinitionTypeI
     /**
      * Sets the "group" element
      */
-    @Inject(optional=true) public void setGroup(net.opengis.gml.ReferenceType group)
+     public void setGroup(net.opengis.gml.ReferenceType group)
     {
         generatedSetterHelperImpl(group, GROUP$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

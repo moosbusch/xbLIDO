@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one remoteSchema(@http://www.opengis.net/gml) attribute.
  *
@@ -79,7 +79,7 @@ public class RemoteSchemaAttributeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "remoteSchema" attribute
      */
-    @Inject(optional=true) public void setRemoteSchema(java.lang.String remoteSchema)
+     public void setRemoteSchema(java.lang.String remoteSchema)
     {
         synchronized (monitor())
         {

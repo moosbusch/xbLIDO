@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one relatedWorksWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "relatedWorksWrap" element
      */
-    @Inject(optional=true) public void setRelatedWorksWrap(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
+     public void setRelatedWorksWrap(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
     {
         generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "relatedWorkSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRelatedWorkSetArray(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet[] relatedWorkSetArray)
+         public void setRelatedWorkSetArray(org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet[] relatedWorkSetArray)
         {
             check_orphaned();
             arraySetterHelper(relatedWorkSetArray, RELATEDWORKSET$0);
@@ -194,7 +194,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "relatedWorkSet" element
          */
-        @Inject(optional=true) public void setRelatedWorkSetArray(int i, org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet relatedWorkSet)
+         public void setRelatedWorkSetArray(int i, org.lidoSchema.RelatedWorksWrapDocument.RelatedWorksWrap.RelatedWorkSet relatedWorkSet)
         {
             generatedSetterHelperImpl(relatedWorkSet, RELATEDWORKSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -303,7 +303,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

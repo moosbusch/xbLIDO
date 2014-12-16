@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Dictionary(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class DictionaryDocumentImpl extends net.opengis.gml.impl.DefinitionDocum
     /**
      * Sets the "Dictionary" element
      */
-    @Inject(optional=true) public void setDictionary(net.opengis.gml.DictionaryType dictionary)
+     public void setDictionary(net.opengis.gml.DictionaryType dictionary)
     {
         generatedSetterHelperImpl(dictionary, DICTIONARY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

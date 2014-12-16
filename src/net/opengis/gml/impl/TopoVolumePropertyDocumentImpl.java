@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one topoVolumeProperty(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TopoVolumePropertyDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "topoVolumeProperty" element
      */
-    @Inject(optional=true) public void setTopoVolumeProperty(net.opengis.gml.TopoVolumePropertyType topoVolumeProperty)
+     public void setTopoVolumeProperty(net.opengis.gml.TopoVolumePropertyType topoVolumeProperty)
     {
         generatedSetterHelperImpl(topoVolumeProperty, TOPOVOLUMEPROPERTY$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

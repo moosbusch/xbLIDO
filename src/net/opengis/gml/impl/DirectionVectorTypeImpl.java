@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DirectionVectorType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class DirectionVectorTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "vector" element
      */
-    @Inject(optional=true) public void setVector(net.opengis.gml.VectorType vector)
+     public void setVector(net.opengis.gml.VectorType vector)
     {
         generatedSetterHelperImpl(vector, VECTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class DirectionVectorTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "horizontalAngle" element
      */
-    @Inject(optional=true) public void setHorizontalAngle(net.opengis.gml.AngleType horizontalAngle)
+     public void setHorizontalAngle(net.opengis.gml.AngleType horizontalAngle)
     {
         generatedSetterHelperImpl(horizontalAngle, HORIZONTALANGLE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -197,7 +197,7 @@ public class DirectionVectorTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "verticalAngle" element
      */
-    @Inject(optional=true) public void setVerticalAngle(net.opengis.gml.AngleType verticalAngle)
+     public void setVerticalAngle(net.opengis.gml.AngleType verticalAngle)
     {
         generatedSetterHelperImpl(verticalAngle, VERTICALANGLE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

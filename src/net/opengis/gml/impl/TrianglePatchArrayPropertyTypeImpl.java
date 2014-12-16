@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TrianglePatchArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TrianglePatchArrayPropertyTypeImpl extends net.opengis.gml.impl.Sur
     /**
      * Sets array of all "Triangle" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setTriangleArray(net.opengis.gml.TriangleType[] triangleArray)
+     public void setTriangleArray(net.opengis.gml.TriangleType[] triangleArray)
     {
         check_orphaned();
         arraySetterHelper(triangleArray, TRIANGLE$0);
@@ -136,7 +136,7 @@ public class TrianglePatchArrayPropertyTypeImpl extends net.opengis.gml.impl.Sur
     /**
      * Sets ith "Triangle" element
      */
-    @Inject(optional=true) public void setTriangleArray(int i, net.opengis.gml.TriangleType triangle)
+     public void setTriangleArray(int i, net.opengis.gml.TriangleType triangle)
     {
         generatedSetterHelperImpl(triangle, TRIANGLE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

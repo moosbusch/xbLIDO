@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one GeodeticDatum(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class GeodeticDatumDocumentImpl extends net.opengis.gml.impl.DatumDocumen
     /**
      * Sets the "GeodeticDatum" element
      */
-    @Inject(optional=true) public void setGeodeticDatum(net.opengis.gml.GeodeticDatumType geodeticDatum)
+     public void setGeodeticDatum(net.opengis.gml.GeodeticDatumType geodeticDatum)
     {
         generatedSetterHelperImpl(geodeticDatum, GEODETICDATUM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

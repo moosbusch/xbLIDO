@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PrimeMeridianType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class PrimeMeridianTypeImpl extends net.opengis.gml.impl.PrimeMeridianBas
     /**
      * Sets array of all "meridianID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMeridianIDArray(net.opengis.gml.IdentifierType[] meridianIDArray)
+     public void setMeridianIDArray(net.opengis.gml.IdentifierType[] meridianIDArray)
     {
         check_orphaned();
         arraySetterHelper(meridianIDArray, MERIDIANID$0);
@@ -140,7 +140,7 @@ public class PrimeMeridianTypeImpl extends net.opengis.gml.impl.PrimeMeridianBas
     /**
      * Sets ith "meridianID" element
      */
-    @Inject(optional=true) public void setMeridianIDArray(int i, net.opengis.gml.IdentifierType meridianID)
+     public void setMeridianIDArray(int i, net.opengis.gml.IdentifierType meridianID)
     {
         generatedSetterHelperImpl(meridianID, MERIDIANID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -218,7 +218,7 @@ public class PrimeMeridianTypeImpl extends net.opengis.gml.impl.PrimeMeridianBas
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -270,7 +270,7 @@ public class PrimeMeridianTypeImpl extends net.opengis.gml.impl.PrimeMeridianBas
     /**
      * Sets the "greenwichLongitude" element
      */
-    @Inject(optional=true) public void setGreenwichLongitude(net.opengis.gml.AngleChoiceType greenwichLongitude)
+     public void setGreenwichLongitude(net.opengis.gml.AngleChoiceType greenwichLongitude)
     {
         generatedSetterHelperImpl(greenwichLongitude, GREENWICHLONGITUDE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

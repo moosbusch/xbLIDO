@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one PolygonPatch(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class PolygonPatchDocumentImpl extends net.opengis.gml.impl.SurfacePatchD
     /**
      * Sets the "PolygonPatch" element
      */
-    @Inject(optional=true) public void setPolygonPatch(net.opengis.gml.PolygonPatchType polygonPatch)
+     public void setPolygonPatch(net.opengis.gml.PolygonPatchType polygonPatch)
     {
         generatedSetterHelperImpl(polygonPatch, POLYGONPATCH$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML NodeType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class NodeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets array of all "directedEdge" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDirectedEdgeArray(net.opengis.gml.DirectedEdgePropertyType[] directedEdgeArray)
+     public void setDirectedEdgeArray(net.opengis.gml.DirectedEdgePropertyType[] directedEdgeArray)
     {
         check_orphaned();
         arraySetterHelper(directedEdgeArray, DIRECTEDEDGE$0);
@@ -138,7 +138,7 @@ public class NodeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets ith "directedEdge" element
      */
-    @Inject(optional=true) public void setDirectedEdgeArray(int i, net.opengis.gml.DirectedEdgePropertyType directedEdge)
+     public void setDirectedEdgeArray(int i, net.opengis.gml.DirectedEdgePropertyType directedEdge)
     {
         generatedSetterHelperImpl(directedEdge, DIRECTEDEDGE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class NodeTypeImpl extends net.opengis.gml.impl.AbstractTopoPrimitiveType
     /**
      * Sets the "pointProperty" element
      */
-    @Inject(optional=true) public void setPointProperty(net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointProperty(net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

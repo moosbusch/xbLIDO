@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one CompositeSurface(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CompositeSurfaceDocumentImpl extends net.opengis.gml.impl.SurfaceDo
     /**
      * Sets the "CompositeSurface" element
      */
-    @Inject(optional=true) public void setCompositeSurface(net.opengis.gml.CompositeSurfaceType compositeSurface)
+     public void setCompositeSurface(net.opengis.gml.CompositeSurfaceType compositeSurface)
     {
         generatedSetterHelperImpl(compositeSurface, COMPOSITESURFACE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

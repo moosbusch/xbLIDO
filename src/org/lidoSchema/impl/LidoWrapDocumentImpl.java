@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one lidoWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "lidoWrap" element
      */
-    @Inject(optional=true) public void setLidoWrap(org.lidoSchema.LidoWrapDocument.LidoWrap lidoWrap)
+     public void setLidoWrap(org.lidoSchema.LidoWrapDocument.LidoWrap lidoWrap)
     {
         generatedSetterHelperImpl(lidoWrap, LIDOWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -187,7 +187,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets array of all "lido" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLidoArray(org.lidoSchema.LidoWrapDocument.LidoWrap.Lido[] lidoArray)
+         public void setLidoArray(org.lidoSchema.LidoWrapDocument.LidoWrap.Lido[] lidoArray)
         {
             check_orphaned();
             arraySetterHelper(lidoArray, LIDO$0);
@@ -196,7 +196,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets ith "lido" element
          */
-        @Inject(optional=true) public void setLidoArray(int i, org.lidoSchema.LidoWrapDocument.LidoWrap.Lido lido)
+         public void setLidoArray(int i, org.lidoSchema.LidoWrapDocument.LidoWrap.Lido lido)
         {
             generatedSetterHelperImpl(lido, LIDO$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -288,7 +288,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "relatedencoding" attribute
          */
-        @Inject(optional=true) public void setRelatedencoding(java.lang.String relatedencoding)
+         public void setRelatedencoding(java.lang.String relatedencoding)
         {
             synchronized (monitor())
             {
@@ -397,7 +397,7 @@ public class LidoWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

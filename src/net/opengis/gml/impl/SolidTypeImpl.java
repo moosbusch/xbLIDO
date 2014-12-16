@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SolidType(@http://www.opengis.net/gml).
  *
@@ -67,7 +67,7 @@ public class SolidTypeImpl extends net.opengis.gml.impl.AbstractSolidTypeImpl im
     /**
      * Sets the "exterior" element
      */
-    @Inject(optional=true) public void setExterior(net.opengis.gml.SurfacePropertyType exterior)
+     public void setExterior(net.opengis.gml.SurfacePropertyType exterior)
     {
         generatedSetterHelperImpl(exterior, EXTERIOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -193,7 +193,7 @@ public class SolidTypeImpl extends net.opengis.gml.impl.AbstractSolidTypeImpl im
     /**
      * Sets array of all "interior" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setInteriorArray(net.opengis.gml.SurfacePropertyType[] interiorArray)
+     public void setInteriorArray(net.opengis.gml.SurfacePropertyType[] interiorArray)
     {
         check_orphaned();
         arraySetterHelper(interiorArray, INTERIOR$2);
@@ -202,7 +202,7 @@ public class SolidTypeImpl extends net.opengis.gml.impl.AbstractSolidTypeImpl im
     /**
      * Sets ith "interior" element
      */
-    @Inject(optional=true) public void setInteriorArray(int i, net.opengis.gml.SurfacePropertyType interior)
+     public void setInteriorArray(int i, net.opengis.gml.SurfacePropertyType interior)
     {
         generatedSetterHelperImpl(interior, INTERIOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

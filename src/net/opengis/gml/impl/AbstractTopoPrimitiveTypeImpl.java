@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractTopoPrimitiveType(@http://www.opengis.net/gml).
  *
@@ -129,7 +129,7 @@ public class AbstractTopoPrimitiveTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets array of all "isolated" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setIsolatedArray(net.opengis.gml.IsolatedPropertyType[] isolatedArray)
+     public void setIsolatedArray(net.opengis.gml.IsolatedPropertyType[] isolatedArray)
     {
         check_orphaned();
         arraySetterHelper(isolatedArray, ISOLATED$0);
@@ -138,7 +138,7 @@ public class AbstractTopoPrimitiveTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets ith "isolated" element
      */
-    @Inject(optional=true) public void setIsolatedArray(int i, net.opengis.gml.IsolatedPropertyType isolated)
+     public void setIsolatedArray(int i, net.opengis.gml.IsolatedPropertyType isolated)
     {
         generatedSetterHelperImpl(isolated, ISOLATED$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class AbstractTopoPrimitiveTypeImpl extends net.opengis.gml.impl.Abstract
     /**
      * Sets the "container" element
      */
-    @Inject(optional=true) public void setContainer(net.opengis.gml.ContainerPropertyType container)
+     public void setContainer(net.opengis.gml.ContainerPropertyType container)
     {
         generatedSetterHelperImpl(container, CONTAINER$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

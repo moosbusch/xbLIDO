@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PriorityLocationPropertyType(@http://www.opengis.net/gml).
  *
@@ -79,7 +79,7 @@ public class PriorityLocationPropertyTypeImpl extends net.opengis.gml.impl.Locat
     /**
      * Sets the "priority" attribute
      */
-    @Inject(optional=true) public void setPriority(java.lang.String priority)
+     public void setPriority(java.lang.String priority)
     {
         synchronized (monitor())
         {

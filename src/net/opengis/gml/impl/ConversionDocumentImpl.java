@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one Conversion(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class ConversionDocumentImpl extends net.opengis.gml.impl.GeneralConversi
     /**
      * Sets the "Conversion" element
      */
-    @Inject(optional=true) public void setConversion(net.opengis.gml.ConversionType conversion)
+     public void setConversion(net.opengis.gml.ConversionType conversion)
     {
         generatedSetterHelperImpl(conversion, CONVERSION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ArrayType(@http://www.opengis.net/gml).
  *
@@ -65,7 +65,7 @@ public class ArrayTypeImpl extends net.opengis.gml.impl.AbstractGMLTypeImpl impl
     /**
      * Sets the "members" element
      */
-    @Inject(optional=true) public void setMembers(net.opengis.gml.ArrayAssociationType members)
+     public void setMembers(net.opengis.gml.ArrayAssociationType members)
     {
         generatedSetterHelperImpl(members, MEMBERS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

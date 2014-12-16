@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TinType(@http://www.opengis.net/gml).
  *
@@ -133,7 +133,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets array of all "stopLines" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setStopLinesArray(net.opengis.gml.LineStringSegmentArrayPropertyType[] stopLinesArray)
+     public void setStopLinesArray(net.opengis.gml.LineStringSegmentArrayPropertyType[] stopLinesArray)
     {
         check_orphaned();
         arraySetterHelper(stopLinesArray, STOPLINES$0);
@@ -142,7 +142,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets ith "stopLines" element
      */
-    @Inject(optional=true) public void setStopLinesArray(int i, net.opengis.gml.LineStringSegmentArrayPropertyType stopLines)
+     public void setStopLinesArray(int i, net.opengis.gml.LineStringSegmentArrayPropertyType stopLines)
     {
         generatedSetterHelperImpl(stopLines, STOPLINES$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -282,7 +282,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets array of all "breakLines" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setBreakLinesArray(net.opengis.gml.LineStringSegmentArrayPropertyType[] breakLinesArray)
+     public void setBreakLinesArray(net.opengis.gml.LineStringSegmentArrayPropertyType[] breakLinesArray)
     {
         check_orphaned();
         arraySetterHelper(breakLinesArray, BREAKLINES$2);
@@ -291,7 +291,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets ith "breakLines" element
      */
-    @Inject(optional=true) public void setBreakLinesArray(int i, net.opengis.gml.LineStringSegmentArrayPropertyType breakLines)
+     public void setBreakLinesArray(int i, net.opengis.gml.LineStringSegmentArrayPropertyType breakLines)
     {
         generatedSetterHelperImpl(breakLines, BREAKLINES$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -357,7 +357,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets the "maxLength" element
      */
-    @Inject(optional=true) public void setMaxLength(net.opengis.gml.LengthType maxLength)
+     public void setMaxLength(net.opengis.gml.LengthType maxLength)
     {
         generatedSetterHelperImpl(maxLength, MAXLENGTH$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -397,7 +397,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
     /**
      * Sets the "controlPoint" element
      */
-    @Inject(optional=true) public void setControlPoint(net.opengis.gml.TinType.ControlPoint controlPoint)
+     public void setControlPoint(net.opengis.gml.TinType.ControlPoint controlPoint)
     {
         generatedSetterHelperImpl(controlPoint, CONTROLPOINT$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -470,7 +470,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
         /**
          * Sets the "posList" element
          */
-        @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+         public void setPosList(net.opengis.gml.DirectPositionListType posList)
         {
             generatedSetterHelperImpl(posList, POSLIST$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -596,7 +596,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
         /**
          * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+         public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
         {
             check_orphaned();
             arraySetterHelper(posArray, POS$2);
@@ -605,7 +605,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
         /**
          * Sets ith "pos" element
          */
-        @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+         public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
         {
             generatedSetterHelperImpl(pos, POS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -745,7 +745,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
         /**
          * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+         public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
         {
             check_orphaned();
             arraySetterHelper(pointPropertyArray, POINTPROPERTY$4);
@@ -754,7 +754,7 @@ public class TinTypeImpl extends net.opengis.gml.impl.TriangulatedSurfaceTypeImp
         /**
          * Sets ith "pointProperty" element
          */
-        @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+         public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
         {
             generatedSetterHelperImpl(pointProperty, POINTPROPERTY$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

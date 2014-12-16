@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML PrimeMeridianBaseType(@http://www.opengis.net/gml).
  *
@@ -53,7 +53,7 @@ public class PrimeMeridianBaseTypeImpl extends net.opengis.gml.impl.DefinitionTy
     /**
      * Sets the "meridianName" element
      */
-    @Inject(optional=true) public void setMeridianName(net.opengis.gml.CodeType meridianName)
+     public void setMeridianName(net.opengis.gml.CodeType meridianName)
     {
         generatedSetterHelperImpl(meridianName, MERIDIANNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

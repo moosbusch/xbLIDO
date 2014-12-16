@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one RectifiedGridCoverage(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class RectifiedGridCoverageDocumentImpl extends net.opengis.gml.impl.Disc
     /**
      * Sets the "RectifiedGridCoverage" element
      */
-    @Inject(optional=true) public void setRectifiedGridCoverage(net.opengis.gml.RectifiedGridCoverageType rectifiedGridCoverage)
+     public void setRectifiedGridCoverage(net.opengis.gml.RectifiedGridCoverageType rectifiedGridCoverage)
     {
         generatedSetterHelperImpl(rectifiedGridCoverage, RECTIFIEDGRIDCOVERAGE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one GeometryStyle(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class GeometryStyleDocument2Impl extends net.opengis.gml.impl.GMLDocument
     /**
      * Sets the "GeometryStyle" element
      */
-    @Inject(optional=true) public void setGeometryStyle(net.opengis.gml.GeometryStyleType geometryStyle)
+     public void setGeometryStyle(net.opengis.gml.GeometryStyleType geometryStyle)
     {
         generatedSetterHelperImpl(geometryStyle, GEOMETRYSTYLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

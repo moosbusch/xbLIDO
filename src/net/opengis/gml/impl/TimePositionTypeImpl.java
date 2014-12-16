@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimePositionType(@http://www.opengis.net/gml).
  *
@@ -103,7 +103,7 @@ public class TimePositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlUni
     /**
      * Sets the "frame" attribute
      */
-    @Inject(optional=true) public void setFrame(java.lang.String frame)
+     public void setFrame(java.lang.String frame)
     {
         synchronized (monitor())
         {
@@ -195,7 +195,7 @@ public class TimePositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlUni
     /**
      * Sets the "calendarEraName" attribute
      */
-    @Inject(optional=true) public void setCalendarEraName(java.lang.String calendarEraName)
+     public void setCalendarEraName(java.lang.String calendarEraName)
     {
         synchronized (monitor())
         {
@@ -287,7 +287,7 @@ public class TimePositionTypeImpl extends org.apache.xmlbeans.impl.values.XmlUni
     /**
      * Sets the "indeterminatePosition" attribute
      */
-    @Inject(optional=true) public void setIndeterminatePosition(net.opengis.gml.TimeIndeterminateValueType.Enum indeterminatePosition)
+     public void setIndeterminatePosition(net.opengis.gml.TimeIndeterminateValueType.Enum indeterminatePosition)
     {
         synchronized (monitor())
         {

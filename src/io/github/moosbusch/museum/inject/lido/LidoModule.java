@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.lido;
+package io.github.moosbusch.museum.inject.lido;
 
 import org.lidoSchema.ActorComplexType;
 import org.lidoSchema.ActorInRoleComplexType;
@@ -110,9 +110,9 @@ import org.lidoSchema.TitleWrapDocument.TitleWrap;
 import org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet;
 import org.lidoSchema.TypeAttribute;
 import org.lidoSchema.WebResourceComplexType;
-import org.moosbusch.museum.document.lido.LidoXmlDocument;
-import org.moosbusch.museum.inject.MuseumXmlModule;
-import org.moosbusch.museum.inject.lido.impl.DefaultLidoObjectFactory;
+import io.github.moosbusch.museum.document.lido.LidoXmlDocument;
+import io.github.moosbusch.museum.document.lido.impl.DefaultLidoObjectFactory;
+import io.github.moosbusch.museum.inject.MuseumXmlModule;
 
 /**
  *
@@ -120,9 +120,8 @@ import org.moosbusch.museum.inject.lido.impl.DefaultLidoObjectFactory;
  */
 public interface LidoModule extends MuseumXmlModule, GmlModule, Smil20Module, XLinkModule {
 
-    public LidoXmlDocument<? extends DefaultLidoObjectFactory> createLidoXmlDocument();
-
-    public String getRelatedEncoding();
+    @Override
+    public LidoXmlDocument<? extends DefaultLidoObjectFactory> createDocument();
 
     public ActorComplexType createLidoActorComplexType();
 
@@ -200,8 +199,6 @@ public interface LidoModule extends MuseumXmlModule, GmlModule, Smil20Module, XL
 
     public LegalBodyRefComplexType createLidoLegalBodyRefComplexType();
 
-
-
     public MaterialsTechComplexType createLidoMaterialsTechComplexType();
 
     public MaterialsTechSetComplexType createLidoMaterialsTechSetComplexType();
@@ -269,8 +266,6 @@ public interface LidoModule extends MuseumXmlModule, GmlModule, Smil20Module, XL
     public RelatedWorksWrap createLidoRelatedWorksWrap();
 
     public RelatedWorkSet createLidoRelatedWorks();
-
-    public RepositorySetComplexType createLidoRepositorySetComplexType();
 
     public RepositoryWrapDocument createLidoRepositoryWrapDocument();
 

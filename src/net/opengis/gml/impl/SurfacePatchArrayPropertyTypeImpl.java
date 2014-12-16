@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SurfacePatchArrayPropertyType(@http://www.opengis.net/gml).
  *
@@ -138,7 +138,7 @@ public class SurfacePatchArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets array of all "_SurfacePatch" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSurfacePatchArray(net.opengis.gml.AbstractSurfacePatchType[] surfacePatchArray)
+     public void setSurfacePatchArray(net.opengis.gml.AbstractSurfacePatchType[] surfacePatchArray)
     {
         check_orphaned();
         arraySetterHelper(surfacePatchArray, SURFACEPATCH$0, SURFACEPATCH$1);
@@ -147,7 +147,7 @@ public class SurfacePatchArrayPropertyTypeImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets ith "_SurfacePatch" element
      */
-    @Inject(optional=true) public void setSurfacePatchArray(int i, net.opengis.gml.AbstractSurfacePatchType surfacePatch)
+     public void setSurfacePatchArray(int i, net.opengis.gml.AbstractSurfacePatchType surfacePatch)
     {
         synchronized (monitor())
         {

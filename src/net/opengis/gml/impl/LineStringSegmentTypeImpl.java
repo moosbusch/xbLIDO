@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML LineStringSegmentType(@http://www.opengis.net/gml).
  *
@@ -137,7 +137,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+     public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
     {
         check_orphaned();
         arraySetterHelper(posArray, POS$0);
@@ -146,7 +146,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets ith "pos" element
      */
-    @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+     public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -286,7 +286,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+     public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
     {
         check_orphaned();
         arraySetterHelper(pointPropertyArray, POINTPROPERTY$2);
@@ -295,7 +295,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets ith "pointProperty" element
      */
-    @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -435,7 +435,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets array of all "pointRep" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
+     public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
     {
         check_orphaned();
         arraySetterHelper(pointRepArray, POINTREP$4);
@@ -444,7 +444,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets ith "pointRep" element
      */
-    @Inject(optional=true) public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
+     public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
     {
         generatedSetterHelperImpl(pointRep, POINTREP$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -522,7 +522,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets the "posList" element
      */
-    @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+     public void setPosList(net.opengis.gml.DirectPositionListType posList)
     {
         generatedSetterHelperImpl(posList, POSLIST$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -586,7 +586,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets the "coordinates" element
      */
-    @Inject(optional=true) public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
+     public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
     {
         generatedSetterHelperImpl(coordinates, COORDINATES$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -672,7 +672,7 @@ public class LineStringSegmentTypeImpl extends net.opengis.gml.impl.AbstractCurv
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {

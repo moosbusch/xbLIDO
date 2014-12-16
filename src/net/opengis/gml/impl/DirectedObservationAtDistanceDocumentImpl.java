@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one DirectedObservationAtDistance(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class DirectedObservationAtDistanceDocumentImpl extends net.opengis.gml.i
     /**
      * Sets the "DirectedObservationAtDistance" element
      */
-    @Inject(optional=true) public void setDirectedObservationAtDistance(net.opengis.gml.DirectedObservationAtDistanceType directedObservationAtDistance)
+     public void setDirectedObservationAtDistance(net.opengis.gml.DirectedObservationAtDistanceType directedObservationAtDistance)
     {
         generatedSetterHelperImpl(directedObservationAtDistance, DIRECTEDOBSERVATIONATDISTANCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

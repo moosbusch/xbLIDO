@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one GeodesicString(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class GeodesicStringDocumentImpl extends net.opengis.gml.impl.CurveSegmen
     /**
      * Sets the "GeodesicString" element
      */
-    @Inject(optional=true) public void setGeodesicString(net.opengis.gml.GeodesicStringType geodesicString)
+     public void setGeodesicString(net.opengis.gml.GeodesicStringType geodesicString)
     {
         synchronized (monitor())
         {

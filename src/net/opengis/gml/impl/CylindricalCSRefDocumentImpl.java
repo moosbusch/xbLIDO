@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one cylindricalCSRef(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class CylindricalCSRefDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "cylindricalCSRef" element
      */
-    @Inject(optional=true) public void setCylindricalCSRef(net.opengis.gml.CylindricalCSRefType cylindricalCSRef)
+     public void setCylindricalCSRef(net.opengis.gml.CylindricalCSRefType cylindricalCSRef)
     {
         generatedSetterHelperImpl(cylindricalCSRef, CYLINDRICALCSREF$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

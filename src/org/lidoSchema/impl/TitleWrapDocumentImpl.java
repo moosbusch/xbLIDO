@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one titleWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "titleWrap" element
      */
-    @Inject(optional=true) public void setTitleWrap(org.lidoSchema.TitleWrapDocument.TitleWrap titleWrap)
+     public void setTitleWrap(org.lidoSchema.TitleWrapDocument.TitleWrap titleWrap)
     {
         generatedSetterHelperImpl(titleWrap, TITLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "titleSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setTitleSetArray(org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet[] titleSetArray)
+         public void setTitleSetArray(org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet[] titleSetArray)
         {
             check_orphaned();
             arraySetterHelper(titleSetArray, TITLESET$0);
@@ -194,7 +194,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "titleSet" element
          */
-        @Inject(optional=true) public void setTitleSetArray(int i, org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet titleSet)
+         public void setTitleSetArray(int i, org.lidoSchema.TitleWrapDocument.TitleWrap.TitleSet titleSet)
         {
             generatedSetterHelperImpl(titleSet, TITLESET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -305,7 +305,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             /**
              * Sets the "type" attribute
              */
-            @Inject(optional=true) public void setType(java.lang.String type)
+             public void setType(java.lang.String type)
             {
                 synchronized (monitor())
                 {
@@ -397,7 +397,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

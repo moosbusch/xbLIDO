@@ -15,7 +15,7 @@
  */
 package org.w3.x2001.smil20.language.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one set(@http://www.w3.org/2001/SMIL20/Language) element.
@@ -60,7 +60,7 @@ public class SetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "set" element
      */
-    @Inject(optional=true) public void setSet(org.w3.x2001.smil20.language.SetType set)
+     public void setSet(org.w3.x2001.smil20.language.SetType set)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _Style(@http://www.opengis.net/gml) element.
  *
@@ -57,7 +57,7 @@ public class StyleDocumentImpl extends net.opengis.gml.impl.GMLDocumentImpl impl
     /**
      * Sets the "_Style" element
      */
-    @Inject(optional=true) public void setStyle(net.opengis.gml.AbstractStyleType style)
+     public void setStyle(net.opengis.gml.AbstractStyleType style)
     {
         synchronized (monitor())
         {

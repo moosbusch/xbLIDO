@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one encodinganalog(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class EncodinganalogAttributeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "encodinganalog" attribute
      */
-    @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+     public void setEncodinganalog(java.lang.String encodinganalog)
     {
         synchronized (monitor())
         {

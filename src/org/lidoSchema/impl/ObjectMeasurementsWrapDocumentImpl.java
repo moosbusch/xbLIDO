@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one objectMeasurementsWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "objectMeasurementsWrap" element
      */
-    @Inject(optional=true) public void setObjectMeasurementsWrap(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap objectMeasurementsWrap)
+     public void setObjectMeasurementsWrap(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap objectMeasurementsWrap)
     {
         generatedSetterHelperImpl(objectMeasurementsWrap, OBJECTMEASUREMENTSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets array of all "objectMeasurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setObjectMeasurementsSetArray(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet[] objectMeasurementsSetArray)
+         public void setObjectMeasurementsSetArray(org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet[] objectMeasurementsSetArray)
         {
             check_orphaned();
             arraySetterHelper(objectMeasurementsSetArray, OBJECTMEASUREMENTSSET$0);
@@ -194,7 +194,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets ith "objectMeasurementsSet" element
          */
-        @Inject(optional=true) public void setObjectMeasurementsSetArray(int i, org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet objectMeasurementsSet)
+         public void setObjectMeasurementsSetArray(int i, org.lidoSchema.ObjectMeasurementsWrapDocument.ObjectMeasurementsWrap.ObjectMeasurementsSet objectMeasurementsSet)
         {
             generatedSetterHelperImpl(objectMeasurementsSet, OBJECTMEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -303,7 +303,7 @@ public class ObjectMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.impl
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

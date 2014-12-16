@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML eventSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class EventSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets array of all "displayEvent" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayEventArray(org.lidoSchema.TextComplexType[] displayEventArray)
+     public void setDisplayEventArray(org.lidoSchema.TextComplexType[] displayEventArray)
     {
         check_orphaned();
         arraySetterHelper(displayEventArray, DISPLAYEVENT$0);
@@ -138,7 +138,7 @@ public class EventSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets ith "displayEvent" element
      */
-    @Inject(optional=true) public void setDisplayEventArray(int i, org.lidoSchema.TextComplexType displayEvent)
+     public void setDisplayEventArray(int i, org.lidoSchema.TextComplexType displayEvent)
     {
         generatedSetterHelperImpl(displayEvent, DISPLAYEVENT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class EventSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "event" element
      */
-    @Inject(optional=true) public void setEvent(org.lidoSchema.EventComplexType event)
+     public void setEvent(org.lidoSchema.EventComplexType event)
     {
         generatedSetterHelperImpl(event, EVENT$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one TopoCurve(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TopoCurveDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "TopoCurve" element
      */
-    @Inject(optional=true) public void setTopoCurve(net.opengis.gml.TopoCurveType topoCurve)
+     public void setTopoCurve(net.opengis.gml.TopoCurveType topoCurve)
     {
         generatedSetterHelperImpl(topoCurve, TOPOCURVE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

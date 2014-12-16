@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * A document containing one objectWorkTypeWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +54,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "objectWorkTypeWrap" element
      */
-    @Inject(optional=true) public void setObjectWorkTypeWrap(org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
+     public void setObjectWorkTypeWrap(org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
     {
         generatedSetterHelperImpl(objectWorkTypeWrap, OBJECTWORKTYPEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "objectWorkType" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setObjectWorkTypeArray(org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType[] objectWorkTypeArray)
+         public void setObjectWorkTypeArray(org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType[] objectWorkTypeArray)
         {
             check_orphaned();
             arraySetterHelper(objectWorkTypeArray, OBJECTWORKTYPE$0);
@@ -194,7 +194,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "objectWorkType" element
          */
-        @Inject(optional=true) public void setObjectWorkTypeArray(int i, org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType objectWorkType)
+         public void setObjectWorkTypeArray(int i, org.lidoSchema.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.ObjectWorkType objectWorkType)
         {
             generatedSetterHelperImpl(objectWorkType, OBJECTWORKTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -305,7 +305,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             /**
              * Sets the "type" attribute
              */
-            @Inject(optional=true) public void setType(java.lang.String type)
+             public void setType(java.lang.String type)
             {
                 synchronized (monitor())
                 {
@@ -397,7 +397,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

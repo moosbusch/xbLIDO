@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML ConventionalUnitType(@http://www.opengis.net/gml).
  *
@@ -69,7 +69,7 @@ public class ConventionalUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitio
     /**
      * Sets the "conversionToPreferredUnit" element
      */
-    @Inject(optional=true) public void setConversionToPreferredUnit(net.opengis.gml.ConversionToPreferredUnitType conversionToPreferredUnit)
+     public void setConversionToPreferredUnit(net.opengis.gml.ConversionToPreferredUnitType conversionToPreferredUnit)
     {
         generatedSetterHelperImpl(conversionToPreferredUnit, CONVERSIONTOPREFERREDUNIT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class ConventionalUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitio
     /**
      * Sets the "roughConversionToPreferredUnit" element
      */
-    @Inject(optional=true) public void setRoughConversionToPreferredUnit(net.opengis.gml.ConversionToPreferredUnitType roughConversionToPreferredUnit)
+     public void setRoughConversionToPreferredUnit(net.opengis.gml.ConversionToPreferredUnitType roughConversionToPreferredUnit)
     {
         generatedSetterHelperImpl(roughConversionToPreferredUnit, ROUGHCONVERSIONTOPREFERREDUNIT$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -259,7 +259,7 @@ public class ConventionalUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitio
     /**
      * Sets array of all "derivationUnitTerm" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDerivationUnitTermArray(net.opengis.gml.DerivationUnitTermType[] derivationUnitTermArray)
+     public void setDerivationUnitTermArray(net.opengis.gml.DerivationUnitTermType[] derivationUnitTermArray)
     {
         check_orphaned();
         arraySetterHelper(derivationUnitTermArray, DERIVATIONUNITTERM$4);
@@ -268,7 +268,7 @@ public class ConventionalUnitTypeImpl extends net.opengis.gml.impl.UnitDefinitio
     /**
      * Sets ith "derivationUnitTerm" element
      */
-    @Inject(optional=true) public void setDerivationUnitTermArray(int i, net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
+     public void setDerivationUnitTermArray(int i, net.opengis.gml.DerivationUnitTermType derivationUnitTerm)
     {
         generatedSetterHelperImpl(derivationUnitTerm, DERIVATIONUNITTERM$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

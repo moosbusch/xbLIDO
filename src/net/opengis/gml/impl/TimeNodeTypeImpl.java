@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimeNodeType(@http://www.opengis.net/gml).
  *
@@ -131,7 +131,7 @@ public class TimeNodeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets array of all "previousEdge" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPreviousEdgeArray(net.opengis.gml.TimeEdgePropertyType[] previousEdgeArray)
+     public void setPreviousEdgeArray(net.opengis.gml.TimeEdgePropertyType[] previousEdgeArray)
     {
         check_orphaned();
         arraySetterHelper(previousEdgeArray, PREVIOUSEDGE$0);
@@ -140,7 +140,7 @@ public class TimeNodeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets ith "previousEdge" element
      */
-    @Inject(optional=true) public void setPreviousEdgeArray(int i, net.opengis.gml.TimeEdgePropertyType previousEdge)
+     public void setPreviousEdgeArray(int i, net.opengis.gml.TimeEdgePropertyType previousEdge)
     {
         generatedSetterHelperImpl(previousEdge, PREVIOUSEDGE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -280,7 +280,7 @@ public class TimeNodeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets array of all "nextEdge" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNextEdgeArray(net.opengis.gml.TimeEdgePropertyType[] nextEdgeArray)
+     public void setNextEdgeArray(net.opengis.gml.TimeEdgePropertyType[] nextEdgeArray)
     {
         check_orphaned();
         arraySetterHelper(nextEdgeArray, NEXTEDGE$2);
@@ -289,7 +289,7 @@ public class TimeNodeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets ith "nextEdge" element
      */
-    @Inject(optional=true) public void setNextEdgeArray(int i, net.opengis.gml.TimeEdgePropertyType nextEdge)
+     public void setNextEdgeArray(int i, net.opengis.gml.TimeEdgePropertyType nextEdge)
     {
         generatedSetterHelperImpl(nextEdge, NEXTEDGE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -367,7 +367,7 @@ public class TimeNodeTypeImpl extends net.opengis.gml.impl.AbstractTimeTopologyP
     /**
      * Sets the "position" element
      */
-    @Inject(optional=true) public void setPosition(net.opengis.gml.TimeInstantPropertyType position)
+     public void setPosition(net.opengis.gml.TimeInstantPropertyType position)
     {
         generatedSetterHelperImpl(position, POSITION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML GeometricComplexPropertyType(@http://www.opengis.net/gml).
  *
@@ -87,7 +87,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "GeometricComplex" element
      */
-    @Inject(optional=true) public void setGeometricComplex(net.opengis.gml.GeometricComplexType geometricComplex)
+     public void setGeometricComplex(net.opengis.gml.GeometricComplexType geometricComplex)
     {
         generatedSetterHelperImpl(geometricComplex, GEOMETRICCOMPLEX$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -151,7 +151,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "CompositeCurve" element
      */
-    @Inject(optional=true) public void setCompositeCurve(net.opengis.gml.CompositeCurveType compositeCurve)
+     public void setCompositeCurve(net.opengis.gml.CompositeCurveType compositeCurve)
     {
         generatedSetterHelperImpl(compositeCurve, COMPOSITECURVE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -215,7 +215,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "CompositeSurface" element
      */
-    @Inject(optional=true) public void setCompositeSurface(net.opengis.gml.CompositeSurfaceType compositeSurface)
+     public void setCompositeSurface(net.opengis.gml.CompositeSurfaceType compositeSurface)
     {
         generatedSetterHelperImpl(compositeSurface, COMPOSITESURFACE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -279,7 +279,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "CompositeSolid" element
      */
-    @Inject(optional=true) public void setCompositeSolid(net.opengis.gml.CompositeSolidType compositeSolid)
+     public void setCompositeSolid(net.opengis.gml.CompositeSolidType compositeSolid)
     {
         generatedSetterHelperImpl(compositeSolid, COMPOSITESOLID$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -365,7 +365,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -457,7 +457,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "href" attribute
      */
-    @Inject(optional=true) public void setHref(java.lang.String href)
+     public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -549,7 +549,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -641,7 +641,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "arcrole" attribute
      */
-    @Inject(optional=true) public void setArcrole(java.lang.String arcrole)
+     public void setArcrole(java.lang.String arcrole)
     {
         synchronized (monitor())
         {
@@ -733,7 +733,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -825,7 +825,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "show" attribute
      */
-    @Inject(optional=true) public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
+     public void setShow(org.w3.x1999.xlink.ShowType.Enum show)
     {
         synchronized (monitor())
         {
@@ -917,7 +917,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "actuate" attribute
      */
-    @Inject(optional=true) public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
+     public void setActuate(org.w3.x1999.xlink.ActuateType.Enum actuate)
     {
         synchronized (monitor())
         {
@@ -1009,7 +1009,7 @@ public class GeometricComplexPropertyTypeImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "remoteSchema" attribute
      */
-    @Inject(optional=true) public void setRemoteSchema(java.lang.String remoteSchema)
+     public void setRemoteSchema(java.lang.String remoteSchema)
     {
         synchronized (monitor())
         {

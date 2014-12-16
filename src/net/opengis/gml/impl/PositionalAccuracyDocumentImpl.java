@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _positionalAccuracy(@http://www.opengis.net/gml) element.
  *
@@ -59,7 +59,7 @@ public class PositionalAccuracyDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "_positionalAccuracy" element
      */
-    @Inject(optional=true) public void setPositionalAccuracy(net.opengis.gml.AbstractPositionalAccuracyType positionalAccuracy)
+     public void setPositionalAccuracy(net.opengis.gml.AbstractPositionalAccuracyType positionalAccuracy)
     {
         synchronized (monitor())
         {

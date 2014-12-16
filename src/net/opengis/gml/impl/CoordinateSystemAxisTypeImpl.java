@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CoordinateSystemAxisType(@http://www.opengis.net/gml).
  *
@@ -135,7 +135,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets array of all "axisID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setAxisIDArray(net.opengis.gml.IdentifierType[] axisIDArray)
+     public void setAxisIDArray(net.opengis.gml.IdentifierType[] axisIDArray)
     {
         check_orphaned();
         arraySetterHelper(axisIDArray, AXISID$0);
@@ -144,7 +144,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets ith "axisID" element
      */
-    @Inject(optional=true) public void setAxisIDArray(int i, net.opengis.gml.IdentifierType axisID)
+     public void setAxisIDArray(int i, net.opengis.gml.IdentifierType axisID)
     {
         generatedSetterHelperImpl(axisID, AXISID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -222,7 +222,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets the "remarks" element
      */
-    @Inject(optional=true) public void setRemarks(net.opengis.gml.StringOrRefType remarks)
+     public void setRemarks(net.opengis.gml.StringOrRefType remarks)
     {
         generatedSetterHelperImpl(remarks, REMARKS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -274,7 +274,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets the "axisAbbrev" element
      */
-    @Inject(optional=true) public void setAxisAbbrev(net.opengis.gml.CodeType axisAbbrev)
+     public void setAxisAbbrev(net.opengis.gml.CodeType axisAbbrev)
     {
         generatedSetterHelperImpl(axisAbbrev, AXISABBREV$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -314,7 +314,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets the "axisDirection" element
      */
-    @Inject(optional=true) public void setAxisDirection(net.opengis.gml.CodeType axisDirection)
+     public void setAxisDirection(net.opengis.gml.CodeType axisDirection)
     {
         generatedSetterHelperImpl(axisDirection, AXISDIRECTION$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -368,7 +368,7 @@ public class CoordinateSystemAxisTypeImpl extends net.opengis.gml.impl.Coordinat
     /**
      * Sets the "uom" attribute
      */
-    @Inject(optional=true) public void setUom(java.lang.String uom)
+     public void setUom(java.lang.String uom)
     {
         synchronized (monitor())
         {

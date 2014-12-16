@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one label(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class LabelAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "label" attribute
      */
-    @Inject(optional=true) public void setLabel(java.lang.String label)
+     public void setLabel(java.lang.String label)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractCoverageType(@http://www.opengis.net/gml).
  *
@@ -66,7 +66,7 @@ public class AbstractCoverageTypeImpl extends net.opengis.gml.impl.AbstractFeatu
     /**
      * Sets the "domainSet" element
      */
-    @Inject(optional=true) public void setDomainSet(net.opengis.gml.DomainSetType domainSet)
+     public void setDomainSet(net.opengis.gml.DomainSetType domainSet)
     {
         synchronized (monitor())
         {
@@ -116,7 +116,7 @@ public class AbstractCoverageTypeImpl extends net.opengis.gml.impl.AbstractFeatu
     /**
      * Sets the "rangeSet" element
      */
-    @Inject(optional=true) public void setRangeSet(net.opengis.gml.RangeSetType rangeSet)
+     public void setRangeSet(net.opengis.gml.RangeSetType rangeSet)
     {
         generatedSetterHelperImpl(rangeSet, RANGESET$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -182,7 +182,7 @@ public class AbstractCoverageTypeImpl extends net.opengis.gml.impl.AbstractFeatu
     /**
      * Sets the "dimension" attribute
      */
-    @Inject(optional=true) public void setDimension(java.math.BigInteger dimension)
+     public void setDimension(java.math.BigInteger dimension)
     {
         synchronized (monitor())
         {

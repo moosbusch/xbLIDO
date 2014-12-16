@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML resourceSetComplexType(@http://www.lido-schema.org).
  *
@@ -82,7 +82,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "resourceID" element
      */
-    @Inject(optional=true) public void setResourceID(org.lidoSchema.IdentifierComplexType resourceID)
+     public void setResourceID(org.lidoSchema.IdentifierComplexType resourceID)
     {
         generatedSetterHelperImpl(resourceID, RESOURCEID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -208,7 +208,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "resourceRepresentation" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourceRepresentationArray(org.lidoSchema.ResourceSetComplexType.ResourceRepresentation[] resourceRepresentationArray)
+     public void setResourceRepresentationArray(org.lidoSchema.ResourceSetComplexType.ResourceRepresentation[] resourceRepresentationArray)
     {
         check_orphaned();
         arraySetterHelper(resourceRepresentationArray, RESOURCEREPRESENTATION$2);
@@ -217,7 +217,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "resourceRepresentation" element
      */
-    @Inject(optional=true) public void setResourceRepresentationArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceRepresentation resourceRepresentation)
+     public void setResourceRepresentationArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceRepresentation resourceRepresentation)
     {
         generatedSetterHelperImpl(resourceRepresentation, RESOURCEREPRESENTATION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -295,7 +295,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "resourceType" element
      */
-    @Inject(optional=true) public void setResourceType(org.lidoSchema.ConceptComplexType resourceType)
+     public void setResourceType(org.lidoSchema.ConceptComplexType resourceType)
     {
         generatedSetterHelperImpl(resourceType, RESOURCETYPE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -421,7 +421,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "resourceRelType" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourceRelTypeArray(org.lidoSchema.ConceptComplexType[] resourceRelTypeArray)
+     public void setResourceRelTypeArray(org.lidoSchema.ConceptComplexType[] resourceRelTypeArray)
     {
         check_orphaned();
         arraySetterHelper(resourceRelTypeArray, RESOURCERELTYPE$6);
@@ -430,7 +430,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "resourceRelType" element
      */
-    @Inject(optional=true) public void setResourceRelTypeArray(int i, org.lidoSchema.ConceptComplexType resourceRelType)
+     public void setResourceRelTypeArray(int i, org.lidoSchema.ConceptComplexType resourceRelType)
     {
         generatedSetterHelperImpl(resourceRelType, RESOURCERELTYPE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -570,7 +570,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "resourcePerspective" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourcePerspectiveArray(org.lidoSchema.ConceptComplexType[] resourcePerspectiveArray)
+     public void setResourcePerspectiveArray(org.lidoSchema.ConceptComplexType[] resourcePerspectiveArray)
     {
         check_orphaned();
         arraySetterHelper(resourcePerspectiveArray, RESOURCEPERSPECTIVE$8);
@@ -579,7 +579,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "resourcePerspective" element
      */
-    @Inject(optional=true) public void setResourcePerspectiveArray(int i, org.lidoSchema.ConceptComplexType resourcePerspective)
+     public void setResourcePerspectiveArray(int i, org.lidoSchema.ConceptComplexType resourcePerspective)
     {
         generatedSetterHelperImpl(resourcePerspective, RESOURCEPERSPECTIVE$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -719,7 +719,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "resourceDescription" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourceDescriptionArray(org.lidoSchema.ResourceSetComplexType.ResourceDescription[] resourceDescriptionArray)
+     public void setResourceDescriptionArray(org.lidoSchema.ResourceSetComplexType.ResourceDescription[] resourceDescriptionArray)
     {
         check_orphaned();
         arraySetterHelper(resourceDescriptionArray, RESOURCEDESCRIPTION$10);
@@ -728,7 +728,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "resourceDescription" element
      */
-    @Inject(optional=true) public void setResourceDescriptionArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceDescription resourceDescription)
+     public void setResourceDescriptionArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceDescription resourceDescription)
     {
         generatedSetterHelperImpl(resourceDescription, RESOURCEDESCRIPTION$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -806,7 +806,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "resourceDateTaken" element
      */
-    @Inject(optional=true) public void setResourceDateTaken(org.lidoSchema.DateSetComplexType resourceDateTaken)
+     public void setResourceDateTaken(org.lidoSchema.DateSetComplexType resourceDateTaken)
     {
         generatedSetterHelperImpl(resourceDateTaken, RESOURCEDATETAKEN$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -932,7 +932,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "resourceSource" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setResourceSourceArray(org.lidoSchema.ResourceSetComplexType.ResourceSource[] resourceSourceArray)
+     public void setResourceSourceArray(org.lidoSchema.ResourceSetComplexType.ResourceSource[] resourceSourceArray)
     {
         check_orphaned();
         arraySetterHelper(resourceSourceArray, RESOURCESOURCE$14);
@@ -941,7 +941,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "resourceSource" element
      */
-    @Inject(optional=true) public void setResourceSourceArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceSource resourceSource)
+     public void setResourceSourceArray(int i, org.lidoSchema.ResourceSetComplexType.ResourceSource resourceSource)
     {
         generatedSetterHelperImpl(resourceSource, RESOURCESOURCE$14, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1081,7 +1081,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets array of all "rightsResource" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setRightsResourceArray(org.lidoSchema.ResourceSetComplexType.RightsResource[] rightsResourceArray)
+     public void setRightsResourceArray(org.lidoSchema.ResourceSetComplexType.RightsResource[] rightsResourceArray)
     {
         check_orphaned();
         arraySetterHelper(rightsResourceArray, RIGHTSRESOURCE$16);
@@ -1090,7 +1090,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets ith "rightsResource" element
      */
-    @Inject(optional=true) public void setRightsResourceArray(int i, org.lidoSchema.ResourceSetComplexType.RightsResource rightsResource)
+     public void setRightsResourceArray(int i, org.lidoSchema.ResourceSetComplexType.RightsResource rightsResource)
     {
         generatedSetterHelperImpl(rightsResource, RIGHTSRESOURCE$16, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -1177,7 +1177,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "linkResource" element
          */
-        @Inject(optional=true) public void setLinkResource(org.lidoSchema.ResourceSetComplexType.ResourceRepresentation.LinkResource linkResource)
+         public void setLinkResource(org.lidoSchema.ResourceSetComplexType.ResourceRepresentation.LinkResource linkResource)
         {
             generatedSetterHelperImpl(linkResource, LINKRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1291,7 +1291,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "resourceMeasurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceMeasurementsSetArray(org.lidoSchema.MeasurementsSetComplexType[] resourceMeasurementsSetArray)
+         public void setResourceMeasurementsSetArray(org.lidoSchema.MeasurementsSetComplexType[] resourceMeasurementsSetArray)
         {
             check_orphaned();
             arraySetterHelper(resourceMeasurementsSetArray, RESOURCEMEASUREMENTSSET$2);
@@ -1300,7 +1300,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "resourceMeasurementsSet" element
          */
-        @Inject(optional=true) public void setResourceMeasurementsSetArray(int i, org.lidoSchema.MeasurementsSetComplexType resourceMeasurementsSet)
+         public void setResourceMeasurementsSetArray(int i, org.lidoSchema.MeasurementsSetComplexType resourceMeasurementsSet)
         {
             generatedSetterHelperImpl(resourceMeasurementsSet, RESOURCEMEASUREMENTSSET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1392,7 +1392,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -1516,7 +1516,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "pref" attribute
              */
-            @Inject(optional=true) public void setPref(java.lang.String pref)
+             public void setPref(java.lang.String pref)
             {
                 synchronized (monitor())
                 {
@@ -1608,7 +1608,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "formatResource" attribute
              */
-            @Inject(optional=true) public void setFormatResource(java.lang.String formatResource)
+             public void setFormatResource(java.lang.String formatResource)
             {
                 synchronized (monitor())
                 {
@@ -1700,7 +1700,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "lang" attribute
              */
-            @Inject(optional=true) public void setLang(java.lang.String lang)
+             public void setLang(java.lang.String lang)
             {
                 synchronized (monitor())
                 {
@@ -1792,7 +1792,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "encodinganalog" attribute
              */
-            @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+             public void setEncodinganalog(java.lang.String encodinganalog)
             {
                 synchronized (monitor())
                 {
@@ -1884,7 +1884,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "label" attribute
              */
-            @Inject(optional=true) public void setLabel(java.lang.String label)
+             public void setLabel(java.lang.String label)
             {
                 synchronized (monitor())
                 {
@@ -1976,7 +1976,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
             /**
              * Sets the "codecResource" attribute
              */
-            @Inject(optional=true) public void setCodecResource(java.lang.String codecResource)
+             public void setCodecResource(java.lang.String codecResource)
             {
                 synchronized (monitor())
                 {
@@ -2100,7 +2100,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+         public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -2192,7 +2192,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+         public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -2284,7 +2284,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+         public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -2376,7 +2376,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -2468,7 +2468,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2580,7 +2580,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+         public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -2672,7 +2672,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {
@@ -2782,7 +2782,7 @@ public class ResourceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "sortorder" attribute
          */
-        @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+         public void setSortorder(java.math.BigInteger sortorder)
         {
             synchronized (monitor())
             {

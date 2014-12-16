@@ -15,7 +15,7 @@
  */
 package net.opengis.gml.impl;
 
-import com.google.inject.Inject;
+
 
 /**
  * A document containing one quantityType(@http://www.opengis.net/gml) element.
@@ -56,7 +56,7 @@ public class QuantityTypeDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "quantityType" element
      */
-    @Inject(optional=true) public void setQuantityType(net.opengis.gml.StringOrRefType quantityType)
+     public void setQuantityType(net.opengis.gml.StringOrRefType quantityType)
     {
         generatedSetterHelperImpl(quantityType, QUANTITYTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;  
+
 /**
  * An XML descriptiveNoteComplexType(@http://www.lido-schema.org).
  *
@@ -136,7 +136,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets array of all "descriptiveNoteID" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDescriptiveNoteIDArray(org.lidoSchema.IdentifierComplexType[] descriptiveNoteIDArray)
+     public void setDescriptiveNoteIDArray(org.lidoSchema.IdentifierComplexType[] descriptiveNoteIDArray)
     {
         check_orphaned();
         arraySetterHelper(descriptiveNoteIDArray, DESCRIPTIVENOTEID$0);
@@ -145,7 +145,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets ith "descriptiveNoteID" element
      */
-    @Inject(optional=true) public void setDescriptiveNoteIDArray(int i, org.lidoSchema.IdentifierComplexType descriptiveNoteID)
+     public void setDescriptiveNoteIDArray(int i, org.lidoSchema.IdentifierComplexType descriptiveNoteID)
     {
         generatedSetterHelperImpl(descriptiveNoteID, DESCRIPTIVENOTEID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -285,7 +285,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets array of all "descriptiveNoteValue" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDescriptiveNoteValueArray(org.lidoSchema.TextComplexType[] descriptiveNoteValueArray)
+     public void setDescriptiveNoteValueArray(org.lidoSchema.TextComplexType[] descriptiveNoteValueArray)
     {
         check_orphaned();
         arraySetterHelper(descriptiveNoteValueArray, DESCRIPTIVENOTEVALUE$2);
@@ -294,7 +294,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets ith "descriptiveNoteValue" element
      */
-    @Inject(optional=true) public void setDescriptiveNoteValueArray(int i, org.lidoSchema.TextComplexType descriptiveNoteValue)
+     public void setDescriptiveNoteValueArray(int i, org.lidoSchema.TextComplexType descriptiveNoteValue)
     {
         generatedSetterHelperImpl(descriptiveNoteValue, DESCRIPTIVENOTEVALUE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -434,7 +434,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets array of all "sourceDescriptiveNote" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setSourceDescriptiveNoteArray(org.lidoSchema.TextComplexType[] sourceDescriptiveNoteArray)
+     public void setSourceDescriptiveNoteArray(org.lidoSchema.TextComplexType[] sourceDescriptiveNoteArray)
     {
         check_orphaned();
         arraySetterHelper(sourceDescriptiveNoteArray, SOURCEDESCRIPTIVENOTE$4);
@@ -443,7 +443,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets ith "sourceDescriptiveNote" element
      */
-    @Inject(optional=true) public void setSourceDescriptiveNoteArray(int i, org.lidoSchema.TextComplexType sourceDescriptiveNote)
+     public void setSourceDescriptiveNoteArray(int i, org.lidoSchema.TextComplexType sourceDescriptiveNote)
     {
         generatedSetterHelperImpl(sourceDescriptiveNote, SOURCEDESCRIPTIVENOTE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -535,7 +535,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+     public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
@@ -627,7 +627,7 @@ public class DescriptiveNoteComplexTypeImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "sortorder" attribute
      */
-    @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+     public void setSortorder(java.math.BigInteger sortorder)
     {
         synchronized (monitor())
         {

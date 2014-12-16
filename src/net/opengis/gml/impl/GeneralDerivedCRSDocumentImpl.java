@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _GeneralDerivedCRS(@http://www.opengis.net/gml) element.
  *
@@ -58,7 +58,7 @@ public class GeneralDerivedCRSDocumentImpl extends net.opengis.gml.impl.Coordina
     /**
      * Sets the "_GeneralDerivedCRS" element
      */
-    @Inject(optional=true) public void setGeneralDerivedCRS(net.opengis.gml.AbstractGeneralDerivedCRSType generalDerivedCRS)
+     public void setGeneralDerivedCRS(net.opengis.gml.AbstractGeneralDerivedCRSType generalDerivedCRS)
     {
         synchronized (monitor())
         {

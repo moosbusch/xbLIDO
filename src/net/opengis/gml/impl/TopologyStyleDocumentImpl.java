@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one topologyStyle(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class TopologyStyleDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "topologyStyle" element
      */
-    @Inject(optional=true) public void setTopologyStyle(net.opengis.gml.TopologyStylePropertyType topologyStyle)
+     public void setTopologyStyle(net.opengis.gml.TopologyStylePropertyType topologyStyle)
     {
         generatedSetterHelperImpl(topologyStyle, TOPOLOGYSTYLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

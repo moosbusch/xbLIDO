@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one using(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class UsingDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "using" element
      */
-    @Inject(optional=true) public void setUsing(net.opengis.gml.FeaturePropertyType using)
+     public void setUsing(net.opengis.gml.FeaturePropertyType using)
     {
         generatedSetterHelperImpl(using, USING$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

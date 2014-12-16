@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML AbstractGMLType(@http://www.opengis.net/gml).
  *
@@ -145,7 +145,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "metaDataProperty" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMetaDataPropertyArray(net.opengis.gml.MetaDataPropertyType[] metaDataPropertyArray)
+     public void setMetaDataPropertyArray(net.opengis.gml.MetaDataPropertyType[] metaDataPropertyArray)
     {
         check_orphaned();
         arraySetterHelper(metaDataPropertyArray, METADATAPROPERTY$0);
@@ -154,7 +154,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "metaDataProperty" element
      */
-    @Inject(optional=true) public void setMetaDataPropertyArray(int i, net.opengis.gml.MetaDataPropertyType metaDataProperty)
+     public void setMetaDataPropertyArray(int i, net.opengis.gml.MetaDataPropertyType metaDataProperty)
     {
         generatedSetterHelperImpl(metaDataProperty, METADATAPROPERTY$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -232,7 +232,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "description" element
      */
-    @Inject(optional=true) public void setDescription(net.opengis.gml.StringOrRefType description)
+     public void setDescription(net.opengis.gml.StringOrRefType description)
     {
         generatedSetterHelperImpl(description, DESCRIPTION$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -358,7 +358,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets array of all "name" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setNameArray(net.opengis.gml.CodeType[] nameArray)
+     public void setNameArray(net.opengis.gml.CodeType[] nameArray)
     {
         check_orphaned();
         arraySetterHelper(nameArray, NAME$4, NAME$5);
@@ -367,7 +367,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets ith "name" element
      */
-    @Inject(optional=true) public void setNameArray(int i, net.opengis.gml.CodeType name)
+     public void setNameArray(int i, net.opengis.gml.CodeType name)
     {
         synchronized (monitor())
         {
@@ -469,7 +469,7 @@ public class AbstractGMLTypeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "id" attribute
      */
-    @Inject(optional=true) public void setId(java.lang.String id)
+     public void setId(java.lang.String id)
     {
         synchronized (monitor())
         {

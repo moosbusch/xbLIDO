@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * An XML placeSetComplexType(@http://www.lido-schema.org).
  *
@@ -129,7 +129,7 @@ public class PlaceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets array of all "displayPlace" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setDisplayPlaceArray(org.lidoSchema.TextComplexType[] displayPlaceArray)
+     public void setDisplayPlaceArray(org.lidoSchema.TextComplexType[] displayPlaceArray)
     {
         check_orphaned();
         arraySetterHelper(displayPlaceArray, DISPLAYPLACE$0);
@@ -138,7 +138,7 @@ public class PlaceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets ith "displayPlace" element
      */
-    @Inject(optional=true) public void setDisplayPlaceArray(int i, org.lidoSchema.TextComplexType displayPlace)
+     public void setDisplayPlaceArray(int i, org.lidoSchema.TextComplexType displayPlace)
     {
         generatedSetterHelperImpl(displayPlace, DISPLAYPLACE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -216,7 +216,7 @@ public class PlaceSetComplexTypeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "place" element
      */
-    @Inject(optional=true) public void setPlace(org.lidoSchema.PlaceComplexType place)
+     public void setPlace(org.lidoSchema.PlaceComplexType place)
     {
         generatedSetterHelperImpl(place, PLACE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

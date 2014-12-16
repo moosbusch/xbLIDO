@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML MultiPolygonType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class MultiPolygonTypeImpl extends net.opengis.gml.impl.AbstractGeometric
     /**
      * Sets array of all "polygonMember" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPolygonMemberArray(net.opengis.gml.PolygonPropertyType[] polygonMemberArray)
+     public void setPolygonMemberArray(net.opengis.gml.PolygonPropertyType[] polygonMemberArray)
     {
         check_orphaned();
         arraySetterHelper(polygonMemberArray, POLYGONMEMBER$0);
@@ -136,7 +136,7 @@ public class MultiPolygonTypeImpl extends net.opengis.gml.impl.AbstractGeometric
     /**
      * Sets ith "polygonMember" element
      */
-    @Inject(optional=true) public void setPolygonMemberArray(int i, net.opengis.gml.PolygonPropertyType polygonMember)
+     public void setPolygonMemberArray(int i, net.opengis.gml.PolygonPropertyType polygonMember)
     {
         generatedSetterHelperImpl(polygonMember, POLYGONMEMBER$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

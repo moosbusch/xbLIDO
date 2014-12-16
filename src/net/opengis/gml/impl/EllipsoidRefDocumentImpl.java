@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one ellipsoidRef(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class EllipsoidRefDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "ellipsoidRef" element
      */
-    @Inject(optional=true) public void setEllipsoidRef(net.opengis.gml.EllipsoidRefType ellipsoidRef)
+     public void setEllipsoidRef(net.opengis.gml.EllipsoidRefType ellipsoidRef)
     {
         generatedSetterHelperImpl(ellipsoidRef, ELLIPSOIDREF$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

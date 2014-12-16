@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one rectifiedGridDomain(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class RectifiedGridDomainDocumentImpl extends net.opengis.gml.impl.Domain
     /**
      * Sets the "rectifiedGridDomain" element
      */
-    @Inject(optional=true) public void setRectifiedGridDomain(net.opengis.gml.RectifiedGridDomainType rectifiedGridDomain)
+     public void setRectifiedGridDomain(net.opengis.gml.RectifiedGridDomainType rectifiedGridDomain)
     {
         generatedSetterHelperImpl(rectifiedGridDomain, RECTIFIEDGRIDDOMAIN$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

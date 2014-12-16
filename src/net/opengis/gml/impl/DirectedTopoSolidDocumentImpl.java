@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one directedTopoSolid(@http://www.opengis.net/gml) element.
  *
@@ -53,7 +53,7 @@ public class DirectedTopoSolidDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "directedTopoSolid" element
      */
-    @Inject(optional=true) public void setDirectedTopoSolid(net.opengis.gml.DirectedTopoSolidPropertyType directedTopoSolid)
+     public void setDirectedTopoSolid(net.opengis.gml.DirectedTopoSolidPropertyType directedTopoSolid)
     {
         generatedSetterHelperImpl(directedTopoSolid, DIRECTEDTOPOSOLID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

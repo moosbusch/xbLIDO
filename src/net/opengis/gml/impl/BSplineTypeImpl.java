@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML BSplineType(@http://www.opengis.net/gml).
  *
@@ -145,7 +145,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets array of all "pos" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
+     public void setPosArray(net.opengis.gml.DirectPositionType[] posArray)
     {
         check_orphaned();
         arraySetterHelper(posArray, POS$0);
@@ -154,7 +154,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets ith "pos" element
      */
-    @Inject(optional=true) public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
+     public void setPosArray(int i, net.opengis.gml.DirectPositionType pos)
     {
         generatedSetterHelperImpl(pos, POS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -294,7 +294,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets array of all "pointProperty" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
+     public void setPointPropertyArray(net.opengis.gml.PointPropertyType[] pointPropertyArray)
     {
         check_orphaned();
         arraySetterHelper(pointPropertyArray, POINTPROPERTY$2);
@@ -303,7 +303,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets ith "pointProperty" element
      */
-    @Inject(optional=true) public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
+     public void setPointPropertyArray(int i, net.opengis.gml.PointPropertyType pointProperty)
     {
         generatedSetterHelperImpl(pointProperty, POINTPROPERTY$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -443,7 +443,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets array of all "pointRep" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
+     public void setPointRepArray(net.opengis.gml.PointPropertyType[] pointRepArray)
     {
         check_orphaned();
         arraySetterHelper(pointRepArray, POINTREP$4);
@@ -452,7 +452,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets ith "pointRep" element
      */
-    @Inject(optional=true) public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
+     public void setPointRepArray(int i, net.opengis.gml.PointPropertyType pointRep)
     {
         generatedSetterHelperImpl(pointRep, POINTREP$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -530,7 +530,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "posList" element
      */
-    @Inject(optional=true) public void setPosList(net.opengis.gml.DirectPositionListType posList)
+     public void setPosList(net.opengis.gml.DirectPositionListType posList)
     {
         generatedSetterHelperImpl(posList, POSLIST$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -594,7 +594,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "coordinates" element
      */
-    @Inject(optional=true) public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
+     public void setCoordinates(net.opengis.gml.CoordinatesType coordinates)
     {
         generatedSetterHelperImpl(coordinates, COORDINATES$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -660,7 +660,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "degree" element
      */
-    @Inject(optional=true) public void setDegree(java.math.BigInteger degree)
+     public void setDegree(java.math.BigInteger degree)
     {
         synchronized (monitor())
         {
@@ -788,7 +788,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets array of all "knot" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setKnotArray(net.opengis.gml.KnotPropertyType[] knotArray)
+     public void setKnotArray(net.opengis.gml.KnotPropertyType[] knotArray)
     {
         check_orphaned();
         arraySetterHelper(knotArray, KNOT$12);
@@ -797,7 +797,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets ith "knot" element
      */
-    @Inject(optional=true) public void setKnotArray(int i, net.opengis.gml.KnotPropertyType knot)
+     public void setKnotArray(int i, net.opengis.gml.KnotPropertyType knot)
     {
         generatedSetterHelperImpl(knot, KNOT$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -897,7 +897,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "interpolation" attribute
      */
-    @Inject(optional=true) public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
+     public void setInterpolation(net.opengis.gml.CurveInterpolationType.Enum interpolation)
     {
         synchronized (monitor())
         {
@@ -989,7 +989,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "isPolynomial" attribute
      */
-    @Inject(optional=true) public void setIsPolynomial(boolean isPolynomial)
+     public void setIsPolynomial(boolean isPolynomial)
     {
         synchronized (monitor())
         {
@@ -1081,7 +1081,7 @@ public class BSplineTypeImpl extends net.opengis.gml.impl.AbstractCurveSegmentTy
     /**
      * Sets the "knotType" attribute
      */
-    @Inject(optional=true) public void setKnotType(net.opengis.gml.KnotTypesType.Enum knotType)
+     public void setKnotType(net.opengis.gml.KnotTypesType.Enum knotType)
     {
         synchronized (monitor())
         {

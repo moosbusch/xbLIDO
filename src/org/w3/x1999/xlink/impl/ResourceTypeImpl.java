@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * An XML resourceType(@http://www.w3.org/1999/xlink).
  *
@@ -81,7 +81,7 @@ public class ResourceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(org.w3.x1999.xlink.TypeType.Enum type)
+     public void setType(org.w3.x1999.xlink.TypeType.Enum type)
     {
         synchronized (monitor())
         {
@@ -161,7 +161,7 @@ public class ResourceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "role" attribute
      */
-    @Inject(optional=true) public void setRole(java.lang.String role)
+     public void setRole(java.lang.String role)
     {
         synchronized (monitor())
         {
@@ -253,7 +253,7 @@ public class ResourceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "title" attribute
      */
-    @Inject(optional=true) public void setTitle(java.lang.String title)
+     public void setTitle(java.lang.String title)
     {
         synchronized (monitor())
         {
@@ -345,7 +345,7 @@ public class ResourceTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "label" attribute
      */
-    @Inject(optional=true) public void setLabel(java.lang.String label)
+     public void setLabel(java.lang.String label)
     {
         synchronized (monitor())
         {

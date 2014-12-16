@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright 2013 Gunnar Kappei.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
+package org.lidoSchema.impl;
 /**
  * A document containing one inscriptionsWrap(@http://www.lido-schema.org) element.
  *
@@ -54,7 +53,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "inscriptionsWrap" element
      */
-    @Inject(optional=true) public void setInscriptionsWrap(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
+     public void setInscriptionsWrap(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
     {
         generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +184,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "inscriptions" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setInscriptionsArray(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions[] inscriptionsArray)
+         public void setInscriptionsArray(org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions[] inscriptionsArray)
         {
             check_orphaned();
             arraySetterHelper(inscriptionsArray, INSCRIPTIONS$0);
@@ -194,7 +193,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "inscriptions" element
          */
-        @Inject(optional=true) public void setInscriptionsArray(int i, org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions inscriptions)
+         public void setInscriptionsArray(int i, org.lidoSchema.InscriptionsWrapDocument.InscriptionsWrap.Inscriptions inscriptions)
         {
             generatedSetterHelperImpl(inscriptions, INSCRIPTIONS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -357,7 +356,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets array of all "inscriptionTranscription" element  WARNING: This method is not atomicaly synchronized.
              */
-            @Inject(optional=true) public void setInscriptionTranscriptionArray(org.lidoSchema.TextComplexType[] inscriptionTranscriptionArray)
+             public void setInscriptionTranscriptionArray(org.lidoSchema.TextComplexType[] inscriptionTranscriptionArray)
             {
                 check_orphaned();
                 arraySetterHelper(inscriptionTranscriptionArray, INSCRIPTIONTRANSCRIPTION$0);
@@ -366,7 +365,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets ith "inscriptionTranscription" element
              */
-            @Inject(optional=true) public void setInscriptionTranscriptionArray(int i, org.lidoSchema.TextComplexType inscriptionTranscription)
+             public void setInscriptionTranscriptionArray(int i, org.lidoSchema.TextComplexType inscriptionTranscription)
             {
                 generatedSetterHelperImpl(inscriptionTranscription, INSCRIPTIONTRANSCRIPTION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
             }
@@ -506,7 +505,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets array of all "inscriptionDescription" element  WARNING: This method is not atomicaly synchronized.
              */
-            @Inject(optional=true) public void setInscriptionDescriptionArray(org.lidoSchema.DescriptiveNoteComplexType[] inscriptionDescriptionArray)
+             public void setInscriptionDescriptionArray(org.lidoSchema.DescriptiveNoteComplexType[] inscriptionDescriptionArray)
             {
                 check_orphaned();
                 arraySetterHelper(inscriptionDescriptionArray, INSCRIPTIONDESCRIPTION$2);
@@ -515,7 +514,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets ith "inscriptionDescription" element
              */
-            @Inject(optional=true) public void setInscriptionDescriptionArray(int i, org.lidoSchema.DescriptiveNoteComplexType inscriptionDescription)
+             public void setInscriptionDescriptionArray(int i, org.lidoSchema.DescriptiveNoteComplexType inscriptionDescription)
             {
                 generatedSetterHelperImpl(inscriptionDescription, INSCRIPTIONDESCRIPTION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
             }
@@ -607,7 +606,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets the "type" attribute
              */
-            @Inject(optional=true) public void setType(java.lang.String type)
+             public void setType(java.lang.String type)
             {
                 synchronized (monitor())
                 {
@@ -699,7 +698,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
             /**
              * Sets the "sortorder" attribute
              */
-            @Inject(optional=true) public void setSortorder(@SortOrder java.math.BigInteger sortorder)
+             public void setSortorder(java.math.BigInteger sortorder)
             {
                 synchronized (monitor())
                 {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DerivedCRSType(@http://www.opengis.net/gml).
  *
@@ -55,7 +55,7 @@ public class DerivedCRSTypeImpl extends net.opengis.gml.impl.AbstractGeneralDeri
     /**
      * Sets the "derivedCRSType" element
      */
-    @Inject(optional=true) public void setDerivedCRSType(net.opengis.gml.DerivedCRSTypeType derivedCRSType)
+     public void setDerivedCRSType(net.opengis.gml.DerivedCRSTypeType derivedCRSType)
     {
         generatedSetterHelperImpl(derivedCRSType, DERIVEDCRSTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -95,7 +95,7 @@ public class DerivedCRSTypeImpl extends net.opengis.gml.impl.AbstractGeneralDeri
     /**
      * Sets the "usesCS" element
      */
-    @Inject(optional=true) public void setUsesCS(net.opengis.gml.CoordinateSystemRefType usesCS)
+     public void setUsesCS(net.opengis.gml.CoordinateSystemRefType usesCS)
     {
         generatedSetterHelperImpl(usesCS, USESCS$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

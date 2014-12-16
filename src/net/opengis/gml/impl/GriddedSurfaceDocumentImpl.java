@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _GriddedSurface(@http://www.opengis.net/gml) element.
  *
@@ -59,7 +59,7 @@ public class GriddedSurfaceDocumentImpl extends net.opengis.gml.impl.ParametricC
     /**
      * Sets the "_GriddedSurface" element
      */
-    @Inject(optional=true) public void setGriddedSurface(net.opengis.gml.AbstractGriddedSurfaceType griddedSurface)
+     public void setGriddedSurface(net.opengis.gml.AbstractGriddedSurfaceType griddedSurface)
     {
         synchronized (monitor())
         {

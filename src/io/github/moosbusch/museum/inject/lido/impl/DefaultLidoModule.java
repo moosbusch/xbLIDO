@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.lido.impl;
+package io.github.moosbusch.museum.inject.lido.impl;
 
 import com.google.inject.Provides;
 import java.math.BigInteger;
@@ -874,7 +874,6 @@ import net.opengis.gml.VerticalDatumTypeType;
 import net.opengis.gml.VerticalExtentDocument;
 import net.opengis.gml.VolumeType;
 import net.opengis.gml.impl.BoundedFeatureTypeImpl;
-import org.apache.xmlbeans.XmlObject;
 import org.lidoSchema.ActorComplexType;
 import org.lidoSchema.ActorInRoleComplexType;
 import org.lidoSchema.ActorInRoleSetComplexType;
@@ -943,15 +942,11 @@ import org.lidoSchema.TextComplexType;
 import org.lidoSchema.TitleWrapDocument;
 import org.lidoSchema.TypeAttribute;
 import org.lidoSchema.WebResourceComplexType;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.document.lido.LidoXmlDocument;
-import org.moosbusch.museum.document.lido.impl.DefaultLidoXmlDocument;
-import org.moosbusch.museum.inject.MuseumXmlModule;
-import org.moosbusch.museum.inject.MuseumXmlObjectFactory;
-import org.moosbusch.museum.inject.annotation.Language;
-import org.moosbusch.museum.inject.annotation.RelatedEncoding;
-import org.moosbusch.museum.inject.lido.annotation.SortOrder;
-import org.moosbusch.museum.inject.lido.spi.AbstractLidoModule;
+import io.github.moosbusch.museum.document.lido.LidoXmlDocument;
+import io.github.moosbusch.museum.document.lido.impl.DefaultLidoObjectFactory;
+import io.github.moosbusch.museum.document.lido.impl.DefaultLidoXmlDocument;
+import io.github.moosbusch.museum.inject.lido.LidoModule;
+import io.github.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
 import org.w3.x1999.xlink.ActuateAttribute;
 import org.w3.x1999.xlink.ActuateType;
 import org.w3.x1999.xlink.ArcroleAttribute;
@@ -1001,37 +996,16 @@ import org.w3.x2001.smil20.language.SetType;
  *
  * @author moosbusch
  */
-public class DefaultLidoModule extends AbstractLidoModule {
-
-    public DefaultLidoModule(MuseumXmlObjectFactory<? extends MuseumXmlModule, ? extends XmlObject> objFactory) {
-        super(objFactory);
-    }
+public class DefaultLidoModule extends AbstractMuseumXmlModule implements LidoModule {
 
     @Override
     protected void configureImpl() {
-        binder().bind(String.class).annotatedWith(Language.class).toInstance(
-                getLanguage());
-        binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(
-                getRelatedEncoding());
-        binder().bind(BigInteger.class).annotatedWith(SortOrder.class).toInstance(
-                BigInteger.ZERO);
         binder().bind(BigInteger.class).toInstance(BigInteger.ZERO);
-    }
-
-    @Override
-    protected String createRelatedEncoding() {
-        return MuseumXmlDocument.DEFAULT_RELATED_ENCODING;
     }
 
     @Provides
     @Override
     public LidoXmlDocument<? extends DefaultLidoObjectFactory> createDocument() {
-        return new DefaultLidoXmlDocument();
-    }
-
-    @Provides
-    @Override
-    public LidoXmlDocument<? extends DefaultLidoObjectFactory> createLidoXmlDocument() {
         return new DefaultLidoXmlDocument();
     }
 
@@ -1081,12 +1055,6 @@ public class DefaultLidoModule extends AbstractLidoModule {
     @Override
     public BoundedFeatureType createGmlBoundedFeatureType() {
         return new BoundedFeatureTypeImpl(BoundedFeatureType.type);
-    }
-
-    @Provides
-    @Override
-    public RepositorySetComplexType createLidoRepositorySetComplexType() {
-        return RepositorySetComplexType.Factory.newInstance();
     }
 
     @Provides

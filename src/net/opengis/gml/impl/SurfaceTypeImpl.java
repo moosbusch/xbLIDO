@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML SurfaceType(@http://www.opengis.net/gml).
  *
@@ -58,7 +58,7 @@ public class SurfaceTypeImpl extends net.opengis.gml.impl.AbstractSurfaceTypeImp
     /**
      * Sets the "patches" element
      */
-    @Inject(optional=true) public void setPatches(net.opengis.gml.SurfacePatchArrayPropertyType patches)
+     public void setPatches(net.opengis.gml.SurfacePatchArrayPropertyType patches)
     {
         synchronized (monitor())
         {

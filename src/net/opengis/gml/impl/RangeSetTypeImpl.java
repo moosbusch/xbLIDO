@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML RangeSetType(@http://www.opengis.net/gml).
  *
@@ -139,7 +139,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "ValueArray" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setValueArray1Array(net.opengis.gml.ValueArrayType[] valueArray1Array)
+     public void setValueArray1Array(net.opengis.gml.ValueArrayType[] valueArray1Array)
     {
         check_orphaned();
         arraySetterHelper(valueArray1Array, VALUEARRAY1$0);
@@ -148,7 +148,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "ValueArray" element
      */
-    @Inject(optional=true) public void setValueArray1Array(int i, net.opengis.gml.ValueArrayType valueArray1)
+     public void setValueArray1Array(int i, net.opengis.gml.ValueArrayType valueArray1)
     {
         generatedSetterHelperImpl(valueArray1, VALUEARRAY1$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -369,7 +369,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "BooleanList" element
      */
-    @Inject(optional=true) public void setBooleanListArray(java.util.List[] booleanListArray)
+     public void setBooleanListArray(java.util.List[] booleanListArray)
     {
         synchronized (monitor())
         {
@@ -381,7 +381,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "BooleanList" element
      */
-    @Inject(optional=true) public void setBooleanListArray(int i, java.util.List booleanList)
+     public void setBooleanListArray(int i, java.util.List booleanList)
     {
         synchronized (monitor())
         {
@@ -589,7 +589,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "CategoryList" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setCategoryListArray(net.opengis.gml.CodeOrNullListType[] categoryListArray)
+     public void setCategoryListArray(net.opengis.gml.CodeOrNullListType[] categoryListArray)
     {
         check_orphaned();
         arraySetterHelper(categoryListArray, CATEGORYLIST$4);
@@ -598,7 +598,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "CategoryList" element
      */
-    @Inject(optional=true) public void setCategoryListArray(int i, net.opengis.gml.CodeOrNullListType categoryList)
+     public void setCategoryListArray(int i, net.opengis.gml.CodeOrNullListType categoryList)
     {
         generatedSetterHelperImpl(categoryList, CATEGORYLIST$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -738,7 +738,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "QuantityList" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setQuantityListArray(net.opengis.gml.MeasureOrNullListType[] quantityListArray)
+     public void setQuantityListArray(net.opengis.gml.MeasureOrNullListType[] quantityListArray)
     {
         check_orphaned();
         arraySetterHelper(quantityListArray, QUANTITYLIST$6);
@@ -747,7 +747,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "QuantityList" element
      */
-    @Inject(optional=true) public void setQuantityListArray(int i, net.opengis.gml.MeasureOrNullListType quantityList)
+     public void setQuantityListArray(int i, net.opengis.gml.MeasureOrNullListType quantityList)
     {
         generatedSetterHelperImpl(quantityList, QUANTITYLIST$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
@@ -968,7 +968,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets array of all "CountList" element
      */
-    @Inject(optional=true) public void setCountListArray(java.util.List[] countListArray)
+     public void setCountListArray(java.util.List[] countListArray)
     {
         synchronized (monitor())
         {
@@ -980,7 +980,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets ith "CountList" element
      */
-    @Inject(optional=true) public void setCountListArray(int i, java.util.List countList)
+     public void setCountListArray(int i, java.util.List countList)
     {
         synchronized (monitor())
         {
@@ -1126,7 +1126,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "DataBlock" element
      */
-    @Inject(optional=true) public void setDataBlock(net.opengis.gml.DataBlockType dataBlock)
+     public void setDataBlock(net.opengis.gml.DataBlockType dataBlock)
     {
         generatedSetterHelperImpl(dataBlock, DATABLOCK$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -1190,7 +1190,7 @@ public class RangeSetTypeImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "File" element
      */
-    @Inject(optional=true) public void setFile(net.opengis.gml.FileType file)
+     public void setFile(net.opengis.gml.FileType file)
     {
         generatedSetterHelperImpl(file, FILE$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

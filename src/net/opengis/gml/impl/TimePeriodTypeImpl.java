@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TimePeriodType(@http://www.opengis.net/gml).
  *
@@ -75,7 +75,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "beginPosition" element
      */
-    @Inject(optional=true) public void setBeginPosition(net.opengis.gml.TimePositionType beginPosition)
+     public void setBeginPosition(net.opengis.gml.TimePositionType beginPosition)
     {
         generatedSetterHelperImpl(beginPosition, BEGINPOSITION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -139,7 +139,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "begin" element
      */
-    @Inject(optional=true) public void setBegin(net.opengis.gml.TimeInstantPropertyType begin)
+     public void setBegin(net.opengis.gml.TimeInstantPropertyType begin)
     {
         generatedSetterHelperImpl(begin, BEGIN$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -203,7 +203,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "endPosition" element
      */
-    @Inject(optional=true) public void setEndPosition(net.opengis.gml.TimePositionType endPosition)
+     public void setEndPosition(net.opengis.gml.TimePositionType endPosition)
     {
         generatedSetterHelperImpl(endPosition, ENDPOSITION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -267,7 +267,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "end" element
      */
-    @Inject(optional=true) public void setEnd(net.opengis.gml.TimeInstantPropertyType end)
+     public void setEnd(net.opengis.gml.TimeInstantPropertyType end)
     {
         generatedSetterHelperImpl(end, END$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -345,7 +345,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "duration" element
      */
-    @Inject(optional=true) public void setDuration(org.apache.xmlbeans.GDuration duration)
+     public void setDuration(org.apache.xmlbeans.GDuration duration)
     {
         synchronized (monitor())
         {
@@ -423,7 +423,7 @@ public class TimePeriodTypeImpl extends net.opengis.gml.impl.AbstractTimeGeometr
     /**
      * Sets the "timeInterval" element
      */
-    @Inject(optional=true) public void setTimeInterval(net.opengis.gml.TimeIntervalLengthType timeInterval)
+     public void setTimeInterval(net.opengis.gml.TimeIntervalLengthType timeInterval)
     {
         generatedSetterHelperImpl(timeInterval, TIMEINTERVAL$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }

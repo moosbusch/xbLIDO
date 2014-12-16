@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one addedSearchTerm(@http://www.lido-schema.org) attribute.
  *
@@ -87,7 +87,7 @@ public class AddedSearchTermAttributeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "addedSearchTerm" attribute
      */
-    @Inject(optional=true) public void setAddedSearchTerm(org.lidoSchema.AddedSearchTermAttribute.AddedSearchTerm.Enum addedSearchTerm)
+     public void setAddedSearchTerm(org.lidoSchema.AddedSearchTermAttribute.AddedSearchTerm.Enum addedSearchTerm)
     {
         synchronized (monitor())
         {

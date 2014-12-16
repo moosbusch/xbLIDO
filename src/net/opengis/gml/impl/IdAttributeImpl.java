@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one id(@http://www.opengis.net/gml) attribute.
  *
@@ -79,7 +79,7 @@ public class IdAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "id" attribute
      */
-    @Inject(optional=true) public void setId(java.lang.String id)
+     public void setId(java.lang.String id)
     {
         synchronized (monitor())
         {

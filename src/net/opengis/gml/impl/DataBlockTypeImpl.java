@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML DataBlockType(@http://www.opengis.net/gml).
  *
@@ -57,7 +57,7 @@ public class DataBlockTypeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "rangeParameters" element
      */
-    @Inject(optional=true) public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
+     public void setRangeParameters(net.opengis.gml.RangeParametersType rangeParameters)
     {
         generatedSetterHelperImpl(rangeParameters, RANGEPARAMETERS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -109,7 +109,7 @@ public class DataBlockTypeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "tupleList" element
      */
-    @Inject(optional=true) public void setTupleList(net.opengis.gml.CoordinatesType tupleList)
+     public void setTupleList(net.opengis.gml.CoordinatesType tupleList)
     {
         generatedSetterHelperImpl(tupleList, TUPLELIST$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -187,7 +187,7 @@ public class DataBlockTypeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "doubleOrNullTupleList" element
      */
-    @Inject(optional=true) public void setDoubleOrNullTupleList(java.util.List doubleOrNullTupleList)
+     public void setDoubleOrNullTupleList(java.util.List doubleOrNullTupleList)
     {
         synchronized (monitor())
         {

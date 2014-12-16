@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML TrackType(@http://www.opengis.net/gml).
  *
@@ -127,7 +127,7 @@ public class TrackTypeImpl extends net.opengis.gml.impl.HistoryPropertyTypeImpl 
     /**
      * Sets array of all "MovingObjectStatus" element  WARNING: This method is not atomicaly synchronized.
      */
-    @Inject(optional=true) public void setMovingObjectStatusArray(net.opengis.gml.MovingObjectStatusType[] movingObjectStatusArray)
+     public void setMovingObjectStatusArray(net.opengis.gml.MovingObjectStatusType[] movingObjectStatusArray)
     {
         check_orphaned();
         arraySetterHelper(movingObjectStatusArray, MOVINGOBJECTSTATUS$0);
@@ -136,7 +136,7 @@ public class TrackTypeImpl extends net.opengis.gml.impl.HistoryPropertyTypeImpl 
     /**
      * Sets ith "MovingObjectStatus" element
      */
-    @Inject(optional=true) public void setMovingObjectStatusArray(int i, net.opengis.gml.MovingObjectStatusType movingObjectStatus)
+     public void setMovingObjectStatusArray(int i, net.opengis.gml.MovingObjectStatusType movingObjectStatus)
     {
         generatedSetterHelperImpl(movingObjectStatus, MOVINGOBJECTSTATUS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }

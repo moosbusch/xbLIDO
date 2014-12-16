@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * A document containing one _ParametricCurveSurface(@http://www.opengis.net/gml) element.
  *
@@ -60,7 +60,7 @@ public class ParametricCurveSurfaceDocumentImpl extends net.opengis.gml.impl.Sur
     /**
      * Sets the "_ParametricCurveSurface" element
      */
-    @Inject(optional=true) public void setParametricCurveSurface(net.opengis.gml.AbstractParametricCurveSurfaceType parametricCurveSurface)
+     public void setParametricCurveSurface(net.opengis.gml.AbstractParametricCurveSurfaceType parametricCurveSurface)
     {
         synchronized (monitor())
         {

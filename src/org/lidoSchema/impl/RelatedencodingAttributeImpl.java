@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lidoSchema.impl;  import com.google.inject.Inject;
+package org.lidoSchema.impl;  
 /**
  * A document containing one relatedencoding(@http://www.lido-schema.org) attribute.
  *
@@ -79,7 +79,7 @@ public class RelatedencodingAttributeImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "relatedencoding" attribute
      */
-    @Inject(optional=true) public void setRelatedencoding(java.lang.String relatedencoding)
+     public void setRelatedencoding(java.lang.String relatedencoding)
     {
         synchronized (monitor())
         {

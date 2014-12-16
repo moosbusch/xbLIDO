@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.opengis.gml.impl; import com.google.inject.Inject;
+package net.opengis.gml.impl; 
 /**
  * An XML CovarianceElementType(@http://www.opengis.net/gml).
  *
@@ -71,7 +71,7 @@ public class CovarianceElementTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "rowIndex" element
      */
-    @Inject(optional=true) public void setRowIndex(java.math.BigInteger rowIndex)
+     public void setRowIndex(java.math.BigInteger rowIndex)
     {
         synchronized (monitor())
         {
@@ -139,7 +139,7 @@ public class CovarianceElementTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "columnIndex" element
      */
-    @Inject(optional=true) public void setColumnIndex(java.math.BigInteger columnIndex)
+     public void setColumnIndex(java.math.BigInteger columnIndex)
     {
         synchronized (monitor())
         {
@@ -207,7 +207,7 @@ public class CovarianceElementTypeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "covariance" element
      */
-    @Inject(optional=true) public void setCovariance(double covariance)
+     public void setCovariance(double covariance)
     {
         synchronized (monitor())
         {

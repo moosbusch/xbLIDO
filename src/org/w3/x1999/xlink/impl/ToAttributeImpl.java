@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.w3.x1999.xlink.impl;  import com.google.inject.Inject;
+package org.w3.x1999.xlink.impl;  
 /**
  * A document containing one to(@http://www.w3.org/1999/xlink) attribute.
  *
@@ -79,7 +79,7 @@ public class ToAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "to" attribute
      */
-    @Inject(optional=true) public void setTo(java.lang.String to)
+     public void setTo(java.lang.String to)
     {
         synchronized (monitor())
         {
